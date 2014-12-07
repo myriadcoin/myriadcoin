@@ -80,9 +80,19 @@ namespace {
     struct CBlockIndexWorkComparator
     {
         bool operator()(CBlockIndex *pa, CBlockIndex *pb) {
-            // First sort by most total work, ...
-            if (pa->nChainWork > pb->nChainWork) return false;
-            if (pa->nChainWork < pb->nChainWork) return true;
+            // First sort by most work per algo, ...
+            int aWins = 0, bWins = 0;
+            for (int i = 0; i < NUM_ALGOS; i++)
+            {
+                if (pa->nAlgoWork[i] > pb->nAlgoWork[i]) aWins++;
+                if (pa->nAlgoWork[i] < pb->nAlgoWork[i]) bWins++;
+            }
+            if (aWins > bWins) return false;
+            if (aWins < bWins) return true;
+            
+            // ... then by number of blocks ...
+            if (pa->nHeight > pb->nHeight) return false;
+            if (pa->nHeight < pb->nHeight) return true;
 
             // ... then by earliest time received, ...
             if (pa->nSequenceId < pb->nSequenceId) return false;
@@ -2322,6 +2332,11 @@ bool AddToBlockIndex(CBlock& block, CValidationState& state, const CDiskBlockPos
     }
     pindexNew->nTx = block.vtx.size();
     pindexNew->nChainWork = (pindexNew->pprev ? pindexNew->pprev->nChainWork : 0) + pindexNew->GetBlockWorkAdjusted().getuint256();
+    for (int i = 0; i < NUM_ALGOS; i++)
+    {
+        pindexNew->nAlgoWork[i] = (pindexNew->pprev ? pindexNew->pprev->nAlgoWork[i] : 0) +
+                                  (i == pindexNew->GetAlgo() ? pindexNew->GetBlockWork().getuint256() : 0);
+    }
     pindexNew->nChainTx = (pindexNew->pprev ? pindexNew->pprev->nChainTx : 0) + pindexNew->nTx;
     pindexNew->nFile = pos.nFile;
     pindexNew->nDataPos = pos.nPos;
