@@ -134,7 +134,7 @@ namespace {
     CBlockIndex *pindexBestInvalid;
     // may contain all CBlockIndex*'s that have validness >=BLOCK_VALID_TRANSACTIONS, and must contain those who aren't failed
     set<CBlockIndex*, CBlockIndexWorkComparator> setBlockIndexValid;
-    set<CBlockIndex*, CBlockIndexWorkComparator2> setBlockIndexValid2; // interim measure to transition between comparator1 and comparator2
+    set<CBlockIndex*> setBlockIndexValid2; // interim measure to transition between comparator1 and comparator2
 
     CCriticalSection cs_LastBlockFile;
     CBlockFileInfo infoLastBlockFile;
@@ -1656,7 +1656,10 @@ void static InvalidBlockFound(CBlockIndex *pindex, const CValidationState &state
         pindex->nStatus |= BLOCK_FAILED_VALID;
         pblocktree->WriteBlockIndex(CDiskBlockIndex(pindex));
         setBlockIndexValid.erase(pindex);
-        setBlockIndexValid2.erase(pindex);
+        if (setBlockIndexValid2.erase(pindex) && pindex->pprev)
+        {
+            setBlockIndexValid2.insert(pindex->pprev);
+        }
         InvalidChainFound(pindex);
     }
 }
@@ -2245,7 +2248,10 @@ void static FindMostWorkChain()
     // In case the current best is invalid, do not consider it.
     while (chainMostWork.Tip() && (chainMostWork.Tip()->nStatus & BLOCK_FAILED_MASK)) {
         setBlockIndexValid.erase(chainMostWork.Tip());
-        setBlockIndexValid2.erase(chainMostWork.Tip());
+        if (setBlockIndexValid2.erase(chainMostWork.Tip()) && chainMostWork.Tip()->pprev)
+        {
+            setBlockIndexValid2.insert(chainMostWork.Tip()->pprev);
+        }
         chainMostWork.SetTip(chainMostWork.Tip()->pprev);
     }
 
@@ -2261,10 +2267,9 @@ void static FindMostWorkChain()
         }
         else
         {
-            std::set<CBlockIndex*, CBlockIndexWorkComparator2>::reverse_iterator it = setBlockIndexValid2.rbegin();
-            if (it == setBlockIndexValid2.rend())
+            if (setBlockIndexValid2.empty())
                 return;
-            pindexNew = *it;
+            pindexNew = *std::max_element(setBlockIndexValid2.begin(), setBlockIndexValid2.end(), CBlockIndexWorkComparator2());
         }
 
         // Check whether all blocks on the path between the currently active chain and the candidate are valid.
@@ -2279,7 +2284,10 @@ void static FindMostWorkChain()
                 while (pindexTest != pindexFailed) {
                     pindexFailed->nStatus |= BLOCK_FAILED_CHILD;
                     setBlockIndexValid.erase(pindexFailed);
-                    setBlockIndexValid2.erase(pindexFailed);
+                    if (setBlockIndexValid2.erase(pindexFailed) && pindexFailed->pprev)
+                    {
+                        setBlockIndexValid2.insert(pindexFailed->pprev);
+                    }
                     pindexFailed = pindexFailed->pprev;
                 }
                 fInvalidAncestor = true;
@@ -2393,6 +2401,10 @@ bool AddToBlockIndex(CBlock& block, CValidationState& state, const CDiskBlockPos
     pindexNew->nUndoPos = 0;
     pindexNew->nStatus = BLOCK_VALID_TRANSACTIONS | BLOCK_HAVE_DATA;
     setBlockIndexValid.insert(pindexNew);
+    if (pindexNew->pprev)
+    {
+        setBlockIndexValid2.erase(pindexNew->pprev);
+    }
     setBlockIndexValid2.insert(pindexNew);
 
     if (!pblocktree->WriteBlockIndex(CDiskBlockIndex(pindexNew)))
@@ -3100,6 +3112,10 @@ bool static LoadBlockIndexDB()
         if ((pindex->nStatus & BLOCK_VALID_MASK) >= BLOCK_VALID_TRANSACTIONS && !(pindex->nStatus & BLOCK_FAILED_MASK))
         {
             setBlockIndexValid.insert(pindex);
+            if (pindex->pprev)
+            {
+                setBlockIndexValid2.erase(pindex->pprev);
+            }
             setBlockIndexValid2.insert(pindex);
         }
         if (pindex->nStatus & BLOCK_FAILED_MASK && (!pindexBestInvalid || pindex->nChainWork > pindexBestInvalid->nChainWork))
