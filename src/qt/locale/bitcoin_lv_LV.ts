@@ -2622,8 +2622,8 @@ Adrese: %4
         <translation>Norādiet datu direktoriju</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>Gaidīt savienojumus portā &lt;port&gt; (pēc noklusēšanas: 8333 vai testnet: 18333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 10888 or testnet: 20888)</source>
+        <translation>Gaidīt savienojumus portā &lt;port&gt; (pēc noklusēšanas: 10888 vai testnet: 20888)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
@@ -2650,7 +2650,7 @@ Adrese: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2824,7 +2824,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Savienoties caur SOCKS starpniekserveri</translation>
     </message>
     <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
         <translation type="unfinished"/>
     </message>
     <message>

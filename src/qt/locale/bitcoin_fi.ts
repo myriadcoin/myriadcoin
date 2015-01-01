@@ -2622,8 +2622,8 @@ Osoite: %4</translation>
         <translation>Määritä data-hakemisto</translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>Kuuntele yhteyksiä portista &lt;port&gt; (oletus: 8333 tai testnet: 18333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 10888 or testnet: 20888)</source>
+        <translation>Kuuntele yhteyksiä portista &lt;port&gt; (oletus: 10888 tai testnet: 20888)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
@@ -2650,8 +2650,8 @@ Osoite: %4</translation>
         <translation>Virhe valmisteltaessa RPC-portin %u avaamista kuunneltavaksi: %s</translation>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation>Kuuntele JSON-RPC -yhteyksiä portista &lt;port&gt; (oletus: 8332 or testnet: 18332)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
+        <translation>Kuuntele JSON-RPC -yhteyksiä portista &lt;port&gt; (oletus: 10889 or testnet: 20889)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -2834,8 +2834,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Yhdistä SOCKS proxin kautta</translation>
     </message>
     <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation>Yhdistä JSON-RPC portissa &lt;port&gt; (oletus: 8332 tai testnet: 18332)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
+        <translation>Yhdistä JSON-RPC portissa &lt;port&gt; (oletus: 10889 tai testnet: 20889)</translation>
     </message>
     <message>
         <source>Connection options:</source>
