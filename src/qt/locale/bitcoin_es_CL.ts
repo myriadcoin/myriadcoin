@@ -2631,8 +2631,8 @@ Dirección: %4</translation>
 </translation>
     </message>
     <message>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>Escuchar por conecciones en &lt;puerto&gt; (Por defecto: 8333 o red de prueba: 18333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 10888 or testnet: 20888)</source>
+        <translation>Escuchar por conecciones en &lt;puerto&gt; (Por defecto: 10888 o red de prueba: 20888)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
@@ -2659,8 +2659,8 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation>Escucha conexiones JSON-RPC en el puerto &lt;port&gt; (predeterminado: 8332 or testnet: 18332)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
+        <translation>Escucha conexiones JSON-RPC en el puerto &lt;port&gt; (predeterminado: 10889 or testnet: 20889)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -2837,7 +2837,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
         <translation type="unfinished"/>
     </message>
     <message>
