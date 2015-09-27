@@ -114,7 +114,9 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, int algo)
     CBlock *pblock = &pblocktemplate->block; // pointer for convenience
 
     // Set block version
-    pblock->nVersion = BLOCK_VERSION_DEFAULT;
+    // pblock->nVersion = BLOCK_VERSION_DEFAULT;
+	// Don't do this now or CHAIN_ID is set to 0
+	
     switch (algo)
     {
         case ALGO_SHA256D:
