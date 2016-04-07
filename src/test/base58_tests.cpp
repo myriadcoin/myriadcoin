@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2014 The Bitcoin Core developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "base58.h"
@@ -9,9 +9,11 @@
 #include "data/base58_keys_valid.json.h"
 
 #include "key.h"
-#include "script.h"
+#include "script/script.h"
 #include "uint256.h"
 #include "util.h"
+#include "utilstrencodings.h"
+#include "test/test_bitcoin.h"
 
 #include <boost/foreach.hpp>
 #include <boost/test/unit_test.hpp>
@@ -22,7 +24,7 @@
 using namespace json_spirit;
 extern Array read_json(const std::string& jsondata);
 
-BOOST_AUTO_TEST_SUITE(base58_tests)
+BOOST_FIXTURE_TEST_SUITE(base58_tests, BasicTestingSetup)
 
 // Goal: test low-level base58 encoding functionality
 BOOST_AUTO_TEST_CASE(base58_EncodeBase58)
@@ -40,7 +42,7 @@ BOOST_AUTO_TEST_CASE(base58_EncodeBase58)
         std::vector<unsigned char> sourcedata = ParseHex(test[0].get_str());
         std::string base58string = test[1].get_str();
         BOOST_CHECK_MESSAGE(
-                    EncodeBase58(&sourcedata[0], &sourcedata[sourcedata.size()]) == base58string,
+                    EncodeBase58(begin_ptr(sourcedata), end_ptr(sourcedata)) == base58string,
                     strTest);
     }
 }
@@ -126,6 +128,7 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
     std::vector<unsigned char> result;
     CBitcoinSecret secret;
     CBitcoinAddress addr;
+    SelectParams(CBaseChainParams::MAIN);
 
     BOOST_FOREACH(Value& tv, tests)
     {
@@ -142,19 +145,19 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
         bool isPrivkey = find_value(metadata, "isPrivkey").get_bool();
         bool isTestnet = find_value(metadata, "isTestnet").get_bool();
         if (isTestnet)
-            SelectParams(CChainParams::TESTNET);
+            SelectParams(CBaseChainParams::TESTNET);
         else
-            SelectParams(CChainParams::MAIN);
+            SelectParams(CBaseChainParams::MAIN);
         if(isPrivkey)
         {
-            // MYRIAD: TEST REMOVED  bool isCompressed = find_value(metadata, "isCompressed").get_bool();
+            bool isCompressed = find_value(metadata, "isCompressed").get_bool();
             // Must be valid private key
             // Note: CBitcoinSecret::SetString tests isValid, whereas CBitcoinAddress does not!
-            // MYRIAD: TEST REMOVED  BOOST_CHECK_MESSAGE(secret.SetString(exp_base58string), "!SetString:"+ strTest);
-            // MYRIAD: TEST REMOVED  BOOST_CHECK_MESSAGE(secret.IsValid(), "!IsValid:" + strTest);
+            BOOST_CHECK_MESSAGE(secret.SetString(exp_base58string), "!SetString:"+ strTest);
+            BOOST_CHECK_MESSAGE(secret.IsValid(), "!IsValid:" + strTest);
             CKey privkey = secret.GetKey();
-            // MYRIAD: TEST REMOVED  BOOST_CHECK_MESSAGE(privkey.IsCompressed() == isCompressed, "compressed mismatch:" + strTest);
-            // MYRIAD: TEST REMOVED  BOOST_CHECK_MESSAGE(privkey.size() == exp_payload.size() && std::equal(privkey.begin(), privkey.end(), exp_payload.begin()), "key mismatch:" + strTest);
+            BOOST_CHECK_MESSAGE(privkey.IsCompressed() == isCompressed, "compressed mismatch:" + strTest);
+            BOOST_CHECK_MESSAGE(privkey.size() == exp_payload.size() && std::equal(privkey.begin(), privkey.end(), exp_payload.begin()), "key mismatch:" + strTest);
 
             // Private key must be invalid public key
             addr.SetString(exp_base58string);
@@ -165,17 +168,16 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
             std::string exp_addrType = find_value(metadata, "addrType").get_str(); // "script" or "pubkey"
             // Must be valid public key
             BOOST_CHECK_MESSAGE(addr.SetString(exp_base58string), "SetString:" + strTest);
-            // MYRIAD: TEST REMOVED  BOOST_CHECK_MESSAGE(addr.IsValid(), "!IsValid:" + strTest);
-            // MYRIAD: TEST REMOVED  BOOST_CHECK_MESSAGE(addr.IsScript() == (exp_addrType == "script"), "isScript mismatch" + strTest);
+            BOOST_CHECK_MESSAGE(addr.IsValid(), "!IsValid:" + strTest);
+            BOOST_CHECK_MESSAGE(addr.IsScript() == (exp_addrType == "script"), "isScript mismatch" + strTest);
             CTxDestination dest = addr.Get();
-            // MYRIAD: TEST REMOVED  BOOST_CHECK_MESSAGE(boost::apply_visitor(TestAddrTypeVisitor(exp_addrType), dest), "addrType mismatch" + strTest);
+            BOOST_CHECK_MESSAGE(boost::apply_visitor(TestAddrTypeVisitor(exp_addrType), dest), "addrType mismatch" + strTest);
 
             // Public key must be invalid private key
             secret.SetString(exp_base58string);
             BOOST_CHECK_MESSAGE(!secret.IsValid(), "IsValid pubkey as privkey:" + strTest);
         }
     }
-    SelectParams(CChainParams::MAIN);
 }
 
 // Goal: check that generated keys match test vectors
@@ -198,9 +200,9 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
         bool isPrivkey = find_value(metadata, "isPrivkey").get_bool();
         bool isTestnet = find_value(metadata, "isTestnet").get_bool();
         if (isTestnet)
-            SelectParams(CChainParams::TESTNET);
+            SelectParams(CBaseChainParams::TESTNET);
         else
-            SelectParams(CChainParams::MAIN);
+            SelectParams(CBaseChainParams::MAIN);
         if(isPrivkey)
         {
             bool isCompressed = find_value(metadata, "isCompressed").get_bool();
@@ -209,7 +211,7 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
             assert(key.IsValid());
             CBitcoinSecret secret;
             secret.SetKey(key);
-            // MYRIAD: TEST REMOVED  BOOST_CHECK_MESSAGE(secret.ToString() == exp_base58string, "result mismatch: " + strTest);
+            BOOST_CHECK_MESSAGE(secret.ToString() == exp_base58string, "result mismatch: " + strTest);
         }
         else
         {
@@ -234,7 +236,7 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
             }
             CBitcoinAddress addrOut;
             BOOST_CHECK_MESSAGE(addrOut.Set(dest), "encode dest: " + strTest);
-            // MYRIAD: TEST REMOVED  BOOST_CHECK_MESSAGE(addrOut.ToString() == exp_base58string, "mismatch: " + strTest);
+            BOOST_CHECK_MESSAGE(addrOut.ToString() == exp_base58string, "mismatch: " + strTest);
         }
     }
 
@@ -243,7 +245,7 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
     CTxDestination nodest = CNoDestination();
     BOOST_CHECK(!dummyAddr.Set(nodest));
 
-    SelectParams(CChainParams::MAIN);
+    SelectParams(CBaseChainParams::MAIN);
 }
 
 // Goal: check that base58 parsing code is robust against a variety of corrupted data

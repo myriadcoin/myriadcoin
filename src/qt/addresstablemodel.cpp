@@ -1,5 +1,5 @@
-// Copyright (c) 2011-2013 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "addresstablemodel.h"
@@ -8,7 +8,9 @@
 #include "walletmodel.h"
 
 #include "base58.h"
-#include "wallet.h"
+#include "wallet/wallet.h"
+
+#include <boost/foreach.hpp>
 
 #include <QFont>
 #include <QDebug>
@@ -27,11 +29,10 @@ struct AddressTableEntry
     Type type;
     QString label;
     QString address;
-    bool stealth;
 
     AddressTableEntry() {}
-    AddressTableEntry(Type type, const QString &label, const QString &address, const bool &stealth = false):
-        type(type), label(label), address(address), stealth(stealth) {}
+    AddressTableEntry(Type type, const QString &label, const QString &address):
+        type(type), label(label), address(address) {}
 };
 
 struct AddressTableEntryLessThan
@@ -91,17 +92,6 @@ public:
                                   QString::fromStdString(strName),
                                   QString::fromStdString(address.ToString())));
             }
-
-            std::set<CStealthAddress>::iterator it;
-            for (it = wallet->stealthAddresses.begin(); it != wallet->stealthAddresses.end(); ++it)
-            {
-                bool fMine = !(it->scan_secret.size() < 1);
-                cachedAddressTable.append(AddressTableEntry(fMine ? AddressTableEntry::Receiving : AddressTableEntry::Sending,
-                                  QString::fromStdString(it->label),
-                                  QString::fromStdString(it->Encoded()),
-                                  true));
-            };
-
         }
         // qLowerBound() and qUpperBound() require our cachedAddressTable list to be sorted in asc order
         // Even though the map is already sorted this re-sorting step is needed because the originating map
@@ -126,7 +116,7 @@ public:
         case CT_NEW:
             if(inModel)
             {
-                qDebug() << "AddressTablePriv::updateEntry : Warning: Got CT_NEW, but entry is already in model";
+                qWarning() << "AddressTablePriv::updateEntry: Warning: Got CT_NEW, but entry is already in model";
                 break;
             }
             parent->beginInsertRows(QModelIndex(), lowerIndex, lowerIndex);
@@ -136,7 +126,7 @@ public:
         case CT_UPDATED:
             if(!inModel)
             {
-                qDebug() << "AddressTablePriv::updateEntry : Warning: Got CT_UPDATED, but entry is not in model";
+                qWarning() << "AddressTablePriv::updateEntry: Warning: Got CT_UPDATED, but entry is not in model";
                 break;
             }
             lower->type = newEntryType;
@@ -146,7 +136,7 @@ public:
         case CT_DELETED:
             if(!inModel)
             {
-                qDebug() << "AddressTablePriv::updateEntry : Warning: Got CT_DELETED, but entry is not in model";
+                qWarning() << "AddressTablePriv::updateEntry: Warning: Got CT_DELETED, but entry is not in model";
                 break;
             }
             parent->beginRemoveRows(QModelIndex(), lowerIndex, upperIndex-1);
@@ -254,7 +244,6 @@ bool AddressTableModel::setData(const QModelIndex &index, const QVariant &value,
     std::string strPurpose = (rec->type == AddressTableEntry::Sending ? "send" : "receive");
     editStatus = OK;
 
-    std::string strTemp, strValue;
     if(role == Qt::EditRole)
     {
         LOCK(wallet->cs_wallet); /* For SetAddressBook / DelAddressBook */
@@ -267,15 +256,7 @@ bool AddressTableModel::setData(const QModelIndex &index, const QVariant &value,
                 editStatus = NO_CHANGES;
                 return false;
             }
-            strTemp = rec->address.toStdString();
-            if (IsStealthAddress(strTemp))
-            {
-                strValue = value.toString().toStdString();
-                wallet->UpdateStealthAddress(strTemp, strValue, false);
-            } else
-            {
-                wallet->SetAddressBook(CBitcoinAddress(strTemp).Get(), value.toString().toStdString(), strPurpose);
-            }
+            wallet->SetAddressBook(curAddress, value.toString().toStdString(), strPurpose);
         } else if(index.column() == Address) {
             CTxDestination newAddress = CBitcoinAddress(value.toString().toStdString()).Get();
             // Refuse to set invalid address, set error status and return false
@@ -361,7 +342,7 @@ void AddressTableModel::updateEntry(const QString &address,
     priv->updateEntry(address, label, isMine, purpose, status);
 }
 
-QString AddressTableModel::addRow(const QString &type, const QString &label, const QString &address, int addressType)
+QString AddressTableModel::addRow(const QString &type, const QString &label, const QString &address)
 {
     std::string strLabel = label.toStdString();
     std::string strAddress = address.toStdString();
@@ -370,93 +351,53 @@ QString AddressTableModel::addRow(const QString &type, const QString &label, con
 
     if(type == Send)
     {
-        if (strAddress.length() > 75)
+        if(!walletModel->validateAddress(address))
         {
-            CStealthAddress sxAddr;
-            if (!sxAddr.SetEncoded(strAddress))
-            {
-                editStatus = INVALID_ADDRESS;
-                return QString();
-            }
-
-            // -- Check for duplicate addresses
-            {
-                LOCK(wallet->cs_wallet);
-
-                if (wallet->stealthAddresses.count(sxAddr))
-                {
-                    editStatus = DUPLICATE_ADDRESS;
-                    return QString();
-                };
-
-                sxAddr.label = strLabel;
-                wallet->AddStealthAddress(sxAddr);
-            }
+            editStatus = INVALID_ADDRESS;
+            return QString();
         }
-        else
+        // Check for duplicate addresses
         {
-            if(!walletModel->validateAddress(address))
+            LOCK(wallet->cs_wallet);
+            if(wallet->mapAddressBook.count(CBitcoinAddress(strAddress).Get()))
             {
-                editStatus = INVALID_ADDRESS;
+                editStatus = DUPLICATE_ADDRESS;
                 return QString();
-            }
-            // Check for duplicate addresses
-            {
-                LOCK(wallet->cs_wallet);
-                if(wallet->mapAddressBook.count(CBitcoinAddress(strAddress).Get()))
-                {
-                    editStatus = DUPLICATE_ADDRESS;
-                    return QString();
-                }
-                wallet->SetAddressBook(CBitcoinAddress(strAddress).Get(), strLabel,
-                               (type == Send ? "send" : "receive"));
             }
         }
     }
     else if(type == Receive)
     {
-        WalletModel::UnlockContext ctx(walletModel->requestUnlock());
-        if(!ctx.isValid())
-        {
-            // Unlock wallet failed or was cancelled
-            editStatus = WALLET_UNLOCK_FAILURE;
-            return QString();
-        }
-
         // Generate a new address to associate with given label
-        if (addressType == AT_Stealth)
+        CPubKey newKey;
+        if(!wallet->GetKeyFromPool(newKey))
         {
-            CStealthAddress newStealthAddr;
-            std::string sError;
-            if (!wallet->NewStealthAddress(sError, strLabel, newStealthAddr)
-                || !wallet->AddStealthAddress(newStealthAddr))
+            WalletModel::UnlockContext ctx(walletModel->requestUnlock());
+            if(!ctx.isValid())
             {
-                editStatus = KEY_GENERATION_FAILURE;
+                // Unlock wallet failed or was cancelled
+                editStatus = WALLET_UNLOCK_FAILURE;
                 return QString();
             }
-            strAddress = newStealthAddr.Encoded();
-        } else
-        {
-            CPubKey newKey;
             if(!wallet->GetKeyFromPool(newKey))
             {
                 editStatus = KEY_GENERATION_FAILURE;
                 return QString();
             }
-            strAddress = CBitcoinAddress(newKey.GetID()).ToString();
-
-            {
-                LOCK(wallet->cs_wallet);
-                wallet->SetAddressBook(CBitcoinAddress(strAddress).Get(), strLabel,
-                               (type == Send ? "send" : "receive"));
-            }
         }
+        strAddress = CBitcoinAddress(newKey.GetID()).ToString();
     }
     else
     {
         return QString();
     }
 
+    // Add entry
+    {
+        LOCK(wallet->cs_wallet);
+        wallet->SetAddressBook(CBitcoinAddress(strAddress).Get(), strLabel,
+                               (type == Send ? "send" : "receive"));
+    }
     return QString::fromStdString(strAddress);
 }
 
@@ -483,28 +424,11 @@ QString AddressTableModel::labelForAddress(const QString &address) const
 {
     {
         LOCK(wallet->cs_wallet);
-
-        std::string sAddr = address.toStdString();
-
-        if (sAddr.length() > 75)
+        CBitcoinAddress address_parsed(address.toStdString());
+        std::map<CTxDestination, CAddressBookData>::iterator mi = wallet->mapAddressBook.find(address_parsed.Get());
+        if (mi != wallet->mapAddressBook.end())
         {
-            CStealthAddress sxAddr;
-            if (!sxAddr.SetEncoded(sAddr))
-                return QString();
-            std::set<CStealthAddress>:: iterator it;
-            it = wallet->stealthAddresses.find(sxAddr);
-            if (it == wallet->stealthAddresses.end())
-                return QString();
-           return QString::fromStdString(it->label);
-        }
-        else
-        {
-            CBitcoinAddress address_parsed(sAddr);
-            std::map<CTxDestination, CAddressBookData>::iterator mi = wallet->mapAddressBook.find(address_parsed.Get());
-            if (mi != wallet->mapAddressBook.end())
-            {
-                return QString::fromStdString(mi->second.name);
-            }
+            return QString::fromStdString(mi->second.name);
         }
     }
     return QString();
@@ -526,5 +450,5 @@ int AddressTableModel::lookupAddress(const QString &address) const
 
 void AddressTableModel::emitDataChanged(int idx)
 {
-    emit dataChanged(index(idx, 0, QModelIndex()), index(idx, columns.length()-1, QModelIndex()));
+    Q_EMIT dataChanged(index(idx, 0, QModelIndex()), index(idx, columns.length()-1, QModelIndex()));
 }

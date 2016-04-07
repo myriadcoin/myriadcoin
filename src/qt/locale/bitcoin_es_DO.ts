@@ -1,50 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="es_DO" version="2.1">
-<context>
-    <name>AboutDialog</name>
-    <message>
-        <source>About Myriadcoin Core</source>
-        <translation>Acerca del Núcleo de Myriadcoin</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Myriadcoin Core&lt;/b&gt; version</source>
-        <translation>Versión del &lt;b&gt;Núcleo de Bitcoin&lt;b&gt;</translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-Este es un software experimental.
-
-Distribuido bajo la licencia MIT/X11, vea el archivo adjunto
-COPYING o http://www.opensource.org/licenses/mit-license.php.
-
-Este producto incluye software desarrollado por OpenSSL Project para su uso en
-el OpenSSL Toolkit (http://www.openssl.org/) y software criptográfico escrito por
-Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Copyright</translation>
-    </message>
-    <message>
-        <source>The Bitcoin and Myriadcoin Core developers</source>
-        <translation>Los desarrolladores del Núcleo de Myriadcoin</translation>
-    </message>
-    <message>
-        <source>(%1-bit)</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+<TS language="es_DO" version="2.0">
 <context>
     <name>AddressBookPage</name>
-    <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Haga doble clic para editar una dirección o etiqueta</translation>
-    </message>
     <message>
         <source>Create a new address</source>
         <translation>Crear una nueva dirección</translation>
@@ -106,12 +62,12 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Recibiendo dirección</translation>
     </message>
     <message>
-        <source>These are your Myriadcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones Myriadcoin para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de transferir monedas.</translation>
+        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones Myriad para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de transferir monedas.</translation>
     </message>
     <message>
-        <source>These are your Myriadcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones de Myriadcoin para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción.</translation>
+        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son sus direcciones de Myriad para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -133,11 +89,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <source>Exporting Failed</source>
         <translation>Error exportando</translation>
     </message>
-    <message>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+    </context>
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -172,10 +124,6 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Repita la nueva contraseña</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Introduzca la nueva contraseña de la cartera.&lt;br/&gt;Por favor elija una con &lt;b&gt;10 o más caracteres aleatorios&lt;/b&gt;, u &lt;b&gt;ocho o más palabras&lt;/b&gt;.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
         <translation>Cifrar la cartera</translation>
     </message>
@@ -200,16 +148,12 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Cambiar contraseña</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Introduzca la contraseña anterior de la cartera y la nueva. </translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Confirmar cifrado de la cartera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADCOINS&lt;/b&gt;!</source>
-        <translation>Atencion: ¡Si cifra su monedero y pierde la contraseña perderá &lt;b&gt;TODOS SUS MYRIADCOINS&lt;/b&gt;!&quot;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
+        <translation>Atencion: ¡Si cifra su monedero y pierde la contraseña perderá &lt;b&gt;TODOS SUS MYRIADS&lt;/b&gt;!"</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -226,10 +170,6 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <source>Wallet encrypted</source>
         <translation>Monedero cifrado</translation>
-    </message>
-    <message>
-        <source>Myriadcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your myriadcoins from being stolen by malware infecting your computer.</source>
-        <translation>Myriadcoin se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus myriadcoins de robo por malware que infecte su sistema.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -299,10 +239,6 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Salir de la aplicación</translation>
     </message>
     <message>
-        <source>Show information about Myriadcoin</source>
-        <translation>Mostrar información acerca de Myriadcoin</translation>
-    </message>
-    <message>
         <source>About &amp;Qt</source>
         <translation>Acerca de &amp;Qt</translation>
     </message>
@@ -347,12 +283,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Reindexando bloques en disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriadcoin address</source>
-        <translation>Enviar monedas a una dirección Myriadcoin</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Myriadcoin</source>
-        <translation>Modificar las opciones de configuración de Myriadcoin</translation>
+        <source>Send coins to a Myriad address</source>
+        <translation>Enviar monedas a una dirección Myriad</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -375,8 +307,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
+        <source>Myriad</source>
+        <translation>Myriad</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -403,12 +335,12 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriadcoin addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Myriadcoin para demostrar la propiedad</translation>
+        <source>Sign messages with your Myriad addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones Myriad para demostrar la propiedad</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriadcoin addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Myriadcoin concretas</translation>
+        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones Myriad concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -427,20 +359,16 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>Myriad Core</source>
+        <translation>Núcleo de Myriad</translation>
     </message>
     <message>
-        <source>Myriadcoin Core</source>
-        <translation>Núcleo de Myriadcoin</translation>
+        <source>Request payments (generates QR codes and myriad: URIs)</source>
+        <translation>Solicitar pagos (genera codigo QR y URL's de Myriad)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriadcoin: URIs)</source>
-        <translation>Solicitar pagos (genera codigo QR y URL&apos;s de Bitcoin)</translation>
-    </message>
-    <message>
-        <source>&amp;About Myriadcoin Core</source>
-        <translation>&amp;Acerca del Núcleo de Myriadcoin</translation>
+        <source>&amp;About Myriad Core</source>
+        <translation>&amp;Acerca del Núcleo de Myriad</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -451,56 +379,16 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
-        <source>Open a myriadcoin: URI or payment request</source>
-        <translation>Abrir un myriadcoin: URI o petición de pago</translation>
+        <source>Open a myriad: URI or payment request</source>
+        <translation>Abrir un myriad: URI o petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Opciones de linea de comando</translation>
     </message>
     <message>
-        <source>Show the Myriadcoin Core help message to get a list with possible Myriadcoin command-line options</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Myriadcoin client</source>
-        <translation>Cliente Myriadcoin</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Myriadcoin network</source>
-        <translation><numerusform>%n conexión activa hacia la red Myriadcoin</numerusform><numerusform>%n conexiones activas hacia la red Myriadcoin</numerusform></translation>
-    </message>
-    <message>
         <source>No block source available...</source>
         <translation>Ninguna fuente de bloques disponible ...</translation>
-    </message>
-    <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Se han procesado %1 de %2 bloques (estimados) del historial de transacciones.</translation>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>Procesados %1 bloques del historial de transacciones.</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n hora</numerusform><numerusform>%n horas</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n día</numerusform><numerusform>%n días</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n semana</numerusform><numerusform>%n semanas</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -543,28 +431,12 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Transacción entrante</translation>
     </message>
     <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Fecha: %1
-Cantidad: %2
-Tipo: %3
-Dirección: %4
-</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>El monedero está &lt;b&gt;cifrado&lt;/b&gt; y actualmente &lt;b&gt;desbloqueado&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>El monedero está &lt;b&gt;cifrado&lt;/b&gt; y actualmente &lt;b&gt;bloqueado&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>A fatal error occurred. Myriadcoin can no longer continue safely and will quit.</source>
-        <translation>Ha ocurrido un error crítico. Myriadcoin ya no puede continuar con seguridad y se cerrará.</translation>
     </message>
 </context>
 <context>
@@ -576,10 +448,6 @@ Dirección: %4
 </context>
 <context>
     <name>CoinControlDialog</name>
-    <message>
-        <source>Coin Control Address Selection</source>
-        <translation>Selección de la dirección de control de la moneda</translation>
-    </message>
     <message>
         <source>Quantity:</source>
         <translation>Cantidad:</translation>
@@ -599,10 +467,6 @@ Dirección: %4
     <message>
         <source>Fee:</source>
         <translation>Tasa:</translation>
-    </message>
-    <message>
-        <source>Low Output:</source>
-        <translation>Envío pequeño:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -627,10 +491,6 @@ Dirección: %4
     <message>
         <source>Amount</source>
         <translation>Cantidad</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Dirección</translation>
     </message>
     <message>
         <source>Date</source>
@@ -693,12 +553,8 @@ Dirección: %4
         <translation>Copiar prioridad</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Copiar envío pequeño</translation>
-    </message>
-    <message>
         <source>Copy change</source>
-        <translation>Copiar cambio</translation>
+        <translation>Copiar Cambio</translation>
     </message>
     <message>
         <source>highest</source>
@@ -745,20 +601,12 @@ Dirección: %4
         <translation>ninguno</translation>
     </message>
     <message>
-        <source>Dust</source>
-        <translation>Basura</translation>
-    </message>
-    <message>
         <source>yes</source>
         <translation>si</translation>
     </message>
     <message>
         <source>no</source>
         <translation>no</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Esta etiqueta se torna roja si el tamaño de la transación es mayor a 1000 bytes.</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
@@ -771,26 +619,6 @@ Dirección: %4
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>Las transacciones con alta prioridad son más propensas a ser incluidas dentro de un bloque.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
-        <translation>Esta etiqueta se convierte en rojo, si la prioridad es menor que &quot;medio&quot;.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Esta etiqueta se torna roja si cualquier destinatario recibe una cantidad menor a %1.</translation>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 is required.</source>
-        <translation>Esto significa que se necesita una tarifa de al menos %1.</translation>
-    </message>
-    <message>
-        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
-        <translation>Cantidades por debajo de 0.546 veces la tasa serán mostradas como basura</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the change is smaller than %1.</source>
-        <translation>Esta etiqueta se vuelve roja si la cantidad de monedas es menor a %1</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -844,12 +672,12 @@ Dirección: %4
         <translation>Editar dirección de envío</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>La dirección introducida &quot;%1&quot; ya está presente en la libreta de direcciones.</translation>
+        <source>The entered address "%1" is already in the address book.</source>
+        <translation>La dirección introducida "%1" ya está presente en la libreta de direcciones.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Myriadcoin address.</source>
-        <translation>La dirección introducida &quot;%1&quot; no es una dirección Myriadcoin válida.</translation>
+        <source>The entered address "%1" is not a valid Myriad address.</source>
+        <translation>La dirección introducida "%1" no es una dirección Myriad válida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -886,16 +714,20 @@ Dirección: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriadcoin Core - Command-line options</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Myriadcoin Core</source>
-        <translation>Núcleo de Myriadcoin</translation>
+        <source>Myriad Core</source>
+        <translation>Núcleo de Myriad</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versión</translation>
+    </message>
+    <message>
+        <source>About Myriad Core</source>
+        <translation>Acerca del Núcleo de Myriad</translation>
+    </message>
+    <message>
+        <source>Command-line options</source>
+        <translation>Opciones de la línea de órdenes</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -905,30 +737,6 @@ Dirección: %4
         <source>command-line options</source>
         <translation>opciones de la línea de órdenes</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>Opciones GUI</translation>
-    </message>
-    <message>
-        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Establecer el idioma, por ejemplo, &quot;es_ES&quot; (predeterminado: configuración regional del sistema)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Arrancar minimizado</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Mostrar pantalla de bienvenida en el inicio (predeterminado: 1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Elegir directorio de datos al iniciar (predeterminado: 0)</translation>
-    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -937,16 +745,16 @@ Dirección: %4
         <translation>Bienvenido</translation>
     </message>
     <message>
-        <source>Welcome to Myriadcoin Core.</source>
-        <translation>Bienvenido al Núcleo de Myriadcoin</translation>
+        <source>Welcome to Myriad Core.</source>
+        <translation>Bienvenido al Núcleo de Myriad</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Myriadcoin Core will store its data.</source>
-        <translation>Al ser la primera vez que se ejecuta el programa, puede elegir dónde almacenará sus datos Bitcoin-Qt.</translation>
+        <source>As this is the first time the program is launched, you can choose where Myriad Core will store its data.</source>
+        <translation>Al ser la primera vez que se ejecuta el programa, puede elegir dónde almacenará sus datos Myriad-Qt.</translation>
     </message>
     <message>
-        <source>Myriadcoin Core will download and store a copy of the Myriadcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Bitcoin-Qt va a descargar y guardar una copia de la cadena de bloques de Myriadcoin. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
+        <source>Myriad Core will download and store a copy of the Myriad block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Myriad-Qt va a descargar y guardar una copia de la cadena de bloques de Myriad. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -957,26 +765,14 @@ Dirección: %4
         <translation>Utilice un directorio de datos personalizado:</translation>
     </message>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
-    </message>
-    <message>
-        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
-        <translation>Error: No puede crearse el directorio de datos especificado &quot;%1&quot;.</translation>
+        <source>Myriad Core</source>
+        <translation>Núcleo de Myriad</translation>
     </message>
     <message>
         <source>Error</source>
         <translation>Error</translation>
     </message>
-    <message>
-        <source>GB of free space available</source>
-        <translation>GB de espacio libre disponible</translation>
-    </message>
-    <message>
-        <source>(of %1GB needed)</source>
-        <translation>(de los %1GB necesarios)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -1011,56 +807,12 @@ Dirección: %4
         <translation>&amp;Principal</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Tarifa de transacción opcional por kB que ayuda a asegurar que sus transacciones sean procesadas rápidamente. La mayoría de transacciones son de 1kB.</translation>
-    </message>
-    <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Comisión de &amp;transacciones</translation>
-    </message>
-    <message>
-        <source>Automatically start Myriadcoin after logging in to the system.</source>
-        <translation>Iniciar Myriadcoin automáticamente al encender el sistema.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Myriadcoin on system login</source>
-        <translation>&amp;Iniciar Myriadcoin al iniciar el sistema</translation>
-    </message>
-    <message>
-        <source>Size of &amp;database cache</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>MB</source>
         <translation>MB</translation>
     </message>
     <message>
-        <source>Number of script &amp;verification threads</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Connect to the Myriadcoin network through a SOCKS proxy.</source>
-        <translation>Conéctese a la red Myriadcoin través de un proxy SOCKS.</translation>
-    </message>
-    <message>
-        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Dirección IP del proxy (ej. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
-    </message>
-    <message>
-        <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Third party transaction URLs</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Active command-line options that override above options:</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1075,32 +827,12 @@ Dirección: %4
         <translation>&amp;Red</translation>
     </message>
     <message>
-        <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>W&amp;allet</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Expert</source>
         <translation>Experto</translation>
     </message>
     <message>
-        <source>Enable coin &amp;control features</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>&amp;Spend unconfirmed change</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Automatically open the Myriadcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Myriadcoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente Myriad en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1119,14 +851,6 @@ Dirección: %4
         <translation>Puerto del servidor proxy (ej. 9050)</translation>
     </message>
     <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>&amp;Versión SOCKS:</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>Versión del proxy SOCKS (ej. 5)</translation>
-    </message>
-    <message>
         <source>&amp;Window</source>
         <translation>&amp;Ventana</translation>
     </message>
@@ -1137,10 +861,6 @@ Dirección: %4
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
         <translation>&amp;Minimizar a la bandeja en vez de a la barra de tareas</translation>
-    </message>
-    <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimizar en lugar de salir de la aplicación al cerrar la ventana. Cuando esta opción está activa, la aplicación solo se puede cerrar seleccionando Salir desde el menú.</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
@@ -1155,24 +875,12 @@ Dirección: %4
         <translation>I&amp;dioma de la interfaz de usuario</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Myriadcoin.</source>
-        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará cuando se reinicie Myriadcoin.</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>Mostrar las cantidades en la &amp;unidad:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Elegir la subdivisión predeterminada para mostrar cantidades en la interfaz y cuando se envían monedas.</translation>
-    </message>
-    <message>
-        <source>Whether to show Myriadcoin addresses in the transaction list or not.</source>
-        <translation>Mostrar o no las direcciones Myriadcoin en la lista de transacciones.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Mostrar las direcciones en la lista de transacciones</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1192,7 +900,7 @@ Dirección: %4
     </message>
     <message>
         <source>none</source>
-        <translation>Ninguna</translation>
+        <translation>ninguno</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
@@ -1201,10 +909,6 @@ Dirección: %4
     <message>
         <source>Client restart required to activate changes.</source>
         <translation>Reinicio del cliente para activar cambios.</translation>
-    </message>
-    <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>This change would require a client restart.</source>
@@ -1222,24 +926,12 @@ Dirección: %4
         <translation>Desde</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriadcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Myriadcoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Monedero</translation>
-    </message>
-    <message>
-        <source>Available:</source>
-        <translation type="unfinished"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Myriad después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
         <translation>Su balance actual gastable</translation>
-    </message>
-    <message>
-        <source>Pending:</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1261,15 +953,7 @@ Dirección: %4
         <source>Your current total balance</source>
         <translation>Su balance actual total</translation>
     </message>
-    <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Movimientos recientes&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>desincronizado</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1277,8 +961,8 @@ Dirección: %4
         <translation>Gestión de URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Myriadcoin address or malformed URI parameters.</source>
-        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección Myriadcoin inválida o a parámetros de URI mal formados.</translation>
+        <source>Invalid payment address %1</source>
+        <translation>Dirección de pago no válida %1</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1289,28 +973,8 @@ Dirección: %4
         <translation>Error en petición de pago</translation>
     </message>
     <message>
-        <source>Cannot start myriadcoin: click-to-pay handler</source>
-        <translation>No se pudo iniciar myriadcoin: manejador de pago-al-clic</translation>
-    </message>
-    <message>
-        <source>Net manager warning</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment request file handling</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
-        <translation type="unfinished"/>
+        <source>Cannot start myriad: click-to-pay handler</source>
+        <translation>No se pudo iniciar myriad: manejador de pago-al-clic</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
@@ -1323,10 +987,6 @@ Dirección: %4
     <message>
         <source>Error communicating with %1: %2</source>
         <translation>Error en la comunicación con %1: %2</translation>
-    </message>
-    <message>
-        <source>Payment request can not be parsed or processed!</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Bad response from server %1</source>
@@ -1342,32 +1002,27 @@ Dirección: %4
     </message>
 </context>
 <context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
+        <source>Amount</source>
+        <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
-        <translation>Error: El directorio de datos especificado &quot;%1&quot; no existe.</translation>
+        <source>%1 h</source>
+        <translation>%1 h</translation>
     </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation type="unfinished"/>
+        <source>%1 m</source>
+        <translation>%1 m</translation>
     </message>
     <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Error: Combinación no válida de -regtest y -testnet.</translation>
+        <source>N/A</source>
+        <translation>N/D</translation>
     </message>
-    <message>
-        <source>Myriadcoin Core didn&apos;t yet exit safely...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter a Myriadcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduzca una dirección Myriadcoin (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -1403,7 +1058,7 @@ Dirección: %4
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation>&amp;Información</translation>
+        <translation>Información</translation>
     </message>
     <message>
         <source>Debug window</source>
@@ -1440,10 +1095,6 @@ Dirección: %4
     <message>
         <source>Current number of blocks</source>
         <translation>Número actual de bloques</translation>
-    </message>
-    <message>
-        <source>Estimated total blocks</source>
-        <translation>Bloques totales estimados</translation>
     </message>
     <message>
         <source>Last block time</source>
@@ -1486,16 +1137,8 @@ Dirección: %4
         <translation>Archivo de registro de depuración</translation>
     </message>
     <message>
-        <source>Open the Myriadcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Abrir el archivo de registro de depuración en el directorio actual de datos. Esto puede llevar varios segundos para archivos de registro grandes.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Borrar consola</translation>
-    </message>
-    <message>
-        <source>Welcome to the Myriadcoin RPC console.</source>
-        <translation>Bienvenido a la consola RPC de Myriadcoin</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1521,19 +1164,7 @@ Dirección: %4
         <source>%1 GB</source>
         <translation>%1 GB</translation>
     </message>
-    <message>
-        <source>%1 m</source>
-        <translation>%1 m</translation>
-    </message>
-    <message>
-        <source>%1 h</source>
-        <translation>%1 h</translation>
-    </message>
-    <message>
-        <source>%1 h %2 m</source>
-        <translation>%1 h %2 m</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
@@ -1557,32 +1188,12 @@ Dirección: %4
         <translation>R&amp;eutilizar una dirección existente para recibir (no recomendado)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriadcoin network.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Clear all fields of the form.</source>
-        <translation>Limpiar todos los campos del formulario.</translation>
+        <translation>Limpiar todos los campos del formulario</translation>
     </message>
     <message>
         <source>Clear</source>
         <translation>Limpiar</translation>
-    </message>
-    <message>
-        <source>Requested payments history</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -1607,10 +1218,6 @@ Dirección: %4
     <message>
         <source>Copy label</source>
         <translation>Copiar etiqueta</translation>
-    </message>
-    <message>
-        <source>Copy message</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Copy amount</source>
@@ -1698,11 +1305,7 @@ Dirección: %4
         <source>(no message)</source>
         <translation>(Ningun mensaje)</translation>
     </message>
-    <message>
-        <source>(no amount)</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+    </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
@@ -1744,10 +1347,6 @@ Dirección: %4
     <message>
         <source>Fee:</source>
         <translation>Tasa:</translation>
-    </message>
-    <message>
-        <source>Low Output:</source>
-        <translation>Envío pequeño:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -1807,7 +1406,7 @@ Dirección: %4
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Copiar cuantía</translation>
+        <translation>Copiar cantidad</translation>
     </message>
     <message>
         <source>Copy fee</source>
@@ -1826,24 +1425,12 @@ Dirección: %4
         <translation>Copiar prioridad</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Copiar envío pequeño</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Copiar Cambio</translation>
     </message>
     <message>
-        <source>Total Amount %1 (= %2)</source>
-        <translation>Cuantía Total %1 (=%2)</translation>
-    </message>
-    <message>
         <source>or</source>
         <translation>o</translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>La dirección de recepción no es válida, compruébela de nuevo.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
@@ -1858,10 +1445,6 @@ Dirección: %4
         <translation>El total sobrepasa su saldo cuando se incluye la tasa de envío de %1</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Se ha encontrado una dirección duplicada. Solo se puede enviar a cada dirección una vez por operación de envío.</translation>
-    </message>
-    <message>
         <source>Transaction creation failed!</source>
         <translation>¡Ha fallado la creación de la transacción!</translation>
     </message>
@@ -1870,8 +1453,8 @@ Dirección: %4
         <translation>La transacción fue rechazada. Esto puede haber ocurrido si alguna de las monedas ya estaba gastada o si ha usado una copia de wallet.dat y las monedas se gastaron en la copia pero no se han marcado como gastadas aqui.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Myriadcoin address</source>
-        <translation>Alerta: Dirección de Myriadcoin inválida</translation>
+        <source>Warning: Invalid Myriad address</source>
+        <translation>Alerta: Dirección de Myriad inválida</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1879,7 +1462,7 @@ Dirección: %4
     </message>
     <message>
         <source>Warning: Unknown change address</source>
-        <translation>Alerta: Dirección de Myriadcoin inválida</translation>
+        <translation>Alerta: Dirección de Myriad inválida</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1888,14 +1471,6 @@ Dirección: %4
     <message>
         <source>added as transaction fee</source>
         <translation>añadido como comisión de transacción</translation>
-    </message>
-    <message>
-        <source>Payment request expired</source>
-        <translation>Petición de pago expirada</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>Dirección de pago no válida %1</translation>
     </message>
 </context>
 <context>
@@ -1909,10 +1484,6 @@ Dirección: %4
         <translation>&amp;Pagar a:</translation>
     </message>
     <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>La dirección a la que enviar el pago (p. ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Etiquete esta dirección para añadirla a la libreta</translation>
     </message>
@@ -1922,7 +1493,7 @@ Dirección: %4
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Escoger direcciones previamente usadas</translation>
+        <translation>Escoger dirección previamente usada</translation>
     </message>
     <message>
         <source>This is a normal payment.</source>
@@ -1945,24 +1516,8 @@ Dirección: %4
         <translation>Eliminar esta transacción</translation>
     </message>
     <message>
-        <source>Message:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This is a verified payment request.</source>
-        <translation>Esto es una petición de pago verificado.</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Introduce una etiqueta para esta dirección para añadirla a la lista de direcciones utilizadas</translation>
-    </message>
-    <message>
-        <source>A message that was attached to the myriadcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriadcoin network.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Esto es una petición de pago no verificado.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1975,15 +1530,7 @@ Dirección: %4
 </context>
 <context>
     <name>ShutdownWindow</name>
-    <message>
-        <source>Myriadcoin Core is shutting down...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Do not shut down the computer until this window disappears.</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+    </context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
@@ -1993,14 +1540,6 @@ Dirección: %4
     <message>
         <source>&amp;Sign Message</source>
         <translation>&amp;Firmar mensaje</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Puede firmar mensajes con sus direcciones para demostrar que las posee. Tenga cuidado de no firmar cualquier cosa vaga, ya que los ataques de phishing pueden tratar de engañarle para suplantar su identidad. Firme solo declaraciones totalmente detalladas con las que usted esté de acuerdo.</translation>
-    </message>
-    <message>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>La dirección con la que firmar el mensaje (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2031,8 +1570,8 @@ Dirección: %4
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriadcoin address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Myriadcoin</translation>
+        <source>Sign the message to prove you own this Myriad address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección Myriad</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2051,16 +1590,8 @@ Dirección: %4
         <translation>&amp;Verificar mensaje</translation>
     </message>
     <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Introduzca la dirección para la firma, el mensaje (asegurándose de copiar tal cual los saltos de línea, espacios, tabulaciones, etc.) y la firma a continuación para verificar el mensaje. Tenga cuidado de no asumir más información de lo que dice el propio mensaje firmado para evitar fraudes basados en ataques de tipo man-in-the-middle.</translation>
-    </message>
-    <message>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>La dirección con la que se firmó el mensaje (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Myriadcoin address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Myriadcoin indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified Myriad address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Myriad indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2071,12 +1602,8 @@ Dirección: %4
         <translation>Limpiar todos los campos de la verificación de mensaje</translation>
     </message>
     <message>
-        <source>Enter a Myriadcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduzca una dirección Myriadcoin (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Haga clic en &quot;Firmar mensaje&quot; para generar la firma</translation>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Haga clic en "Firmar mensaje" para generar la firma</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2130,12 +1657,12 @@ Dirección: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriadcoin Core</source>
-        <translation>Núcleo de Myriadcoin</translation>
+        <source>Myriad Core</source>
+        <translation>Núcleo de Myriad</translation>
     </message>
     <message>
-        <source>The Bitcoin and Myriadcoin Core developers</source>
-        <translation>Los desarrolladores del Núcleo de Myriadcoin</translation>
+        <source>The Myriad Core developers</source>
+        <translation>Los desarrolladores del Núcleo de Myriad</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2156,10 +1683,6 @@ Dirección: %4
         <translation>Abierto hasta %1</translation>
     </message>
     <message>
-        <source>conflicted</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>%1/offline</source>
         <translation>%1/fuera de línea</translation>
     </message>
@@ -2174,10 +1697,6 @@ Dirección: %4
     <message>
         <source>Status</source>
         <translation>Estado</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, transmitir a través de %n nodo</numerusform><numerusform>, transmitir a través de %n nodos</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -2211,10 +1730,6 @@ Dirección: %4
         <source>Credit</source>
         <translation>Crédito</translation>
     </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>disponible en %n bloque más</numerusform><numerusform>disponible en %n bloques más</numerusform></translation>
-    </message>
     <message>
         <source>not accepted</source>
         <translation>no aceptada</translation>
@@ -2241,15 +1756,15 @@ Dirección: %4
     </message>
     <message>
         <source>Transaction ID</source>
-        <translation>Identificador de transacción</translation>
+        <translation>ID</translation>
     </message>
     <message>
         <source>Merchant</source>
         <translation>Vendedor</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Las monedas generadas deben madurar %1 bloques antes de que puedan ser gastadas. Una vez que generas este bloque, es propagado por la red para ser añadido a la cadena de bloques. Si falla el intento de meterse en la cadena, su estado cambiará a &quot;no aceptado&quot; y ya no se puede gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del tuyo.</translation>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Las monedas generadas deben madurar %1 bloques antes de que puedan ser gastadas. Una vez que generas este bloque, es propagado por la red para ser añadido a la cadena de bloques. Si falla el intento de meterse en la cadena, su estado cambiará a "no aceptado" y ya no se puede gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del tuyo.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2279,10 +1794,6 @@ Dirección: %4
         <source>, has not been successfully broadcast yet</source>
         <translation>, todavía no se ha sido difundido satisfactoriamente</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Abrir para %n bloque más</numerusform><numerusform>Abrir para %n bloques más</numerusform></translation>
-    </message>
     <message>
         <source>unknown</source>
         <translation>desconocido</translation>
@@ -2310,22 +1821,6 @@ Dirección: %4
         <translation>Tipo</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Dirección</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Cantidad</translation>
-    </message>
-    <message>
-        <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Abrir para %n bloque más</numerusform><numerusform>Abrir para %n bloques más</numerusform></translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>Abierto hasta %1</translation>
     </message>
@@ -2342,20 +1837,8 @@ Dirección: %4
         <translation>Generado pero no aceptado</translation>
     </message>
     <message>
-        <source>Offline</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Unconfirmed</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Conflicted</source>
-        <translation type="unfinished"/>
+        <source>Label</source>
+        <translation>Etiqueta</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -2392,10 +1875,6 @@ Dirección: %4
     <message>
         <source>Type of transaction.</source>
         <translation>Tipo de transacción.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Dirección de destino de la transacción.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2470,7 +1949,7 @@ Dirección: %4
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Copiar cuantía</translation>
+        <translation>Copiar cantidad</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
@@ -2529,10 +2008,6 @@ Dirección: %4
         <translation>Dirección</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Cantidad</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -2545,6 +2020,9 @@ Dirección: %4
         <translation>para</translation>
     </message>
 </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
 <context>
     <name>WalletFrame</name>
     <message>
@@ -2597,45 +2075,13 @@ Dirección: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Uso:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Muestra comandos
-</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>Recibir ayuda para un comando
-</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Opciones:
 </translation>
     </message>
     <message>
-        <source>Specify configuration file (default: myriadcoin.conf)</source>
-        <translation>Especificar archivo de configuración (predeterminado: myriadcoin.conf)
-</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: myriadcoind.pid)</source>
-        <translation>Especificar archivo pid (predeterminado: bitcoin.pid)
-</translation>
-    </message>
-    <message>
         <source>Specify data directory</source>
         <translation>Especificar directorio para los datos</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 10888 or testnet: 20888)</source>
-        <translation>Escuchar conexiones en &lt;puerto&gt; (predeterminado: 10888 o testnet: 20888)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Mantener como máximo &lt;n&gt; conexiones a pares (predeterminado: 125)</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -2646,29 +2092,9 @@ Dirección: %4
         <translation>Especifique su propia dirección pública</translation>
     </message>
     <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Umbral para la desconexión de pares con mal comportamiento (predeterminado: 100)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Número de segundos en que se evita la reconexión de pares con mal comportamiento (predeterminado: 86400)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>Ha ocurrido un error al configurar el puerto RPC %u para escucha en IPv4: %s</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
-        <translation>Escuchar conexiones JSON-RPC en &lt;puerto&gt; (predeterminado: 10889 o testnet:20889)</translation>
-    </message>
-    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Aceptar comandos consola y JSON-RPC
 </translation>
-    </message>
-    <message>
-        <source>Myriadcoin Core RPC client version</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
@@ -2685,112 +2111,20 @@ Dirección: %4
         <translation>Aceptar conexiones desde el exterior (predeterminado: 1 si no -proxy o -connect)</translation>
     </message>
     <message>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=myriadcoinrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@foo.com
-</source>
-        <translation>%s, debe establecer un valor rpcpassword en el archivo de configuración:
-%s
-Se recomienda utilizar la siguiente contraseña aleatoria:
-rpcuser=myriadcoinrpc
-rpcpassword=%s
-(no es necesario recordar esta contraseña)
-El nombre de usuario y la contraseña DEBEN NO ser iguales.
-Si el archivo no existe, créelo con permisos de archivo de solo lectura.
-Se recomienda también establecer alertnotify para recibir notificaciones de problemas.
-Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
-        <translation>Cifradores aceptables (por defecto: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>Ha ocurrido un error al configurar el puerto RPC %u para escuchar mediante IPv6. Recurriendo a IPv4: %s</translation>
-    </message>
-    <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Vincular a la dirección dada y escuchar siempre en ella. Utilice la notación [host]:port para IPv6</translation>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:15)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
-        <translation>Iniciar modo de prueba de regresión, el cuál utiliza una cadena especial en la cual los bloques pueden ser resueltos instantáneamente. Se utiliza para herramientas de prueba de regresión y desarrollo de aplicaciones.</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>¡Error: se ha rechazado la transacción! Esto puede ocurrir si ya se han gastado algunas de las monedas del monedero, como ocurriría si hubiera hecho una copia de wallet.dat y se hubieran gastado monedas a partir de la copia, con lo que no se habrían marcado aquí como gastadas.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>¡Error: Esta transacción requiere una comisión de al menos %s debido a su monto, complejidad, o al uso de fondos recién recibidos!</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Ejecutar comando cuando una transacción del monedero cambia (%s en cmd se remplazará por TxID)</translation>
     </message>
     <message>
-        <source>Fees smaller than this are considered zero fee (for transaction creation) (default:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: 100)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: 3)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set the processor limit for when generation is on (-1 = unlimited, default: -1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation>Esta es una versión de pre-prueba - utilícela bajo su propio riesgo. No la utilice para usos comerciales o de minería.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Myriadcoin Core is probably already running.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
-        <translation>Usar distintos proxys SOCKS5 para comunicarse vía Tor de forma anónima (Por defecto: -proxy)</translation>
-    </message>
-    <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Aviso: ¡-paytxfee tiene un valor muy alto! Esta es la comisión que pagará si envía una transacción.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Myriadcoin will not work properly.</source>
-        <translation>Precaución: Por favor, ¡revise que la fecha y hora de su ordenador son correctas! Si su reloj está mal, Myriadcoin no funcionará correctamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2809,14 +2143,6 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Aviso: ¡Recuperados datos de wallet.dat corrupto! El wallet.dat original se ha guardado como wallet.{timestamp}.bak en %s; si hubiera errores en su saldo o transacciones, deberá restaurar una copia de seguridad.</translation>
     </message>
     <message>
-        <source>(default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>(default: wallet.dat)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; puede ser:</translation>
     </message>
@@ -2825,52 +2151,16 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Intento de recuperar claves privadas de un wallet.dat corrupto</translation>
     </message>
     <message>
-        <source>Myriadcoin Core Daemon</source>
-        <translation>Proceso Bitcoin-QT</translation>
-    </message>
-    <message>
         <source>Block creation options:</source>
         <translation>Opciones de creación de bloques:</translation>
-    </message>
-    <message>
-        <source>Clear list of wallet transactions (diagnostic tool; implies -rescan)</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Conectar sólo a los nodos (o nodo) especificados</translation>
     </message>
     <message>
-        <source>Connect through SOCKS proxy</source>
-        <translation>Conectar a través de un proxy SOCKS</translation>
-    </message>
-    <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
-        <translation>Conectar a JSON-RPC en &lt;puerto&gt; (predeterminado: 10889 o testnet: 20889)</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Corrupted block database detected</source>
         <translation>Corrupción de base de datos de bloques detectada.</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Descubrir dirección IP propia (predeterminado: 1 al escuchar sin -externalip)</translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -2897,144 +2187,32 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Error: ¡Espacio en disco bajo!</translation>
     </message>
     <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Error: ¡El monedero está bloqueado; no se puede crear la transacción!</translation>
-    </message>
-    <message>
-        <source>Error: system error: </source>
-        <translation>Error: error de sistema: </translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Ha fallado la escucha en todos los puertos. Use -listen=0 si desea esto.</translation>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation>No se ha podido leer la información de bloque</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>No se ha podido leer el bloque</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>No se ha podido sincronizar el índice de bloques</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>No se ha podido escribir en el índice de bloques</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>No se ha podido escribir la información de bloques</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>No se ha podido escribir el bloque</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>No se ha podido escribir la información de archivo</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation>No se ha podido escribir en la base de datos de monedas</translation>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>No se ha podido escribir en el índice de transacciones</translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation>No se han podido escribir los datos de deshacer</translation>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation>Donación por KB añadida a las transacciones que envíe</translation>
-    </message>
-    <message>
-        <source>Fees smaller than this are considered zero fee (for relaying) (default:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Encontrar pares mediante búsqueda de DNS (predeterminado: 1 salvo con -connect)</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Generate coins (default: 0)</source>
-        <translation>Generar monedas (por defecto: 0)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Cuántos bloques comprobar al iniciar (predeterminado: 288, 0 = todos)</translation>
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
         <translation>Si no se proporciona &lt;category&gt;, mostrar toda la depuración</translation>
     </message>
     <message>
-        <source>Importing...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Incorrecto o bloque de génesis no encontrado. Datadir equivocada para la red?</translation>
     </message>
     <message>
-        <source>Invalid -onion address: &apos;%s&apos;</source>
-        <translation>Dirección -onion inválida: &apos;%s&apos;</translation>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>Dirección -onion inválida: '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>No hay suficientes descriptores de archivo disponibles. </translation>
     </message>
     <message>
-        <source>Prepend debug output with timestamp (default: 1)</source>
-        <translation>Anteponer marca temporal a la información de depuración (por defecto: 1)</translation>
-    </message>
-    <message>
-        <source>RPC client options:</source>
-        <translation>Opciones para cliente RPC:</translation>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Reconstruir el índice de la cadena de bloques a partir de los archivos blk000??.dat actuales</translation>
-    </message>
-    <message>
-        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
-        <translation>Seleccionar version de SOCKS para -proxy (4 o 5, por defecto: 5)</translation>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Set maximum block size in bytes (default: %d)</source>
         <translation>Establecer tamaño máximo de bloque en bytes (por defecto: %d)</translation>
     </message>
     <message>
-        <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>Establecer el número de hilos para atender las llamadas RPC (predeterminado: 4)</translation>
-    </message>
-    <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Especificar archivo de monedero (dentro del directorio de datos)</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Usage (deprecated, use myriadcoin-cli):</source>
-        <translation>Uso (desaconsejado, usar myriadcoin-cli)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3045,20 +2223,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Verificando monedero...</translation>
     </message>
     <message>
-        <source>Wait for RPC server to start</source>
-        <translation>Espere a que se inicie el servidor RPC</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>El monedero %s se encuentra fuera del directorio de datos %s</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
-        <translation>Aviso: Argumento -debugnet anticuado, utilice -debug=net</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -3069,116 +2235,52 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Importa los bloques desde un archivo blk000??.dat externo</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Myriadcoin Core is probably already running.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>Ejecutar un comando cuando se reciba una alerta importante o cuando veamos un fork demasiado largo (%s en cmd se reemplazará por el mensaje)</translation>
-    </message>
-    <message>
-        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
-        <translation>Mostrar depuración (por defecto: 0, proporcionar &lt;category&gt; es opcional)</translation>
     </message>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Establecer tamaño máximo de las transacciones de alta prioridad/comisión baja en bytes (por defecto: %d)</translation>
     </message>
     <message>
+        <source>Choose data directory on startup (default: 0)</source>
+        <translation>Elegir directorio de datos al iniciar (predeterminado: 0)</translation>
+    </message>
+    <message>
         <source>Information</source>
         <translation>Información</translation>
     </message>
     <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Inválido por el monto -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Inválido por el monto -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Inválido por el monto -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Inválido por el monto -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: 50000)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Maintain a full transaction index (default: 0)</source>
-        <translation>Mantener índice de transacciones completo (predeterminado: 0)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Búfer de recepción máximo por conexión, &lt;n&gt;*1000 bytes (predeterminado: 5000)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Búfer de recepción máximo por conexión, , &lt;n&gt;*1000 bytes (predeterminado: 1000)</translation>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation>Aceptar solamente cadena de bloques que concuerde con los puntos de control internos (predeterminado: 1)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Conectarse solo a nodos de la red &lt;net&gt; (IPv4, IPv6 o Tor)</translation>
-    </message>
-    <message>
-        <source>Print block on startup, if found in block index</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Print block tree on startup (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>RPC SSL options: (see the Myriadcoin Wiki for SSL setup instructions)</source>
-        <translation type="unfinished"/>
+        <source>RPC SSL options: (see the Myriad Wiki for SSL setup instructions)</source>
+        <translation>Opciones RPC SSL: (Vea la Wiki de Myriad para las instrucciones de la configuración de SSL)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>SSL options: (see the Myriadcoin Wiki for SSL setup instructions)</source>
-        <translation>Opciones SSL: (ver la Myriadcoin Wiki para instrucciones de configuración SSL)</translation>
-    </message>
-    <message>
-        <source>Send command to Myriadcoin Core</source>
-        <translation type="unfinished"/>
+        <translation>Opciones del sservidor RPC:</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Enviar información de trazas/depuración a la consola en lugar de al archivo debug.log</translation>
     </message>
     <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Establecer tamaño mínimo de bloque en bytes (predeterminado: 0)</translation>
-    </message>
-    <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: 1)</source>
-        <translation type="unfinished"/>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Establecer el idioma, por ejemplo, "es_ES" (predeterminado: configuración regional del sistema)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation type="unfinished"/>
+        <translation>Mostrar todas las opciones de depuración (uso: --help -help-debug)</translation>
     </message>
     <message>
-        <source>Show benchmark information (default: 0)</source>
-        <translation type="unfinished"/>
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>Mostrar pantalla de bienvenida en el inicio (predeterminado: 1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
@@ -3189,16 +2291,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Transacción falló</translation>
     </message>
     <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Especificar el tiempo máximo de conexión en milisegundos (predeterminado: 5000)</translation>
-    </message>
-    <message>
-        <source>Start Myriadcoin Core Daemon</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation>Error de sistema: </translation>
+        <source>Start minimized</source>
+        <translation>Arrancar minimizado</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -3211,10 +2305,6 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
     <message>
         <source>Transaction too large</source>
         <translation>Transacción demasiado grande</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Usar UPnP para asignar el puerto de escucha (predeterminado: 0)</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
@@ -3230,20 +2320,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Aviso</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Aviso: Esta versión es obsoleta, actualización necesaria!</translation>
-    </message>
-    <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>on startup</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>version</source>
-        <translation>versión</translation>
+        <translation>al iniciar</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
@@ -3255,27 +2333,12 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
 </translation>
     </message>
     <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Permitir conexiones JSON-RPC desde la dirección IP especificada
-</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Enviar comando al nodo situado en &lt;ip&gt; (predeterminado: 127.0.0.1)
-</translation>
-    </message>
-    <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Ejecutar un comando cuando cambia el mejor bloque (%s en cmd se sustituye por el hash de bloque)</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Actualizar el monedero al último formato</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Ajustar el número de claves en reserva &lt;n&gt; (predeterminado: 100)
-</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions</source>
@@ -3287,23 +2350,9 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
 </translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>Certificado del servidor (predeterminado: server.cert)
-</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Clave privada del servidor (predeterminado: server.pem)
-</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Este mensaje de ayuda
 </translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>No es posible conectar con %s en este sistema (bind ha dado el error %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -3318,44 +2367,28 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Error al cargar wallet.dat: el monedero está dañado</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Myriadcoin</source>
-        <translation>Error al cargar wallet.dat: El monedero requiere una versión más reciente de Myriadcoin</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Myriadcoin to complete</source>
-        <translation>El monedero ha necesitado ser reescrito. Reinicie Myriadcoin para completar el proceso</translation>
-    </message>
-    <message>
         <source>Error loading wallet.dat</source>
         <translation>Error al cargar wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Dirección -proxy inválida: &apos;%s&apos;</translation>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Dirección -proxy inválida: '%s'</translation>
     </message>
     <message>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>La red especificada en -onlynet &apos;%s&apos; es desconocida</translation>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>La red especificada en -onlynet '%s' es desconocida</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Solicitada versión de proxy -socks desconocida: %i</translation>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>No se puede resolver la dirección de -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>No se puede resolver la dirección de -bind: &apos;%s&apos;</translation>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>No se puede resolver la dirección de -externalip: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>No se puede resolver la dirección de -externalip: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Cantidad inválida para -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Cuantía no válida</translation>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Cantidad inválida para -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -3390,20 +2423,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Generado pero no aceptado</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>Para utilizar la opción %s</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Error</translation>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Tiene que establecer rpcpassword=&lt;contraseña&gt; en el fichero de configuración: ⏎
-%s ⏎
-Si el archivo no existe, créelo con permiso de lectura solamente del propietario.</translation>
     </message>
 </context>
 </TS>

@@ -1,47 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="id_ID" version="2.1">
-<context>
-    <name>AboutDialog</name>
-    <message>
-        <source>About Myriadcoin Core</source>
-        <translation>Mengenai Myriadcoin Core</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Myriadcoin Core&lt;/b&gt; version</source>
-        <translation>versi &lt;b&gt;Myriadcoin Core&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-Software ini adalah yang bersifat percobaan.
-
-Dibagikan dengan izin software MIT/X11, bacalah arsip COPYING atau  http://www.opensource.org/licenses/mit-license.php.
-
-Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit OpenSSL (http://www.openssl.org/) dan software kriptografi dibangun oleh Eric Young (eay@cryptsoft.com) dan software UPnP dibangun oleh Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Copyright</translation>
-    </message>
-    <message>
-        <source>The Bitcoin and Myriadcoin Core developers</source>
-        <translation>Pembangun Myriadcoin Core</translation>
-    </message>
-    <message>
-        <source>(%1-bit)</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+<TS language="id_ID" version="2.0">
 <context>
     <name>AddressBookPage</name>
-    <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Klik-ganda untuk mengubah alamat atau label</translation>
-    </message>
     <message>
         <source>Create a new address</source>
         <translation>Buat alamat baru</translation>
@@ -103,11 +62,11 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Alamat-alamat menerima</translation>
     </message>
     <message>
-        <source>These are your Myriadcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Alamat-alamat Anda supaya mengirim pembayaran. Periksalah jumlah dan alamat penerima setiap kali Anda mengirim Myriadcoin.</translation>
+        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Alamat-alamat Anda supaya mengirim pembayaran. Periksalah jumlah dan alamat penerima setiap kali Anda mengirim Myriad.</translation>
     </message>
     <message>
-        <source>These are your Myriadcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Alamat-alamat Anda supaya menerima pembayaran. Dianjurkan agar Anda menggunakan alamat menerima yang baru untuk setiap transaksi.</translation>
     </message>
     <message>
@@ -130,11 +89,7 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <source>Exporting Failed</source>
         <translation>Proses Ekspor Gagal</translation>
     </message>
-    <message>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
+    </context>
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -169,10 +124,6 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Ulangi kata kunci baru</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Masukkan kata kunci baru ke dompet.&lt;br/&gt;Mohon gunakan kata kunci dengan &lt;b&gt;10 karakter atau lebih dengan acak&lt;/b&gt;, atau &lt;b&gt;delapan kata atau lebih&lt;/b&gt;.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
         <translation>Enkripsi dompet</translation>
     </message>
@@ -197,24 +148,16 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Ubah kata kunci</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Masukkan kata kunci lama dan baru ke dompet ini.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Konfirmasi enkripsi dompet</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADCOINS&lt;/b&gt;!</source>
-        <translation>Perhatian: Jika anda mengenkripsi dompet anda dan lupa kata kuncinya, anda pasti &lt;b&gt;KEHILANGAN SELURUH MYRIADCOIN ANDA&lt;/B&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
+        <translation>Perhatian: Jika anda mengenkripsi dompet anda dan lupa kata kuncinya, anda pasti &lt;b&gt;KEHILANGAN SELURUH BITCOIN ANDA&lt;/B&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Apakah kamu yakin ingin mengenkripsi dompet anda?</translation>
-    </message>
-    <message>
-        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -223,10 +166,6 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
     <message>
         <source>Wallet encrypted</source>
         <translation>Dompet terenkripsi</translation>
-    </message>
-    <message>
-        <source>Myriadcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your myriadcoins from being stolen by malware infecting your computer.</source>
-        <translation>Myriadcoin akan menutup untuk menyelesaikan proses enkripsi. Ingat bahwa dengan mengenkripsi dompet Anda tidak sepenuhnya melindungi myriadcoin Anda dari perangkat lunak berbahaya yang menginfeksi komputer Anda.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -296,10 +235,6 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Keluar dari aplikasi</translation>
     </message>
     <message>
-        <source>Show information about Myriadcoin</source>
-        <translation>Tampilkan informasi mengenai Myriadcoin</translation>
-    </message>
-    <message>
         <source>About &amp;Qt</source>
         <translation>Mengenai &amp;Qt</translation>
     </message>
@@ -310,10 +245,6 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
     <message>
         <source>&amp;Options...</source>
         <translation>&amp;Pilihan...</translation>
-    </message>
-    <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>%Enkripsi Dompet...</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
@@ -336,6 +267,10 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Buka &amp;URI</translation>
     </message>
     <message>
+        <source>Myriad Core client</source>
+        <translation>Client Myriad Inti</translation>
+    </message>
+    <message>
         <source>Importing blocks from disk...</source>
         <translation>Blok-blok sedang di-impor dari disk</translation>
     </message>
@@ -344,12 +279,8 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Mengindex ulang block di harddisk...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriadcoin address</source>
-        <translation>Kirim koin ke alamat Myriadcoin</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Myriadcoin</source>
-        <translation>Ubah pilihan konfigurasi untuk Myriadcoin</translation>
+        <source>Send coins to a Myriad address</source>
+        <translation>Kirim koin ke alamat Myriad</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -372,8 +303,8 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>&amp;Verifikasi pesan...</translation>
     </message>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
+        <source>Myriad</source>
+        <translation>Myriad</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -388,6 +319,10 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>&amp;Menerima</translation>
     </message>
     <message>
+        <source>Show information about Myriad Core</source>
+        <translation>Tampilkan informasi tentang Myriad Inti</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Sunjukkan / Menyembungi</translation>
     </message>
@@ -400,12 +335,12 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Mengenkripsi kunci-kunci pribadi yang dipunyai dompetmu</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriadcoin addresses to prove you own them</source>
-        <translation>Tandalah pesanan dengan alamat-alamat Myriadcoin Anda supaya membuktikan pesanan itu dikirim oleh Anda</translation>
+        <source>Sign messages with your Myriad addresses to prove you own them</source>
+        <translation>Tandalah pesanan dengan alamat-alamat Myriad Anda supaya membuktikan pesanan itu dikirim oleh Anda</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriadcoin addresses</source>
-        <translation>Periksakan pesan-pesan supaya menjaminkan ditandatangani oleh alamat Myriadcoin yang terperinci</translation>
+        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
+        <translation>Periksakan pesan-pesan supaya menjaminkan ditandatangani oleh alamat Myriad yang terperinci</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -424,20 +359,16 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Baris tab</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Core</translation>
     </message>
     <message>
-        <source>Myriadcoin Core</source>
-        <translation>Myriadcoin Core</translation>
+        <source>Request payments (generates QR codes and myriad: URIs)</source>
+        <translation>Permintaan pembayaran (membangkitkan kode QR dan myriad: URIs)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriadcoin: URIs)</source>
-        <translation>Permintaan pembayaran (membangkitkan kode QR dan myriadcoin: URIs)</translation>
-    </message>
-    <message>
-        <source>&amp;About Myriadcoin Core</source>
-        <translation>&amp;Mengenai Myriadcoin Core</translation>
+        <source>&amp;About Myriad Core</source>
+        <translation>&amp;Mengenai Myriad Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -448,36 +379,24 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Tampilkan daftar alamat dan label yang diterima</translation>
     </message>
     <message>
-        <source>Open a myriadcoin: URI or payment request</source>
-        <translation>Buka URI myriadcoin: atau permintaan pembayaran</translation>
+        <source>Open a myriad: URI or payment request</source>
+        <translation>Buka URI myriad: atau permintaan pembayaran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;pilihan Perintah-baris</translation>
     </message>
     <message>
-        <source>Show the Myriadcoin Core help message to get a list with possible Myriadcoin command-line options</source>
-        <translation>Tampilkan pesan bantuan Myriadcoin Core untuk memberikan daftar pilihan perintah-baris yang memungkinkan dalam aplikasi Myriadcoin</translation>
-    </message>
-    <message>
-        <source>Myriadcoin client</source>
-        <translation>Klien Myriadcoin</translation>
+        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
+        <translation>Tampilkan pesan bantuan Myriad Core untuk memberikan daftar pilihan perintah-baris yang memungkinkan dalam aplikasi Myriad</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Myriadcoin network</source>
-        <translation><numerusform>%n hubungan aktif ke jaringan Myriadcoin</numerusform></translation>
+        <source>%n active connection(s) to Myriad network</source>
+        <translation><numerusform>%n hubungan aktif ke jaringan Myriad</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
         <translation>Sumber blok tidak tersedia...</translation>
-    </message>
-    <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Proses % 1 dar i% 2 (perkiraan) blok catatan transaksi</translation>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>%1 blok-blok riwayat transaksi telah diproses</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -540,28 +459,12 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Transaksi diterima</translation>
     </message>
     <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Tanggal: %1
-Nilai: %2
-Jenis: %3
-Alamat: %4
-</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terbuka&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terkunci&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>A fatal error occurred. Myriadcoin can no longer continue safely and will quit.</source>
-        <translation>Terjadi kesalahan fatal. Myriadcoin tidak bisa lagi meneruskan dengan aman dan akan berhenti.</translation>
     </message>
 </context>
 <context>
@@ -573,10 +476,6 @@ Alamat: %4
 </context>
 <context>
     <name>CoinControlDialog</name>
-    <message>
-        <source>Coin Control Address Selection</source>
-        <translation>Pilihan alamat pengaturan koin</translation>
-    </message>
     <message>
         <source>Quantity:</source>
         <translation>Kuantitas:</translation>
@@ -596,10 +495,6 @@ Alamat: %4
     <message>
         <source>Fee:</source>
         <translation>Biaya:</translation>
-    </message>
-    <message>
-        <source>Low Output:</source>
-        <translation>Jumlah Yang Sedikit:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -624,10 +519,6 @@ Alamat: %4
     <message>
         <source>Amount</source>
         <translation>Nilai</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Alamat</translation>
     </message>
     <message>
         <source>Date</source>
@@ -690,10 +581,6 @@ Alamat: %4
         <translation>Salin prioritas</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Salin jumlah yang sedikit</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Salin uang kembali</translation>
     </message>
@@ -742,20 +629,12 @@ Alamat: %4
         <translation>tidak satupun</translation>
     </message>
     <message>
-        <source>Dust</source>
-        <translation>Debu</translation>
-    </message>
-    <message>
         <source>yes</source>
         <translation>ya</translation>
     </message>
     <message>
         <source>no</source>
         <translation>tidak</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Label ini akan berubah merah, jika ukuran transaksi lebih besar dari 1000 byte.</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
@@ -768,26 +647,6 @@ Alamat: %4
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>Makin penting transaksinya, makin kemungkinan akan termasuk dalam blok.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
-        <translation>Label ini akan berubah merah, jika prioritas lebih kecil dari &quot;medium&quot;.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Label ini akan berubah merah, jika setiap penerima menerima nilai lebih kecil dari %1.</translation>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 is required.</source>
-        <translation>Berarti perlu biaya lebih dari %1.</translation>
-    </message>
-    <message>
-        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
-        <translation>Nilai yang kurang dari 0.546 kali biaya pengiriman minimal akan ditampilkan sebagai debu.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the change is smaller than %1.</source>
-        <translation>Label ini akan berubah merah, jika perubahan itu lebih kecil dari %1.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -841,12 +700,12 @@ Alamat: %4
         <translation>Ubah alamat mengirim</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>Alamat yang dimasukkan &quot;%1&quot; sudah ada di dalam buku alamat.</translation>
+        <source>The entered address "%1" is already in the address book.</source>
+        <translation>Alamat yang dimasukkan "%1" sudah ada di dalam buku alamat.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Myriadcoin address.</source>
-        <translation>Alamat yang dimasukkan &quot;%1&quot; bukan alamat Myriadcoin yang benar.</translation>
+        <source>The entered address "%1" is not a valid Myriad address.</source>
+        <translation>Alamat yang dimasukkan "%1" bukan alamat Myriad yang benar.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -883,16 +742,16 @@ Alamat: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriadcoin Core - Command-line options</source>
-        <translation>Myriadcoin Core - pilihan Perintah-baris</translation>
-    </message>
-    <message>
-        <source>Myriadcoin Core</source>
-        <translation>Myriadcoin Core</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Core</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versi</translation>
+    </message>
+    <message>
+        <source>About Myriad Core</source>
+        <translation>Mengenai Myriad Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -902,30 +761,6 @@ Alamat: %4
         <source>command-line options</source>
         <translation>pilihan perintah-baris</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>pilihan UI</translation>
-    </message>
-    <message>
-        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Atur bahasa, sebagai contoh &quot;id_ID&quot; (standar: system locale)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Memulai terminimalisi</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Tampilkan layar pembuka saat nyala (standar: 1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -934,16 +769,8 @@ Alamat: %4
         <translation>Selamat Datang</translation>
     </message>
     <message>
-        <source>Welcome to Myriadcoin Core.</source>
-        <translation>Selamat Datang ke Myriadcoin Core</translation>
-    </message>
-    <message>
-        <source>As this is the first time the program is launched, you can choose where Myriadcoin Core will store its data.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Myriadcoin Core will download and store a copy of the Myriadcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation type="unfinished"/>
+        <source>Welcome to Myriad Core.</source>
+        <translation>Selamat Datang ke Myriad Core</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -954,26 +781,18 @@ Alamat: %4
         <translation>Menggunakan direktori data yang dipilih Anda:</translation>
     </message>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
-    </message>
-    <message>
-        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
-        <translation>Gagal: Direktori untuk data &quot;%1&quot; tidak bisa dibuat.</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Core</translation>
     </message>
     <message>
         <source>Error</source>
         <translation>Gagal</translation>
     </message>
-    <message>
-        <source>GB of free space available</source>
-        <translation>GB di hard disk yang masih tersedia</translation>
+    <message numerus="yes">
+        <source>%n GB of free space available</source>
+        <translation><numerusform>%n GB dari ruang yang tersedia</numerusform></translation>
     </message>
-    <message>
-        <source>(of %1GB needed)</source>
-        <translation>(dari %1GB yang diperlu)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -1008,52 +827,16 @@ Alamat: %4
         <translation>&amp;Utama</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Biaya transaksi untuk setiap kB yang membantu transaksi Andi diproses cepat (biayanya opsional). Ukuran transaksi biasanya 1kB.</translation>
-    </message>
-    <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Bayar &amp;biaya transaksi</translation>
-    </message>
-    <message>
-        <source>Automatically start Myriadcoin after logging in to the system.</source>
-        <translation>Menyalakan Myriadcoin secara otomatis setelah masuk ke dalam sistem.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Myriadcoin on system login</source>
-        <translation>&amp;Menyalakan Myriadcoin pada login sistem</translation>
-    </message>
-    <message>
-        <source>Size of &amp;database cache</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>MB</source>
         <translation>MB</translation>
-    </message>
-    <message>
-        <source>Number of script &amp;verification threads</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Connect to the Myriadcoin network through a SOCKS proxy.</source>
-        <translation>Menghubungkan jaringan Myriadcoin lewat proxy SOCKS.</translation>
-    </message>
-    <message>
-        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation>&amp;Hubungkan melalui proxy SOCKS (proxy biasa):</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Alamat IP proxy (cth. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
-        <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Third party transaction URLs</source>
-        <translation type="unfinished"/>
+        <translation>Transaksi URLs pihak ketiga</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
@@ -1070,10 +853,6 @@ Alamat: %4
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Jaringan</translation>
-    </message>
-    <message>
-        <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1096,8 +875,8 @@ Alamat: %4
         <translation>&amp;Perubahan saldo untuk transaksi yang belum dikonfirmasi</translation>
     </message>
     <message>
-        <source>Automatically open the Myriadcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Otomatis membuka port client Myriadcoin di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
+        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Otomatis membuka port client Myriad di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1116,14 +895,6 @@ Alamat: %4
         <translation>Port proxy (cth. 9050)</translation>
     </message>
     <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>Versi &amp;SOCKS:</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>Versi proxy SOCKS (cth. 5)</translation>
-    </message>
-    <message>
         <source>&amp;Window</source>
         <translation>&amp;Jendela</translation>
     </message>
@@ -1134,10 +905,6 @@ Alamat: %4
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
         <translation>&amp;Meminilisasi ke tray daripada taskbar</translation>
-    </message>
-    <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Meminimalkan tanpa keluar dari aplikasi saat jendela ditutup. Apabila pilihan ini diaktifkan, aplikasi hanya bisa ditutup dengan memilih Keluar di menu Berkas.</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
@@ -1152,24 +919,12 @@ Alamat: %4
         <translation>&amp;Bahasa Antarmuka Pengguna:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Myriadcoin.</source>
-        <translation>Tampilan bahasa pengguna dapat diatur disini. Pengaturan ini akan berpengaruh setelah memulai kembali aplikasi Myriadcoin.</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;Unit untuk menunjukkan nilai:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Pilihan standar unit yang ingin ditampilkan pada layar aplikasi dan saat mengirim koin.</translation>
-    </message>
-    <message>
-        <source>Whether to show Myriadcoin addresses in the transaction list or not.</source>
-        <translation>Apakah menampilkan alamat-alamat Myriadcoin dalam daftar transaksi atau tidak.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Tampilkan alamat dalam daftar transaksi</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1197,15 +952,11 @@ Alamat: %4
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation type="unfinished"/>
+        <translation>Restart klien diperlukan untuk mengaktifkan perubahan.</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
-        <translation type="unfinished"/>
+        <translation>Perubahan ini akan memerlukan restart klien</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -1219,12 +970,8 @@ Alamat: %4
         <translation>Formulir</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriadcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Myriadcoin ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Dompet</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Myriad ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1258,15 +1005,7 @@ Alamat: %4
         <source>Your current total balance</source>
         <translation>Jumlah saldo Anda sekarang</translation>
     </message>
-    <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Transaksi sebelumnya&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>tidak tersinkron</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1274,8 +1013,8 @@ Alamat: %4
         <translation>Penanganan URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Myriadcoin address or malformed URI parameters.</source>
-        <translation>URI tidak bisa dimengerti! Biasanya oleh karena alamat Myriadcoin yang tidak sah atau persoalan tentang parameter-parameter URI.</translation>
+        <source>Invalid payment address %1</source>
+        <translation>Alamat pembayaran salah %1</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1286,44 +1025,12 @@ Alamat: %4
         <translation>Gagalan permintaan pembayaran</translation>
     </message>
     <message>
-        <source>Cannot start myriadcoin: click-to-pay handler</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Net manager warning</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation>Proxy Anda tidak mendukung SOCKS5, yang diperlu untuk permintaan pembayaran melalui proxy.</translation>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment request file handling</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Refund from %1</source>
         <translation>Pembayaran kembali dari %1</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
         <translation>Masalah berkomunikasi dengan %1: %2</translation>
-    </message>
-    <message>
-        <source>Payment request can not be parsed or processed!</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Bad response from server %1</source>
@@ -1339,32 +1046,27 @@ Alamat: %4
     </message>
 </context>
 <context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
+        <source>Amount</source>
+        <translation>Nilai</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
-        <translation>Gagal: Tidak ada direktori untuk data &quot;%1&quot;.</translation>
+        <source>%1 h</source>
+        <translation>%1 Jam</translation>
     </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>Kesalahan: Tidak dapat memproses pengaturan berkas: %1. Hanya menggunakan kunci= nilai sintak.</translation>
+        <source>%1 m</source>
+        <translation>%1 menit</translation>
     </message>
     <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Gagal: Gabungan -regtest dan -testnet salah</translation>
+        <source>N/A</source>
+        <translation>T/S</translation>
     </message>
-    <message>
-        <source>Myriadcoin Core didn&apos;t yet exit safely...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter a Myriadcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Masukkan alamat Myriadcoin (cth. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -1439,10 +1141,6 @@ Alamat: %4
         <translation>Jumlah blok terkini</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation>Perkiraan jumlah blok</translation>
-    </message>
-    <message>
         <source>Last block time</source>
         <translation>Waktu blok terakhir</translation>
     </message>
@@ -1483,16 +1181,8 @@ Alamat: %4
         <translation>Berkas catatan debug</translation>
     </message>
     <message>
-        <source>Open the Myriadcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Buka berkas catatan debug Myriadcoin dari direktori data sekarang. Hal ini dapat memakan waktu beberapa detik untuk berkas catatan yang besar.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Bersihkan konsol</translation>
-    </message>
-    <message>
-        <source>Welcome to the Myriadcoin RPC console.</source>
-        <translation>Selamat datang ke konsol RPC Myriadcoin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1518,19 +1208,7 @@ Alamat: %4
         <source>%1 GB</source>
         <translation>%1 GB</translation>
     </message>
-    <message>
-        <source>%1 m</source>
-        <translation>%1 menit</translation>
-    </message>
-    <message>
-        <source>%1 h</source>
-        <translation>%1 Jam</translation>
-    </message>
-    <message>
-        <source>%1 h %2 m</source>
-        <translation>%1 Jam %2 menit</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
@@ -1546,16 +1224,8 @@ Alamat: %4
         <translation>&amp;Pesan:</translation>
     </message>
     <message>
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>R&amp;euse an existing receiving address (not recommended)</source>
         <translation>Gunakan lagi alamat penerima yang ada (tidak disarankan)</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriadcoin network.</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1743,10 +1413,6 @@ Alamat: %4
         <translation>Biaya:</translation>
     </message>
     <message>
-        <source>Low Output:</source>
-        <translation>Jumlah Yang Sedikit:</translation>
-    </message>
-    <message>
         <source>After Fee:</source>
         <translation>Dengan Biaya:</translation>
     </message>
@@ -1773,10 +1439,6 @@ Alamat: %4
     <message>
         <source>Clear all fields of the form.</source>
         <translation>Hapus informasi dari form.</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Hapus %Semua</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -1823,24 +1485,12 @@ Alamat: %4
         <translation>Salin prioritas</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Salin jumlah yang sedikit</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Salin uang kembali</translation>
     </message>
     <message>
-        <source>Total Amount %1 (= %2)</source>
-        <translation>Jumlah Nilai %1 (= %2)</translation>
-    </message>
-    <message>
         <source>or</source>
         <translation>atau</translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Alamat penerima tidak sah, silakan periksa sekali lagi.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
@@ -1855,10 +1505,6 @@ Alamat: %4
         <translation>Jumlah melebihi saldo Anda ketika biaya transaksi %1 ditambahkan.</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Ditemukan alamat ganda, hanya dapat mengirim ke tiap alamat sekali per operasi pengiriman.</translation>
-    </message>
-    <message>
         <source>Transaction creation failed!</source>
         <translation>Gagal membuat transaksi!</translation>
     </message>
@@ -1867,16 +1513,12 @@ Alamat: %4
         <translation>Gagal: Transaksi ditolak. Ini mungkin terjadi jika beberapa dari koin dalam dompet Anda telah digunakan, seperti ketika Anda menggunakan salinan wallet.dat dan beberapa koin telah dibelanjakan dalam salinan tersebut tetapi disini tidak tertandai sebagai terpakai.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Myriadcoin address</source>
-        <translation>Awas: Alamat Myriadcoin tidak sah</translation>
+        <source>Warning: Invalid Myriad address</source>
+        <translation>Awas: Alamat Myriad tidak sah</translation>
     </message>
     <message>
         <source>(no label)</source>
         <translation>(tidak ada label)</translation>
-    </message>
-    <message>
-        <source>Warning: Unknown change address</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1885,14 +1527,6 @@ Alamat: %4
     <message>
         <source>added as transaction fee</source>
         <translation>ditambahkan sebagai biaya transaksi</translation>
-    </message>
-    <message>
-        <source>Payment request expired</source>
-        <translation>Permintaan pembayaran telah kadaluarsa</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>Alamat pembayaran salah %1</translation>
     </message>
 </context>
 <context>
@@ -1904,10 +1538,6 @@ Alamat: %4
     <message>
         <source>Pay &amp;To:</source>
         <translation>Kirim &amp;Ke:</translation>
-    </message>
-    <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Alamat pembayaran (cth. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1923,7 +1553,7 @@ Alamat: %4
     </message>
     <message>
         <source>This is a normal payment.</source>
-        <translation type="unfinished"/>
+        <translation>Ini adalah pembayaran normal</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1939,27 +1569,15 @@ Alamat: %4
     </message>
     <message>
         <source>Remove this entry</source>
-        <translation type="unfinished"/>
+        <translation>Hapus masukan ini</translation>
     </message>
     <message>
         <source>Message:</source>
         <translation>Pesan:</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>Permintaan pembayaran terverifikasi.</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Masukkan label untuk alamat ini untuk dimasukan dalam daftar alamat yang pernah digunakan</translation>
-    </message>
-    <message>
-        <source>A message that was attached to the myriadcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriadcoin network.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Permintaan pembayaran tidak terverifikasi.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1973,8 +1591,8 @@ Alamat: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Myriadcoin Core is shutting down...</source>
-        <translation>Myriadcoin Core sementara dimatikan...</translation>
+        <source>Myriad Core is shutting down...</source>
+        <translation>Myriad Core sementara dimatikan...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1990,14 +1608,6 @@ Alamat: %4
     <message>
         <source>&amp;Sign Message</source>
         <translation>&amp;Tandakan Pesan</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Alamat yang akan ditandai pesan (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2028,8 +1638,8 @@ Alamat: %4
         <translation>Salin tanda tangan terpilih ke sistem klipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriadcoin address</source>
-        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Myriadcoin ini</translation>
+        <source>Sign the message to prove you own this Myriad address</source>
+        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Myriad ini</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2040,24 +1650,8 @@ Alamat: %4
         <translation>Hapus semua bidang penanda pesan</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>Hapus %Semua</translation>
-    </message>
-    <message>
         <source>&amp;Verify Message</source>
         <translation>&amp;Verifikasi Pesan</translation>
-    </message>
-    <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Myriadcoin address</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2068,12 +1662,8 @@ Alamat: %4
         <translation>Hapus semua bidang verifikasi pesan</translation>
     </message>
     <message>
-        <source>Enter a Myriadcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Masukkan alamat Myriadcoin (cth. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation type="unfinished"/>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Tekan "Tandatangan Pesan" untuk menghasilan tanda tangan</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2127,12 +1717,12 @@ Alamat: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriadcoin Core</source>
-        <translation>Myriadcoin Core</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Core</translation>
     </message>
     <message>
-        <source>The Bitcoin and Myriadcoin Core developers</source>
-        <translation>Pembangun Myriadcoin Core</translation>
+        <source>The Myriad Core developers</source>
+        <translation>Pembangun Myriad Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2245,10 +1835,6 @@ Alamat: %4
         <translation>Pedagang</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Debug information</source>
         <translation>Informasi debug</translation>
     </message>
@@ -2307,14 +1893,6 @@ Alamat: %4
         <translation>Jenis</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Alamat</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Nilai</translation>
-    </message>
-    <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Terlalu muda (cuma %1 konfirmasi, akan siap sesudah %2) </translation>
     </message>
@@ -2341,6 +1919,10 @@ Alamat: %4
     <message>
         <source>Offline</source>
         <translation>Tidak terhubung</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Label</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -2389,10 +1971,6 @@ Alamat: %4
     <message>
         <source>Type of transaction.</source>
         <translation>Jenis transaksi.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Alamat tujuan dari transaksi.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2490,10 +2068,6 @@ Alamat: %4
         <translation>Proses Ekspor Gagal</translation>
     </message>
     <message>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Exporting Successful</source>
         <translation>Proses Ekspor Berhasil</translation>
     </message>
@@ -2526,10 +2100,6 @@ Alamat: %4
         <translation>Alamat</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Nilai</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -2542,6 +2112,9 @@ Alamat: %4
         <translation>ke</translation>
     </message>
 </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
 <context>
     <name>WalletFrame</name>
     <message>
@@ -2579,10 +2152,6 @@ Alamat: %4
         <translation>Cadangkgan Gagal</translation>
     </message>
     <message>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>The wallet data was successfully saved to %1.</source>
         <translation>Informasi dalam dompet berhasil disimpan di %1.</translation>
     </message>
@@ -2594,40 +2163,12 @@ Alamat: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Penggunaan:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Daftar perintah</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>Dapatkan bantuan untuk perintah</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Pilihan:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: myriadcoin.conf)</source>
-        <translation>Tentukan berkas konfigurasi (standar: myriadcoin.conf)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: myriadcoind.pid)</source>
-        <translation>Tentukan berkas pid (standar: myriadcoind.pid)</translation>
-    </message>
-    <message>
         <source>Specify data directory</source>
         <translation>Tentukan direktori data</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 10888 or testnet: 20888)</source>
-        <translation>Menerima hubungan pada &lt;port&gt; (standar: 10888 atau testnet: 20888)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Mengatur hubungan paling banyak &lt;n&gt; ke peer (standar: 125)</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -2638,28 +2179,8 @@ Alamat: %4
         <translation>Tentukan alamat publik Anda sendiri</translation>
     </message>
     <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Batas untuk memutuskan peer buruk (standar: 100)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Jumlah kedua untuk menjaga peer buruk dari hubung-ulang (standar: 86400)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Menerima perintah baris perintah dan JSON-RPC</translation>
-    </message>
-    <message>
-        <source>Myriadcoin Core RPC client version</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
@@ -2674,103 +2195,16 @@ Alamat: %4
         <translation>Terima hubungan dari luar (standar: 1 kalau -proxy atau -connect tidak dipilih)</translation>
     </message>
     <message>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=myriadcoinrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@foo.com
-</source>
-        <translation>
-</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
-        <translation>Sandi yang diterima (biasanya: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:15)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Gagal: Transaksi ditolak. Ini mungkin terjadi jika beberapa dari koin dalam dompet Anda telah digunakan, seperti ketika Anda menggunakan salinan wallet.dat dan beberapa koin telah dibelanjakan dalam salinan tersebut tetapi disini tidak tertandai sebagai terpakai.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Jalankan perintah ketika perubahan transaksi dompet (%s di cmd digantikan oleh TxID)</translation>
     </message>
     <message>
-        <source>Fees smaller than this are considered zero fee (for transaction creation) (default:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: 100)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: 3)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set the processor limit for when generation is on (-1 = unlimited, default: -1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer. Myriadcoin Core is probably already running.</source>
-        <translation>Tidak bisa mengikat dengan %s di computer ini. Kemungkinan Myriadcoin Core sudah mulai.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
-        <translation>Gunakanlah proxy SOCKS5 yang tersendiri supaya menghubungkan peer dengan layanan tersembunyi Tor (biasanya: -proxy)</translation>
+        <source>Unable to bind to %s on this computer. Myriad Core is probably already running.</source>
+        <translation>Tidak bisa mengikat dengan %s di computer ini. Kemungkinan Myriad Core sudah mulai.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Peringatan: -paytxfee sangat besar! Ini adalah biaya pengiriman yang akan dibayar oleh Anda jika transaksi terkirim.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Myriadcoin will not work properly.</source>
-        <translation>Perhatian: Mohon diperiksa pengaturan tanggal dan waktu komputer anda apakah sudah benar! Jika pengaturan waktu salah aplikasi Myriadcoin tidak akan berjalan dengan tepat.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2785,48 +2219,20 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Awas: wallet.dat tidak bisa dibaca! Berhasil periksakan kunci-kunci dalam arsipnya, tetapi ada kemungkinan informasi tentang transaksi atau isi-isi buku alamat salah atau terhilang.</translation>
     </message>
     <message>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>(default: 1)</source>
         <translation>(pengaturan awal: 1)</translation>
-    </message>
-    <message>
-        <source>(default: wallet.dat)</source>
-        <translation>(pengaturan awal: wallet.dat)</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Coba memulihkan kunci-kunci pribadi dari wallet.dat yang rusak</translation>
     </message>
     <message>
-        <source>Myriadcoin Core Daemon</source>
-        <translation>Daemon Myriadcoin Core</translation>
-    </message>
-    <message>
         <source>Block creation options:</source>
         <translation>Pilihan pembuatan blok:</translation>
     </message>
     <message>
-        <source>Clear list of wallet transactions (diagnostic tool; implies -rescan)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Jangan menghubungkan node(-node) selain yang di daftar</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS proxy</source>
-        <translation>Hubungkan melalui proxy SOCKS</translation>
-    </message>
-    <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Connection options:</source>
@@ -2837,20 +2243,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Menemukan database blok yang rusak </translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Cari alamat IP Anda sendiri (biasanya: 1 saat mendengarkan dan -externalip tidak terpilih)</translation>
-    </message>
-    <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation type="unfinished"/>
+        <translation>Jangan memuat dompet dan menonaktifkan panggilan dompet RPC</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -2877,86 +2271,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Gagal: Hard disk hampir terisi!</translation>
     </message>
     <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Gagal: Dompet terkunci, transaksi tidak bisa dibuat!</translation>
-    </message>
-    <message>
-        <source>Error: system error: </source>
-        <translation>Error: system error:</translation>
-    </message>
-    <message>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation>Gagal membaca informasi dari blok</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Gagal membaca blok</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>Gagal menyamakan daftar isi blok</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>Gagal menulis daftar isi blok</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>Gagal menulis info blok</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>Gagal menulis blok</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>Gagal menulis info arsip</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>Gagal menulis daftar isi transaksi</translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation>Biaya untuk setiap kB yang akan ditambahkan ke transaksi yang Anda kirim</translation>
-    </message>
-    <message>
-        <source>Fees smaller than this are considered zero fee (for relaying) (default:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Cari peer dengan daftar alamat DNS (biasanya: 1 jika -connect tidak terpilih)</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Generate coins (default: 0)</source>
-        <translation>Buatlah koin (biasanya: 0)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Periksakan berapa blok waktu mulai (biasanya: 288, 0 = setiapnya)</translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Importing...</source>
         <translation>mengimpor...</translation>
     </message>
@@ -2965,56 +2279,20 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Tidak bisa cari blok pertama, atau blok pertama salah. Salah direktori untuk jaringan?</translation>
     </message>
     <message>
-        <source>Invalid -onion address: &apos;%s&apos;</source>
-        <translation>Alamat -onion salah: &apos;%s&apos;</translation>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>Alamat -onion salah: '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>Deskripsi berkas tidak tersedia dengan cukup.</translation>
     </message>
     <message>
-        <source>Prepend debug output with timestamp (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>RPC client options:</source>
-        <translation>Pilihan RPC klien:</translation>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
-        <translation>Pililah versi SOCKS untuk -proxy (4 atau 5, biasanya: 5)</translation>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Set maximum block size in bytes (default: %d)</source>
         <translation>Atur ukuran maksimal untuk blok dalam byte (biasanya: %d)</translation>
     </message>
     <message>
-        <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>Mengatur jumlah urutan untuk layanan panggilan RPC (pengaturan awal: 4)</translation>
-    </message>
-    <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Tentukan arsip dompet (dalam direktori data)</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation>Perubahan saldo untuk transaksi yang belum dikonfirmasi setelah transaksi terkirim (default: 1)</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Usage (deprecated, use myriadcoin-cli):</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3025,20 +2303,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Dompet sedang diverifikasi...</translation>
     </message>
     <message>
-        <source>Wait for RPC server to start</source>
-        <translation>Tunggu sampai server RPC dimulai</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Dompet %s ada diluar direktori data %s</translation>
     </message>
     <message>
         <source>Wallet options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
-        <translation type="unfinished"/>
+        <translation>Opsi dompet:</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -3049,116 +2319,36 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Impor blok dari eksternal berkas blk000???.dat</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Myriadcoin Core is probably already running.</source>
-        <translation>Tidak bisa mengunci data directory %s. Kemungkinan Myriadcoin Core sudah mulai.</translation>
-    </message>
-    <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation type="unfinished"/>
+        <source>Cannot obtain a lock on data directory %s. Myriad Core is probably already running.</source>
+        <translation>Tidak bisa mengunci data directory %s. Kemungkinan Myriad Core sudah mulai.</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>Informasi</translation>
     </message>
     <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Nilai yang salah untuk -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Nilai yang salah untuk -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Nilai yang salah untuk -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: 50000)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Maintain a full transaction index (default: 0)</source>
-        <translation>Jaga daftar transaksi yang lengkap (biasanya: 0)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Dilarang menghubungkan node-node selain &lt;net&gt; (IPv4, IPv6 atau Tor)</translation>
-    </message>
-    <message>
-        <source>Print block on startup, if found in block index</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Print block tree on startup (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>RPC SSL options: (see the Myriadcoin Wiki for SSL setup instructions)</source>
-        <translation type="unfinished"/>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Nilai yang salah untuk -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>RPC server options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>SSL options: (see the Myriadcoin Wiki for SSL setup instructions)</source>
-        <translation>Pilihan SSL: (petunjuk pengaturan SSL lihat dalam Myriadcoin Wiki)</translation>
-    </message>
-    <message>
-        <source>Send command to Myriadcoin Core</source>
-        <translation type="unfinished"/>
+        <translation>Opsi server RPC:</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Kirim info jejak/debug ke konsol bukan berkas debug.log</translation>
     </message>
     <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Atur ukuran minimal untuk blok dalam byte (standar: 0)</translation>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Atur bahasa, sebagai contoh "id_ID" (standar: system locale)</translation>
     </message>
     <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Show benchmark information (default: 0)</source>
-        <translation type="unfinished"/>
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>Tampilkan layar pembuka saat nyala (standar: 1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
@@ -3169,16 +2359,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Tandatangani transaksi tergagal</translation>
     </message>
     <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Menetapkan waktu berakhir koneksi di milidetik (biasanya: 5000)</translation>
-    </message>
-    <message>
-        <source>Start Myriadcoin Core Daemon</source>
-        <translation>Memulai Myriadcoin Core Daemon</translation>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation>Kesalahan sistem:</translation>
+        <source>Start minimized</source>
+        <translation>Memulai terminimalisi</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -3193,14 +2375,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Transaksi terlalu besar</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Nama pengguna untuk hubungan JSON-RPC</translation>
     </message>
@@ -3209,20 +2383,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Peringatan</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Perhatian: Versi ini sudah lama, perlu ditingkatkan!</translation>
-    </message>
-    <message>
         <source>Zapping all transactions from wallet...</source>
-        <translation>Setiap transaksi dalam dompet sedang di-&apos;Zap&apos;...</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>version</source>
-        <translation>versi</translation>
+        <translation>Setiap transaksi dalam dompet sedang di-'Zap'...</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
@@ -3233,24 +2395,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Kata sandi untuk hubungan JSON-RPC</translation>
     </message>
     <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Izinkan hubungan JSON-RPC dari alamat IP yang ditentukan</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Kirim perintah ke node berjalan pada &lt;ip&gt; (standar: 127.0.0.1)</translation>
-    </message>
-    <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Menjalankan perintah ketika perubahan blok terbaik (%s dalam cmd digantikan oleh hash blok)</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Perbarui dompet ke format terbaru</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Kirim ukuran kolam kunci ke &lt;n&gt; (standar: 100)</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions</source>
@@ -3261,20 +2411,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Gunakan OpenSSL (https) untuk hubungan JSON-RPC</translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>Berkas sertifikat server (standar: server.cert)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Kunci pribadi server (standar: server.pem)</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Pesan bantuan ini</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Tidak dapat mengikat ke %s dengan komputer ini (ikatan gagal %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -3289,44 +2427,28 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Gagal memuat wallet.dat: Dompet rusak</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Myriadcoin</source>
-        <translation>Gagal memuat wallet.dat: Dompet memerlukan versi Myriadcoin yang terbaru</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Myriadcoin to complete</source>
-        <translation>Dompet diperlukan untuk disimpan-ulang: nyala-ulangkan Myriadcoin untuk menyelesaikan</translation>
-    </message>
-    <message>
         <source>Error loading wallet.dat</source>
         <translation>Gagal memuat wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Alamat -proxy salah: &apos;%s&apos;</translation>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Alamat -proxy salah: '%s'</translation>
     </message>
     <message>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Jaringan tidak diketahui yang ditentukan dalam -onlynet: &apos;%s&apos;</translation>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Jaringan tidak diketahui yang ditentukan dalam -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Diminta versi proxy -socks tidak diketahui: %i</translation>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Tidak dapat menyelesaikan alamat -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Tidak dapat menyelesaikan alamat -bind: &apos;%s&apos;</translation>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Tidak dapat menyelesaikan alamat -externalip: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Tidak dapat menyelesaikan alamat -externalip: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Nilai salah untuk -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Nilai salah</translation>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Nilai salah untuk -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -3361,20 +2483,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Memuat selesai</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>Gunakan pilihan %s</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Gagal</translation>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Anda harus mengatur rpcpassword=&lt;kata sandi&gt; dalam berkas konfigurasi:
-%s
-Jika berkas tidak ada, buatlah dengan permisi berkas hanya-dapat-dibaca-oleh-pemilik.</translation>
     </message>
 </context>
 </TS>

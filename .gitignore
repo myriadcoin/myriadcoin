@@ -4,21 +4,38 @@
 src/myriadcoin
 src/myriadcoind
 src/myriadcoin-cli
+src/myriadcoin-tx
 src/test/test_myriadcoin
 src/qt/test/test_myriadcoin-qt
 
+# autoreconf
 Makefile.in
 aclocal.m4
 autom4te.cache/
+build-aux/config.guess
+build-aux/config.sub
+build-aux/depcomp
+build-aux/install-sh
+build-aux/ltmain.sh
+build-aux/m4/libtool.m4
+build-aux/m4/lt~obsolete.m4
+build-aux/m4/ltoptions.m4
+build-aux/m4/ltsugar.m4
+build-aux/m4/ltversion.m4
+build-aux/missing
+build-aux/compile
+build-aux/test-driver
 config.log
 config.status
 configure
-src/bitcoin-config.h
-src/bitcoin-config.h.in
-src/build-aux/
-src/stamp-h1
+libtool
+src/config/bitcoin-config.h
+src/config/bitcoin-config.h.in
+src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
+
+src/univalue/gen
 
 src/qt/*.moc
 src/qt/moc_*.cpp
@@ -28,15 +45,17 @@ src/qt/test/moc*.cpp
 
 .deps
 .dirstamp
+.libs
 .*.swp
 *.*~*
 *.bak
 *.rej
 *.orig
+*.pyc
 *.o
 *.o-*
 *.patch
-.myriadcoin
+.bitcoin
 *.a
 *.pb.cc
 *.pb.h
@@ -48,15 +67,20 @@ src/qt/test/moc*.cpp
 *.json.h
 *.raw.h
 
+#libtool object files
+*.lo
+*.la
+
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-myriadcoin-qt
-Myriadcoin-Qt.app
+bitcoin-qt
+Bitcoin-Qt.app
 
 # Unit-tests
 Makefile.test
-myriadcoin-qt_test
+bitcoin-qt_test
+src/test/buildenv.py
 
 # Resources cpp
 qrc_*.cpp
@@ -80,6 +104,12 @@ linux-coverage-build
 linux-build
 win32-build
 qa/pull-tester/run-bitcoind-for-test.sh
-qa/pull-tester/build-tests.sh
+qa/pull-tester/tests-config.sh
+qa/pull-tester/cache/*
+qa/pull-tester/test.*/*
 
 !src/leveldb*/Makefile
+
+/doc/doxygen/
+
+libbitcoinconsensus.pc

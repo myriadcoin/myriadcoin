@@ -1,17 +1,17 @@
-Bitcoin Core version 0.9.2 is now available from:
+Bitcoin Core version 0.11.2 is now available from:
 
-  https://bitcoin.org/bin/0.9.2/
+  <https://bitcoin.org/bin/bitcoin-core-0.11.2/>
 
-This is a new minor version release, bringing mostly bug fixes and some minor
-improvements. OpenSSL has been updated because of a security issue (CVE-2014-0224).
-Upgrading to this release is recommended.
+This is a new minor version release, bringing bug fixes, the BIP65
+(CLTV) consensus change, and relay policy preparation for BIP113. It is
+recommended to upgrade to this version as soon as possible.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/bitcoin/bitcoin/issues
+  <https://github.com/bitcoin/bitcoin/issues>
 
 Upgrading and downgrading
-==========================
+=========================
 
 How to Upgrade
 --------------
@@ -21,184 +21,197 @@ shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or
 bitcoind/bitcoin-qt (on Linux).
 
-If you are upgrading from version 0.7.2 or earlier, the first time you run
-0.9.0 your blockchain files will be re-indexed, which will take anywhere from 
-30 minutes to several hours, depending on the speed of your machine.
+Downgrade warning
+------------------
 
-Downgrading warnings
---------------------
+Because release 0.10.0 and later makes use of headers-first synchronization and
+parallel block download (see further), the block files and databases are not
+backwards-compatible with pre-0.10 versions of Bitcoin Core or other software:
 
-The 'chainstate' for this release is not always compatible with previous
-releases, so if you run 0.9.x and then decide to switch back to a
-0.8.x release you might get a blockchain validation error when starting the
-old release (due to 'pruned outputs' being omitted from the index of
-unspent transaction outputs).
+* Blocks will be stored on disk out of order (in the order they are
+received, really), which makes it incompatible with some tools or
+other programs. Reindexing using earlier versions will also not work
+anymore as a result of this.
 
-Running the old release with the -reindex option will rebuild the chainstate
-data structures and correct the problem.
+* The block index database will now hold headers for which no block is
+stored on disk, which earlier versions won't support.
 
-Also, the first time you run a 0.8.x release on a 0.9 wallet it will rescan
-the blockchain for missing spent coins, which will take a long time (tens
-of minutes on a typical machine).
+If you want to be able to downgrade smoothly, make a backup of your entire data
+directory. Without this your node will need start syncing (or importing from
+bootstrap.dat) anew afterwards. It is possible that the data from a completely
+synchronised 0.10 node may be usable in older versions as-is, but this is not
+supported and may break as soon as the older version attempts to reindex.
 
-Important changes
-==================
+This does not affect wallet forward or backward compatibility. There are no
+known problems when downgrading from 0.11.x to 0.10.x.
 
-Gitian OSX build
------------------
+Notable changes since 0.11.1
+============================
 
-The deterministic build system that was already used for Windows and Linux
-builds is now used for OSX as well. Although the resulting executables have
-been tested quite a bit, there could be possible regressions. Be sure to report
-these on the Github bug tracker mentioned above.
+BIP65 soft fork to enforce OP_CHECKLOCKTIMEVERIFY opcode
+--------------------------------------------------------
 
-Compatibility of Linux build
------------------------------
+This release includes several changes related to the [BIP65][] soft fork
+which redefines the existing OP_NOP2 opcode as OP_CHECKLOCKTIMEVERIFY
+(CLTV) so that a transaction output can be made unspendable until a
+specified point in the future.
 
-For Linux we now build against Qt 4.6, and filter the symbols for libstdc++ and glibc.
-This brings back compatibility with
+1. This release will only relay and mine transactions spending a CLTV
+   output if they comply with the BIP65 rules as provided in code.
 
-- Debian 6+ / Tails
-- Ubuntu 10.04
-- CentOS 6.5
+2. This release will produce version 4 blocks by default. Please see the
+   *notice to miners* below.
 
-0.9.2 Release notes
-=======================
+3. Once 951 out of a sequence of 1,001 blocks on the local node's best block
+   chain contain version 4 (or higher) blocks, this release will no
+   longer accept new version 3 blocks and it will only accept version 4
+   blocks if they comply with the BIP65 rules for CLTV.
 
-The OpenSSL dependency in the gitian builds has been upgraded to 1.0.1h because of CVE-2014-0224.
+For more information about the soft-forking change, please see
+<https://github.com/bitcoin/bitcoin/pull/6351>
 
-RPC:
-- Add `getwalletinfo`, `getblockchaininfo` and `getnetworkinfo` calls (will replace hodge-podge `getinfo` at some point)
-- Add a `relayfee` field to `getnetworkinfo`
-- Fix RPC related shutdown hangs and leaks
-- Always show syncnode in `getpeerinfo`
-- `sendrawtransaction`: report the reject code and reason, and make it possible to re-send transactions that are already in the mempool
-- `getmininginfo` show right genproclimit
+Graphs showing the progress towards block version 4 adoption may be
+found at the URLs below:
 
-Command-line options:
-- Fix `-printblocktree` output
-- Show error message if ReadConfigFile fails
+- Block versions over the last 50,000 blocks as progress towards BIP65
+  consensus enforcement: <http://bitcoin.sipa.be/ver-50k.png>
 
-Block-chain handling and storage:
-- Fix for GetBlockValue() after block 13,440,000 (BIP42)
-- Upgrade leveldb to 1.17
+- Block versions over the last 2,000 blocks showing the days to the
+  earliest possible BIP65 consensus-enforced block: <http://bitcoin.sipa.be/ver-2k.png>
 
-Protocol and network code:
-- Per-peer block download tracking and stalled download detection
-- Add new DNS seed from bitnodes.io
-- Prevent socket leak in ThreadSocketHandler and correct some proxy related socket leaks
-- Use pnode->nLastRecv as sync score (was the wrong way around)
+**Notice to miners:** Bitcoin Core’s block templates are now for
+version 4 blocks only, and any mining software relying on its
+getblocktemplate must be updated in parallel to use libblkmaker either
+version 0.4.3 or any version from 0.5.2 onward.
 
-Wallet:
-- Make GetAvailableCredit run GetHash() only once per transaction (performance improvement)
-- Lower paytxfee warning threshold from 0.25 BTC to 0.01 BTC
-- Fix importwallet nTimeFirstKey (trigger necessary rescans)
-- Log BerkeleyDB version at startup
-- CWallet init fix
+- If you are solo mining, this will affect you the moment you upgrade
+  Bitcoin Core, which must be done prior to BIP65 achieving its 951/1001
+  status.
 
-Build system:
-- Add OSX build descriptors to gitian
-- Fix explicit --disable-qt-dbus
-- Don't require db_cxx.h when compiling with wallet disabled and GUI enabled
-- Improve missing boost error reporting
-- Upgrade miniupnpc version to 1.9
-- gitian-linux: --enable-glibc-back-compat for binary compatibility with old distributions
-- gitian: don't export any symbols from executable
-- gitian: build against Qt 4.6
-- devtools: add script to check symbols from Linux gitian executables
-- Remove build-time no-IPv6 setting
+- If you are mining with the stratum mining protocol: this does not
+  affect you.
 
-GUI:
-- Fix various coin control visual issues
-- Show number of in/out connections in debug console
-- Show weeks as well as years behind for long timespans behind
-- Enable and disable the Show and Remove buttons for requested payments history based on whether any entry is selected.
-- Show also value for options overridden on command line in options dialog
-- Fill in label from address book also for URIs
-- Fixes feel when resizing the last column on tables (issue #2862)
-- Fix ESC in disablewallet mode
-- Add expert section to wallet tab in optionsdialog
-- Do proper boost::path conversion (fixes unicode in datadir)
-- Only override -datadir if different from the default (fixes -datadir in config file)
-- Show rescan progress at start-up
-- Show importwallet progress
-- Get required locks upfront in polling functions (avoids hanging on locks)
-- Catch Windows shutdown events while client is running
-- Optionally add third party links to transaction context menu
-- Check for !pixmap() before trying to export QR code (avoids crashes when no QR code could be generated)
-- Fix "Start bitcoin on system login"
+- If you are mining with the getblocktemplate protocol to a pool: this
+  will affect you at the pool operator’s discretion, which must be no
+  later than BIP65 achieving its 951/1001 status.
 
-Miscellaneous:
+[BIP65]: https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki
 
-- Replace non-threadsafe C functions (gmtime, strerror and setlocale)
-- Add missing cs_main and wallet locks
-- Avoid exception at startup when system locale not recognized
-- Changed bitrpc.py's raw_input to getpass for passwords to conceal characters during command line input
-- devtools: add a script to fetch and postprocess translations
+BIP113 mempool-only locktime enforcement using GetMedianTimePast()
+----------------------------------------------------------------
+
+Bitcoin transactions currently may specify a locktime indicating when
+they may be added to a valid block.  Current consensus rules require
+that blocks have a block header time greater than the locktime specified
+in any transaction in that block.
+
+Miners get to choose what time they use for their header time, with the
+consensus rule being that no node will accept a block whose time is more
+than two hours in the future.  This creates a incentive for miners to
+set their header times to future values in order to include locktimed
+transactions which weren't supposed to be included for up to two more
+hours.
+
+The consensus rules also specify that valid blocks may have a header
+time greater than that of the median of the 11 previous blocks.  This
+GetMedianTimePast() time has a key feature we generally associate with
+time: it can't go backwards.
+
+[BIP113][] specifies a soft fork (**not enforced in this release**) that
+weakens this perverse incentive for individual miners to use a future
+time by requiring that valid blocks have a computed GetMedianTimePast()
+greater than the locktime specified in any transaction in that block.
+
+Mempool inclusion rules currently require transactions to be valid for
+immediate inclusion in a block in order to be accepted into the mempool.
+This release begins applying the BIP113 rule to received transactions,
+so transaction whose time is greater than the GetMedianTimePast() will
+no longer be accepted into the mempool.
+
+**Implication for miners:** you will begin rejecting transactions that
+would not be valid under BIP113, which will prevent you from producing
+invalid blocks if/when BIP113 is enforced on the network. Any
+transactions which are valid under the current rules but not yet valid
+under the BIP113 rules will either be mined by other miners or delayed
+until they are valid under BIP113. Note, however, that time-based
+locktime transactions are more or less unseen on the network currently.
+
+**Implication for users:** GetMedianTimePast() always trails behind the
+current time, so a transaction locktime set to the present time will be
+rejected by nodes running this release until the median time moves
+forward. To compensate, subtract one hour (3,600 seconds) from your
+locktimes to allow those transactions to be included in mempools at
+approximately the expected time.
+
+[BIP113]: https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki
+
+Windows bug fix for corrupted UTXO database on unclean shutdowns
+----------------------------------------------------------------
+
+Several Windows users reported that they often need to reindex the
+entire blockchain after an unclean shutdown of Bitcoin Core on Windows
+(or an unclean shutdown of Windows itself). Although unclean shutdowns
+remain unsafe, this release no longer relies on memory-mapped files for
+the UTXO database, which significantly reduced the frequency of unclean
+shutdowns leading to required reindexes during testing.
+
+For more information, see: <https://github.com/bitcoin/bitcoin/pull/6917>
+
+Other fixes for database corruption on Windows are expected in the
+next major release.
+
+0.11.2 Change log
+=================
+
+Detailed release notes follow. This overview includes changes that affect
+behavior, not code moves, refactors and string updates. For convenience in locating
+the code changes and accompanying discussion, both the pull request and
+git merge commit are mentioned.
+
+- #6124 `684636b` Make CScriptNum() take nMaxNumSize as an argument
+- #6124 `4fa7a04` Replace NOP2 with CHECKLOCKTIMEVERIFY (BIP65)
+- #6124 `6ea5ca4` Enable CHECKLOCKTIMEVERIFY as a standard script verify flag
+- #6351 `5e82e1c` Add CHECKLOCKTIMEVERIFY (BIP65) soft-fork logic
+- #6353 `ba1da90` Show softfork status in getblockchaininfo
+- #6351 `6af25b0` Add BIP65 to getblockchaininfo softforks list
+- #6688 `01878c9` Fix locking in GetTransaction
+- #6653 `b3eaa30` [Qt] Raise debug window when requested
+- #6600 `1e672ae` Debian/Ubuntu: Include bitcoin-tx binary
+- #6600 `2394f4d` Debian/Ubuntu: Split bitcoin-tx into its own package
+- #5987 `33d6825` Bugfix: Allow mining on top of old tip blocks for testnet
+- #6852 `21e58b8` build: make sure OpenSSL heeds noexecstack
+- #6846 `af6edac` alias `-h` for `--help`
+- #6867 `95a5039` Set TCP_NODELAY on P2P sockets.
+- #6856 `dfe55bd` Do not allow blockfile pruning during reindex.
+- #6566 `a1d3c6f` Add rules--presently disabled--for using GetMedianTimePast as end point for lock-time calculations
+- #6566 `f720c5f` Enable policy enforcing GetMedianTimePast as the end point of lock-time constraints
+- #6917 `0af5b8e` leveldb: Win32WritableFile without memory mapping
+- #6948 `4e895b0` Always flush block and undo when switching to new file
 
 Credits
---------
+=======
 
-Thanks to everyone who contributed to this release:
+Thanks to everyone who directly contributed to this release:
 
-- Addy Yeow
-- Altoidnerd
-- Andrea D'Amore
-- Andreas Schildbach
-- Bardi Harborow
-- Brandon Dahler
-- Bryan Bishop
-- Chris Beams
-- Christian von Roques
-- Cory Fields
-- Cozz Lovan
-- daniel
-- Daniel Newton
-- David A. Harding
-- ditto-b
-- duanemoody
-- Eric S. Bullington
-- Fabian Raetz
-- Gavin Andresen
+- Alex Morcos
+- ฿tcDrak
+- Chris Kleeschulte
+- Daniel Cousens
+- Diego Viola
+- Eric Lombrozo
+- Esteban Ordano
 - Gregory Maxwell
-- gubatron
-- Haakon Nilsen
-- harry
-- Hector Jusforgues
-- Isidoro Ghezzi
-- Jeff Garzik
-- Johnathan Corgan
-- jtimon
-- Kamil Domanski
-- langerhans
 - Luke Dashjr
-- Manuel Araoz
+- Marco Falke
 - Mark Friedenbach
 - Matt Corallo
-- Matthew Bogosian
-- Meeh
-- Michael Ford
-- Michagogo
-- Mikael Wikman
-- Mike Hearn
-- olalonde
-- paveljanik
-- peryaudo
-- Philip Kaufmann
-- philsong
+- Micha
+- Mitchell Cash
+- Peter Todd
 - Pieter Wuille
-- R E Broadley
-- richierichrawr
-- Rune K. Svendsen
-- rxl
-- shshshsh
-- Simon de la Rouviere
-- Stuart Cardall
-- super3
-- Telepatheic
-- Thomas Zander
-- Torstein Husebø
-- Warren Togami
 - Wladimir J. van der Laan
-- Yoichi Hirai
+- Zak Wilcox
 
+And those who contributed additional code review and/or security research.
+
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).

@@ -1,47 +1,9 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
-<context>
-    <name>AboutDialog</name>
-    <message>
-        <source>About Myriadcoin Core</source>
-        <translation>Om Myriadcoin Core</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Myriadcoin Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Myriadcoin Core&lt;/b&gt;-version</translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-Detta är experimentell mjukvara.
-
-
-Distribuerad under mjukvarulicensen MIT/X11, se den medföljande filen COPYING eller http://www.opensource.org/licenses/mit-license.php.
-
-Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användning i OpenSSL Toolkit (http://www.openssl.org/) och kryptografisk mjukvara utvecklad av Eric Young (eay@cryptsoft.com) samt UPnP-mjukvara skriven av Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Copyright</translation>
-    </message>
-    <message>
-        <source>The Bitcoin and Myriadcoin Core developers</source>
-        <translation>Myriadcoin Core-utvecklarna</translation>
-    </message>
-    <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
-    </message>
-</context>
+<TS language="sv" version="2.0">
 <context>
     <name>AddressBookPage</name>
     <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Dubbelklicka för att ändra adressen eller etiketten</translation>
+        <source>Right-click to edit address or label</source>
+        <translation>Högerklicka för att ändra adressen eller etiketten.</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -104,12 +66,12 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Mottagaradresser</translation>
     </message>
     <message>
-        <source>These are your Myriadcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Detta är dina Myriadcoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Bitcoins.</translation>
+        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Detta är dina Myriad-adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Myriads.</translation>
     </message>
     <message>
-        <source>These are your Myriadcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Detta är dina Myriadcoin adresser för att ta emot betalningar. Det rekommenderas att använda en ny mottagningsadress för varje transaktion.</translation>
+        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Detta är dina Myriad-adresser för att ta emot betalningar. Det rekommenderas att använda en ny mottagningsadress för varje transaktion.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -117,7 +79,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>&amp;Editera</translation>
+        <translation>&amp;Ändra</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -132,8 +94,9 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Exporteringen misslyckades</translation>
     </message>
     <message>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation>Det inträffade ett fel när adresslistan skulle sparas till %1.</translation>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>Det inträffade ett fel när adresslistan skulle sparas till %1.
+Var vänlig och försök igen.</translation>
     </message>
 </context>
 <context>
@@ -148,14 +111,14 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(Ingen etikett)</translation>
+        <translation>(ingen etikett)</translation>
     </message>
 </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Lösenords Dialog</translation>
+        <translation>Lösenordsdialog</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
@@ -168,10 +131,6 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <source>Repeat new passphrase</source>
         <translation>Upprepa nytt lösenord</translation>
-    </message>
-    <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Ange plånbokens nya lösenord. &lt;br/&gt; Använd ett lösenord på &lt;b&gt;10 eller fler slumpmässiga tecken,&lt;/b&gt; eller &lt;b&gt;åtta eller fler ord.&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -198,20 +157,20 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Ändra lösenord</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Ange plånbokens gamla och nya lösenord.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Bekräfta kryptering av plånbok</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
         <translation>VARNING: Om du krypterar din plånbok och glömmer ditt lösenord, kommer du att &lt;b&gt;FÖRLORA ALLA DINA TILLGÅNGAR&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
+    </message>
+    <message>
+        <source>Myriad Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your myriads from being stolen by malware infecting your computer.</source>
+        <translation>Myriad Core kommer att stängas för att slutföra krypteringsprocessen. Kom ihåg att plånbokskryptering inte garanterar fullt skydd mot skadlig kod på din dator.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -226,8 +185,12 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Plånboken är krypterad</translation>
     </message>
     <message>
-        <source>Myriadcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your myriadcoins from being stolen by malware infecting your computer.</source>
-        <translation>Programmet kommer nu att stänga ner för att färdigställa krypteringen. Tänk på att en krypterad plånbok inte skyddar mot stöld om din dator är infekterad med en keylogger.</translation>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Ange plånbokens nya lösenord. &lt;br/&gt; Använd ett lösenord på &lt;b&gt;tio eller fler slumpmässiga tecken,&lt;/b&gt; eller &lt;b&gt;åtta eller fler ord.&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>Ge det gamla lösenordet och det nya lösenordet för plånboken.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -278,7 +241,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>Visa översiktsvy av plånbok</translation>
+        <translation>Visa generell översikt av plånboken</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -295,10 +258,6 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <source>Quit application</source>
         <translation>Avsluta programmet</translation>
-    </message>
-    <message>
-        <source>Show information about Myriadcoin</source>
-        <translation>Visa information om Myriadcoin</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -322,7 +281,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Byt Lösenord...</translation>
+        <translation>&amp;Byt lösenord...</translation>
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
@@ -337,6 +296,10 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Öppna &amp;URI...</translation>
     </message>
     <message>
+        <source>Myriad Core client</source>
+        <translation>Myriad Core-klient</translation>
+    </message>
+    <message>
         <source>Importing blocks from disk...</source>
         <translation>Importerar block från disk...</translation>
     </message>
@@ -345,12 +308,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Återindexerar block på disken...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriadcoin address</source>
-        <translation>Skicka mynt till en Bitcoin-adress</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Myriadcoin</source>
-        <translation>Ändra konfigurationsalternativ för Myriadcoin</translation>
+        <source>Send coins to a Myriad address</source>
+        <translation>Skicka myriads till en Myriad-adress</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -358,11 +317,11 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Byt lösenord för kryptering av plånbok</translation>
+        <translation>Byt lösenfras för kryptering av plånbok</translation>
     </message>
     <message>
         <source>&amp;Debug window</source>
-        <translation>&amp;Debug fönster</translation>
+        <translation>&amp;Debug-fönster</translation>
     </message>
     <message>
         <source>Open debugging and diagnostic console</source>
@@ -373,8 +332,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>&amp;Verifiera meddelande...</translation>
     </message>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
+        <source>Myriad</source>
+        <translation>Myriad</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -389,6 +348,10 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>&amp;Ta emot</translation>
     </message>
     <message>
+        <source>Show information about Myriad Core</source>
+        <translation>Visa information om Myriad Core</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Visa / Göm</translation>
     </message>
@@ -401,12 +364,12 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Kryptera de privata nycklar som tillhör din plånbok</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriadcoin addresses to prove you own them</source>
-        <translation>Signera meddelanden med din Bitcoinadress för att bevisa att du äger dem</translation>
+        <source>Sign messages with your Myriad addresses to prove you own them</source>
+        <translation>Signera meddelanden med din Myriad-adress för att bevisa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriadcoin addresses</source>
-        <translation>Verifiera meddelanden för att vara säker på att de var signerade med den specificerade Bitcoin-adressen</translation>
+        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
+        <translation>Verifiera meddelanden för att vara säker på att de var signerade med specificerade Myriad-adresser</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -422,23 +385,23 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <source>Tabs toolbar</source>
-        <translation>Verktygsfält för Tabbar</translation>
+        <translation>Verktygsfält för tabbar</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Core</translation>
     </message>
     <message>
-        <source>Myriadcoin Core</source>
-        <translation>Myriadcoin Kärna</translation>
+        <source>Request payments (generates QR codes and myriad: URIs)</source>
+        <translation>Begär betalning (genererar QR-koder och myriad-URI)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriadcoin: URIs)</source>
-        <translation>Begär betalning (genererar QR-koder och bitcoin-URI)</translation>
+        <source>&amp;About Myriad Core</source>
+        <translation>&amp;Om Myriad Core</translation>
     </message>
     <message>
-        <source>&amp;About Myriadcoin Core</source>
-        <translation>&amp;Om Myriadcoin Core</translation>
+        <source>Modify configuration options for Myriad Core</source>
+        <translation>Ändra konfigurationsalternativ för Myriad Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -449,36 +412,28 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Visa listan av använda mottagningsadresser och etiketter</translation>
     </message>
     <message>
-        <source>Open a myriadcoin: URI or payment request</source>
-        <translation>Öppna en myriadcoin: URI eller betalningsbegäran</translation>
+        <source>Open a myriad: URI or payment request</source>
+        <translation>Öppna en myriad: URI eller betalningsbegäran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandoradsalternativ</translation>
     </message>
     <message>
-        <source>Show the Myriadcoin Core help message to get a list with possible Myriadcoin command-line options</source>
-        <translation>Visa Myriadcoin Core hjälpmeddelande för att få en lista med möjliga Myriadcoin kommandoradsalternativ.</translation>
-    </message>
-    <message>
-        <source>Myriadcoin client</source>
-        <translation>Bitcoin-klient</translation>
+        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
+        <translation>Visa Myriad Cores hjälpmeddelande för att få en lista med möjliga Myriad-kommandoradsalternativ.</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Myriadcoin network</source>
-        <translation><numerusform>%n aktiv anslutning till Bitcoin-nätverket</numerusform><numerusform>%n aktiva anslutningar till Bitcoin-nätverket</numerusform></translation>
+        <source>%n active connection(s) to Myriad network</source>
+        <translation><numerusform>%n aktiva anslutningar till Myriad-nätverket.</numerusform><numerusform>%n aktiva anslutningar till Myriad-nätverket.</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
         <translation>Ingen block-källa tillgänglig...</translation>
     </message>
-    <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Bearbetat %1 av %2 (uppskattade) block av transaktionshistorik.</translation>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>Bearbetat %1 block i transaktionshistoriken.</translation>
+    <message numerus="yes">
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation><numerusform>Bearbetade %n block av transaktionshistoriken.</numerusform><numerusform>Bearbetade %n block av transaktionshistoriken.</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -506,7 +461,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Senast mottagna block genererades %1 sen.</translation>
+        <translation>Senast mottagna block genererades för %1 sen.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
@@ -533,6 +488,36 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Hämtar senaste...</translation>
     </message>
     <message>
+        <source>Date: %1
+</source>
+        <translation>Datum: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation>Belopp: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation>Typ: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation>Etikett: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation>Adress: %1
+</translation>
+    </message>
+    <message>
         <source>Sent transaction</source>
         <translation>Transaktion skickad</translation>
     </message>
@@ -541,28 +526,12 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Inkommande transaktion</translation>
     </message>
     <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Datum: %1
-Belopp: %2
-Typ: %3
-Adress: %4
-</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Denna plånbok är &lt;b&gt;krypterad&lt;/b&gt; och för närvarande &lt;b&gt;olåst&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Denna plånbok är &lt;b&gt;krypterad&lt;/b&gt; och för närvarande &lt;b&gt;låst&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>A fatal error occurred. Myriadcoin can no longer continue safely and will quit.</source>
-        <translation>Ett allvarligt fel har uppstått. Myriadcoin kan inte längre köras säkert och kommer att avslutas.</translation>
     </message>
 </context>
 <context>
@@ -575,8 +544,8 @@ Adress: %4
 <context>
     <name>CoinControlDialog</name>
     <message>
-        <source>Coin Control Address Selection</source>
-        <translation>Adressval för myntkontroll</translation>
+        <source>Coin Selection</source>
+        <translation>Myntval</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -584,7 +553,7 @@ Adress: %4
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Antal Byte:</translation>
+        <translation>Antal byte:</translation>
     </message>
     <message>
         <source>Amount:</source>
@@ -599,8 +568,8 @@ Adress: %4
         <translation>Avgift:</translation>
     </message>
     <message>
-        <source>Low Output:</source>
-        <translation>Låg utmatning:</translation>
+        <source>Dust:</source>
+        <translation>Damm:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -612,23 +581,27 @@ Adress: %4
     </message>
     <message>
         <source>(un)select all</source>
-        <translation>(av)välj allt</translation>
+        <translation>(av)markera allt</translation>
     </message>
     <message>
         <source>Tree mode</source>
-        <translation>Trädmetod</translation>
+        <translation>Trädvy</translation>
     </message>
     <message>
         <source>List mode</source>
-        <translation>Listmetod</translation>
+        <translation>Listvy</translation>
     </message>
     <message>
         <source>Amount</source>
         <translation>Mängd</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adress</translation>
+        <source>Received with label</source>
+        <translation>Mottagen med etikett</translation>
+    </message>
+    <message>
+        <source>Received with address</source>
+        <translation>Mottagen med adress</translation>
     </message>
     <message>
         <source>Date</source>
@@ -636,7 +609,7 @@ Adress: %4
     </message>
     <message>
         <source>Confirmations</source>
-        <translation>Konfirmationer</translation>
+        <translation>Bekräftelser</translation>
     </message>
     <message>
         <source>Confirmed</source>
@@ -691,8 +664,8 @@ Adress: %4
         <translation>Kopiera prioritet</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Kopiera låg utmatning</translation>
+        <source>Copy dust</source>
+        <translation>Kopiera damm</translation>
     </message>
     <message>
         <source>Copy change</source>
@@ -743,8 +716,16 @@ Adress: %4
         <translation>ingen</translation>
     </message>
     <message>
-        <source>Dust</source>
-        <translation>Damm</translation>
+        <source>This label turns red if the transaction size is greater than 1000 bytes.</source>
+        <translation>Denna etikett blir röd om transaktionens storlek är större än 1000 bytes.</translation>
+    </message>
+    <message>
+        <source>This label turns red if the priority is smaller than "medium".</source>
+        <translation>Denna etikett blir röd om prioriteten är lägre än "medium".</translation>
+    </message>
+    <message>
+        <source>This label turns red if any recipient receives an amount smaller than %1.</source>
+        <translation>Denna etikett blir röd om någon mottagare får ett belopp mindre än %1.</translation>
     </message>
     <message>
         <source>yes</source>
@@ -753,10 +734,6 @@ Adress: %4
     <message>
         <source>no</source>
         <translation>nej</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Denna etikett blir röd om transaktionen överstiger 1000 byte.</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
@@ -769,26 +746,6 @@ Adress: %4
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>Transaktioner med högre prioritet har större sannolikhet att inkluderas i ett block.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
-        <translation>Denna etikett blir röd om prioriteten är mindre än &quot;medium&quot;.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Denna etikett blir röd om någon mottagare får en betalning som är mindre än %1.</translation>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 is required.</source>
-        <translation>Detta betyder att en avgift på minst %1 behövs.</translation>
-    </message>
-    <message>
-        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
-        <translation>Belopp mindre än 0.546 gånger den minsta vidarebefordringsavgiften visa som damm.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the change is smaller than %1.</source>
-        <translation>Denna etikett blir röd om växeln är mindre än %1.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -807,7 +764,7 @@ Adress: %4
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
-        <translation>Redigera Adress</translation>
+        <translation>Redigera adress</translation>
     </message>
     <message>
         <source>&amp;Label</source>
@@ -842,12 +799,12 @@ Adress: %4
         <translation>Redigera avsändaradress</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>Den angivna adressen &quot;%1&quot; finns redan i adressboken.</translation>
+        <source>The entered address "%1" is already in the address book.</source>
+        <translation>Den angivna adressen "%1" finns redan i adressboken.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Myriadcoin address.</source>
-        <translation>Den angivna adressen &quot;%1&quot; är inte en giltig Bitcoin-adress.</translation>
+        <source>The entered address "%1" is not a valid Myriad address.</source>
+        <translation>Den angivna adressen "%1" är inte en giltig Myriad-adress.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -884,16 +841,24 @@ Adress: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriadcoin Core - Command-line options</source>
-        <translation>Myriadcoin Core - Kommandoradsalternativ</translation>
-    </message>
-    <message>
-        <source>Myriadcoin Core</source>
-        <translation>Myriadcoin Kärna</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Core</translation>
     </message>
     <message>
         <source>version</source>
         <translation>version</translation>
+    </message>
+    <message>
+        <source>(%1-bit)</source>
+        <translation>(%1-bit)</translation>
+    </message>
+    <message>
+        <source>About Myriad Core</source>
+        <translation>Om Myriad Core</translation>
+    </message>
+    <message>
+        <source>Command-line options</source>
+        <translation>Kommandoradsalternativ</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -903,30 +868,6 @@ Adress: %4
         <source>command-line options</source>
         <translation>kommandoradsalternativ</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>UI alternativ</translation>
-    </message>
-    <message>
-        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Ändra språk, till exempel &quot;de_DE&quot; (förvalt: systemets språk)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Starta som minimerad</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Sätt SSL root-certifikat för betalningsbegäran (förvalt: -system-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Visa startbilden vid uppstart (förvalt: 1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Välj datakatalog vid uppstart (förvalt: 0)</translation>
-    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -935,16 +876,16 @@ Adress: %4
         <translation>Välkommen</translation>
     </message>
     <message>
-        <source>Welcome to Myriadcoin Core.</source>
-        <translation>Välkommen till Myriadcoin Core.</translation>
+        <source>Welcome to Myriad Core.</source>
+        <translation>Välkommen till Myriad Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Myriadcoin Core will store its data.</source>
-        <translation>Eftersom detta är första gången programmet startas får du välja var Myriadcoin Core skall lagra sitt data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Myriad Core will store its data.</source>
+        <translation>Eftersom detta är första gången programmet startas får du välja var Myriad Core skall lagra sina data.</translation>
     </message>
     <message>
-        <source>Myriadcoin Core will download and store a copy of the Myriadcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Myriadcoin Core kommer att ladda ner och spara en kopia av Myriadcoin blockkedjan. Åtminstone %1GB av data kommer att sparas i denna katalog, och den kommer att växa över tiden. Plånboken kommer också att sparas i denna katalog.</translation>
+        <source>Myriad Core will download and store a copy of the Myriad block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Myriad Core kommer att ladda ner och spara en kopia av Myriad-blockkedjan. Åtminstone %1GB av data kommer att sparas i denna katalog, och den kommer att växa över tiden. Plånboken kommer också att sparas i denna katalog.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -955,24 +896,24 @@ Adress: %4
         <translation>Använd en anpassad datakatalog:</translation>
     </message>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Core</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
-        <translation>Fel: Den angivna datakatalogen &quot;%1&quot; kan inte skapas.</translation>
+        <source>Error: Specified data directory "%1" cannot be created.</source>
+        <translation>Fel: Den angivna datakatalogen "%1" kan inte skapas.</translation>
     </message>
     <message>
         <source>Error</source>
         <translation>Fel</translation>
     </message>
-    <message>
-        <source>GB of free space available</source>
-        <translation>GB ledigt utrymme är tillgängligt</translation>
+    <message numerus="yes">
+        <source>%n GB of free space available</source>
+        <translation><numerusform>%n GB fritt utrymme kvar</numerusform><numerusform>%n GB fritt utrymme kvar</numerusform></translation>
     </message>
-    <message>
-        <source>(of %1GB needed)</source>
-        <translation>(av %1GB behövs)</translation>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation><numerusform>(av %n GB behövs)</numerusform><numerusform>(av %n GB behövs)</numerusform></translation>
     </message>
 </context>
 <context>
@@ -1009,22 +950,6 @@ Adress: %4
         <translation>&amp;Allmänt</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Valfri transaktionsavgift per kB som ser till att dina transaktioner behandlas snabbt. De flesta transaktioner är 1 kB.</translation>
-    </message>
-    <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Betala överförings&amp;avgift</translation>
-    </message>
-    <message>
-        <source>Automatically start Myriadcoin after logging in to the system.</source>
-        <translation>Starta Myriadcoin automatiskt efter inloggning.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Myriadcoin on system login</source>
-        <translation>&amp;Starta Myriadcoin vid systemstart</translation>
-    </message>
-    <message>
         <source>Size of &amp;database cache</source>
         <translation>Storleken på &amp;databascache</translation>
     </message>
@@ -1034,23 +959,31 @@ Adress: %4
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
-        <translation>Antalet skript &amp; verifikationstrådar</translation>
+        <translation>Antalet skript&amp;verifikationstrådar</translation>
     </message>
     <message>
-        <source>Connect to the Myriadcoin network through a SOCKS proxy.</source>
-        <translation>Anslut till Bitcoin-nätverket genom en SOCKS-proxy.</translation>
+        <source>Accept connections from outside</source>
+        <translation>Acceptera anslutningar utifrån</translation>
     </message>
     <message>
-        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation>&amp;Anslut genom SOCKS-proxy (förvald proxy):</translation>
+        <source>Allow incoming connections</source>
+        <translation>Acceptera inkommande anslutningar</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Proxyns IP-adress (t.ex.  IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
+        <translation>Minimera istället för att stänga programmet när fönstret stängs. När detta alternativ är aktiverat stängs programmet endast genom att välja Stäng i menyn.</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting Myriad Core.</source>
+        <translation>Gränssnittets språk kan väljas här. Denna inställning träder i kraft efter omstart av Myriad Core.</translation>
+    </message>
+    <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>Tredjeparts URL:er (t.ex. en block utforskare) som finns i transaktionstabben som ett menyval i sammanhanget. %s i URL:en ersätts med tansaktionshashen. Flera URL:er är separerade med vertikala streck |.</translation>
+        <translation>Tredjeparts URL:er (t.ex. en blockutforskare) som finns i transaktionstabben som ett menyval i sammanhanget. %s i URL:en ersätts med tansaktionshashen. Flera URL:er är separerade med vertikala streck |.</translation>
     </message>
     <message>
         <source>Third party transaction URLs</source>
@@ -1058,19 +991,27 @@ Adress: %4
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
-        <translation>Aktiva kommandoradsalternativ som överrider alternativen ovan:</translation>
+        <translation>Aktiva kommandoradsalternativ som ersätter alternativen ovan:</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>Återställ alla klient inställningar till förvalen.</translation>
+        <translation>Återställ alla klientinställningar till förvalen.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation>&amp;Återställ Alternativ</translation>
+        <translation>&amp;Återställ alternativ</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Nätverk</translation>
+    </message>
+    <message>
+        <source>Automatically start Myriad Core after logging in to the system.</source>
+        <translation>Kör Myriad Core automatiskt vid systeminloggning.</translation>
+    </message>
+    <message>
+        <source>&amp;Start Myriad Core on system login</source>
+        <translation>&amp;Kör Myriad Core vid systeminloggning</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1086,23 +1027,31 @@ Adress: %4
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Aktivera mynt och kontrollfunktioner</translation>
+        <translation>Aktivera mynt&amp;kontrollfunktioner</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
-        <translation>Om du avaktiverar betalning med okonfirmerade växel, kan inte växeln från en transaktion användas förrän den transaktionen har minst en konfirmation.</translation>
+        <translation>Om du avaktiverar betalning med obekräftad växel, kan inte växeln från en transaktion användas förrän den transaktionen har minst en bekräftelse.</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;Spendera okonfirmerad växel</translation>
+        <translation>&amp;Spendera obekräftad växel</translation>
     </message>
     <message>
-        <source>Automatically open the Myriadcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt Bitcoin-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
+        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt Myriad-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Tilldela port med hjälp av &amp;UPnP</translation>
+    </message>
+    <message>
+        <source>Connect to the Myriad network through a SOCKS5 proxy.</source>
+        <translation>Anslut till Myriad-nätverket genom en SOCKS5-proxy.</translation>
+    </message>
+    <message>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp;Anslut genom SOCKS5-proxy (förvald proxy):</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1117,14 +1066,6 @@ Adress: %4
         <translation>Proxyns port (t.ex. 9050)</translation>
     </message>
     <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>SOCKS &amp;Version:</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>SOCKS version av proxyn (t.ex. 5)</translation>
-    </message>
-    <message>
         <source>&amp;Window</source>
         <translation>&amp;Fönster</translation>
     </message>
@@ -1135,10 +1076,6 @@ Adress: %4
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
         <translation>&amp;Minimera till systemfältet istället för aktivitetsfältet</translation>
-    </message>
-    <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimera applikationen istället för att stänga ner den när fönstret stängs. Detta innebär att programmet fotrsätter att köras tills du väljer Avsluta i menyn.</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
@@ -1153,24 +1090,12 @@ Adress: %4
         <translation>Användargränssnittets &amp;språk: </translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Myriadcoin.</source>
-        <translation>Användargränssnittets språk kan ställas in här. Denna inställning träder i kraft efter en omstart av Myriadcoin.</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;Måttenhet att visa belopp i: </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Välj en måttenhet att visa när du skickar mynt.</translation>
-    </message>
-    <message>
-        <source>Whether to show Myriadcoin addresses in the transaction list or not.</source>
-        <translation>Anger om Bitcoin-adresser skall visas i transaktionslistan.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Visa adresser i transaktionslistan</translation>
+        <translation>Välj en måttenhet att visa i gränssnittet och när du skickar mynt.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1201,8 +1126,8 @@ Adress: %4
         <translation>Klientomstart är nödvändig för att aktivera ändringarna.</translation>
     </message>
     <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Klienten skall stängas av, vill du fortsätta?</translation>
+        <source>Client will be shut down. Do you want to proceed?</source>
+        <translation>Programmet kommer att stängas. Vill du fortsätta?</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
@@ -1210,7 +1135,7 @@ Adress: %4
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Den medföljande proxy adressen är ogiltig.</translation>
+        <translation>Den angivna proxy-adressen är ogiltig.</translation>
     </message>
 </context>
 <context>
@@ -1220,12 +1145,12 @@ Adress: %4
         <translation>Formulär</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriadcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Bitcoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Myriad-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation>Plånbok</translation>
+        <source>Watch-only:</source>
+        <translation>Granska-bara:</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1252,6 +1177,10 @@ Adress: %4
         <translation>Den genererade balansen som ännu inte har mognat</translation>
     </message>
     <message>
+        <source>Balances</source>
+        <translation>Balanser</translation>
+    </message>
+    <message>
         <source>Total:</source>
         <translation>Totalt:</translation>
     </message>
@@ -1260,12 +1189,28 @@ Adress: %4
         <translation>Ditt nuvarande totala saldo</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Nyligen genomförda transaktioner&lt;/b&gt;</translation>
+        <source>Your current balance in watch-only addresses</source>
+        <translation>Ditt nuvarande saldo i granska-bara adresser</translation>
     </message>
     <message>
-        <source>out of sync</source>
-        <translation>osynkroniserad</translation>
+        <source>Spendable:</source>
+        <translation>Spenderbar:</translation>
+    </message>
+    <message>
+        <source>Recent transactions</source>
+        <translation>Nyligen genomförda transaktioner</translation>
+    </message>
+    <message>
+        <source>Unconfirmed transactions to watch-only addresses</source>
+        <translation>Okonfirmerade transaktioner till granska-bara adresser</translation>
+    </message>
+    <message>
+        <source>Mined balance in watch-only addresses that has not yet matured</source>
+        <translation>Den genererade balansen i granska-bara adresser som ännu inte har mognat</translation>
+    </message>
+    <message>
+        <source>Current total balance in watch-only addresses</source>
+        <translation>Nuvarande total balans i granska-bara adresser</translation>
     </message>
 </context>
 <context>
@@ -1275,8 +1220,20 @@ Adress: %4
         <translation>URI hantering</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Myriadcoin address or malformed URI parameters.</source>
-        <translation>URI går inte att tolkas! Detta kan orsakas av en ogiltig Bitcoin-adress eller felaktiga URI parametrar.</translation>
+        <source>Invalid payment address %1</source>
+        <translation>Felaktig betalningsadress %1</translation>
+    </message>
+    <message>
+        <source>Payment request rejected</source>
+        <translation>Betalningsbegäran avslogs</translation>
+    </message>
+    <message>
+        <source>Payment request network doesn't match client network.</source>
+        <translation>Betalningsbegärans nätverk matchar inte klientens nätverk.</translation>
+    </message>
+    <message>
+        <source>Payment request is not initialized.</source>
+        <translation>Betalningsbegäran är inte initierad.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1287,44 +1244,56 @@ Adress: %4
         <translation>Fel vid betalningsbegäran</translation>
     </message>
     <message>
-        <source>Cannot start myriadcoin: click-to-pay handler</source>
-        <translation>Kan inte starta myriadcoin: klicka-och-betala handhavare</translation>
-    </message>
-    <message>
-        <source>Net manager warning</source>
-        <translation>Varningar från näthanteraren</translation>
-    </message>
-    <message>
-        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation>Din aktiva proxy stödjer inte SOCKS5, vilket är nödvändigt för att använda betalningsbegäran via proxy.</translation>
+        <source>Cannot start myriad: click-to-pay handler</source>
+        <translation>Kan inte starta myriad: klicka-och-betala handhavare</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>Betalningsbegärans hämta URL är felaktig: %1</translation>
     </message>
     <message>
+        <source>URI cannot be parsed! This can be caused by an invalid Myriad address or malformed URI parameters.</source>
+        <translation>URI går inte att tolkas! Detta kan orsakas av en ogiltig Myriad-adress eller felaktiga URI parametrar.</translation>
+    </message>
+    <message>
         <source>Payment request file handling</source>
         <translation>Hantering av betalningsbegäransfil</translation>
     </message>
     <message>
-        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
-        <translation>Betalningsbegäransfilen kan inte läsas eller behandlas! Detta kan orsakas av en felaktig betalningsbegäransfil.</translation>
+        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
+        <translation>Betalningsbegäransfilen kan inte läsas! Detta kan orsakas av en felaktig betalningsbegäransfil.</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>Betalningsbegäran löpte ut.</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
         <translation>Overifierade betalningsbegärningar till specialbetalningsskript stöds inte.</translation>
     </message>
     <message>
+        <source>Invalid payment request.</source>
+        <translation>Ogiltig betalningsbegäran.</translation>
+    </message>
+    <message>
         <source>Refund from %1</source>
         <translation>Återbetalning från %1</translation>
+    </message>
+    <message>
+        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
+        <translation>Betalningsbegäran %1 är för stor (%2 bytes, tillåten %3 bytes)</translation>
+    </message>
+    <message>
+        <source>Payment request DoS protection</source>
+        <translation>Betalningsbegäran begär DoS-skydd</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
         <translation>Kommunikationsfel med %1: %2</translation>
     </message>
     <message>
-        <source>Payment request can not be parsed or processed!</source>
-        <translation>Betalningsbegäran kan inte läsas eller behandlas!</translation>
+        <source>Payment request cannot be parsed!</source>
+        <translation>Betalningsbegäran kan inte behandlas!</translation>
     </message>
     <message>
         <source>Bad response from server %1</source>
@@ -1340,30 +1309,57 @@ Adress: %4
     </message>
 </context>
 <context>
+    <name>PeerTableModel</name>
+    <message>
+        <source>User Agent</source>
+        <translation>Användaragent</translation>
+    </message>
+    <message>
+        <source>Node/Service</source>
+        <translation>Nod/Tjänst</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>Pingtid</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
+        <source>Amount</source>
+        <translation>Mängd</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
-        <translation>Fel: Den angivna datakatalogen &quot;%1&quot; finns inte.</translation>
+        <source>Enter a Myriad address (e.g. %1)</source>
+        <translation>Ange en Myriad-adress (t.ex. %1)</translation>
     </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>Fel: Kan inte läsa konfigurationsfilen: %1. Använd bara nyckel=värde formatet.</translation>
+        <source>%1 d</source>
+        <translation>%1 d</translation>
     </message>
     <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Fel: Felaktig kombination av -regtest och -testnet.</translation>
+        <source>%1 h</source>
+        <translation>%1 h</translation>
     </message>
     <message>
-        <source>Myriadcoin Core didn&apos;t yet exit safely...</source>
-        <translation>Myriadcoin Core avslutades inte ännu säkert...</translation>
+        <source>%1 m</source>
+        <translation>%1 m</translation>
     </message>
     <message>
-        <source>Enter a Myriadcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Ange en Bitcoin-adress (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>%1 s</source>
+        <translation>%1 s</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Ingen</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>ej tillgänglig</translation>
+    </message>
+    <message>
+        <source>%1 ms</source>
+        <translation>%1 ms</translation>
     </message>
 </context>
 <context>
@@ -1416,6 +1412,10 @@ Adress: %4
         <translation>Använder OpenSSL version</translation>
     </message>
     <message>
+        <source>Using BerkeleyDB version</source>
+        <translation>Använder BerkeleyDB versionen</translation>
+    </message>
+    <message>
         <source>Startup time</source>
         <translation>Uppstartstid</translation>
     </message>
@@ -1440,8 +1440,80 @@ Adress: %4
         <translation>Aktuellt antal block</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation>Beräknade totala block</translation>
+        <source>Open the Myriad Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna felsökningsloggfilen för Myriad Core från den nuvarande datakatalogen. Detta kan ta några sekunder om loggfilen är stor.</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Mottagen</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Skickad</translation>
+    </message>
+    <message>
+        <source>&amp;Peers</source>
+        <translation>&amp;Klienter</translation>
+    </message>
+    <message>
+        <source>Select a peer to view detailed information.</source>
+        <translation>Välj en klient för att se detaljerad information.</translation>
+    </message>
+    <message>
+        <source>Direction</source>
+        <translation>Riktning</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Version</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation>Användaragent</translation>
+    </message>
+    <message>
+        <source>Services</source>
+        <translation>Tjänster</translation>
+    </message>
+    <message>
+        <source>Starting Height</source>
+        <translation>Starthöjd</translation>
+    </message>
+    <message>
+        <source>Sync Height</source>
+        <translation>Synchöjd</translation>
+    </message>
+    <message>
+        <source>Ban Score</source>
+        <translation>Banpoäng</translation>
+    </message>
+    <message>
+        <source>Connection Time</source>
+        <translation>Anslutningstid</translation>
+    </message>
+    <message>
+        <source>Last Send</source>
+        <translation>Senast sänt</translation>
+    </message>
+    <message>
+        <source>Last Receive</source>
+        <translation>Senast mottagen</translation>
+    </message>
+    <message>
+        <source>Bytes Sent</source>
+        <translation>Bytes sänt</translation>
+    </message>
+    <message>
+        <source>Bytes Received</source>
+        <translation>Bytes mottaget</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>Pingtid</translation>
+    </message>
+    <message>
+        <source>Time Offset</source>
+        <translation>Tidsförskjutning</translation>
     </message>
     <message>
         <source>Last block time</source>
@@ -1465,7 +1537,7 @@ Adress: %4
     </message>
     <message>
         <source>Totals</source>
-        <translation>Totalt</translation>
+        <translation>Totalt:</translation>
     </message>
     <message>
         <source>In:</source>
@@ -1484,16 +1556,12 @@ Adress: %4
         <translation>Debugloggfil</translation>
     </message>
     <message>
-        <source>Open the Myriadcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna Myriadcoin debug-loggfilen som finns i datakatalogen. Detta kan ta några sekunder för stora loggfiler.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Rensa konsollen</translation>
     </message>
     <message>
-        <source>Welcome to the Myriadcoin RPC console.</source>
-        <translation>Välkommen till Myriadcoin RPC-konsollen.</translation>
+        <source>Welcome to the Myriad Core RPC console.</source>
+        <translation>Välkommen till RPC-konsolen för Myriad Core.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1520,24 +1588,32 @@ Adress: %4
         <translation>%1 GB</translation>
     </message>
     <message>
-        <source>%1 m</source>
-        <translation>%1 m</translation>
+        <source>via %1</source>
+        <translation>via %1</translation>
     </message>
     <message>
-        <source>%1 h</source>
-        <translation>%1 h</translation>
+        <source>never</source>
+        <translation>aldrig</translation>
     </message>
     <message>
-        <source>%1 h %2 m</source>
-        <translation>%1 h %2 m</translation>
+        <source>Inbound</source>
+        <translation>Inkommande</translation>
+    </message>
+    <message>
+        <source>Outbound</source>
+        <translation>Utgående</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Okänd</translation>
+    </message>
+    <message>
+        <source>Fetching...</source>
+        <translation>Hämtar...</translation>
     </message>
 </context>
 <context>
     <name>ReceiveCoinsDialog</name>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>%Belopp:</translation>
-    </message>
     <message>
         <source>&amp;Label:</source>
         <translation>&amp;Etikett:</translation>
@@ -1555,8 +1631,8 @@ Adress: %4
         <translation>Åt&amp;eranvänd en existerande mottagningsadress (rekommenderas inte)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriadcoin network.</source>
-        <translation>Ett frivilligt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. NB: Meddelandet kommer inte att sändas med betalningen över Bitcoinnätverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriad network.</source>
+        <translation>Ett frivilligt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. NB: Meddelandet kommer inte att sändas med betalningen över Myriadnätverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1744,10 +1820,6 @@ Adress: %4
         <translation>Avgift:</translation>
     </message>
     <message>
-        <source>Low Output:</source>
-        <translation>Låg utmatning:</translation>
-    </message>
-    <message>
         <source>After Fee:</source>
         <translation>Efter avgift:</translation>
     </message>
@@ -1764,6 +1836,74 @@ Adress: %4
         <translation>Specialväxeladress</translation>
     </message>
     <message>
+        <source>Transaction Fee:</source>
+        <translation>Transaktionsavgift:</translation>
+    </message>
+    <message>
+        <source>Choose...</source>
+        <translation>Välj...</translation>
+    </message>
+    <message>
+        <source>collapse fee-settings</source>
+        <translation>Fäll ihop avgiftsinställningarna</translation>
+    </message>
+    <message>
+        <source>per kilobyte</source>
+        <translation>per kilobyte</translation>
+    </message>
+    <message>
+        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then "per kilobyte" only pays 250 satoshis in fee, while "total at least" pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Om den anpassad avgiften är satt till 1000 satoshi och transaktionen bara är 250 byte, betalar "per kilobyte" bara 250 satoshi i avgift, medans "totalt minst" betalar 1000 satoshi. För transaktioner större än en kilobyte betalar både per kilobyte.</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Göm</translation>
+    </message>
+    <message>
+        <source>total at least</source>
+        <translation>totalt minst</translation>
+    </message>
+    <message>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for myriad transactions than the network can process.</source>
+        <translation>Att betala endast den minsta avgiften är bara bra så länge det är mindre transaktionsvolym än utrymme i blocken. Men tänk på att det kan hamna i en aldrig bekräftar transaktion när det finns mer efterfrågan på myriad transaktioner än nätverket kan bearbeta.</translation>
+    </message>
+    <message>
+        <source>(read the tooltip)</source>
+        <translation>(läs verktygstips)</translation>
+    </message>
+    <message>
+        <source>Recommended:</source>
+        <translation>Rekommenderad:</translation>
+    </message>
+    <message>
+        <source>Custom:</source>
+        <translation>Anpassad:</translation>
+    </message>
+    <message>
+        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
+        <translation>(Smartavgiften är inte initierad än. Detta tar vanligen några block...)</translation>
+    </message>
+    <message>
+        <source>Confirmation time:</source>
+        <translation>Bekräftelsetid:</translation>
+    </message>
+    <message>
+        <source>normal</source>
+        <translation>normal</translation>
+    </message>
+    <message>
+        <source>fast</source>
+        <translation>snabb</translation>
+    </message>
+    <message>
+        <source>Send as zero-fee transaction if possible</source>
+        <translation>Sänd som nollavgiftstransaktion om möjligt</translation>
+    </message>
+    <message>
+        <source>(confirmation may take longer)</source>
+        <translation>(bekräftelse kan ta längre tid)</translation>
+    </message>
+    <message>
         <source>Send to multiple recipients at once</source>
         <translation>Skicka till flera mottagare samtidigt</translation>
     </message>
@@ -1774,6 +1914,10 @@ Adress: %4
     <message>
         <source>Clear all fields of the form.</source>
         <translation>Rensa alla formulärfälten</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Damm:</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1824,24 +1968,12 @@ Adress: %4
         <translation>Kopiera prioritet</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Kopiera låg utmatning</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Kopiera växel</translation>
     </message>
     <message>
-        <source>Total Amount %1 (= %2)</source>
-        <translation>Totalt %1 (= %2)</translation>
-    </message>
-    <message>
         <source>or</source>
         <translation>eller</translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Mottagarens adress är inte giltig, vänligen kontrollera igen.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
@@ -1856,10 +1988,6 @@ Adress: %4
         <translation>Totalvärdet överstiger ditt saldo när transaktionsavgiften %1 är pålagd.</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Dubblett av adress funnen, kan bara skicka till varje adress en gång per sändning.</translation>
-    </message>
-    <message>
         <source>Transaction creation failed!</source>
         <translation>Transaktionen gick inte att skapa!</translation>
     </message>
@@ -1868,8 +1996,36 @@ Adress: %4
         <translation>Transaktionen avslogs! Detta kan hända om några av mynten i plånboken redan spenderats, t.ex om du använt en kopia av wallet.dat och mynt spenderades i kopian men inte markerats som spenderade här.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Myriadcoin address</source>
-        <translation>Varning: Felaktig Bitcoinadress</translation>
+        <source>A fee higher than %1 is considered an absurdly high fee.</source>
+        <translation>En avgift som är högre än %1 anses vara en orimligt hög avgift.</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>Betalningsbegäran löpte ut.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Estimated to begin confirmation within %n block(s).</source>
+        <translation><numerusform>Uppskattas till att påbörja bekräftelse inom %n block.</numerusform><numerusform>Uppskattas till att påbörja bekräftelse inom %n block.</numerusform></translation>
+    </message>
+    <message>
+        <source>Pay only the minimum fee of %1</source>
+        <translation>Betala endast den minimala avgiften på %1</translation>
+    </message>
+    <message>
+        <source>Total Amount %1&lt;span style='font-size:10pt;font-weight:normal;'&gt;&lt;br /&gt;(=%2)&lt;/span&gt;</source>
+        <translation>Total summa %1&lt;span style='font-size:10pt;font-weight:normal;'&gt;&lt;br /&gt;(=%2)&lt;/span&gt;</translation>
+    </message>
+    <message>
+        <source>The recipient address is not valid. Please recheck.</source>
+        <translation>Mottagarens adress är ogiltig. Kontrollera igen.</translation>
+    </message>
+    <message>
+        <source>Duplicate address found: addresses should only be used once each.</source>
+        <translation>Duplicerad adress upptäckt: adresser skall endast användas en gång var.</translation>
+    </message>
+    <message>
+        <source>Warning: Invalid Myriad address</source>
+        <translation>Varning: Felaktig Myriadadress</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1880,20 +2036,16 @@ Adress: %4
         <translation>Varning: Okänd växeladress</translation>
     </message>
     <message>
+        <source>Copy dust</source>
+        <translation>Kopiera damm</translation>
+    </message>
+    <message>
         <source>Are you sure you want to send?</source>
         <translation>Är du säker på att du vill skicka?</translation>
     </message>
     <message>
         <source>added as transaction fee</source>
         <translation>adderad som transaktionsavgift</translation>
-    </message>
-    <message>
-        <source>Payment request expired</source>
-        <translation>Tiden för betalningsbegäran gick ut</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>Felaktig betalningsadress %1</translation>
     </message>
 </context>
 <context>
@@ -1905,10 +2057,6 @@ Adress: %4
     <message>
         <source>Pay &amp;To:</source>
         <translation>Betala &amp;Till:</translation>
-    </message>
-    <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Adressen som betalningen skall skickas till  (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1927,6 +2075,10 @@ Adress: %4
         <translation>Detta är en normal betalning.</translation>
     </message>
     <message>
+        <source>The Myriad address to send the payment to</source>
+        <translation>Myriadadress att sända betalning till</translation>
+    </message>
+    <message>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
@@ -1943,24 +2095,28 @@ Adress: %4
         <translation>Radera denna post</translation>
     </message>
     <message>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less myriads than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Avgiften dras från beloppet som skickas. Mottagaren kommer att få mindre myriads än du angivit i belopp-fältet. Om flera mottagare valts kommer avgiften delas jämt.</translation>
+    </message>
+    <message>
         <source>Message:</source>
         <translation>Meddelande:</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>Detta är en verifierad betalningsbegäran.</translation>
+        <source>This is an unauthenticated payment request.</source>
+        <translation>Detta är en oautentiserad betalningsbegäran.</translation>
+    </message>
+    <message>
+        <source>This is an authenticated payment request.</source>
+        <translation>Detta är en autentiserad betalningsbegäran.</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Ange en etikett för denna adress att adderas till listan över använda adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the myriadcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriadcoin network.</source>
-        <translation>Ett meddelande som bifogades bitcoin-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Bitcoinnätverket.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Detta är en overifierad betalningsbegäran.</translation>
+        <source>A message that was attached to the myriad: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriad network.</source>
+        <translation>Ett meddelande som bifogades myriad-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Myriadnätverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1974,8 +2130,8 @@ Adress: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Myriadcoin Core is shutting down...</source>
-        <translation>Myriadcoin Core stängs av...</translation>
+        <source>Myriad Core is shutting down...</source>
+        <translation>Myriad Core stängs av...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1993,12 +2149,12 @@ Adress: %4
         <translation>&amp;Signera Meddelande</translation>
     </message>
     <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Du kan signera meddelanden med dina adresser för att bevisa att du äger dem. Var försiktig med vad du signerar eftersom phising-attacker kan försöka få dig att skriva över din identitet till någon annan. Signera bara väldetaljerade påståenden du kan gå i god för.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive myriads sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Du kan underteckna meddelanden/avtal med dina adresser för att bevisa att du kan ta emot myriads som skickats till dem. Var försiktig så du inte undertecknar något oklart eller konstigt, eftersom phishing-angrepp kan försöka få dig att underteckna din identitet till dem. Underteckna endast väldetaljerade meddelanden som du godkänner.</translation>
     </message>
     <message>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Adressen att signera meddelandet med  (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The Myriad address to sign the message with</source>
+        <translation>Myriadadress att signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2029,7 +2185,7 @@ Adress: %4
         <translation>Kopiera signaturen till systemets Urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriadcoin address</source>
+        <source>Sign the message to prove you own this Myriad address</source>
         <translation>Signera meddelandet för att bevisa att du äger denna adress</translation>
     </message>
     <message>
@@ -2049,16 +2205,16 @@ Adress: %4
         <translation>&amp;Verifiera Meddelande</translation>
     </message>
     <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Skriv in din adress, meddelande (se till att du kopierar radbrytningar, mellanslag, tabbar, osv. exakt) och signatur nedan för att verifiera meddelandet. Var noga med att inte läsa in mer i signaturen än vad som finns i det signerade meddelandet, för att undvika att luras av en man-in-the-middle attack.</translation>
+        <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
+        <translation>Ange mottagarens adress, meddelande (kopiera radbrytningar, mellanrum, flikar, etc. exakt) och signatur nedan för att verifiera meddelandet. Undvik att läsa in mera information i signaturen än vad som stod i själva undertecknade meddelandet, för att undvika ett man-in-the-middle-angrepp. Notera att detta endast bevisar att undertecknad tar emot med adressen, det bevisar inte vem som skickat transaktionen!</translation>
     </message>
     <message>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Adressen som meddelandet var signerat med  (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The Myriad address the message was signed with</source>
+        <translation>Myriadadressen som meddelandet signerades med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Myriadcoin address</source>
-        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna Bitcoin-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Myriad address</source>
+        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna Myriad-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2069,12 +2225,8 @@ Adress: %4
         <translation>Rensa alla fält</translation>
     </message>
     <message>
-        <source>Enter a Myriadcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Ange en Bitcoin-adress (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Klicka &quot;Signera Meddelande&quot; för att få en signatur</translation>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Klicka "Signera Meddelande" för att få en signatur</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2128,12 +2280,12 @@ Adress: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriadcoin Core</source>
-        <translation>Myriadcoin Kärna</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Kärna</translation>
     </message>
     <message>
-        <source>The Bitcoin and Myriadcoin Core developers</source>
-        <translation>Myriadcoin Core-utvecklarna</translation>
+        <source>The Myriad Core developers</source>
+        <translation>Myriad Core-utvecklarna</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2202,6 +2354,10 @@ Adress: %4
         <translation>egen adress</translation>
     </message>
     <message>
+        <source>watch-only</source>
+        <translation>granska-bara</translation>
+    </message>
+    <message>
         <source>label</source>
         <translation>etikett</translation>
     </message>
@@ -2211,7 +2367,7 @@ Adress: %4
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>mognar om %n block</numerusform><numerusform>mognar om %n fler block</numerusform></translation>
+        <translation><numerusform>mognar om %n fler block</numerusform><numerusform>mognar om %n fler block</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -2220,6 +2376,14 @@ Adress: %4
     <message>
         <source>Debit</source>
         <translation>Belasta</translation>
+    </message>
+    <message>
+        <source>Total debit</source>
+        <translation>Total skuld</translation>
+    </message>
+    <message>
+        <source>Total credit</source>
+        <translation>Total kredit</translation>
     </message>
     <message>
         <source>Transaction fee</source>
@@ -2246,8 +2410,8 @@ Adress: %4
         <translation>Handlare</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Genererade mynt måste vänta %1 block innan de kan användas. När du skapade detta block sändes det till nätverket för att läggas till i blockkedjan. Om blocket inte kommer in i kedjan kommer dess status att ändras till &quot;accepteras inte&quot; och kommer ej att gå att spendera. Detta kan ibland hända om en annan nod genererar ett block nästan samtidigt som dig.</translation>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Genererade mynt måste vänta %1 block innan de kan användas. När du skapade detta block sändes det till nätverket för att läggas till i blockkedjan. Om blocket inte kommer in i kedjan kommer dess status att ändras till "accepteras inte" och kommer ej att gå att spendera. Detta kan ibland hända om en annan nod genererar ett block nästan samtidigt som dig.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2308,14 +2472,6 @@ Adress: %4
         <translation>Typ</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adress</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Mängd</translation>
-    </message>
-    <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Omogen (%1 konfirmeringar, blir tillgänglig efter %2)</translation>
     </message>
@@ -2342,6 +2498,10 @@ Adress: %4
     <message>
         <source>Offline</source>
         <translation>Nerkopplad</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etikett</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -2376,6 +2536,10 @@ Adress: %4
         <translation>Genererade</translation>
     </message>
     <message>
+        <source>watch-only</source>
+        <translation>granska-bara</translation>
+    </message>
+    <message>
         <source>(n/a)</source>
         <translation>(n/a)</translation>
     </message>
@@ -2392,8 +2556,12 @@ Adress: %4
         <translation>Transaktionstyp.</translation>
     </message>
     <message>
-        <source>Destination address of transaction.</source>
-        <translation>Transaktionens destinationsadress.</translation>
+        <source>Whether or not a watch-only address is involved in this transaction.</source>
+        <translation>Anger om granska-bara--adresser är involverade i denna transaktion.</translation>
+    </message>
+    <message>
+        <source>User-defined intent/purpose of the transaction.</source>
+        <translation>Användardefinierat syfte/ändamål för transaktionen.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2487,6 +2655,10 @@ Adress: %4
         <translation>Exportera Transaktionshistoriken</translation>
     </message>
     <message>
+        <source>Watch-only</source>
+        <translation>Granska-bara</translation>
+    </message>
+    <message>
         <source>Exporting Failed</source>
         <translation>Exporteringen misslyckades</translation>
     </message>
@@ -2504,7 +2676,7 @@ Adress: %4
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Kommaseparerad fil (*. csv)</translation>
+        <translation>Kommaseparerad fil (*.csv)</translation>
     </message>
     <message>
         <source>Confirmed</source>
@@ -2527,10 +2699,6 @@ Adress: %4
         <translation>Adress</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Mängd</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -2541,6 +2709,13 @@ Adress: %4
     <message>
         <source>to</source>
         <translation>till</translation>
+    </message>
+</context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    <message>
+        <source>Unit to show amounts in. Click to select another unit.</source>
+        <translation>&amp;Enhet att visa belopp i. Klicka för att välja annan enhet.</translation>
     </message>
 </context>
 <context>
@@ -2595,40 +2770,12 @@ Adress: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Användning:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Lista kommandon</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>Få hjälp med ett kommando</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Inställningar:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: myriadcoin.conf)</source>
-        <translation>Ange konfigurationsfil (förvalt: myriadcoin.conf)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: myriadcoind.pid)</source>
-        <translation>Ange pid fil (förvalt: myriadcoind.pid)</translation>
-    </message>
-    <message>
         <source>Specify data directory</source>
         <translation>Ange katalog för data</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 10888 or testnet: 20888)</source>
-        <translation>Lyssna efter anslutningar på &lt;port&gt; (förvalt: 10888 eller testnet: 20888)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Ha som mest &lt;n&gt; anslutningar till andra klienter (förvalt: 125)</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -2639,28 +2786,8 @@ Adress: %4
         <translation>Ange din egen publika adress</translation>
     </message>
     <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Tröskelvärde för att koppla ifrån klienter som missköter sig (förvalt: 100)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Antal sekunder att hindra klienter som missköter sig från att ansluta (förvalt: 86400)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>Ett fel uppstod vid upprättandet av RPC port %u för att lyssna på IPv4: %s</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
-        <translation>Lyssna på JSON-RPC-anslutningar på &lt;port&gt; (förvalt: 10889 eller testnet: 20889)</translation>
-    </message>
-    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Tillåt kommandon från kommandotolken och JSON-RPC-kommandon</translation>
-    </message>
-    <message>
-        <source>Myriadcoin Core RPC client version</source>
-        <translation>Myriadcoin Core RPC-klient version</translation>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
@@ -2675,112 +2802,52 @@ Adress: %4
         <translation>Acceptera anslutningar utifrån (förvalt: 1 om ingen -proxy eller -connect)</translation>
     </message>
     <message>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=myriadcoinrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@foo.com
-</source>
-        <translation>%s, du behöver sätta ett rpclösensord i konfigurationsfilen:
-%s
-Det är rekommenderat att använda följande slumpade lösenord:
-rpcuser=myriadcoinrpc
-rpcpassword=%s
-(du behöver inte komma ihåg lösenordet)
-Användarnamnet och lösenordet FÅR INTE bara detsamma.
-Om filen inte existerar, skapa den med enbart ägarläsbara filrättigheter.
-Det är också rekommenderat att sätta alertnotify så du meddelas om problem;
-till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
-        <translation>Accepterade krypteringsalgoritmer  (förvalt: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>Ett fel uppstod vid upprättandet av RPC port %u för att lyssna på IPv6, faller tillbaka till IPV4: %s</translation>
-    </message>
-    <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Bind till given adress och lyssna alltid på den. Använd [värd]:port notation för IPv6</translation>
     </message>
     <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:15)</source>
-        <translation>Antalsbegränsa kontinuerligt fria transaktioner till &lt;n&gt;*1000 bytes per minut (förvalt:15)</translation>
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>Ta bort alla plånbokstransaktioner och återskapa bara dom som är en del av blockkedjan genom att ange -rescan vid uppstart</translation>
     </message>
     <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
-        <translation>Ange regressiontestläge, som använder en speciell kedja i vilka block kan lösas omedelbart. Detta är avsett för regressiontestnings verktyg och applikationsutveckling.</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Ange regressiontestläge, som använder en speciell kedja i vilka block kan lösas omedelbart.</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %d)</source>
-        <translation>Fel: Avlyssning av inkommande anslutningar misslyckades (Avlyssningen returnerade felkod %d)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fel: Transaktionen avslogs! Detta kan hända om några av mynten i plånboken redan spenderats, t.ex om du använt en kopia av wallet.dat och mynt spenderades i kopian men inte markerats som spenderas här.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fel: Denna transaktion kräver en transaktionsavgift på minst %s på grund av dess storlek, komplexitet, eller användning av senast mottagna myriadcoins!</translation>
+        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
+        <translation>Distribuerad under MIT mjukvarulicens, se den bifogade filen COPYING eller &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Exekvera kommando när en plånbokstransaktion ändras (%s i cmd är ersatt av TxID)</translation>
     </message>
     <message>
-        <source>Fees smaller than this are considered zero fee (for transaction creation) (default:</source>
-        <translation>Avgifter mindre än detta betraktas som nollavgift (för transaktionsskapande) (förvalt:</translation>
+        <source>Maximum total fees to use in a single wallet transaction; setting this too low may abort large transactions (default: %s)</source>
+        <translation>Maximal total avgift att använda i en plånbokstransaktion. Sätts denna för lågt kommer stora transaktioner att avbrytas (förvalt: %s)</translation>
     </message>
     <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: 100)</source>
-        <translation>Töm databasens minnespool till disk varje &lt;n&gt; megabytes (förvalt: 100)</translation>
-    </message>
-    <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: 3)</source>
-        <translation>Hur grundlig blockverifikationen vid -checkblocks är (0-4, förvalt: 3)</translation>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>I denna mode kontrollerar -genproclimit hur många block som genereras på en gång.</translation>
+        <source>Reduce storage requirements by pruning (deleting) old blocks. This mode disables wallet support and is incompatible with -txindex. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, &gt;%u = target size in MiB to use for block files)</source>
+        <translation>Reducera lagringsbehovet genom att beskära (ta bort) gamla block. Detta läge avaktiverar plånbokssupport och är inkompatibel med -txindex. Varning: Ändras denna inställning måste hela blockkedjan laddas ner igen. 0 = avaktivera beskärning av blocks, &gt;%u = målstorlek i MiB att använda för blockfiler)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
         <translation>Ange antalet skriptkontrolltrådar (%u till %d, 0 = auto, &lt;0 = lämna så många kärnor lediga, förval: %d)</translation>
     </message>
     <message>
-        <source>Set the processor limit for when generation is on (-1 = unlimited, default: -1)</source>
-        <translation>Sätt processorbegränsning när blockgenereringen är på (-1 = obegränsad, förvalt: -1)</translation>
-    </message>
-    <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation>Detta är ett förhands testbygge - använd på egen risk - använd inte för mining eller handels applikationer</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Myriadcoin Core is probably already running.</source>
-        <translation>Det går inte att binda till %s på den här datorn. Myriadcoin Core är förmodligen redan igång.</translation>
+        <source>Unable to bind to %s on this computer. Myriad Core is probably already running.</source>
+        <translation>Det går inte att binda till %s på den här datorn. Myriad Core är förmodligen redan igång.</translation>
     </message>
     <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
-        <translation>Använd separat SOCKS5 proxy för att nå kollegor via dolda tjänster i Tor (default: -proxy)</translation>
+        <source>WARNING: abnormally high number of blocks generated, %d blocks received in the last %d hours (%d expected)</source>
+        <translation>Varning: Onormalt antal block block genererade. %d block mottagna senaste %d timmarna (%d förväntade)</translation>
+    </message>
+    <message>
+        <source>WARNING: check your network connection, %d blocks received in the last %d hours (%d expected)</source>
+        <translation>Varning: Kontrollera din närverksanslutning. %d block mottagna senaste %d timmarna, (%d förväntade)</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Varning: -paytxfee är satt väldigt hög! Detta är avgiften du kommer betala för varje transaktion.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Myriadcoin will not work properly.</source>
-        <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer Myriadcoin inte fungera korrekt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2799,12 +2866,12 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Varning: wallet.dat korrupt, datan har räddats! Den ursprungliga wallet.dat har sparas som wallet.{timestamp}.bak i %s; om ditt saldo eller transaktioner är felaktiga ska du återställa från en säkerhetskopia.</translation>
     </message>
     <message>
-        <source>(default: 1)</source>
-        <translation>(förvalt: 1)</translation>
+        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
+        <translation>Vitlista klienter som ansluter från angivna nätmasker eller IP-adresser. Kan specificeras flera gånger.</translation>
     </message>
     <message>
-        <source>(default: wallet.dat)</source>
-        <translation>(förvalt: wallet.dat)</translation>
+        <source>(default: 1)</source>
+        <translation>(förvalt: 1)</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -2815,28 +2882,12 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Försök att rädda de privata nycklarna från en korrupt wallet.dat</translation>
     </message>
     <message>
-        <source>Myriadcoin Core Daemon</source>
-        <translation>Myriadcoin Core tjänsten</translation>
-    </message>
-    <message>
         <source>Block creation options:</source>
         <translation>Block skapande inställningar:</translation>
     </message>
     <message>
-        <source>Clear list of wallet transactions (diagnostic tool; implies -rescan)</source>
-        <translation>Töm listan över plånbokstransaktioner (diagnostikverktyg; medför -rescan)</translation>
-    </message>
-    <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Koppla enbart upp till den/de specificerade noden/noder</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS proxy</source>
-        <translation>Anslut genom SOCKS-proxy</translation>
-    </message>
-    <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
-        <translation>Anslut till JSON-RPC på &lt;port&gt; (förval: 10889 eller testnet: 20889)</translation>
     </message>
     <message>
         <source>Connection options:</source>
@@ -2849,14 +2900,6 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
     <message>
         <source>Debugging/Testing options:</source>
         <translation>Avlusnings/Testnings optioner:</translation>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: 0)</source>
-        <translation>Avaktivera säkert läge. Åsidosätt en riktigt säkert läge händelse (förvalt: 0)</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Hitta egen IP-adress (förvalt: 1 under lyssning och utan -externalip)</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -2887,80 +2930,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Fel: Hårddiskutrymme är lågt!</translation>
     </message>
     <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Fel: Plånboken är låst, det går ej att skapa en transaktion!</translation>
-    </message>
-    <message>
-        <source>Error: system error: </source>
-        <translation>Fel: systemfel:</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Misslyckades att lyssna på någon port. Använd -listen=0 om du vill detta.</translation>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation>Misslyckades att läsa blockinformation</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Misslyckades att läsa blocket</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>Misslyckades att synkronisera blockindex</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>Misslyckades att skriva blockindex</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>Misslyckades att skriva blockinformation</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>Misslyckades att skriva blocket</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>Misslyckades att skriva filinformation</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation>Misslyckades att skriva till myntdatabas</translation>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>Misslyckades att skriva transaktionsindex</translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation>Misslyckades att skriva ångradata</translation>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation>Avgift per kB att lägga till på transaktioner du skickar</translation>
-    </message>
-    <message>
-        <source>Fees smaller than this are considered zero fee (for relaying) (default:</source>
-        <translation>Avgifter mindre än detta betraktas som nollavgift (för vidarebefodran) (förvalt:</translation>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Sök efter klienter med DNS sökningen (förvalt: 1 om inte -connect)</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: 0)</source>
-        <translation>Tvångskör i säkert läge (förvalt: 0)</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: 0)</source>
-        <translation>Generera mynt (förvalt: 0)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Hur många block att kontrollera vid uppstart (standardvärde: 288, 0 = alla)</translation>
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
@@ -2975,28 +2946,24 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Felaktig eller inget genesisblock hittades. Fel datadir för nätverket?</translation>
     </message>
     <message>
-        <source>Invalid -onion address: &apos;%s&apos;</source>
-        <translation>Ogiltig -onion adress:&apos;%s&apos;</translation>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>Ogiltig -onion adress:'%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>Inte tillräckligt med filbeskrivningar tillgängliga.</translation>
     </message>
     <message>
-        <source>Prepend debug output with timestamp (default: 1)</source>
-        <translation>Skriv ut tidsstämpel i avlusningsinformationen (förvalt: 1)</translation>
+        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
+        <translation>Anslut enbart till noder i nätverket &lt;net&gt; (IPv4, IPv6 eller onion)</translation>
     </message>
     <message>
-        <source>RPC client options:</source>
-        <translation>RPC klientoptioner:</translation>
+        <source>Prune cannot be configured with a negative value.</source>
+        <translation>Beskärning kan inte konfigureras med ett negativt värde.</translation>
     </message>
     <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Återskapa blockkedjans index från nuvarande blk000??.dat filer</translation>
-    </message>
-    <message>
-        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
-        <translation>Välj SOCKS-version att använda för -proxy (4 eller 5, förvalt: 5)</translation>
+        <source>Prune mode is incompatible with -txindex.</source>
+        <translation>Beskärningsläge är inkompatibel med -txindex.</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
@@ -3007,24 +2974,12 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Sätt maximal blockstorlek i byte (förvalt: %d)</translation>
     </message>
     <message>
-        <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>Ange antalet trådar för att hantera RPC anrop (standard: 4)</translation>
-    </message>
-    <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Ange plånboksfil (inom datakatalogen)</translation>
     </message>
     <message>
-        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation>Spendera okonfirmerad växel när transaktioner sänds (förvalt: 1)</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>Detta är avsett för regressionstestningsverktyg och applikationsutveckling.</translation>
-    </message>
-    <message>
-        <source>Usage (deprecated, use myriadcoin-cli):</source>
-        <translation>Användning (föråldrat, använd myriadcoin-cli):</translation>
+        <source>Use UPnP to map the listening port (default: %u)</source>
+        <translation>Använd UPnP för att mappa den lyssnande porten (förvalt: %u)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3035,10 +2990,6 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Verifierar plånboken...</translation>
     </message>
     <message>
-        <source>Wait for RPC server to start</source>
-        <translation>Vänta på att RPC.servern startar</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Plånbok %s ligger utanför datakatalogen %s</translation>
     </message>
@@ -3047,8 +2998,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Plånboksinställningar:</translation>
     </message>
     <message>
-        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
-        <translation>Varning: Föråldrat argument -debugnet ignorerad, använd -debug=net</translation>
+        <source>Warning: This version is obsolete; upgrade required!</source>
+        <translation>Varning: Denna version är föråldrad; uppgradering krävs!</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -3059,116 +3010,268 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Importerar block från extern blk000??.dat fil</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Myriadcoin Core is probably already running.</source>
-        <translation>Kan inte låsa data-mappen %s. Myriadcoin Core körs förmodligen redan.</translation>
+        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
+        <translation>Tillåt JSON-RPC anslutningar från specifik kalla. Tillåtet för &lt;ip&gt; är enkel IP (t.ex 1.2.3.4), en nätverk/nätmask (t.ex. 1.2.3.4/255.255.255.0) eller ett nätverk/CIDR (t.ex. 1.2.3.4/24). Denna option kan specificeras flera gånger</translation>
+    </message>
+    <message>
+        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
+        <translation>Ett fel uppstod vid upprättandet av RPC adress %s port %u för att lyssna: %s</translation>
+    </message>
+    <message>
+        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
+        <translation>Bind till given adress och vitlista klienter som ansluter till den. Använd [värd]:port notation för IPv6</translation>
+    </message>
+    <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Bind till angiven adress för att lyssna på JSON-RPC anslutningar. Använd [värd]:port notation for IPv6. Denna option kan specificeras flera gånger (förvalt: bind till alla gränssnitt)</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. Myriad Core is probably already running.</source>
+        <translation>Kan inte låsa data-mappen %s. Myriad Core körs förmodligen redan.</translation>
+    </message>
+    <message>
+        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
+        <translation>Skapa nya filer med systemets förvalda rättigheter, istället för umask 077 (bara effektivt med avaktiverad plånboks funktionalitet)</translation>
+    </message>
+    <message>
+        <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
+        <translation>Upptäck egna IP adresser (standard: 1 vid lyssning ingen -externalip eller -proxy)</translation>
+    </message>
+    <message>
+        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
+        <translation>Fel: Avlyssning av inkommande anslutningar misslyckades (Avlyssningen returnerade felkod %s)</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
+        <translation>Fel: Argumentet -socks stöds inte. Att sätta SOCKS version är inte möjligt längre. Endast SOCKS5 proxy stöds.</translation>
     </message>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>Exekvera kommando när ett relevant meddelande är mottagen eller när vi ser en väldigt lång förgrening (%s i cmd är utbytt med ett meddelande)</translation>
     </message>
     <message>
-        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
-        <translation>Skriv ut avlusningsinformation (förvalt: 0, att ange &lt;category&gt; är frivilligt)</translation>
+        <source>Fees (in BTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Avgifter (i BTC/Kb) mindre än detta betraktas som nollavgift för vidarebefodran (förvalt: %s)</translation>
+    </message>
+    <message>
+        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
+        <translation>Om paytxfee inte är satt, inkludera tillräcklig avgift så att transaktionen börjar att konfirmeras inom n blocks (förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>Otillåtet belopp för -maxtxfee=&lt;belopp&gt;: '%s' (måste åtminstånde vara minrelay avgift %s för att förhindra stoppade transkationer)</translation>
+    </message>
+    <message>
+        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
+        <translation>Maximal storlek på data i databärartransaktioner som vi reläar och bryter (förvalt: %u) </translation>
+    </message>
+    <message>
+        <source>Prune configured below the minimum of %d MB.  Please use a higher number.</source>
+        <translation>Beskärning konfigurerad under miniminivån %d MB. Var vänlig använd ett högre värde.</translation>
+    </message>
+    <message>
+        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
+        <translation>Sök efter klientadresser med DNS sökningen, om det finns otillräckligt med adresser (förvalt: 1 om inte -connect)</translation>
+    </message>
+    <message>
+        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation>Slumpa autentiseringen för varje proxyanslutning. Detta möjliggör Tor ström-isolering (förvalt: %u)</translation>
     </message>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Sätt den maximala storleken av hög-prioriterade/låg-avgifts transaktioner i byte (förvalt: %d)</translation>
     </message>
     <message>
+        <source>The transaction amount is too small to send after the fee has been deducted</source>
+        <translation>Transaktionen är för liten att skicka efter det att avgiften har dragits</translation>
+    </message>
+    <message>
+        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
+        <translation>Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användning i OpenSSL Toolkit &lt;https://www.openssl.org/&gt; och kryptografisk mjukvara utvecklad av Eric Young samt UPnP-mjukvara skriven av Thomas Bernard.</translation>
+    </message>
+    <message>
+        <source>To use myriadcoind, or the -server option to myriadcoin-qt, you must set an rpcpassword in the configuration file:
+%s
+It is recommended you use the following random password:
+rpcuser=myriadcoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+It is also recommended to set alertnotify so you are notified of problems;
+for example: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
+</source>
+        <translation>För att använda bitconid,eller -server optionen till myriadcoin-qt så mäste du sätta ett rpclösensord i konfigurationsfilen:
+%s
+Det är rekommenderat att använda följande slumpade lösenord:
+rpcuser=myriadcoinrpc
+rpcpassword=%s
+(du behöver inte komma ihåg lösenordet)
+Användarnamnet och lösenordet FÅR INTE vara detsamma.
+Om filen inte existerar, skapa den med enbart ägarläsbara filrättigheter.
+Det är också rekommenderat att sätta alertnotify så du meddelas om problem;
+till exempel: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
+</translation>
+    </message>
+    <message>
+        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
+        <translation>Varning: -maxtxfee är satt väldigt hög! Så höga avgifter kan betalas för en enstaka transaktion.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Myriad Core will not work properly.</source>
+        <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer Myriad Core inte att fungera korrekt.</translation>
+    </message>
+    <message>
+        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
+        <translation>Vitlistade klienter kan inte bli DoS bannade och deras transaktioner reläas alltid, även om dom redan är i mempoolen, användbart för t.ex en gateway  </translation>
+    </message>
+    <message>
+        <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
+        <translation>Du måste bygga om databasen genom att använda -reindex för att återgå till obeskärt läge. Detta kommer att ladda ner hela blockkedjan.</translation>
+    </message>
+    <message>
+        <source>(default: %u)</source>
+        <translation>(förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Accept public REST requests (default: %u)</source>
+        <translation>Acceptera publika REST förfrågningar (förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Activating best chain...</source>
+        <translation>Aktiverar bästa kedjan...</translation>
+    </message>
+    <message>
+        <source>Can't run with a wallet in prune mode.</source>
+        <translation>Kan inte köra med en plånbok i beskärningsläge.</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Kan inte matcha -whitebind adress: '%s'</translation>
+    </message>
+    <message>
+        <source>Choose data directory on startup (default: 0)</source>
+        <translation>Välj datakatalog vid uppstart (förvalt: 0)</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Anslut genom SOCKS5 proxy</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2009-%i The Myriad Core Developers</source>
+        <translation>Copyright (C) 2009-%i Myriad Core Utvecklarna</translation>
+    </message>
+    <message>
+        <source>Could not parse -rpcbind value %s as network address</source>
+        <translation>Kunde inte tolka -rpcbind värdet %s som en nätverksadress</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of Myriad Core</source>
+        <translation>Fel vid inläsningen av wallet.dat: Kontofilen kräver en senare version av Myriad Core</translation>
+    </message>
+    <message>
+        <source>Error reading from database, shutting down.</source>
+        <translation>Fel vid läsning från databas, avslutar.</translation>
+    </message>
+    <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Fel: Ett kritiskt internt fel uppstod, se debug.log för detaljer</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -tor found, use -onion.</source>
+        <translation>Fel: Argumentet -tor stöds inte, använd -onion.</translation>
+    </message>
+    <message>
+        <source>Fee (in BTC/kB) to add to transactions you send (default: %s)</source>
+        <translation>Avgift (i BTC/Kb) att lägga till på transaktioner du skickar (förvalt: %s)</translation>
+    </message>
+    <message>
         <source>Information</source>
         <translation>Information</translation>
     </message>
     <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Ogiltigt belopp för -minrelaytxfee=&lt;belopp&gt;: &apos;%s&apos;</translation>
+        <source>Initialization sanity check failed. Myriad Core is shutting down.</source>
+        <translation>Initieringschecken fallerade. Myriad Core stängs av...</translation>
     </message>
     <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Ogiltigt belopp för -mintxfee=&lt;belopp&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Otillåtet belopp för -maxtxfee=&lt;belopp&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: 50000)</source>
-        <translation>Begränsa signaturcachestorleken till &lt;n&gt; poster (förvalt: 50000)</translation>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ogiltigt belopp för -minrelaytxfee=&lt;belopp&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: 0)</source>
-        <translation>Logga transaktionsprioritet och avgift per kB vid blockbrytning (förvalt: 0)</translation>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ogiltigt belopp för -mintxfee=&lt;belopp&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Maintain a full transaction index (default: 0)</source>
-        <translation>Upprätthåll ett fullständigt transaktionsindex (förval: 0)</translation>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
+        <translation>Ogiltigt belopp för -paytxfee=&lt;belopp&gt;:'%s' (måste vara minst %s)</translation>
     </message>
     <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Maximal buffert för mottagning per anslutning, &lt;n&gt;*1000 byte (förvalt: 5000)</translation>
+        <source>Invalid netmask specified in -whitelist: '%s'</source>
+        <translation>Ogiltig nätmask angiven i -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Maximal buffert för sändning per anslutning, &lt;n&gt;*1000 byte (förvalt: 5000)</translation>
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
+        <translation>Håll som mest &lt;n&gt; oanslutningsbara transaktioner i minnet (förvalt: %u)</translation>
     </message>
     <message>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation>Acceptera bara blockkedjans matchande inbyggda kontrollpunkter (förvalt: 1)</translation>
+        <source>Need to specify a port with -whitebind: '%s'</source>
+        <translation>Port måste anges med -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Anslut enbart till noder i nätverket &lt;net&gt; (IPv4, IPv6 eller Tor)</translation>
+        <source>Node relay options:</source>
+        <translation>Nodreläoptioner:</translation>
     </message>
     <message>
-        <source>Print block on startup, if found in block index</source>
-        <translation>Skriv ut block vid uppstart, om det hittas i blockindexet</translation>
+        <source>Pruning blockstore...</source>
+        <translation>Rensar blockstore...</translation>
     </message>
     <message>
-        <source>Print block tree on startup (default: 0)</source>
-        <translation>Skriv ut blockträdet vid uppstart (förvalt: 0)</translation>
-    </message>
-    <message>
-        <source>RPC SSL options: (see the Myriadcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL optioner: (se Myriadcoin Wiki för SSL inställningsinstruktioner)</translation>
+        <source>RPC SSL options: (see the Myriad Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL optioner: (se Myriad Wiki för SSL inställningsinstruktioner)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
         <translation>RPC serveroptioner:</translation>
     </message>
     <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>Slumpmässigt tappa 1 av varje &lt;n&gt; nåtverksmeddelande</translation>
+        <source>RPC support for HTTP persistent connections (default: %d)</source>
+        <translation>RPC support för HTTP permanent anslutning (förvalt: %d)</translation>
     </message>
     <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>Slupmässigt brus 1 gång varje &lt;n&gt; nätverksmeddelande</translation>
+        <source>Rebuild block chain index from current blk000??.dat files on startup</source>
+        <translation>Återskapa blockkedjans index från nuvarande blk000??.dat filer under uppstarten</translation>
     </message>
     <message>
-        <source>Run a thread to flush wallet periodically (default: 1)</source>
-        <translation>Kör en tråd för att tömma plånboken periodiskt (förvalt: 1)</translation>
-    </message>
-    <message>
-        <source>SSL options: (see the Myriadcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL-inställningar: (se Bitcoin-wikin för SSL-setup instruktioner)</translation>
-    </message>
-    <message>
-        <source>Send command to Myriadcoin Core</source>
-        <translation>Sänd kommando till Myriadcoin Core</translation>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>Mottag och visa P2P nätverksvarningar (förvalt: %u)</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Skicka trace-/debuginformation till terminalen istället för till debug.log</translation>
     </message>
     <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Sätt minsta blockstorlek i byte (förvalt: 0)</translation>
+        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
+        <translation>Sänd transaktioner som nollavgiftstransaktioner om möjligt (förvalt: %u)</translation>
     </message>
     <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: 1)</source>
-        <translation>Sätt DB_PRIVATE flaggan i plånbokens databasmiljö (förvalt: 1)</translation>
+        <source>Set SSL root certificates for payment request (default: -system-)</source>
+        <translation>Sätt SSL root-certifikat för betalningsbegäran (förvalt: -system-)</translation>
+    </message>
+    <message>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Ändra språk, till exempel "de_DE" (förvalt: systemets språk)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Visa alla avlusningsoptioner (använd: --help -help-debug)</translation>
     </message>
     <message>
-        <source>Show benchmark information (default: 0)</source>
-        <translation>Visa riktmärknings information (förvalt: 0)</translation>
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>Visa startbilden vid uppstart (förvalt: 1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
@@ -3179,16 +3282,16 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Signering av transaktion misslyckades</translation>
     </message>
     <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Ange timeout för uppkoppling i millisekunder (förvalt: 5000)</translation>
+        <source>Start minimized</source>
+        <translation>Starta som minimerad</translation>
     </message>
     <message>
-        <source>Start Myriadcoin Core Daemon</source>
-        <translation>Starta Myriadcoin Core tjänsten</translation>
+        <source>The transaction amount is too small to pay the fee</source>
+        <translation>Transaktionen är för liten för att betala avgiften</translation>
     </message>
     <message>
-        <source>System error: </source>
-        <translation>Systemfel:</translation>
+        <source>This is experimental software.</source>
+        <translation>Detta är experimentmjukvara.</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -3199,12 +3302,20 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Transaktionens belopp måste vara positiva</translation>
     </message>
     <message>
+        <source>Transaction too large for fee policy</source>
+        <translation>Transaktionen är för stor för avgiftspolicyn</translation>
+    </message>
+    <message>
         <source>Transaction too large</source>
         <translation>Transaktionen är för stor</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Använd UPnP för att mappa den lyssnande porten (förvalt: 0)</translation>
+        <source>UI Options:</source>
+        <translation>UI Alternativ:</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
+        <translation>Det går inte att binda till %s på den här datorn (bind returnerade felmeddelande %s)</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
@@ -3215,12 +3326,20 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Användarnamn för JSON-RPC-anslutningar</translation>
     </message>
     <message>
+        <source>Wallet needed to be rewritten: restart Myriad Core to complete</source>
+        <translation>Kontot behöver sparas om: Starta om Myriad Core för att fullfölja</translation>
+    </message>
+    <message>
         <source>Warning</source>
         <translation>Varning</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Varning: denna version är föråldrad, uppgradering krävs!</translation>
+        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>Varning:  Argument -benchmark stöds inte och ignoreras, använd -debug=bench.</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>Varning: Argument -debugnet stöds inte och ignorerad, använd -debug=net.</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -3231,24 +3350,12 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>under uppstarten</translation>
     </message>
     <message>
-        <source>version</source>
-        <translation>version</translation>
-    </message>
-    <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat korrupt, räddning misslyckades</translation>
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Lösenord för JSON-RPC-anslutningar</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Tillåt JSON-RPC-anslutningar från specifika IP-adresser</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Skicka kommandon till klient på &lt;ip&gt; (förvalt: 127.0.0.1)</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
@@ -3259,10 +3366,6 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Uppgradera plånboken till senaste formatet</translation>
     </message>
     <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Sätt storleken på nyckelpoolen till &lt;n&gt; (förvalt: 100)</translation>
-    </message>
-    <message>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Sök i blockkedjan efter saknade plånboks transaktioner</translation>
     </message>
@@ -3271,20 +3374,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Använd OpenSSL (https) för JSON-RPC-anslutningar</translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>Serverns certifikatfil (förvalt: server.cert)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Serverns privata nyckel (förvalt: server.pem)</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Det här hjälp medelandet</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Det går inte att binda till %s på den här datorn (bind returnerade felmeddelande %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -3299,48 +3390,156 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Fel vid inläsningen av wallet.dat: Plånboken är skadad</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Myriadcoin</source>
-        <translation>Fel vid inläsningen av wallet.dat: Plånboken kräver en senare version av Myriadcoin</translation>
+        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
+        <translation>(1 = spara tx metadata t.ex. kontoägare och betalningsbegäransinformation, 2 = släng tx metadata)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Myriadcoin to complete</source>
-        <translation>Plånboken behöver skrivas om: Starta om Myriadcoin för att färdigställa</translation>
+        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
+        <translation>Hur grundlig blockverifikationen vid -checkblocks är (0-4, förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
+        <translation>Upprätthåll ett fullständigt transaktionsindex, som används av getrawtransaction rpc-anrop (förval: %u)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
+        <translation>Antal sekunder att hindra klienter som missköter sig från att ansluta (förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
+        <translation>Skriv ut avlusningsinformation (förvalt: %u, att ange &lt;category&gt; är frivilligt)</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
+        <translation>Använd separat SOCKS5 proxy för att nå kollegor via dolda tjänster i Tor (förvalt: -%s)</translation>
+    </message>
+    <message>
+        <source>(default: %s)</source>
+        <translation>(förvalt: %s)</translation>
+    </message>
+    <message>
+        <source>Acceptable ciphers (default: %s)</source>
+        <translation>Accepterbara chiffer (förvalt: %s)</translation>
+    </message>
+    <message>
+        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
+        <translation>Sök alltid efter klientadresser med DNS sökningen (förvalt: %u)</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
         <translation>Fel vid inläsning av plånboksfilen wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Ogiltig -proxy adress: &apos;%s&apos;</translation>
+        <source>Generate coins (default: %u)</source>
+        <translation>Generera mynt (förvalt: %u)</translation>
     </message>
     <message>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Okänt nätverk som anges i -onlynet: &apos;%s&apos;</translation>
+        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
+        <translation>Hur många block att kontrollera vid uppstart (förvalt: %u, 0 = alla)</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Okänd -socks proxy version begärd: %i</translation>
+        <source>Include IP addresses in debug output (default: %u)</source>
+        <translation>Inkludera IP-adresser i debugutskrift (förvalt: %u)</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Kan inte matcha -bind adress: &apos;%s&apos;</translation>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Ogiltig -proxy adress: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Kan inte matcha -externalip adress: &apos;%s&apos;</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>Lyssna på JSON-RPC-anslutningar på &lt;port&gt; (förval: %u eller testnet: %u)</translation>
     </message>
     <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Ogiltigt belopp för -paytxfee=&lt;belopp&gt;:&apos;%s&apos;</translation>
+        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>Lyssna efter anslutningar på &lt;port&gt; (förvalt: %u eller testnet: %u)</translation>
     </message>
     <message>
-        <source>Invalid amount</source>
-        <translation>Ogiltig mängd</translation>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
+        <translation>Ha som mest &lt;n&gt; anslutningar till andra klienter (förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Make the wallet broadcast transactions</source>
+        <translation>Gör så att plånboken sänder ut transaktionerna</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Maximal mottagningsbuffert per anslutning, &lt;n&gt;*1000 byte (förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Maximal sändningsbuffert per anslutning, &lt;n&gt;*1000 byte (förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp (default: %u)</source>
+        <translation>Skriv ut tidsstämpel i avlusningsinformationen (förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>Reläa och bearbeta databärartransaktioner (förvalt: %u) </translation>
+    </message>
+    <message>
+        <source>Relay non-P2SH multisig (default: %u)</source>
+        <translation>Reläa icke P2SH multisig (förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Server certificate file (default: %s)</source>
+        <translation>Serverns certifikatfil (förvalt: %s)</translation>
+    </message>
+    <message>
+        <source>Server private key (default: %s)</source>
+        <translation>Serverns privata nyckel (förvalt: %s)</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
+        <translation>Sätt storleken på nyckelpoolen till &lt;n&gt; (förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Set minimum block size in bytes (default: %u)</source>
+        <translation>Sätt minsta blockstorlek i byte (standard: %u)</translation>
+    </message>
+    <message>
+        <source>Set the number of threads to service RPC calls (default: %d)</source>
+        <translation>Ange antalet trådar för att hantera RPC anrop (förvalt: %d)</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: %s)</source>
+        <translation>Ange konfigurationsfil (förvalt: %s)</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
+        <translation>Ange timeout för uppkoppling i millisekunder (minimum:1, förvalt: %d)</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: %s)</source>
+        <translation>Ange pid-fil (förvalt: %s)</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
+        <translation>Spendera okonfirmerad växel när transaktioner sänds (förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
+        <translation>Tröskelvärde för att koppla ifrån klienter som missköter sig (förvalt: %u)</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Okänt nätverk som anges i -onlynet: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Kan inte matcha -bind adress: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Kan inte matcha -externalip adress: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ogiltigt belopp för -paytxfee=&lt;belopp&gt;:'%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Otillräckligt med myriadcoins</translation>
+        <translation>Otillräckligt med myriads</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -3371,20 +3570,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@
         <translation>Klar med laddning</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>Att använda %s alternativet</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Fel</translation>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Du behöver välja ett rpclösensord i konfigurationsfilen:
-%s
-Om filen inte existerar, skapa den med filrättigheten endast läsbar för ägaren.</translation>
     </message>
 </context>
 </TS>

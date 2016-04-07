@@ -9,12 +9,20 @@
 #include "serialize.h"
 #include "uint256.h"
 #include "version.h"
+#include "arith_uint256.h"
 
 #include <stdexcept>
 #include <stdint.h>
 #include <vector>
 
 #include <openssl/bn.h>
+
+extern const signed char p_util_hexdigit[256]; // defined in util.cpp
+
+inline signed char HexDigit(char c)
+{
+    return p_util_hexdigit[(unsigned char)c];
+}
 
 /** Errors thrown by the bignum class */
 class bignum_error : public std::runtime_error
@@ -136,7 +144,7 @@ public:
 
         if (sn < (int64_t)0)
         {
-            // Since the minimum signed integer cannot be represented as positive so long as its type is signed,
+            // Since the minimum signed integer cannot be represented as positive so long as its type is signed, 
             // and it's not well-defined what happens if you make it unsigned before negating it,
             // we instead increment the negative integer by 1, convert it, then increment the (now positive) unsigned integer by 1 to compensate
             n = -(sn + 1);
@@ -231,12 +239,12 @@ public:
     {
         unsigned int nSize = BN_bn2mpi(this, NULL);
         if (nSize < 4)
-            return 0;
+            return ArithToUint256(arith_uint256(0));
         std::vector<unsigned char> vch(nSize);
         BN_bn2mpi(this, &vch[0]);
         if (vch.size() > 4)
             vch[4] &= 0x7f;
-        uint256 n = 0;
+        uint256 n = ArithToUint256(arith_uint256(0));
         for (unsigned int i = 0, j = vch.size()-1; i < sizeof(n) && j >= 4; i++, j--)
             ((unsigned char*)&n)[i] = vch[j];
         return n;
@@ -588,8 +596,6 @@ public:
     }
 
 };
-
-
 
 inline const CBigNum operator+(const CBigNum& a, const CBigNum& b)
 {

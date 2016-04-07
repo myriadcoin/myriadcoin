@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2013 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SENDCOINSENTRY_H
-#define SENDCOINSENTRY_H
+#ifndef BITCOIN_QT_SENDCOINSENTRY_H
+#define BITCOIN_QT_SENDCOINSENTRY_H
 
 #include "walletmodel.h"
 
@@ -45,14 +45,15 @@ public:
 
     void setFocus();
 
-public slots:
+public Q_SLOTS:
     void clear();
 
-signals:
+Q_SIGNALS:
     void removeEntry(SendCoinsEntry *entry);
     void payAmountChanged();
+    void subtractFeeFromAmountChanged();
 
-private slots:
+private Q_SLOTS:
     void deleteClicked();
     void on_payTo_textChanged(const QString &address);
     void on_addressBookButton_clicked();
@@ -67,4 +68,4 @@ private:
     bool updateLabel(const QString &address);
 };
 
-#endif // SENDCOINSENTRY_H
+#endif // BITCOIN_QT_SENDCOINSENTRY_H

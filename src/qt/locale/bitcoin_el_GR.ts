@@ -1,54 +1,17 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="el_GR" version="2.1">
-<context>
-    <name>AboutDialog</name>
-    <message>
-        <source>About Myriadcoin Core</source>
-        <translation>Σχετικά με το Myriadcoin Core</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Myriadcoin Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Myriadcoin Core&lt;/b&gt; έκδοση</translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Πνευματική ιδιοκτησία </translation>
-    </message>
-    <message>
-        <source>The Bitcoin and Myriadcoin Core developers</source>
-        <translation>Οι προγραμματιστές του Myriadcoin Core</translation>
-    </message>
-    <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
-    </message>
-</context>
+<TS language="el_GR" version="2.0">
 <context>
     <name>AddressBookPage</name>
     <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Διπλό-κλικ για επεξεργασία της διεύθυνσης ή της ετικέτας</translation>
+        <source>Right-click to edit address or label</source>
+        <translation>Δεξί-κλικ για επεξεργασία της διεύθυνσης ή της ετικέτας</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Δημιούργησε νέα διεύθυνση</translation>
+        <translation>Δημιουργία νέας διεύθυνσης</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;Νέα</translation>
+        <translation>&amp;Νέo</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -88,11 +51,11 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Επιλογή διεύθυνσης απ&apos; όπου θα ληφθούν νομίσματα</translation>
+        <translation>Επιλογή διεύθυνσης απ' όπου θα ληφθούν νομίσματα</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation type="unfinished"/>
+        <translation>Ε&amp;πιλογή</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -103,12 +66,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Διευθύνσεις λήψης</translation>
     </message>
     <message>
-        <source>These are your Myriadcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Αυτές είναι οι Myriadcoin διευθύνσεις σας για να λαμβάνετε πληρωμές. Δίνοντας μία ξεχωριστή διεύθυνση σε κάθε αποστολέα, θα μπορείτε να ελέγχετε ποιος σας πληρώνει.</translation>
+        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Αυτές είναι οι Myriad διευθύνσεις σας για να λαμβάνετε πληρωμές. Δίνοντας μία ξεχωριστή διεύθυνση σε κάθε αποστολέα, θα μπορείτε να ελέγχετε ποιος σας πληρώνει.</translation>
     </message>
     <message>
-        <source>These are your Myriadcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation type="unfinished"/>
+        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Αυτές είναι οι Myriad διευθύνσεις σας για να λαμβάνετε πληρωμές. Δίνοντας μία ξεχωριστή διεύθυνση σε κάθε αποστολέα, θα μπορείτε να ελέγχετε ποιος σας πληρώνει.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -128,18 +91,18 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>Η εξαγωγή απέτυχε</translation>
+        <translation>Η Εξαγωγή Απέτυχε</translation>
     </message>
     <message>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation>Παρουσιάστηκε σφάλμα κατά την αποθήκευση της λίστας πορτοφολιών στο %1.</translation>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>Παρουσιάστηκε σφάλμα κατά την αποθήκευση της λίστας πορτοφολιών στο %1. Παρακαλώ δοκιμάστε ξανά</translation>
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
-        <translation>Ετικέτα</translation>
+        <translation>Επιγραφή</translation>
     </message>
     <message>
         <source>Address</source>
@@ -162,19 +125,15 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>New passphrase</source>
-        <translation>Νέος κωδικός πρόσβασης</translation>
+        <translation>&amp;Αλλαγή κωδικού</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
         <translation>Επανέλαβε τον νέο κωδικό πρόσβασης</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Εισάγετε τον νέο κωδικό πρόσβασης στον πορτοφόλι &lt;br/&gt; Παρακαλώ χρησιμοποιείστε ένα κωδικό με &lt;b&gt; 10 ή περισσότερους τυχαίους χαρακτήρες&lt;/b&gt; ή &lt;b&gt; οχτώ ή παραπάνω λέξεις&lt;/b&gt;.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
-        <translation>Κρυπτογράφησε το πορτοφόλι</translation>
+        <translation>&amp;Κρυπτογράφηση πορτοφολιού</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
@@ -197,16 +156,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Άλλαξε κωδικο πρόσβασης</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Εισάγετε τον παλιό και τον νεο κωδικο στο πορτοφολι.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Επιβεβαίωσε την κρυπτογραφηση του πορτοφολιού</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADCOINS&lt;/b&gt;!</source>
-        <translation>Προσοχη: Εαν κρυπτογραφησεις το πορτοφολι σου και χάσεις τον κωδικο σου θα χάσεις &lt;b&gt; ΟΛΑ ΣΟΥ ΤΑ MYRIADCOINS&lt;/b&gt;!
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
+        <translation>Προσοχη: Εαν κρυπτογραφησεις το πορτοφολι σου και χάσεις τον κωδικο σου θα χάσεις &lt;b&gt; ΟΛΑ ΣΟΥ ΤΑ MYRIADS&lt;/b&gt;!
 Είσαι σίγουρος ότι θέλεις να κρυπτογραφησεις το πορτοφολι;</translation>
     </message>
     <message>
@@ -226,8 +181,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Κρυπτογραφημενο πορτοφολι</translation>
     </message>
     <message>
-        <source>Myriadcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your myriadcoins from being stolen by malware infecting your computer.</source>
-        <translation>Το Myriadcoin θα κλεισει τώρα για να τελειώσει την διαδικασία κρυπτογραφησης. Θυμησου ότι κρυπτογραφώντας το πορτοφολι σου δεν μπορείς να προστατέψεις πλήρως τα myriadcoins σου από κλοπή στην περίπτωση όπου μολυνθεί ο υπολογιστής σου με κακόβουλο λογισμικό.</translation>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Εισάγετε τον νέο κωδικό πρόσβασης στον πορτοφόλι &lt;br/&gt; Παρακαλώ χρησιμοποιείστε ένα κωδικό με &lt;b&gt; 10 ή περισσότερους τυχαίους χαρακτήρες&lt;/b&gt; ή &lt;b&gt; οχτώ ή παραπάνω λέξεις&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -274,7 +229,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>Node</source>
-        <translation type="unfinished"/>
+        <translation>Κόμβος</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
@@ -295,10 +250,6 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <source>Quit application</source>
         <translation>Εξοδος από την εφαρμογή</translation>
-    </message>
-    <message>
-        <source>Show information about Myriadcoin</source>
-        <translation>Εμφάνιση πληροφοριών σχετικά με το Myriadcoin</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -326,15 +277,19 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
-        <translation type="unfinished"/>
+        <translation>Διευθύνσεις αποστολής</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
-        <translation type="unfinished"/>
+        <translation>Διευθύνσεις λήψης</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
-        <translation type="unfinished"/>
+        <translation>'Ανοιγμα &amp;URI</translation>
+    </message>
+    <message>
+        <source>Myriad Core client</source>
+        <translation>Εφαρμογή Myriad Core</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -345,12 +300,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Φόρτωση ευρετηρίου μπλοκ στον σκληρο δισκο...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriadcoin address</source>
-        <translation>Στείλε νομίσματα σε μια διεύθυνση bitcoin</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Myriadcoin</source>
-        <translation>Επεργασία  ρυθμισεων επιλογών για το Myriadcoin</translation>
+        <source>Send coins to a Myriad address</source>
+        <translation>Στείλε νομίσματα σε μια διεύθυνση myriad</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -373,8 +324,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Επιβεβαίωση μηνύματος</translation>
     </message>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
+        <source>Myriad</source>
+        <translation>Myriad</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -389,6 +340,10 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Παραλαβή </translation>
     </message>
     <message>
+        <source>Show information about Myriad Core</source>
+        <translation>Σχετικά με το Myriad Core</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Εμφάνισε/Κρύψε</translation>
     </message>
@@ -401,12 +356,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Κρυπτογραφήστε τα ιδιωτικά κλειδιά που ανήκουν στο πορτοφόλι σας </translation>
     </message>
     <message>
-        <source>Sign messages with your Myriadcoin addresses to prove you own them</source>
+        <source>Sign messages with your Myriad addresses to prove you own them</source>
         <translation>Υπογράψτε ένα μήνυμα για να βεβαιώσετε πως είστε ο κάτοχος αυτής της διεύθυνσης</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriadcoin addresses</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Myriadcoin</translation>
+        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Myriad</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -425,20 +380,16 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Εργαλειοθήκη καρτελών</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Core</translation>
     </message>
     <message>
-        <source>Myriadcoin Core</source>
-        <translation>Myriadcoin Core</translation>
+        <source>Request payments (generates QR codes and myriad: URIs)</source>
+        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις myriad: )</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriadcoin: URIs)</source>
-        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις myriadcoin: )</translation>
-    </message>
-    <message>
-        <source>&amp;About Myriadcoin Core</source>
-        <translation>&amp;Σχετικά με το Myriadcoin Core</translation>
+        <source>&amp;About Myriad Core</source>
+        <translation>&amp;Σχετικά με το Myriad Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -449,56 +400,24 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών λήψεως</translation>
     </message>
     <message>
-        <source>Open a myriadcoin: URI or payment request</source>
-        <translation type="unfinished"/>
+        <source>Open a myriad: URI or payment request</source>
+        <translation>Άνοιγμα myriad: URI αίτησης πληρωμής</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Επιλογές γραμμής εντολών</translation>
     </message>
     <message>
-        <source>Show the Myriadcoin Core help message to get a list with possible Myriadcoin command-line options</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Myriadcoin client</source>
-        <translation>Πελάτης Myriadcoin</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Myriadcoin network</source>
-        <translation><numerusform>%n ενεργή σύνδεση στο δίκτυο Myriadcoin</numerusform><numerusform>%n ενεργές συνδέσεις στο δίκτυο Βitcoin</numerusform></translation>
+        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
+        <translation>Εμφανιση του Myriad-Qt μήνυματος βοήθειας για να πάρετε μια λίστα με τις πιθανές επιλογές Myriad γραμμής εντολών.</translation>
     </message>
     <message>
         <source>No block source available...</source>
         <translation>Η πηγή του μπλοκ δεν ειναι διαθέσιμη... </translation>
     </message>
     <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Μεταποιημένα %1 απο %2 (κατ &apos;εκτίμηση) μπλοκ της ιστορίας της συναλλαγής. </translation>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>Έγινε λήψη %1 μπλοκ ιστορικού συναλλαγών</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n ώρες </numerusform><numerusform>%n ώρες </numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n ημέρες </numerusform><numerusform>%n ημέρες </numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n εβδομαδες</numerusform><numerusform>%n εβδομαδες</numerusform></translation>
-    </message>
-    <message>
         <source>%1 and %2</source>
         <translation>%1 και %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n έτος</numerusform><numerusform>%n έτη</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -533,6 +452,36 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Ενημέρωση...</translation>
     </message>
     <message>
+        <source>Date: %1
+</source>
+        <translation>Ημερομηνία: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation>Ποσό: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation>Τύπος: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation>Ετικέτα: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation>Διεύθυνση: %1
+</translation>
+    </message>
+    <message>
         <source>Sent transaction</source>
         <translation>Η συναλλαγή απεστάλη</translation>
     </message>
@@ -541,28 +490,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Εισερχόμενη συναλλαγή</translation>
     </message>
     <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Ημερομηνία: %1
-Ποσό: %2
-Τύπος: %3
-Διεύθυνση: %4
-</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Το πορτοφόλι είναι &lt;b&gt;κρυπτογραφημένο&lt;/b&gt; και &lt;b&gt;ξεκλείδωτο&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Το πορτοφόλι είναι &lt;b&gt;κρυπτογραφημένο&lt;/b&gt; και &lt;b&gt;κλειδωμένο&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>A fatal error occurred. Myriadcoin can no longer continue safely and will quit.</source>
-        <translation>Παρουσιάστηκε ανεπανόρθωτο σφάλμα. Το Myriadcoin δεν μπορεί πλέον να συνεχίσει με ασφάλεια και θα τερματισθει.</translation>
     </message>
 </context>
 <context>
@@ -575,8 +508,8 @@ Address: %4
 <context>
     <name>CoinControlDialog</name>
     <message>
-        <source>Coin Control Address Selection</source>
-        <translation type="unfinished"/>
+        <source>Coin Selection</source>
+        <translation>Επιλογή κερμάτων</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -596,15 +529,15 @@ Address: %4
     </message>
     <message>
         <source>Fee:</source>
-        <translation type="unfinished"/>
+        <translation>Ταρίφα</translation>
     </message>
     <message>
-        <source>Low Output:</source>
-        <translation type="unfinished"/>
+        <source>Dust:</source>
+        <translation>Σκόνη</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation type="unfinished"/>
+        <translation>Ταρίφα αλλαγής</translation>
     </message>
     <message>
         <source>Change:</source>
@@ -616,19 +549,23 @@ Address: %4
     </message>
     <message>
         <source>Tree mode</source>
-        <translation type="unfinished"/>
+        <translation>Εμφάνιση τύπου δέντρο</translation>
     </message>
     <message>
         <source>List mode</source>
-        <translation type="unfinished"/>
+        <translation>Λίστα εντολών</translation>
     </message>
     <message>
         <source>Amount</source>
         <translation>Ποσό</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Διεύθυνση</translation>
+        <source>Received with label</source>
+        <translation>Παραλήφθηκε με επιγραφή</translation>
+    </message>
+    <message>
+        <source>Received with address</source>
+        <translation>Παραλείφθηκε με την εξής διεύθυνση</translation>
     </message>
     <message>
         <source>Date</source>
@@ -664,11 +601,11 @@ Address: %4
     </message>
     <message>
         <source>Lock unspent</source>
-        <translation type="unfinished"/>
+        <translation>Κλείδωμα αξόδευτων</translation>
     </message>
     <message>
         <source>Unlock unspent</source>
-        <translation type="unfinished"/>
+        <translation>Ξεκλείδωμα αξόδευτων</translation>
     </message>
     <message>
         <source>Copy quantity</source>
@@ -676,11 +613,11 @@ Address: %4
     </message>
     <message>
         <source>Copy fee</source>
-        <translation type="unfinished"/>
+        <translation>Αντιγραφή ταρίφας</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation type="unfinished"/>
+        <translation>Αντιγραφή μετα-ταρίφας</translation>
     </message>
     <message>
         <source>Copy bytes</source>
@@ -691,8 +628,8 @@ Address: %4
         <translation>Αντιγραφή προτεραιότητας</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation type="unfinished"/>
+        <source>Copy dust</source>
+        <translation>Αντιγραφή 'σκόνης'</translation>
     </message>
     <message>
         <source>Copy change</source>
@@ -743,8 +680,16 @@ Address: %4
         <translation>κανένα</translation>
     </message>
     <message>
-        <source>Dust</source>
-        <translation type="unfinished"/>
+        <source>This label turns red if the transaction size is greater than 1000 bytes.</source>
+        <translation>Αυτή η ετικέτα γίνεται κόκκινη αν το μέγεθος της συναλλαγής είναι μεγαλύτερο από 1000 bytes.</translation>
+    </message>
+    <message>
+        <source>This label turns red if the priority is smaller than "medium".</source>
+        <translation>Αυτή η ετικέτα γίνεται κόκκινη αν η προτεραιότητα είναι μικρότερη από "μεσαία".</translation>
+    </message>
+    <message>
+        <source>This label turns red if any recipient receives an amount smaller than %1.</source>
+        <translation>Αυτή η ετικέτα γίνεται κόκκινη αν οποιοσδήποτε παραλήπτης λάβει ποσό μικρότερο από %1.</translation>
     </message>
     <message>
         <source>yes</source>
@@ -755,40 +700,12 @@ Address: %4
         <translation>όχι</translation>
     </message>
     <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>This means a fee of at least %1 per kB is required.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Can vary +/- 1 byte per input.</source>
-        <translation type="unfinished"/>
+        <translation>Ελάχιστο χρεώσιμο ποσό τουλάχιστο %1 ανα kB</translation>
     </message>
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 is required.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This label turns red, if the change is smaller than %1.</source>
-        <translation type="unfinished"/>
+        <translation>Συναλλαγές με υψηλότερη προτεραιότητα είναι πιο πιθανό να περιλαμβάνονται σε ένα μπλοκ.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -820,7 +737,7 @@ Address: %4
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation type="unfinished"/>
+        <translation>Η διεύθυνση σχετίζεται με αυτή την καταχώρηση του βιβλίου διευθύνσεων. Μπορεί να τροποποιηθεί μόνο για τις διευθύνσεις αποστολής.</translation>
     </message>
     <message>
         <source>&amp;Address</source>
@@ -843,12 +760,12 @@ Address: %4
         <translation>Επεξεργασία διεύθυνσης αποστολής</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>Η διεύθυνση &quot;%1&quot; βρίσκεται ήδη στο βιβλίο διευθύνσεων.</translation>
+        <source>The entered address "%1" is already in the address book.</source>
+        <translation>Η διεύθυνση "%1" βρίσκεται ήδη στο βιβλίο διευθύνσεων.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Myriadcoin address.</source>
-        <translation>Η διεύθυνση &quot;%1&quot; δεν είναι έγκυρη Myriadcoin διεύθυνση.</translation>
+        <source>The entered address "%1" is not a valid Myriad address.</source>
+        <translation>Η διεύθυνση "%1" δεν είναι έγκυρη Myriad διεύθυνση.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -871,11 +788,11 @@ Address: %4
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation type="unfinished"/>
+        <translation>Κατάλογος ήδη υπάρχει. Προσθήκη %1, αν σκοπεύετε να δημιουργήσετε έναν νέο κατάλογο εδώ.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation type="unfinished"/>
+        <translation>Η διαδρομή υπάρχει ήδη αλλά δεν είναι φάκελος</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
@@ -885,16 +802,24 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriadcoin Core - Command-line options</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Myriadcoin Core</source>
-        <translation>Myriadcoin Core</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Core</translation>
     </message>
     <message>
         <source>version</source>
         <translation>έκδοση</translation>
+    </message>
+    <message>
+        <source>(%1-bit)</source>
+        <translation>(%1-bit)</translation>
+    </message>
+    <message>
+        <source>About Myriad Core</source>
+        <translation>Σχετικά με το Myriad Core</translation>
+    </message>
+    <message>
+        <source>Command-line options</source>
+        <translation>επιλογής γραμμής εντολών</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -904,30 +829,6 @@ Address: %4
         <source>command-line options</source>
         <translation>επιλογής γραμμής εντολών</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>επιλογές UI</translation>
-    </message>
-    <message>
-        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Όρισε γλώσσα, για παράδειγμα &quot;de_DE&quot;(προεπιλογή:τοπικές ρυθμίσεις)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Έναρξη ελαχιστοποιημένο</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Εμφάνισε την οθόνη εκκίνησης κατά την εκκίνηση(προεπιλογή:1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -936,16 +837,16 @@ Address: %4
         <translation>Καλώς ήρθατε</translation>
     </message>
     <message>
-        <source>Welcome to Myriadcoin Core.</source>
-        <translation>Καλώς ήρθατε στο Myriadcoin Core.</translation>
+        <source>Welcome to Myriad Core.</source>
+        <translation>Καλώς ήρθατε στο Myriad Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Myriadcoin Core will store its data.</source>
-        <translation>Καθώς αυτή είναι η πρώτη φορά που εκκινείται το πρόγραμμα, μπορείτε να διαλέξετε πού θα αποθηκεύει το Myriadcoin Core τα δεδομένα του.</translation>
+        <source>As this is the first time the program is launched, you can choose where Myriad Core will store its data.</source>
+        <translation>Καθώς αυτή είναι η πρώτη φορά που εκκινείται το πρόγραμμα, μπορείτε να διαλέξετε πού θα αποθηκεύει το Myriad Core τα δεδομένα του.</translation>
     </message>
     <message>
-        <source>Myriadcoin Core will download and store a copy of the Myriadcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation type="unfinished"/>
+        <source>Myriad Core will download and store a copy of the Myriad block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>O πυρήνας Myriad θα κατεβάσει και να αποθηκεύσει ένα αντίγραφο της αλυσίδας μπλοκ Myriad. Τουλάχιστον %1GB δεδομένων θα αποθηκευτούν σε αυτόν τον κατάλογο, και θα αυξηθεί με την πάροδο του χρόνου. Το πορτοφόλι θα αποθηκευτεί σε αυτόν τον κατάλογο.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -956,47 +857,47 @@ Address: %4
         <translation>Προσαρμογή του φακέλου δεδομένων: </translation>
     </message>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Core</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
-        <translation>Σφάλμα: Ο καθορισμένος φάκελος δεδομένων &quot;%1&quot; δεν μπορεί να δημιουργηθεί.</translation>
+        <source>Error: Specified data directory "%1" cannot be created.</source>
+        <translation>Σφάλμα: Ο καθορισμένος φάκελος δεδομένων "%1" δεν μπορεί να δημιουργηθεί.</translation>
     </message>
     <message>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
-    <message>
-        <source>GB of free space available</source>
-        <translation>GB ελεύθερου χώρου διαθέσιμα</translation>
+    <message numerus="yes">
+        <source>%n GB of free space available</source>
+        <translation><numerusform>%n GB ελεύθερου χώρου διαθέσιμα</numerusform><numerusform>%n GB ελεύθερου χώρου διαθέσιμα</numerusform></translation>
     </message>
-    <message>
-        <source>(of %1GB needed)</source>
-        <translation>(από τα %1GB που χρειάζονται)</translation>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation><numerusform>(από το %n GB που απαιτείται)</numerusform><numerusform>(από τα %n GB που απαιτούνται)</numerusform></translation>
     </message>
 </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
         <source>Open URI</source>
-        <translation type="unfinished"/>
+        <translation>'Ανοιγμα &amp;URI</translation>
     </message>
     <message>
         <source>Open payment request from URI or file</source>
-        <translation type="unfinished"/>
+        <translation>Ανοιχτό αίτημα πληρωμής από URI ή απο αρχείο</translation>
     </message>
     <message>
         <source>URI:</source>
-        <translation type="unfinished"/>
+        <translation>URI:</translation>
     </message>
     <message>
         <source>Select payment request file</source>
-        <translation type="unfinished"/>
+        <translation>Επιλέξτε πληρωμή αρχείου αίτησης</translation>
     </message>
     <message>
         <source>Select payment request file to open</source>
-        <translation type="unfinished"/>
+        <translation>Επιλέξτε αρχείο πληρωμής για άνοιγμα.</translation>
     </message>
 </context>
 <context>
@@ -1010,24 +911,8 @@ Address: %4
         <translation>&amp;Κύριο</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Η προαιρετική αμοιβή για κάθε kB επισπεύδει την επεξεργασία των συναλλαγών σας. Οι περισσότερες συναλλαγές είναι 1 kB. </translation>
-    </message>
-    <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Αμοιβή &amp;συναλλαγής</translation>
-    </message>
-    <message>
-        <source>Automatically start Myriadcoin after logging in to the system.</source>
-        <translation>Αυτόματη εκκίνηση του Myriadcoin μετά την εισαγωγή στο σύστημα</translation>
-    </message>
-    <message>
-        <source>&amp;Start Myriadcoin on system login</source>
-        <translation>&amp;Έναρξη του Βιtcoin κατά την εκκίνηση του συστήματος</translation>
-    </message>
-    <message>
         <source>Size of &amp;database cache</source>
-        <translation type="unfinished"/>
+        <translation>Μέγεθος κρυφής μνήμης βάσης δεδομένων.</translation>
     </message>
     <message>
         <source>MB</source>
@@ -1035,31 +920,35 @@ Address: %4
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
-        <translation type="unfinished"/>
+        <translation>Αριθμός script και γραμμές επαλήθευσης </translation>
     </message>
     <message>
-        <source>Connect to the Myriadcoin network through a SOCKS proxy.</source>
-        <translation type="unfinished"/>
+        <source>Accept connections from outside</source>
+        <translation>Αποδοχή συνδέσεων απο έξω</translation>
     </message>
     <message>
-        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation type="unfinished"/>
+        <source>Allow incoming connections</source>
+        <translation>Αποδοχή εισερχόμενων συναλλαγών</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation type="unfinished"/>
+        <translation>Διεύθυνση IP του διαμεσολαβητή (π.χ. 127.0.0.1  / IPv6: ::1)</translation>
+    </message>
+    <message>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
+        <translation>Ελαχιστοποίηση αντί για έξοδο κατά το κλείσιμο του παραθύρου. Όταν αυτή η επιλογή είναι ενεργοποιημένη, η εφαρμογή θα κλείνει μόνο αν επιλεχθεί η Έξοδος στο μενού.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation type="unfinished"/>
+        <translation>URLs από τρίτους (π.χ. ένας εξερευνητής μπλοκ) τα οποία εμφανίζονται στην καρτέλα συναλλαγών ως στοιχεία μενού. Το %s στα URL αντικαθιστάται από την τιμή της κατατεμαχισμένης συναλλαγής.</translation>
     </message>
     <message>
         <source>Third party transaction URLs</source>
-        <translation type="unfinished"/>
+        <translation>Διευθύνσεις τρίτων συναλλαγών.</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
-        <translation type="unfinished"/>
+        <translation>Ενεργές επιλογές γραμμής-εντολών που παρακάμπτουν τις παραπάνω επιλογές:</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1075,11 +964,11 @@ Address: %4
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation type="unfinished"/>
+        <translation>(0 = αυτόματο, &lt;0 = ελεύθεροι πυρήνες)</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
-        <translation type="unfinished"/>
+        <translation>Π&amp;ορτοφόλι</translation>
     </message>
     <message>
         <source>Expert</source>
@@ -1087,23 +976,31 @@ Address: %4
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation type="unfinished"/>
+        <translation>Επιλογή κατα πόσο να αναδείχνονται οι δυνατότητες ελέγχου κερμάτων.</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
-        <translation type="unfinished"/>
+        <translation>Εάν απενεργοποιήσετε το ξόδεμα μη επικυρωμένων ρέστων, τα ρέστα από μια συναλλαγή δεν μπορούν να χρησιμοποιηθούν έως ότου αυτή η συναλλαγή έχει έστω μια επικύρωση. Αυτό επίσης επηρεάζει το πως υπολογίζεται το υπόλοιπό σας.</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Ξόδεμα μη επικυρωμένων ρέστων</translation>
     </message>
     <message>
-        <source>Automatically open the Myriadcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Αυτόματο άνοιγμα των θυρών Myriadcoin στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
+        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Αυτόματο άνοιγμα των θυρών Myriad στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Απόδοση θυρών με χρήστη &amp;UPnP</translation>
+    </message>
+    <message>
+        <source>Connect to the Myriad network through a SOCKS5 proxy.</source>
+        <translation>Σύνδεση στο Myriad δίκτυο μέσω διαμεσολαβητή SOCKS5 (π.χ. για σύνδεση μέσω Tor)</translation>
+    </message>
+    <message>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp;Σύνδεση μέσω διαμεσολαβητή SOCKS5 (προεπιλεγμένος)</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1118,14 +1015,6 @@ Address: %4
         <translation>Θύρα διαμεσολαβητή</translation>
     </message>
     <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>SOCKS &amp;Έκδοση:</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>SOCKS εκδοση του διαμεσολαβητη (e.g. 5)</translation>
-    </message>
-    <message>
         <source>&amp;Window</source>
         <translation>&amp;Παράθυρο</translation>
     </message>
@@ -1136,10 +1025,6 @@ Address: %4
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
         <translation>&amp;Ελαχιστοποίηση στην περιοχή ειδοποιήσεων αντί της γραμμής εργασιών</translation>
-    </message>
-    <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Ελαχιστοποίηση αντί για έξοδο κατά το κλείσιμο του παραθύρου</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
@@ -1154,10 +1039,6 @@ Address: %4
         <translation>Γλώσσα περιβάλλοντος εργασίας: </translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Myriadcoin.</source>
-        <translation>Εδώ μπορεί να ρυθμιστεί η γλώσσα διεπαφής χρήστη. Αυτή η ρύθμιση θα ισχύσει μετά την επανεκκίνηση του Myriadcoin.</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;Μονάδα μέτρησης:</translation>
     </message>
@@ -1166,16 +1047,9 @@ Address: %4
         <translation>Διαλέξτε την προεπιλεγμένη υποδιαίρεση που θα εμφανίζεται όταν στέλνετε νομίσματα.</translation>
     </message>
     <message>
-        <source>Whether to show Myriadcoin addresses in the transaction list or not.</source>
-        <translation>Επιλέξτε αν θέλετε να εμφανίζονται οι διευθύνσεις Myriadcoin στη λίστα συναλλαγών.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>Εμφάνιση διευθύνσεων στη λίστα συναλλαγών</translation>
-    </message>
-    <message>
         <source>Whether to show coin control features or not.</source>
-        <translation type="unfinished"/>
+        <translation>Επιλογή κατα πόσο να αναδείχνονται οι δυνατότητες ελέγχου κερμάτων.
+</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -1202,12 +1076,8 @@ Address: %4
         <translation>Χρειάζεται επανεκκίνηση του προγράμματος για να ενεργοποιηθούν οι αλλαγές.</translation>
     </message>
     <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>This change would require a client restart.</source>
-        <translation type="unfinished"/>
+        <translation>Η αλλαγή αυτή θα χρειαστεί επανεκκίνηση του προγράμματος</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -1221,12 +1091,12 @@ Address: %4
         <translation>Φόρμα</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriadcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Myriadcoin μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
+        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Myriad μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation>Πορτοφόλι</translation>
+        <source>Watch-only:</source>
+        <translation>Επίβλεψη μόνο:</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1238,7 +1108,7 @@ Address: %4
     </message>
     <message>
         <source>Pending:</source>
-        <translation type="unfinished"/>
+        <translation>Εκκρεμούν:</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1253,6 +1123,10 @@ Address: %4
         <translation>Εξορυγμενο υπόλοιπο που δεν έχει ακόμα ωριμάσει </translation>
     </message>
     <message>
+        <source>Balances</source>
+        <translation>Υπόλοιπο:</translation>
+    </message>
+    <message>
         <source>Total:</source>
         <translation>Σύνολο:</translation>
     </message>
@@ -1261,12 +1135,28 @@ Address: %4
         <translation>Το τρέχον συνολικό υπόλοιπο</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Πρόσφατες συναλλαγές&lt;/b&gt;</translation>
+        <source>Your current balance in watch-only addresses</source>
+        <translation>Το τρέχον υπόλοιπο σας σε διευθύνσεις παρακολούθησης μόνο</translation>
     </message>
     <message>
-        <source>out of sync</source>
-        <translation>εκτός συγχρονισμού</translation>
+        <source>Spendable:</source>
+        <translation>Ξοδεμένα:</translation>
+    </message>
+    <message>
+        <source>Recent transactions</source>
+        <translation>Πρόσφατες συναλλαγές</translation>
+    </message>
+    <message>
+        <source>Unconfirmed transactions to watch-only addresses</source>
+        <translation>Μη επικυρωμένες συναλλαγές σε διευθύνσεις παρακολούθησης μόνο</translation>
+    </message>
+    <message>
+        <source>Mined balance in watch-only addresses that has not yet matured</source>
+        <translation>Εξορυγμένο υπόλοιπο σε διευθύνσεις παρακολούθησης μόνο που δεν έχει ωριμάσει ακόμα</translation>
+    </message>
+    <message>
+        <source>Current total balance in watch-only addresses</source>
+        <translation>Το τρέχον συνολικό υπόλοιπο σε διευθύνσεις παρακολούθησης μόνο</translation>
     </message>
 </context>
 <context>
@@ -1276,60 +1166,52 @@ Address: %4
         <translation>Χειρισμός URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Myriadcoin address or malformed URI parameters.</source>
-        <translation>Το URI δεν μπορεί να αναλυθεί! Αυτό μπορεί να προκληθεί από μια μη έγκυρη διεύθυνση Myriadcoin ή ακατάλληλη παραμέτρο URI.</translation>
+        <source>Invalid payment address %1</source>
+        <translation>Μη έγκυρη διεύθυνση πληρωμής %1</translation>
+    </message>
+    <message>
+        <source>Payment request rejected</source>
+        <translation>Η αίτηση πληρωμής έχει αρνηθεί.</translation>
+    </message>
+    <message>
+        <source>Payment request is not initialized.</source>
+        <translation>Η αίτηση πληρωμής δεν έχει αρχίζει ακόμα.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation type="unfinished"/>
+        <translation>Το ζητούμενο ποσό πληρωμής του %1 είναι πολύ μικρό (θεωρείται σκόνη)</translation>
     </message>
     <message>
         <source>Payment request error</source>
         <translation>Σφάλμα αιτήματος πληρωμής</translation>
     </message>
     <message>
-        <source>Cannot start myriadcoin: click-to-pay handler</source>
-        <translation>Δεν είναι δυνατή η εκκίνηση του Bitcoin: click-to-pay handler</translation>
-    </message>
-    <message>
-        <source>Net manager warning</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation type="unfinished"/>
+        <source>Cannot start myriad: click-to-pay handler</source>
+        <translation>Δεν είναι δυνατή η εκκίνηση του Myriad: click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
-        <translation type="unfinished"/>
+        <translation>Η διεύθυνση πληρωμής (URL) δεν είναι έγκυρη: %1</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation type="unfinished"/>
+        <translation>Επιλέξτε αρχείο πληρωμής για άνοιγμα.</translation>
     </message>
     <message>
         <source>Refund from %1</source>
-        <translation type="unfinished"/>
+        <translation>Επιστροφή ποσού από %1</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
-        <translation type="unfinished"/>
+        <translation>Σφάλμα επικοινωνίας με %1: %2</translation>
     </message>
     <message>
-        <source>Payment request can not be parsed or processed!</source>
-        <translation type="unfinished"/>
+        <source>Payment request cannot be parsed!</source>
+        <translation>Η αίτηση πληρωμής δεν μπορεί να αναλυθεί!</translation>
     </message>
     <message>
         <source>Bad response from server %1</source>
-        <translation type="unfinished"/>
+        <translation>Κακή απάντηση από διακομιστή %1</translation>
     </message>
     <message>
         <source>Payment acknowledged</source>
@@ -1341,30 +1223,49 @@ Address: %4
     </message>
 </context>
 <context>
+    <name>PeerTableModel</name>
+    <message>
+        <source>Ping Time</source>
+        <translation>Χρόνος καθυστέρησης</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
-        <source>Myriadcoin</source>
-        <translation>Myriadcoin</translation>
+        <source>Amount</source>
+        <translation>Ποσό</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
-        <translation>Σφάλμα: Ο καθορισμένος φάκελος δεδομένων &quot;%1&quot; δεν υπάρχει.</translation>
+        <source>Enter a Myriad address (e.g. %1)</source>
+        <translation>Εισάγετε μια διεύθυνση Myriad (π.χ. %1)</translation>
     </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation type="unfinished"/>
+        <source>%1 d</source>
+        <translation>%1 d</translation>
     </message>
     <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Σφάλμα: Άκυρος συνδυασμός των -regtest και -testnet</translation>
+        <source>%1 h</source>
+        <translation>%1 ώ</translation>
     </message>
     <message>
-        <source>Myriadcoin Core didn&apos;t yet exit safely...</source>
-        <translation type="unfinished"/>
+        <source>%1 m</source>
+        <translation>%1 λ</translation>
     </message>
     <message>
-        <source>Enter a Myriadcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση Myriadcoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>%1 s</source>
+        <translation>%1 s</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Κανένα</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Μη διαθέσιμο</translation>
+    </message>
+    <message>
+        <source>%1 ms</source>
+        <translation>%1 ms</translation>
     </message>
 </context>
 <context>
@@ -1417,6 +1318,10 @@ Address: %4
         <translation>Χρησιμοποιηση της OpenSSL εκδοσης</translation>
     </message>
     <message>
+        <source>Using BerkeleyDB version</source>
+        <translation>Χρήση BerkeleyDB έκδοσης</translation>
+    </message>
+    <message>
         <source>Startup time</source>
         <translation>Χρόνος εκκίνησης</translation>
     </message>
@@ -1441,8 +1346,64 @@ Address: %4
         <translation>Τρέχον αριθμός μπλοκ</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation>Κατ&apos; εκτίμηση συνολικά μπλοκς</translation>
+        <source>Received</source>
+        <translation>Παραλήφθησαν</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Αποστολή</translation>
+    </message>
+    <message>
+        <source>&amp;Peers</source>
+        <translation>&amp;Χρήστες</translation>
+    </message>
+    <message>
+        <source>Select a peer to view detailed information.</source>
+        <translation>Επιλέξτε ένα χρήστη για να δείτε αναλυτικές πληροφορίες.</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Έκδοση</translation>
+    </message>
+    <message>
+        <source>Services</source>
+        <translation>Υπηρεσίες</translation>
+    </message>
+    <message>
+        <source>Starting Height</source>
+        <translation>Αρχικό ύψος</translation>
+    </message>
+    <message>
+        <source>Sync Height</source>
+        <translation>Ύψος συγχονισμού</translation>
+    </message>
+    <message>
+        <source>Ban Score</source>
+        <translation>Σκορ αποκλησμού</translation>
+    </message>
+    <message>
+        <source>Connection Time</source>
+        <translation>Χρόνος σύνδεσης</translation>
+    </message>
+    <message>
+        <source>Last Send</source>
+        <translation>Τελευταία αποστολή</translation>
+    </message>
+    <message>
+        <source>Last Receive</source>
+        <translation>Τελευταία λήψη</translation>
+    </message>
+    <message>
+        <source>Bytes Sent</source>
+        <translation>Σταλθέντα bytes</translation>
+    </message>
+    <message>
+        <source>Bytes Received</source>
+        <translation>Ληφθέντα bytes</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>Χρόνος καθυστέρησης</translation>
     </message>
     <message>
         <source>Last block time</source>
@@ -1485,16 +1446,8 @@ Address: %4
         <translation>Αρχείο καταγραφής εντοπισμού σφαλμάτων </translation>
     </message>
     <message>
-        <source>Open the Myriadcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ανοίξτε το αρχείο καταγραφής εντοπισμού σφαλμάτων από τον τρέχοντα κατάλογο δεδομένων. Αυτό μπορεί να πάρει μερικά δευτερόλεπτα για τα μεγάλα αρχεία καταγραφής. </translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Καθαρισμός κονσόλας</translation>
-    </message>
-    <message>
-        <source>Welcome to the Myriadcoin RPC console.</source>
-        <translation>Καλώς ήρθατε στην Myriadcoin RPC κονσόλα.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1521,16 +1474,28 @@ Address: %4
         <translation>%1 GB</translation>
     </message>
     <message>
-        <source>%1 m</source>
-        <translation>%1 λ</translation>
+        <source>via %1</source>
+        <translation>μέσω %1</translation>
     </message>
     <message>
-        <source>%1 h</source>
-        <translation>%1 ώ</translation>
+        <source>never</source>
+        <translation>ποτέ</translation>
     </message>
     <message>
-        <source>%1 h %2 m</source>
-        <translation>%1 ώ %2 λ</translation>
+        <source>Inbound</source>
+        <translation>Εισερχόμενα</translation>
+    </message>
+    <message>
+        <source>Outbound</source>
+        <translation>Εξερχόμενα</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Άγνωστο(α)</translation>
+    </message>
+    <message>
+        <source>Fetching...</source>
+        <translation>Ανάκτηση...</translation>
     </message>
 </context>
 <context>
@@ -1548,28 +1513,8 @@ Address: %4
         <translation>&amp;Μήνυμα:</translation>
     </message>
     <message>
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriadcoin network.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation type="unfinished"/>
+        <translation>Ε&amp;παναχρησιμοποίηση υπάρχουσας διεύθυνσης λήψης (δεν συνιστάται)</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
@@ -1580,16 +1525,8 @@ Address: %4
         <translation>Καθαρισμός</translation>
     </message>
     <message>
-        <source>Requested payments history</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>&amp;Request payment</source>
         <translation>&amp;Αίτηση πληρωμής</translation>
-    </message>
-    <message>
-        <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Show</source>
@@ -1597,7 +1534,7 @@ Address: %4
     </message>
     <message>
         <source>Remove the selected entries from the list</source>
-        <translation type="unfinished"/>
+        <translation>Αφαίρεση επιλεγμένων καταχωρίσεων από τη λίστα</translation>
     </message>
     <message>
         <source>Remove</source>
@@ -1624,11 +1561,11 @@ Address: %4
     </message>
     <message>
         <source>Copy &amp;URI</source>
-        <translation type="unfinished"/>
+        <translation>Αντιγραφη της επιλεγμενης διεύθυνσης στο πρόχειρο του συστηματος</translation>
     </message>
     <message>
         <source>Copy &amp;Address</source>
-        <translation type="unfinished"/>
+        <translation>Αντιγραφή &amp;Διεύθυνσης</translation>
     </message>
     <message>
         <source>&amp;Save Image...</source>
@@ -1636,7 +1573,7 @@ Address: %4
     </message>
     <message>
         <source>Request payment to %1</source>
-        <translation type="unfinished"/>
+        <translation>Αίτηση πληρωμής για %1</translation>
     </message>
     <message>
         <source>Payment information</source>
@@ -1644,7 +1581,7 @@ Address: %4
     </message>
     <message>
         <source>URI</source>
-        <translation type="unfinished"/>
+        <translation>URI:</translation>
     </message>
     <message>
         <source>Address</source>
@@ -1656,7 +1593,7 @@ Address: %4
     </message>
     <message>
         <source>Label</source>
-        <translation>Ετικέτα</translation>
+        <translation>Επιγραφή</translation>
     </message>
     <message>
         <source>Message</source>
@@ -1679,7 +1616,7 @@ Address: %4
     </message>
     <message>
         <source>Label</source>
-        <translation>Ετικέτα</translation>
+        <translation>Επιγραφή</translation>
     </message>
     <message>
         <source>Message</source>
@@ -1710,11 +1647,11 @@ Address: %4
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation type="unfinished"/>
+        <translation>Χαρακτηρηστικά επιλογής κερμάτων</translation>
     </message>
     <message>
         <source>Inputs...</source>
-        <translation type="unfinished"/>
+        <translation>Εισροές...</translation>
     </message>
     <message>
         <source>automatically selected</source>
@@ -1742,15 +1679,11 @@ Address: %4
     </message>
     <message>
         <source>Fee:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Low Output:</source>
-        <translation type="unfinished"/>
+        <translation>Ταρίφα</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation type="unfinished"/>
+        <translation>Ταρίφα αλλαγής</translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1758,11 +1691,55 @@ Address: %4
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation type="unfinished"/>
+        <translation>Όταν ενεργό, αλλά η διεύθυνση ρέστων είναι κενή ή άκυρη, τα ρέστα θα σταλούν σε μία πρόσφατα δημιουργημένη διεύθυνση.</translation>
     </message>
     <message>
         <source>Custom change address</source>
-        <translation type="unfinished"/>
+        <translation>Προσαρμοσμένη διεύθυνση ρέστων</translation>
+    </message>
+    <message>
+        <source>Transaction Fee:</source>
+        <translation>Τέλος συναλλαγής:</translation>
+    </message>
+    <message>
+        <source>Choose...</source>
+        <translation>Επιλογή...</translation>
+    </message>
+    <message>
+        <source>per kilobyte</source>
+        <translation>ανά kilobyte</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Απόκρυψη</translation>
+    </message>
+    <message>
+        <source>total at least</source>
+        <translation>συνολικά τουλάχιστον</translation>
+    </message>
+    <message>
+        <source>Recommended:</source>
+        <translation>Προτεινόμενο: </translation>
+    </message>
+    <message>
+        <source>Custom:</source>
+        <translation>Προσαρμογή:</translation>
+    </message>
+    <message>
+        <source>Confirmation time:</source>
+        <translation>Χρόνος επικύρωσης:</translation>
+    </message>
+    <message>
+        <source>normal</source>
+        <translation>κανονικό</translation>
+    </message>
+    <message>
+        <source>fast</source>
+        <translation>Γρήγορο</translation>
+    </message>
+    <message>
+        <source>(confirmation may take longer)</source>
+        <translation>(η επικύρωση ίσως χρειαστεί περισσότερο χρόνο)</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -1775,6 +1752,10 @@ Address: %4
     <message>
         <source>Clear all fields of the form.</source>
         <translation>Καθαρισμός όλων των πεδίων της φόρμας.</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Σκόνη</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1810,11 +1791,11 @@ Address: %4
     </message>
     <message>
         <source>Copy fee</source>
-        <translation type="unfinished"/>
+        <translation>Αντιγραφή ταρίφας</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation type="unfinished"/>
+        <translation>Αντιγραφή μετα-ταρίφας</translation>
     </message>
     <message>
         <source>Copy bytes</source>
@@ -1825,24 +1806,12 @@ Address: %4
         <translation>Αντιγραφή προτεραιότητας</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Αντιγραφή των ρέστων</translation>
     </message>
     <message>
-        <source>Total Amount %1 (= %2)</source>
-        <translation>Ολικό Ποσό %1 (= %2)</translation>
-    </message>
-    <message>
         <source>or</source>
         <translation>ή</translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Η διεύθυνση του αποδέκτη δεν είναι σωστή. Παρακαλώ ελέγξτε ξανά.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
@@ -1857,28 +1826,20 @@ Address: %4
         <translation>Το σύνολο υπερβαίνει το υπόλοιπό σας όταν συμπεριληφθεί και η αμοιβή %1</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Βρέθηκε η ίδια διεύθυνση δύο φορές. Επιτρέπεται μία μόνο εγγραφή για κάθε διεύθυνση, σε κάθε διαδικασία αποστολής.</translation>
-    </message>
-    <message>
         <source>Transaction creation failed!</source>
         <translation>Η δημιουργία της συναλλαγής απέτυχε!</translation>
     </message>
     <message>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: Invalid Myriadcoin address</source>
-        <translation>Προειδοποίηση: Μη έγκυρη διεύθυνση Myriadcoin</translation>
+        <source>Warning: Invalid Myriad address</source>
+        <translation>Προειδοποίηση: Μη έγκυρη διεύθυνση Myriad</translation>
     </message>
     <message>
         <source>(no label)</source>
         <translation>(χωρίς ετικέτα)</translation>
     </message>
     <message>
-        <source>Warning: Unknown change address</source>
-        <translation type="unfinished"/>
+        <source>Copy dust</source>
+        <translation>Αντιγραφή 'σκόνης'</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1887,14 +1848,6 @@ Address: %4
     <message>
         <source>added as transaction fee</source>
         <translation>προστέθηκαν ως αμοιβή συναλλαγής</translation>
-    </message>
-    <message>
-        <source>Payment request expired</source>
-        <translation>Έληξε η αίτηση πληρωμής</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>Μη έγκυρη διεύθυνση πληρωμής %1</translation>
     </message>
 </context>
 <context>
@@ -1906,10 +1859,6 @@ Address: %4
     <message>
         <source>Pay &amp;To:</source>
         <translation>Πληρωμή &amp;σε:</translation>
-    </message>
-    <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Διεύθυνση αποστολής της πληρωμής  (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1925,7 +1874,11 @@ Address: %4
     </message>
     <message>
         <source>This is a normal payment.</source>
-        <translation type="unfinished"/>
+        <translation>Αυτή είναι μια απλή πληρωμή.</translation>
+    </message>
+    <message>
+        <source>The Myriad address to send the payment to</source>
+        <translation>Η διεύθυνση Myriad που θα σταλεί η πληρωμή</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1933,7 +1886,7 @@ Address: %4
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Επικόλληση διεύθυνσης από το πρόχειρο</translation>
+        <translation>Επικόλληση διεύθυνσης από το βιβλίο διευθύνσεων</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -1948,20 +1901,8 @@ Address: %4
         <translation>Μήνυμα:</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>A message that was attached to the myriadcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriadcoin network.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation type="unfinished"/>
+        <translation>Εισάγεται μία ετικέτα για αυτή την διεύθυνση για να προστεθεί στη λίστα με τις χρησιμοποιημένες διευθύνσεις</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1975,8 +1916,8 @@ Address: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Myriadcoin Core is shutting down...</source>
-        <translation>Το Myriadcoin Core τερματίζεται...</translation>
+        <source>Myriad Core is shutting down...</source>
+        <translation>Το Myriad Core τερματίζεται...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1994,12 +1935,8 @@ Address: %4
         <translation>&amp;Υπογραφή Μηνύματος</translation>
     </message>
     <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Μπορείτε να υπογράφετε μηνύματα με τις διευθύνσεις σας, ώστε ν&apos; αποδεικνύετε πως αυτές σας ανήκουν. Αποφεύγετε να υπογράφετε κάτι αόριστο καθώς ενδέχεται να εξαπατηθείτε. Υπογράφετε μόνο πλήρης δηλώσεις με τις οποίες συμφωνείτε.</translation>
-    </message>
-    <message>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση Myriadcoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The Myriad address to sign the message with</source>
+        <translation>Διεύθυνση Myriad που θα σταλεί το μήνυμα</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2030,8 +1967,8 @@ Address: %4
         <translation>Αντέγραφη της επιλεγμενης διεύθυνσης στο πρόχειρο του συστηματος</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriadcoin address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση Myriadcoin</translation>
+        <source>Sign the message to prove you own this Myriad address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση Myriad</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2050,16 +1987,12 @@ Address: %4
         <translation>&amp;Επιβεβαίωση μηνύματος</translation>
     </message>
     <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Πληκτρολογήστε την υπογραφή διεύθυνσης, μήνυμα (βεβαιωθείτε ότι έχετε αντιγράψει τις αλλαγές γραμμής, κενά, tabs, κ.λπ. ακριβώς) και την υπογραφή παρακάτω, για να ελέγξει το μήνυμα. Να είστε προσεκτικοί για να μην διαβάσετε περισσότερα στην υπογραφή ό, τι είναι στην υπογραφή ίδιο το μήνυμα , για να μην εξαπατηθούν από έναν άνθρωπο -in - the-middle επίθεση.</translation>
+        <source>The Myriad address the message was signed with</source>
+        <translation>Διεύθυνση Myriad η οποία το μήνυμα έχει υπογραφεί</translation>
     </message>
     <message>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση Myriadcoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Myriadcoin address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως υπογραφθηκε απο μια συγκεκριμένη διεύθυνση Myriadcoin</translation>
+        <source>Verify the message to ensure it was signed with the specified Myriad address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως υπογραφθηκε απο μια συγκεκριμένη διεύθυνση Myriad</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2070,12 +2003,8 @@ Address: %4
         <translation>Επαναφορά όλων επαλήθευμενων πεδίων μήνυματος </translation>
     </message>
     <message>
-        <source>Enter a Myriadcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση Myriadcoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Κάντε κλικ στο &quot;Υπογραφή Μηνύματος&quot; για να λάβετε την υπογραφή</translation>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Κάντε κλικ στο "Υπογραφή Μηνύματος" για να λάβετε την υπογραφή</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2129,12 +2058,12 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriadcoin Core</source>
-        <translation>Myriadcoin Core</translation>
+        <source>Myriad Core</source>
+        <translation>Myriad Core</translation>
     </message>
     <message>
-        <source>The Bitcoin and Myriadcoin Core developers</source>
-        <translation>Οι προγραμματιστές του Myriadcoin Core</translation>
+        <source>The Myriad Core developers</source>
+        <translation>Οι προγραμματιστές του Myriad Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2156,7 +2085,7 @@ Address: %4
     </message>
     <message>
         <source>conflicted</source>
-        <translation type="unfinished"/>
+        <translation>σύγκρουση</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -2173,10 +2102,6 @@ Address: %4
     <message>
         <source>Status</source>
         <translation>Κατάσταση</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, έχει μεταδοθεί μέσω %n κόμβων</numerusform><numerusform>, έχει μεταδοθεί μέσω %n κόμβων</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -2203,16 +2128,16 @@ Address: %4
         <translation> δική σας διεύθυνση </translation>
     </message>
     <message>
+        <source>watch-only</source>
+        <translation>Επίβλεψη μόνο:</translation>
+    </message>
+    <message>
         <source>label</source>
         <translation>eπιγραφή</translation>
     </message>
     <message>
         <source>Credit</source>
         <translation>Πίστωση </translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>ωρίμανση σε %n επιπλέον μπλοκ</numerusform><numerusform>ωρίμανση σε %n επιπλέον μπλοκ</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -2221,6 +2146,14 @@ Address: %4
     <message>
         <source>Debit</source>
         <translation>Debit</translation>
+    </message>
+    <message>
+        <source>Total debit</source>
+        <translation>Σύνολο χρέωσης</translation>
+    </message>
+    <message>
+        <source>Total credit</source>
+        <translation>Συνολική πίστωση</translation>
     </message>
     <message>
         <source>Transaction fee</source>
@@ -2247,8 +2180,8 @@ Address: %4
         <translation>Έμπορος</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation type="unfinished"/>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Πρέπει να περιμένετε %1 μπλοκ πριν μπορέσετε να χρησιμοποιήσετε τα νομίσματα που έχετε δημιουργήσει. Το μπλοκ που δημιουργήσατε μεταδόθηκε στο δίκτυο για να συμπεριληφθεί στην αλυσίδα των μπλοκ. Αν δεν μπει σε αυτή θα μετατραπεί σε "μη αποδεκτό" και δε θα μπορεί να καταναλωθεί. Αυτό συμβαίνει σπάνια όταν κάποιος άλλος κόμβος δημιουργήσει ένα μπλοκ λίγα δευτερόλεπτα πριν από εσάς.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2276,11 +2209,7 @@ Address: %4
     </message>
     <message>
         <source>, has not been successfully broadcast yet</source>
-        <translation>, δεν έχει ακόμα μεταδοθεί μ&apos; επιτυχία</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Ανοιχτό για %n μπλοκ</numerusform><numerusform>Ανοιχτό για %n μπλοκ</numerusform></translation>
+        <translation>, δεν έχει ακόμα μεταδοθεί μ' επιτυχία</translation>
     </message>
     <message>
         <source>unknown</source>
@@ -2309,22 +2238,6 @@ Address: %4
         <translation>Τύπος</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Διεύθυνση</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Ποσό</translation>
-    </message>
-    <message>
-        <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Ανοιχτό για %n μπλοκ</numerusform><numerusform>Ανοιχτό για %n μπλοκ</numerusform></translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>Ανοιχτό μέχρι %1</translation>
     </message>
@@ -2345,20 +2258,20 @@ Address: %4
         <translation>Offline</translation>
     </message>
     <message>
+        <source>Label</source>
+        <translation>Επιγραφή</translation>
+    </message>
+    <message>
         <source>Unconfirmed</source>
         <translation>Ανεπιβεβαίωτες</translation>
     </message>
     <message>
-        <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Conflicted</source>
-        <translation type="unfinished"/>
+        <translation>Σύγκρουση</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation>Παραλαβή με</translation>
+        <translation>Ελήφθη με</translation>
     </message>
     <message>
         <source>Received from</source>
@@ -2366,7 +2279,7 @@ Address: %4
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Αποστολή προς</translation>
+        <translation>Απεστάλη προς</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
@@ -2375,6 +2288,10 @@ Address: %4
     <message>
         <source>Mined</source>
         <translation>Εξόρυξη</translation>
+    </message>
+    <message>
+        <source>watch-only</source>
+        <translation>Επίβλεψη μόνο:</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -2391,10 +2308,6 @@ Address: %4
     <message>
         <source>Type of transaction.</source>
         <translation>Είδος συναλλαγής.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Διεύθυνση αποστολής της συναλλαγής.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2488,6 +2401,10 @@ Address: %4
         <translation>Εξαγωγή Ιστορικού Συναλλαγών</translation>
     </message>
     <message>
+        <source>Watch-only</source>
+        <translation>Επίβλεψη μόνο:</translation>
+    </message>
+    <message>
         <source>Exporting Failed</source>
         <translation>Η Εξαγωγή Απέτυχε</translation>
     </message>
@@ -2501,7 +2418,7 @@ Address: %4
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
-        <translation type="unfinished"/>
+        <translation>Το ιστορικό συναλλαγών αποθηκεύτηκε επιτυχώς στο %1.</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
@@ -2528,10 +2445,6 @@ Address: %4
         <translation>Διεύθυνση</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Ποσό</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -2542,6 +2455,13 @@ Address: %4
     <message>
         <source>to</source>
         <translation>έως</translation>
+    </message>
+</context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    <message>
+        <source>Unit to show amounts in. Click to select another unit.</source>
+        <translation>Μονάδα μέτρησης προβολής ποσών. Κάντε κλικ για επιλογή άλλης μονάδας.</translation>
     </message>
 </context>
 <context>
@@ -2582,7 +2502,7 @@ Address: %4
     </message>
     <message>
         <source>There was an error trying to save the wallet data to %1.</source>
-        <translation type="unfinished"/>
+        <translation>Παρουσιάστηκε σφάλμα κατά την αποθήκευση των δεδομένων πορτοφολιού στο %1.</translation>
     </message>
     <message>
         <source>The wallet data was successfully saved to %1.</source>
@@ -2596,40 +2516,12 @@ Address: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Χρήση:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Λίστα εντολών</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>Επεξήγηση εντολής</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Επιλογές:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: myriadcoin.conf)</source>
-        <translation>Ορίστε αρχείο ρυθμίσεων (προεπιλογή: myriadcoin.conf)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: myriadcoind.pid)</source>
-        <translation>Ορίστε αρχείο pid (προεπιλογή: myriadcoind.pid)</translation>
-    </message>
-    <message>
         <source>Specify data directory</source>
         <translation>Ορισμός φακέλου δεδομένων</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 10888 or testnet: 20888)</source>
-        <translation>Εισερχόμενες συνδέσεις στη θύρα &lt;port&gt; (προεπιλογή: 10888 ή στο testnet: 20888)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Μέγιστες αριθμός συνδέσεων με τους peers &lt;n&gt; (προεπιλογή: 125)</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -2640,28 +2532,8 @@ Address: %4
         <translation>Διευκρινίστε τη δικιά σας δημόσια διεύθυνση.</translation>
     </message>
     <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Όριο αποσύνδεσης προβληματικών peers (προεπιλογή: 100)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Δευτερόλεπτα πριν επιτραπεί ξανά η σύνδεση των προβληματικών peers (προεπιλογή: 86400)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>Ένα σφάλμα συνέβη καθώς προετοιμαζόταν η πόρτα RPC %u για αναμονή IPv4: %s</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
-        <translation>Εισερχόμενες συνδέσεις JSON-RPC στη θύρα &lt;port&gt; (προεπιλογή: 10889 or testnet: 20889)</translation>
-    </message>
-    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Αποδοχή εντολών κονσόλας και JSON-RPC</translation>
-    </message>
-    <message>
-        <source>Myriadcoin Core RPC client version</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
@@ -2676,121 +2548,20 @@ Address: %4
         <translation>Να δέχεσαι συνδέσεις από έξω(προεπιλογή:1)</translation>
     </message>
     <message>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=myriadcoinrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@foo.com
-</source>
-        <translation>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=myriadcoinrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>Ένα σφάλμα συνέβη καθώς προετοιμαζόταν η υποδοχη RPC %u για αναμονη του IPv6, επεσε πισω στο IPv4:%s</translation>
-    </message>
-    <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Αποθηκευση σε συγκεκριμένη διεύθυνση. Χρησιμοποιήστε τα πλήκτρα [Host] : συμβολισμός θύρα για IPv6</translation>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:15)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Σφάλμα: Η συναλλαγή απορρίφθηκε.
-Αυτό ίσως οφείλεται στο ότι τα νομίσματά σας έχουν ήδη ξοδευτεί, π.χ. με την αντιγραφή του wallet.dat σε άλλο σύστημα και την χρήση τους εκεί, χωρίς η συναλλαγή να έχει καταγραφεί στο παρόν σύστημα.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Σφάλμα: Αυτή η συναλλαγή απαιτεί αμοιβή συναλλαγής τουλάχιστον %s λόγω του μεγέθους, πολυπλοκότητας ή της χρήσης πρόσφατης παραλαβής κεφαλαίου</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Εκτέλεσε την εντολή όταν το καλύτερο μπλοκ αλλάξει(%s στην εντολή αντικαθίσταται από το hash του μπλοκ)</translation>
     </message>
     <message>
-        <source>Fees smaller than this are considered zero fee (for transaction creation) (default:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: 100)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: 3)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set the processor limit for when generation is on (-1 = unlimited, default: -1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation>Αυτό είναι ένα προ-τεστ κυκλοφορίας - χρησιμοποιήστε το με δική σας ευθύνη - δεν χρησιμοποιείτε για εξόρυξη ή για αλλες εφαρμογές</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Myriadcoin Core is probably already running.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Προειδοποίηση: Η παράμετρος -paytxfee είναι πολύ υψηλή. Πρόκειται για την αμοιβή που θα πληρώνετε για κάθε συναλλαγή που θα στέλνετε.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Myriadcoin will not work properly.</source>
-        <translation>Προειδοποίηση: Παρακαλώ βεβαιωθείτε πως η ημερομηνία κι ώρα του συστήματός σας είναι σωστές. Αν το ρολόι του υπολογιστή σας πάει λάθος, ενδέχεται να μη λειτουργεί σωστά το Myriadcoin.</translation>
-    </message>
-    <message>
-        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
@@ -2805,40 +2576,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>(προεπιλογή: 1)</translation>
     </message>
     <message>
-        <source>(default: wallet.dat)</source>
-        <translation>(προεπιλογή: wallet.dat)</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Προσπάθεια για ανακτησει ιδιωτικων κλειδιων από ενα διεφθαρμένο αρχειο wallet.dat </translation>
-    </message>
-    <message>
-        <source>Myriadcoin Core Daemon</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Block creation options:</source>
         <translation>Αποκλεισμός επιλογων δημιουργίας: </translation>
     </message>
     <message>
-        <source>Clear list of wallet transactions (diagnostic tool; implies -rescan)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Σύνδεση μόνο με ορισμένους κόμβους</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS proxy</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 10889 or testnet: 20889)</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Connection options:</source>
@@ -2847,22 +2594,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
     <message>
         <source>Corrupted block database detected</source>
         <translation>Εντοπισθηκε διεφθαρμενη βαση δεδομενων των μπλοκ</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Ανακαλύψτε την δικη σας IP διεύθυνση (προεπιλογή: 1 όταν ακούει και δεν - externalip) </translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -2889,144 +2620,28 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Προειδοποίηση: Χαμηλός χώρος στο δίσκο  </translation>
     </message>
     <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Σφάλμα: το πορτοφόλι είναι κλειδωμένο, δεν μπορεί να δημιουργηθεί συναλλαγή</translation>
-    </message>
-    <message>
-        <source>Error: system error: </source>
-        <translation>Λάθος: λάθος συστήματος:</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>ταλαιπωρηθειτε για να ακούσετε σε οποιαδήποτε θύρα. Χρήση - ακούστε = 0 , αν θέλετε αυτό.</translation>
     </message>
     <message>
-        <source>Failed to read block info</source>
-        <translation>Αποτυχία αναγνωσης των block πληροφοριων</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Η αναγνωση του μπλοκ απετυχε</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>Ο συγχρονισμος του μπλοκ ευρετηριου απετυχε</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>Η δημιουργια του μπλοκ ευρετηριου απετυχε</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>Η δημιουργια των μπλοκ πληροφοριων απετυχε</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>Η δημιουργια του μπλοκ απετυχε</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>Αδυναμία εγγραφής πληροφοριων αρχειου</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation>Αποτυχία εγγραφής στη βάση δεδομένων νομίσματος</translation>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>Αποτυχία εγγραφής δείκτη συναλλαγών </translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation>Αποτυχία εγγραφής αναίρεσης δεδομένων </translation>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation>Προσθήκη αμοιβής ανά kB στις συναλλαγές που στέλνετε</translation>
-    </message>
-    <message>
-        <source>Fees smaller than this are considered zero fee (for relaying) (default:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Βρες ομότιμους υπολογιστές χρησιμοποιώντας αναζήτηση DNS(προεπιλογή:1)</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Generate coins (default: 0)</source>
-        <translation>Δημιουργία νομισμάτων (προκαθορισμος: 0)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Πόσα μπλοκ να ελέγχθουν κατά την εκκίνηση (προεπιλογή:288,0=όλα)</translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Importing...</source>
-        <translation type="unfinished"/>
+        <translation>ΕΙσαγωγή...</translation>
     </message>
     <message>
-        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Invalid -onion address: &apos;%s&apos;</source>
-        <translation>Άκυρη διεύθυνση -onion : &apos;%s&apos;</translation>
+        <source>Invalid -onion address: '%s'</source>
+        <translation>Άκυρη διεύθυνση -onion : '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>Δεν ειναι αρκετες περιγραφες αρχείων διαθέσιμες.</translation>
     </message>
     <message>
-        <source>Prepend debug output with timestamp (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>RPC client options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Εισαγωγή μπλοκ από εξωτερικό αρχείο blk000?.dat</translation>
-    </message>
-    <message>
-        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>Ορίσμος του αριθμόυ θεματων στην υπηρεσία κλήσεων RPC (προεπιλογή: 4) </translation>
+        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
+        <translation>Μόνο σύνδεση σε κόμβους του δικτύου &lt;net&gt; (ipv4, ipv6 ή onion)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Usage (deprecated, use myriadcoin-cli):</source>
-        <translation type="unfinished"/>
+        <translation>Επιλέξτε αρχείο πορτοφολιού (μέσα απο κατάλογο δεδομένων)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3037,140 +2652,96 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Επαλήθευση πορτοφολιου... </translation>
     </message>
     <message>
-        <source>Wait for RPC server to start</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
-        <translation type="unfinished"/>
+        <translation>Το πορτοφόλι %s βρίσκεται έξω από το φάκελο δεδομένων %s</translation>
     </message>
     <message>
         <source>Wallet options:</source>
         <translation>Επιλογές πορτοφολιού:</translation>
     </message>
     <message>
-        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>Εισαγωγή μπλοκ από εξωτερικό αρχείο blk000?.dat</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Myriadcoin Core is probably already running.</source>
-        <translation type="unfinished"/>
+        <source>Cannot obtain a lock on data directory %s. Myriad Core is probably already running.</source>
+        <translation>Αδυναμία κλειδώματος του φακέλου δεδομένων %s. Πιθανώς το Myriad να είναι ήδη ενεργό.</translation>
     </message>
     <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation type="unfinished"/>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Myriad Core will not work properly.</source>
+        <translation>Προειδοποίηση: Παρακαλώ ελέγξτε ότι η ημερομηνία και ώρα του υπολογιστή σας είναι σωστά ρυθμισμένες! Εάν το ρολόι σας είναι λάθος το Myriad Core δεν θα λειτουργήσει σωστά. </translation>
     </message>
     <message>
-        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
-        <translation type="unfinished"/>
+        <source>Choose data directory on startup (default: 0)</source>
+        <translation>Επιλογή φακέλου δεδομένων στην εκκίνηση (προεπιλεγμένο: 0)</translation>
     </message>
     <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation type="unfinished"/>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Σύνδεση μέσω διαμεσολαβητή SOCKS5</translation>
+    </message>
+    <message>
+        <source>Could not parse -rpcbind value %s as network address</source>
+        <translation>Δεν μπόρεσε να αναλυθεί η παράμετρος -rpcbind value %s ως διεύθυνση δικτύου</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of Myriad Core</source>
+        <translation>Σφάλμα φόρτωσης wallet.dat: Το Πορτοφόλι απαιτεί μια νεότερη έκδοση του Myriad</translation>
+    </message>
+    <message>
+        <source>Error reading from database, shutting down.</source>
+        <translation>Σφάλμα ανάγνωσης από τη βάση δεδομένων, γίνεται τερματισμός.</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -tor found, use -onion.</source>
+        <translation>Σφάλμα: Μη συμβατή παράμετρος -tor. Χρησιμοποιήσε την παράμετρο -onion</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>Πληροφορία</translation>
     </message>
     <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Μη έγκυρο ποσό για την παράμετρο -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Initialization sanity check failed. Myriad Core is shutting down.</source>
+        <translation>Η εκκίνηση ελέγχου ορθότητας απέτυχε.  Γίνεται τερματισμός του Myriad Core.</translation>
     </message>
     <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Μη έγκυρο ποσό για την παράμετρο -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Μη έγκυρο ποσό για την παράμετρο -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: 50000)</source>
-        <translation type="unfinished"/>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Μη έγκυρο ποσό για την παράμετρο -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: 0)</source>
-        <translation type="unfinished"/>
+        <source>Node relay options:</source>
+        <translation>Επιλογές αναμετάδοσης κόμβου: </translation>
     </message>
     <message>
-        <source>Maintain a full transaction index (default: 0)</source>
-        <translation>Διατηρήση ένος πλήρες ευρετήριου συναλλαγών (προεπιλογή: 0) </translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Μέγιστος buffer λήψης ανά σύνδεση, &lt;n&gt;*1000 bytes (προεπιλογή: 5000)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Μέγιστος buffer αποστολής ανά σύνδεση, &lt;n&gt;*1000 bytes (προεπιλογή: 1000)</translation>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation>Μονο αποδοχη αλυσίδας μπλοκ που ταιριάζει με τα ενσωματωμένα σημεία ελέγχου (προεπιλογή: 1) </translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation> Συνδέση μόνο σε κόμβους του δικτύου &lt;net&gt; (IPv4, IPv6 ή Tor) </translation>
-    </message>
-    <message>
-        <source>Print block on startup, if found in block index</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Print block tree on startup (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>RPC SSL options: (see the Myriadcoin Wiki for SSL setup instructions)</source>
-        <translation type="unfinished"/>
+        <source>RPC SSL options: (see the Myriad Wiki for SSL setup instructions)</source>
+        <translation>Ρυθμίσεις SSL: (ανατρέξτε στο Myriad Wiki για οδηγίες ρυθμίσεων SSL)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>SSL options: (see the Myriadcoin Wiki for SSL setup instructions)</source>
-        <translation>Ρυθμίσεις SSL: (ανατρέξτε στο Myriadcoin Wiki για οδηγίες ρυθμίσεων SSL)</translation>
-    </message>
-    <message>
-        <source>Send command to Myriadcoin Core</source>
-        <translation type="unfinished"/>
+        <translation>Επιλογές διακομιστή RPC:</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Αποστολή πληροφοριών εντοπισμού σφαλμάτων στην κονσόλα αντί του αρχείου debug.log</translation>
     </message>
     <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Ορίστε το μέγιστο μέγεθος μπλοκ σε bytes (προεπιλογή: 0)</translation>
+        <source>Set SSL root certificates for payment request (default: -system-)</source>
+        <translation>Ορίστε SSL root certificates για αίτηση πληρωμής (default: -system-)</translation>
     </message>
     <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: 1)</source>
-        <translation type="unfinished"/>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Όρισε γλώσσα, για παράδειγμα "de_DE"(προεπιλογή:τοπικές ρυθμίσεις)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation type="unfinished"/>
+        <translation>Προβολή όλων των επιλογών εντοπισμού σφαλμάτων (χρήση: --help -help-debug)</translation>
     </message>
     <message>
-        <source>Show benchmark information (default: 0)</source>
-        <translation type="unfinished"/>
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>Εμφάνισε την οθόνη εκκίνησης κατά την εκκίνηση(προεπιλογή:1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
@@ -3181,16 +2752,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Η υπογραφή συναλλαγής απέτυχε </translation>
     </message>
     <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Ορισμός λήξης χρονικού ορίου σε χιλιοστά του δευτερολέπτου(προεπιλογή:5000)</translation>
+        <source>Start minimized</source>
+        <translation>Έναρξη ελαχιστοποιημένο</translation>
     </message>
     <message>
-        <source>Start Myriadcoin Core Daemon</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation>Λάθος Συστήματος:</translation>
+        <source>This is experimental software.</source>
+        <translation>Η εφαρμογή είναι σε πειραματικό στάδιο.</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -3205,10 +2772,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Η συναλλαγή ειναι πολύ μεγάλη </translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Χρησιμοποίηση του  UPnP για την χρήση της πόρτας αναμονής (προεπιλογή:0)</translation>
-    </message>
-    <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
         <translation>Χρησιμοποίηση του  UPnP για την χρήση της πόρτας αναμονής (προεπιλογή:1)</translation>
     </message>
@@ -3221,20 +2784,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Προειδοποίηση</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Προειδοποίηση: Αυτή η έκδοση είναι ξεπερασμένη, απαιτείται αναβάθμιση </translation>
-    </message>
-    <message>
         <source>Zapping all transactions from wallet...</source>
-        <translation type="unfinished"/>
+        <translation>Μεταφορά όλων των συναλλαγών απο το πορτοφόλι</translation>
     </message>
     <message>
         <source>on startup</source>
         <translation>κατά την εκκίνηση</translation>
-    </message>
-    <message>
-        <source>version</source>
-        <translation>έκδοση</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
@@ -3245,24 +2800,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Κωδικός για τις συνδέσεις JSON-RPC</translation>
     </message>
     <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Αποδοχή συνδέσεων JSON-RPC από συγκεκριμένη διεύθυνση IP</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Αποστολή εντολών στον κόμβο &lt;ip&gt; (προεπιλογή: 127.0.0.1)</translation>
-    </message>
-    <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Εκτέλεσε την εντολή όταν το καλύτερο μπλοκ αλλάξει(%s στην εντολή αντικαθίσταται από το hash του μπλοκ)</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Αναβάθμισε το πορτοφόλι στην τελευταία έκδοση</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Όριο πλήθους κλειδιών pool &lt;n&gt; (προεπιλογή: 100)</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions</source>
@@ -3273,20 +2816,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Χρήση του OpenSSL (https) για συνδέσεις JSON-RPC</translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>Αρχείο πιστοποιητικού του διακομιστή  (προεπιλογή: server.cert)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Προσωπικό κλειδί του διακομιστή (προεπιλογή: server.pem)</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Αυτό το κείμενο βοήθειας</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Αδύνατη η σύνδεση με τη θύρα %s αυτού του υπολογιστή (bind returned error %d, %s) </translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -3301,44 +2832,68 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Σφάλμα φόρτωσης wallet.dat: Κατεστραμμένο Πορτοφόλι</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Myriadcoin</source>
-        <translation>Σφάλμα φόρτωσης wallet.dat: Το Πορτοφόλι απαιτεί μια νεότερη έκδοση του Myriadcoin</translation>
+        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
+        <translation>Πόσο εξονυχιστική να είναι η επιβεβαίωση του μπλοκ (0-4, προεπιλογή: %u)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Myriadcoin to complete</source>
-        <translation>Απαιτείται η επανεγγραφή του Πορτοφολιού, η οποία θα ολοκληρωθεί στην επανεκκίνηση του Myriadcoin</translation>
+        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
+        <translation>Διατηρήση ένος πλήρες ευρετήριου συναλλαγών (προεπιλογή: %u) </translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
+        <translation>Δευτερόλεπτα πριν επιτραπεί ξανά η σύνδεση των προβληματικών peers (προεπιλογή: %u)</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
         <translation>Σφάλμα φόρτωσης αρχείου wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Δεν είναι έγκυρη η διεύθυνση διαμεσολαβητή: &apos;%s&apos;</translation>
+        <source>Generate coins (default: %u)</source>
+        <translation>Δημιουργία νομισμάτων (προκαθορισμος: %u)</translation>
     </message>
     <message>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Άγνωστo δίκτυο ορίζεται σε onlynet: &apos;%s&apos;</translation>
+        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
+        <translation>Πόσα μπλοκ να ελέγχθουν κατά την εκκίνηση (προεπιλογή: %u, 0 = όλα)</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Άγνωστo δίκτυο ορίζεται: %i</translation>
+        <source>Include IP addresses in debug output (default: %u)</source>
+        <translation>Να συμπεριληφθεί η διεύθυνση IP στην αναφορά? (προεπιλογή: %u)</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Δεν μπορώ να γράψω την προεπιλεγμένη διεύθυνση: &apos;%s&apos;</translation>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Δεν είναι έγκυρη η διεύθυνση διαμεσολαβητή: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Δεν μπορώ να γράψω την προεπιλεγμένη διεύθυνση: &apos;%s&apos;</translation>
+        <source>Server certificate file (default: %s)</source>
+        <translation>Αρχείο πιστοποιητικού του διακομιστή  (προεπιλογή: %s)</translation>
     </message>
     <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Μη έγκυρο ποσό για την παράμετρο -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
+        <translation>Ορισμός λήξης χρονικού ορίου σε χιλιοστά του δευτερολέπτου(προεπιλογή: %d)</translation>
     </message>
     <message>
-        <source>Invalid amount</source>
-        <translation>Λάθος ποσότητα</translation>
+        <source>Specify pid file (default: %s)</source>
+        <translation>Ορίστε αρχείο pid (προεπιλογή: %s)</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
+        <translation>Όριο αποσύνδεσης προβληματικών peers (προεπιλογή: %u)</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Άγνωστo δίκτυο ορίζεται σε onlynet: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Δεν μπορώ να γράψω την προεπιλεγμένη διεύθυνση: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Δεν μπορώ να γράψω την προεπιλεγμένη διεύθυνση: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Μη έγκυρο ποσό για την παράμετρο -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -3373,19 +2928,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Myriadcoin Alert&quot; admin@f
         <translation>Η φόρτωση ολοκληρώθηκε</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>Χρήση της %s επιλογής</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Σφάλμα</translation>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Πρέπει να βάλεις ένα κωδικό  στο αρχείο παραμέτρων: %s
-Εάν το αρχείο δεν υπάρχει, δημιούργησε το με δικαιώματα μόνο για ανάγνωση από τον δημιουργό</translation>
     </message>
 </context>
 </TS>
