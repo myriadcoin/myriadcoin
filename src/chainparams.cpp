@@ -124,6 +124,7 @@ public:
         vSeeds.push_back(CDNSSeedData("seed6.myriadcoin.org", "seed6.myriadcoin.org"));
         vSeeds.push_back(CDNSSeedData("seed7.myriadcoin.org", "seed7.myriadcoin.org"));
         vSeeds.push_back(CDNSSeedData("seed8.myriadcoin.org", "seed8.myriadcoin.org"));
+        vSeeds.push_back(CDNSSeedData("myriadseed1.cryptap.us", "myriadseed1.cryptap.us"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,50);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,9);
@@ -191,9 +192,9 @@ public:
         consensus.nAuxpowChainId = 0x005A; 
         consensus.fStrictChainId = false;
         
-        consensus.nBlockTimeWarpPreventStart1 = 740500; // block where time warp 1 prevention starts
-        consensus.nBlockTimeWarpPreventStart2 = 766000; // block where time warp 2 prevention starts
-        consensus.nBlockTimeWarpPreventStart3 = 1048320; // block where time warp 3 prevention starts
+        consensus.nBlockTimeWarpPreventStart1 = 1000; // block where time warp 1 prevention starts
+        consensus.nBlockTimeWarpPreventStart2 = 1005; // block where time warp 2 prevention starts
+        consensus.nBlockTimeWarpPreventStart3 = 1010; // block where time warp 3 prevention starts
         consensus.Phase2Timespan_Start = 150; // block where 60 second target time kicks in
         consensus.nBlockDiffAdjustV2 = 150; // block where difficulty adjust V2 starts
         
@@ -212,7 +213,7 @@ public:
         consensus.nBlockAlgoNormalisedWorkDecayStart1 = 0; // block where weight decay starts
         consensus.nBlockAlgoNormalisedWorkDecayStart2 = 0; // block where weight decay starts
         consensus.nGeoAvgWork_Start = 150;
-        consensus.nFork1MinBlock = 300;
+        consensus.nFork1MinBlock = 601;
 
         pchMessageStart[0] = 0x01;
         pchMessageStart[1] = 0xf5;

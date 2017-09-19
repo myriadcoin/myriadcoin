@@ -4968,6 +4968,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 
     else if (fAlerts && strCommand == "alert")
     {
+        /* Disable Alert System
         CAlert alert;
         vRecv >> alert;
 
@@ -4994,6 +4995,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                 Misbehaving(pfrom->GetId(), 10);
             }
         }
+        */
     }
 
 

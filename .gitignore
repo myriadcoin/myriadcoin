@@ -7,6 +7,7 @@ src/myriadcoin-cli
 src/myriadcoin-tx
 src/test/test_myriadcoin
 src/qt/test/test_myriadcoin-qt
+src/qt/test/test_myriad-qt
 
 # autoreconf
 Makefile.in
