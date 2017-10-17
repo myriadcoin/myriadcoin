@@ -1,4 +1,4 @@
-<TS language="sl_SI" version="2.0">
+<TS language="sl_SI" version="2.1">
 <context>
     <name>AddressBookPage</name>
     <message>
@@ -26,10 +26,6 @@
         <translation>&amp;Zapri</translation>
     </message>
     <message>
-        <source>&amp;Copy Address</source>
-        <translation>&amp;Kopiraj naslov</translation>
-    </message>
-    <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Izbriši trenutno označeni naslov  iz seznama</translation>
     </message>
@@ -45,74 +41,10 @@
         <source>&amp;Delete</source>
         <translation>I&amp;zbriši</translation>
     </message>
-    <message>
-        <source>Choose the address to send coins to</source>
-        <translation>Izbira naslova, na katerega pošiljate plačilo</translation>
-    </message>
-    <message>
-        <source>Choose the address to receive coins with</source>
-        <translation>Izbira naslova za prejem plačila</translation>
-    </message>
-    <message>
-        <source>C&amp;hoose</source>
-        <translation>&amp;Izberi</translation>
-    </message>
-    <message>
-        <source>Sending addresses</source>
-        <translation>Imenik naslovov za pošiljanje</translation>
-    </message>
-    <message>
-        <source>Receiving addresses</source>
-        <translation>Imenik naslovov za prejemanje</translation>
-    </message>
-    <message>
-        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To je vaš imenik shranjenih naslovov Myriad, na katere lahko pošiljate plačila. Pred vsakim odlivom vedno preverite, če sta znesek in prejemnikov naslov pravilna.</translation>
-    </message>
-    <message>
-        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To je imenik vaših ustvarjenih naslovov Myriad, na katere lahko prejemate plačila. Priporočljivo je, da za vsak nov priliv ustvarite nov prejemni naslov.</translation>
-    </message>
-    <message>
-        <source>Copy &amp;Label</source>
-        <translation>Kopiraj &amp;oznako</translation>
-    </message>
-    <message>
-        <source>&amp;Edit</source>
-        <translation>&amp;Uredi</translation>
-    </message>
-    <message>
-        <source>Export Address List</source>
-        <translation>Izvozi seznam naslovov</translation>
-    </message>
-    <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Datoteka s podatki, ločenimi z vejico (*.csv)</translation>
-    </message>
-    <message>
-        <source>Exporting Failed</source>
-        <translation>Seznama naslovov ni bilo mogoče izvoziti.</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Napaka pri shranjevanju seznama naslovov v datoteko %1. Prosimo, poskusite znova.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>AddressTableModel</name>
-    <message>
-        <source>Label</source>
-        <translation>Oznaka</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Naslov</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(brez oznake)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -131,93 +63,16 @@
         <source>Repeat new passphrase</source>
         <translation>Ponovite novo geslo</translation>
     </message>
+    </context>
+<context>
+    <name>BanTableModel</name>
     <message>
-        <source>Encrypt wallet</source>
-        <translation>Šifriraj denarnico</translation>
+        <source>IP/Netmask</source>
+        <translation>IP/Netmaska</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>To dejanje zahteva geslo za odklepanje vaše denarnice.</translation>
-    </message>
-    <message>
-        <source>Unlock wallet</source>
-        <translation>Odkleni denarnico</translation>
-    </message>
-    <message>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>To dejanje zahteva geslo za dešifriranje vaše denarnice.</translation>
-    </message>
-    <message>
-        <source>Decrypt wallet</source>
-        <translation>Dešifriraj denarnico</translation>
-    </message>
-    <message>
-        <source>Change passphrase</source>
-        <translation>Zamenjaj geslo</translation>
-    </message>
-    <message>
-        <source>Confirm wallet encryption</source>
-        <translation>Potrditev šifriranja denarnice</translation>
-    </message>
-    <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
-        <translation>Opozorilo: V primeru izgube gesla šifrirane denarnice, boste &lt;b&gt;IZGUBILI VSE BITCOINE V DENARNICI&lt;/b&gt;!</translation>
-    </message>
-    <message>
-        <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Ali ste prepričani, da želite šifrirati vašo denarnico?</translation>
-    </message>
-    <message>
-        <source>Myriad Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your myriads from being stolen by malware infecting your computer.</source>
-        <translation>Program se bo zaprl, da dokonča proces šifriranja. Zapomnite si, da šifriranje ne more popolnoma zaščititi vaše denarnice pred krajami in zlonamernimi programi, ki bi lahko bili nameščeni na vašem računalniku.</translation>
-    </message>
-    <message>
-        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>POMEMBNO: Vse starejše obstoječe varnostne kopije denarnice je potrebno zamenjati s to novo, šifrirano varnostno kopijo. Iz varnostnih razlogov bodo stare varnostne kopije postale neuporabne takoj, ko začnete uporabljati novo, šifrirano denarnico.</translation>
-    </message>
-    <message>
-        <source>Warning: The Caps Lock key is on!</source>
-        <translation>Opozorilo: imate vklopljene velike črke (Caps Lock)</translation>
-    </message>
-    <message>
-        <source>Wallet encrypted</source>
-        <translation>Denarnica je šifrirana</translation>
-    </message>
-    <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Vnesite novo geslo. Prosimo, da uporabite geslo sestavljeno iz &lt;b&gt;deset ali več&lt;/b&gt; naključnih znakov, ali &lt;b&gt;osem ali več&lt;/b&gt; besed.</translation>
-    </message>
-    <message>
-        <source>Enter the old passphrase and new passphrase to the wallet.</source>
-        <translation>Vnesite staro in novo geslo denarnice.</translation>
-    </message>
-    <message>
-        <source>Wallet encryption failed</source>
-        <translation>Denarnice ni bilo mogoče šifrirati.</translation>
-    </message>
-    <message>
-        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Prišlo je do napake. Denarnice ni bilo mogoče šifrirati.</translation>
-    </message>
-    <message>
-        <source>The supplied passphrases do not match.</source>
-        <translation>Vnešeni gesli se ne ujemata</translation>
-    </message>
-    <message>
-        <source>Wallet unlock failed</source>
-        <translation>Denarnice ni bilo mogoče odkleniti.</translation>
-    </message>
-    <message>
-        <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>Vnesli ste napačno geslo za dešifriranje denarnice.</translation>
-    </message>
-    <message>
-        <source>Wallet decryption failed</source>
-        <translation>Denarnice ni bilo mogoče dešifrirati.</translation>
-    </message>
-    <message>
-        <source>Wallet passphrase was successfully changed.</source>
-        <translation>Geslo za dostop do denarnice je bilo uspešno zamenjano.</translation>
+        <source>Banned Until</source>
+        <translation>Prepoved do</translation>
     </message>
 </context>
 <context>
@@ -295,20 +150,12 @@
         <translation>Odpri &amp;URI ...</translation>
     </message>
     <message>
-        <source>Myriad Core client</source>
-        <translation>Odjemalec Myriad Core</translation>
-    </message>
-    <message>
-        <source>Importing blocks from disk...</source>
-        <translation>Uvažam bloke z diska ...</translation>
-    </message>
-    <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Poustvarjam kazalo blokov na disku ...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
-        <translation>Izvedite plačilo na naslov Myriad</translation>
+        <source>Send coins to a Myriadcoin address</source>
+        <translation>Izvedite plačilo na naslov Bitcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -331,8 +178,8 @@
         <translation>&amp;Preveri sporočilo ...</translation>
     </message>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -347,10 +194,6 @@
         <translation>P&amp;rejmi</translation>
     </message>
     <message>
-        <source>Show information about Myriad Core</source>
-        <translation>Oglejte si informacije o programu</translation>
-    </message>
-    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Prikaži / Skrij</translation>
     </message>
@@ -363,12 +206,12 @@
         <translation>Šifrirajte zasebne ključe, ki se nahajajo v denarnici</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
-        <translation>Podpišite poljubno sporočilo z enim svojih naslovov Myriad, da prejemniku sporočila dokažete, da je ta naslov v vaši lasti.</translation>
+        <source>Sign messages with your Myriadcoin addresses to prove you own them</source>
+        <translation>Podpišite poljubno sporočilo z enim svojih naslovov Bitcoin, da prejemniku sporočila dokažete, da je ta naslov v vaši lasti.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
-        <translation>Preverite, če je bilo prejeto sporočilo podpisano z določenim naslovom Myriad</translation>
+        <source>Verify messages to ensure they were signed with specified Myriadcoin addresses</source>
+        <translation>Preverite, če je bilo prejeto sporočilo podpisano z določenim naslovom Bitcoin</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -387,20 +230,8 @@
         <translation>Orodna vrstica zavihkov</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
-    </message>
-    <message>
-        <source>Request payments (generates QR codes and myriad: URIs)</source>
-        <translation>Zahtevajte plačilo (ustvarite zahtevek s kodo QR in URI tipa myriad:)</translation>
-    </message>
-    <message>
-        <source>&amp;About Myriad Core</source>
-        <translation>&amp;O programu</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Myriad Core</source>
-        <translation>Spremenite programske nastavitve</translation>
+        <source>Request payments (generates QR codes and myriadcoin: URIs)</source>
+        <translation>Zahtevajte plačilo (ustvarite zahtevek s kodo QR in URI tipa myriadcoin:)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,48 +242,28 @@
         <translation>Preglejte in uredite seznam naslovov, na katere ste kdaj prejeli plačila</translation>
     </message>
     <message>
-        <source>Open a myriad: URI or payment request</source>
-        <translation>Izvedite plačilo iz zahtevka v datoteki ali iz URI tipa myriad:</translation>
+        <source>Open a myriadcoin: URI or payment request</source>
+        <translation>Izvedite plačilo iz zahtevka v datoteki ali iz URI tipa myriadcoin:</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opcije &amp;ukazne vrstice</translation>
     </message>
-    <message>
-        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
-        <translation>Oglejte si seznam in kratek opis vseh opcij pri zagonu programa iz ukazne vrstice</translation>
-    </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Myriad network</source>
-        <translation><numerusform>%n aktivna povezava v myriad omrežje</numerusform><numerusform>%n aktivni povezavi v myriad omrežje</numerusform><numerusform>%n aktivne povezave v myriad omrežje</numerusform><numerusform>%n aktivnih povezav v myriad omrežje</numerusform></translation>
+        <source>%n active connection(s) to Myriadcoin network</source>
+        <translation><numerusform>%n aktivna povezava v omrežje Bitcoin</numerusform><numerusform>%n aktivni povezavi v omrežje Bitcoin</numerusform><numerusform>%n aktivne povezave v omrežje Bitcoin</numerusform><numerusform>%n aktivnih povezav v omrežje Bitcoin</numerusform></translation>
     </message>
     <message>
-        <source>No block source available...</source>
-        <translation>Ni virov za prenos blokov ...</translation>
+        <source>Indexing blocks on disk...</source>
+        <translation>Indeksirani bloki na disku ...</translation>
+    </message>
+    <message>
+        <source>Processing blocks on disk...</source>
+        <translation>Obdelava blokov na disku ...</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation><numerusform>%n obdelan blok zgodovine transakcij.</numerusform><numerusform>%n obdelana bloka zgodovine transakcij.</numerusform><numerusform>%n obdelani bloki zgodovine transakcij.</numerusform><numerusform>%n obdelanih blokov zgodovine transakcij.</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n ura</numerusform><numerusform>%n uri</numerusform><numerusform>%n ure</numerusform><numerusform>%n ur</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dan</numerusform><numerusform>%n dneva</numerusform><numerusform>%n dni</numerusform><numerusform>%n dni</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n teden</numerusform><numerusform>%n tedna</numerusform><numerusform>%n tedne</numerusform><numerusform>%n tednov</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation>%1 in %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n leto</numerusform><numerusform>%n leti</numerusform><numerusform>%n leta</numerusform><numerusform>%n let</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -460,7 +271,7 @@
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Zadnji prejeti blok je bil ustvarjen %1 nazaj.</translation>
+        <translation>Zadnji prejeti blok je star %1.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
@@ -481,6 +292,10 @@
     <message>
         <source>Up to date</source>
         <translation>Posodobljeno</translation>
+    </message>
+    <message>
+        <source>%1 client</source>
+        <translation>%1 odjemalec</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -532,14 +347,7 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Denarnica je &lt;b&gt;šifrirana&lt;/b&gt; in trenutno &lt;b&gt;zaklenjena&lt;/b&gt;</translation>
     </message>
-</context>
-<context>
-    <name>ClientModel</name>
-    <message>
-        <source>Network Alert</source>
-        <translation>Omrežno opozorilo</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
@@ -557,10 +365,6 @@
     <message>
         <source>Amount:</source>
         <translation>Znesek:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioriteta:</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -614,155 +418,7 @@
         <source>Confirmed</source>
         <translation>Potrjeno</translation>
     </message>
-    <message>
-        <source>Priority</source>
-        <translation>Prioriteta</translation>
-    </message>
-    <message>
-        <source>Copy address</source>
-        <translation>Kopiraj naslov</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Kopiraj oznako</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopiraj znesek</translation>
-    </message>
-    <message>
-        <source>Copy transaction ID</source>
-        <translation>Kopiraj ID transakcije</translation>
-    </message>
-    <message>
-        <source>Lock unspent</source>
-        <translation>Zakleni neporabljeno</translation>
-    </message>
-    <message>
-        <source>Unlock unspent</source>
-        <translation>Odkleni neporabljeno</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Kopiraj število vhodov</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Kopiraj znesek provizije</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>Kopiraj končni znesek</translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>Kopiraj število bajtov</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>Kopiraj prioriteto</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>Kopiraj prah</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>Kopiraj znesek vračila</translation>
-    </message>
-    <message>
-        <source>highest</source>
-        <translation>najvišja</translation>
-    </message>
-    <message>
-        <source>higher</source>
-        <translation>višja</translation>
-    </message>
-    <message>
-        <source>high</source>
-        <translation>visoka</translation>
-    </message>
-    <message>
-        <source>medium-high</source>
-        <translation>srednje visoka</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>srednja</translation>
-    </message>
-    <message>
-        <source>low-medium</source>
-        <translation>srednje nizka</translation>
-    </message>
-    <message>
-        <source>low</source>
-        <translation>nizka</translation>
-    </message>
-    <message>
-        <source>lower</source>
-        <translation>nižja</translation>
-    </message>
-    <message>
-        <source>lowest</source>
-        <translation>najnižja</translation>
-    </message>
-    <message>
-        <source>(%1 locked)</source>
-        <translation>(%1 zaklenjeno)</translation>
-    </message>
-    <message>
-        <source>none</source>
-        <translation>nič</translation>
-    </message>
-    <message>
-        <source>This label turns red if the transaction size is greater than 1000 bytes.</source>
-        <translation>Oznaka postane rdeča, če je transakcije večja od 1000 bajtov.</translation>
-    </message>
-    <message>
-        <source>This label turns red if the priority is smaller than "medium".</source>
-        <translation>Oznaka postane rdeča, če je prioriteta transakcije manjša kot "srednja".</translation>
-    </message>
-    <message>
-        <source>This label turns red if any recipient receives an amount smaller than %1.</source>
-        <translation>Oznaka postane rdeča, če je znesek manjši od %1.</translation>
-    </message>
-    <message>
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Lahko variira +/- %1 satoshijev na vhod.</translation>
-    </message>
-    <message>
-        <source>yes</source>
-        <translation>da</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>ne</translation>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 per kB is required.</source>
-        <translation>To pomeni, da je zahtevana provizija v višini vsaj %1 na KiB.</translation>
-    </message>
-    <message>
-        <source>Can vary +/- 1 byte per input.</source>
-        <translation>Lahko variira +/-1 bajt na vhod.</translation>
-    </message>
-    <message>
-        <source>Transactions with higher priority are more likely to get included into a block.</source>
-        <translation>Transakcije z višjo prioriteto imajo boljše možnosti za vključitev v blok.</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(brez oznake)</translation>
-    </message>
-    <message>
-        <source>change from %1 (%2)</source>
-        <translation>vračilo od %1 (%2)</translation>
-    </message>
-    <message>
-        <source>(change)</source>
-        <translation>(vračilo)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -785,39 +441,7 @@
         <source>&amp;Address</source>
         <translation>&amp;Naslov</translation>
     </message>
-    <message>
-        <source>New receiving address</source>
-        <translation>Nov naslov za prilive</translation>
-    </message>
-    <message>
-        <source>New sending address</source>
-        <translation>Nov naslov za odlive</translation>
-    </message>
-    <message>
-        <source>Edit receiving address</source>
-        <translation>Uredi naslov za prilive</translation>
-    </message>
-    <message>
-        <source>Edit sending address</source>
-        <translation>Uredi naslov za odlive</translation>
-    </message>
-    <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>Vnešeni naslov %1 je že v imeniku.</translation>
-    </message>
-    <message>
-        <source>The entered address "%1" is not a valid Myriad address.</source>
-        <translation>Vnešeni naslov %1 ni veljaven naslov Myriad.</translation>
-    </message>
-    <message>
-        <source>Could not unlock wallet.</source>
-        <translation>Denarnice ni bilo mogoče odkleniti.</translation>
-    </message>
-    <message>
-        <source>New key generation failed.</source>
-        <translation>Novega ključa ni bilo mogoče ustvariti.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>FreespaceChecker</name>
     <message>
@@ -844,10 +468,6 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
-    </message>
-    <message>
         <source>version</source>
         <translation>različica</translation>
     </message>
@@ -856,8 +476,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Myriad Core</source>
-        <translation>O programu Myriad Core</translation>
+        <source>About %1</source>
+        <translation>O %1</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -871,7 +491,19 @@
         <source>command-line options</source>
         <translation>možnosti ukazne vrstice</translation>
     </message>
-</context>
+    <message>
+        <source>UI Options:</source>
+        <translation>UI možnosti:</translation>
+    </message>
+    <message>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Nastavi jezik, na primer "sl_SI" (privzeto: sistemsko)</translation>
+    </message>
+    <message>
+        <source>Start minimized</source>
+        <translation>Začni minimizirano</translation>
+    </message>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -879,16 +511,8 @@
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to Myriad Core.</source>
-        <translation>Dobrodošli v programu Myriad Core.</translation>
-    </message>
-    <message>
-        <source>As this is the first time the program is launched, you can choose where Myriad Core will store its data.</source>
-        <translation>To je prvi zagon programa, zato lahko izberete mapo, v katero bo program shranjeval podatke.</translation>
-    </message>
-    <message>
-        <source>Myriad Core will download and store a copy of the Myriad block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Program bo prenesel in shranil kopijo verige blokov. V izbrani podatkovni mapi bo shranjenih vsaj %1 GiB podatkov, ta količina pa bo sčasoma še naraščala. V tej mapi bo shranjena tudi denarnica.</translation>
+        <source>Welcome to %1.</source>
+        <translation>Dobrodošli v %1</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -897,10 +521,6 @@
     <message>
         <source>Use a custom data directory:</source>
         <translation>Uporabi to podatkovno mapo:</translation>
-    </message>
-    <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -913,6 +533,25 @@
     <message numerus="yes">
         <source>%n GB of free space available</source>
         <translation><numerusform>%n GiB prostega prostora na voljo</numerusform><numerusform>%n GiB prostega prostora na voljo</numerusform><numerusform>%n GiB prostega prostora na voljo</numerusform><numerusform>%n GiB prostega prostora na voljo</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation><numerusform>(od potrebnih %n GiB)</numerusform><numerusform>(od potrebnih %n GiB)</numerusform><numerusform>(od potrebnih %n GiB)</numerusform><numerusform>(od potrebnih %n GiB)</numerusform></translation>
+    </message>
+</context>
+<context>
+    <name>ModalOverlay</name>
+    <message>
+        <source>Form</source>
+        <translation>Oblika</translation>
+    </message>
+    <message>
+        <source>Last block time</source>
+        <translation>Čas zadnjega bloka</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Skrij</translation>
     </message>
     </context>
 <context>
@@ -933,11 +572,7 @@
         <source>Select payment request file</source>
         <translation>Izbiranje datoteke z zahtevkom za plačilo</translation>
     </message>
-    <message>
-        <source>Select payment request file to open</source>
-        <translation>Izberite datoteko, ki vsebuje zahtevek za plačilo</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OptionsDialog</name>
     <message>
@@ -977,10 +612,6 @@
         <translation>Ko zaprete glavno okno programa, bo program tekel še naprej, okno pa bo zgolj minimirano. Program v tem primeru ustavite tako, da v meniju izberete ukaz Izhod.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Myriad Core.</source>
-        <translation>Nastavitev jezika uporabniškega vmesnika programa. Nova nastavitev jezika bo uporabljena šele, ko boste znova zagnali program.</translation>
-    </message>
-    <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>Naslovi URL tretjih oseb (npr. raziskovalec blokov), ki bodo navedeni v kontekstnem meniju seznama transakcij. Niz %s iz naslova URL je nadomeščen s hash vrednostjo transakcije. Več zaporednih naslovov URL je med seboj ločenih z znakom |.</translation>
     </message>
@@ -1003,14 +634,6 @@
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Omrežje</translation>
-    </message>
-    <message>
-        <source>Automatically start Myriad Core after logging in to the system.</source>
-        <translation>Ob uporabnikovi prijavi v sistem se bo program samodejno zagnal</translation>
-    </message>
-    <message>
-        <source>&amp;Start Myriad Core on system login</source>
-        <translation>&amp;Zaženi program ob prijavi v sistem</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1037,7 +660,7 @@
         <translation>Omogoči &amp;trošenje drobiža iz še nepotrjenih plačil</translation>
     </message>
     <message>
-        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Myriadcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Program samodejno odpre ustrezna vrata na usmerjevalniku. To deluje samo, če vaš usmerjevalnik podpira in ima omogočen UPnP.</translation>
     </message>
     <message>
@@ -1045,8 +668,8 @@
         <translation>Preslikaj vrata z uporabo &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Myriad network through a SOCKS5 proxy.</source>
-        <translation>Poveži se v omrežje Myriad preko posredniškega strežnika SOCKS5.</translation>
+        <source>Connect to the Myriadcoin network through a SOCKS5 proxy.</source>
+        <translation>Poveži se v omrežje Myriadcoin preko posredniškega strežnika SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1063,6 +686,10 @@
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Vrata posredniškega strežnika (npr. 9050)</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
+        <translation>Za dostop do soležnikov preko skritih storitev Tor uporabi drug posredniški strežnik SOCKS5:</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1144,8 +771,8 @@
         <translation>Oblika</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazani podatki so morda zastareli. Program ob vzpostavitvi povezave samodejno sinhronizira denarnico z omrežjem Myriad, a trenutno ta proces še ni zaključen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriadcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazani podatki so morda zastareli. Program ob vzpostavitvi povezave samodejno sinhronizira denarnico z omrežjem Bitcoin, a trenutno ta proces še ni zaključen.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1214,99 +841,7 @@
 </context>
 <context>
     <name>PaymentServer</name>
-    <message>
-        <source>URI handling</source>
-        <translation>Rokovanje z URI</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>Neveljaven naslov plačila %1</translation>
-    </message>
-    <message>
-        <source>Payment request rejected</source>
-        <translation>Zahtevek za plačilo je bil zavrnjen.</translation>
-    </message>
-    <message>
-        <source>Payment request network doesn't match client network.</source>
-        <translation>Zahtevek za plačilo in vaš odjemalec se nahajata na dveh različnih omrežjih.</translation>
-    </message>
-    <message>
-        <source>Payment request is not initialized.</source>
-        <translation>Zahtevek za plačilo ni inicializiran.</translation>
-    </message>
-    <message>
-        <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Znesek %1 v zahtevku za plačilo je prenizek (smatran za prah.)</translation>
-    </message>
-    <message>
-        <source>Payment request error</source>
-        <translation>Napaka pri zahtevku za plačilo</translation>
-    </message>
-    <message>
-        <source>Cannot start myriad: click-to-pay handler</source>
-        <translation>Ni mogoče zagnati rokovalca plačilnih povezav tipa myriad:.</translation>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation>Naslov URL za pridobitev zahtevka za plačilo ni veljaven: %1</translation>
-    </message>
-    <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Myriad address or malformed URI parameters.</source>
-        <translation>URI je neprepoznaven! Možno je, da je naslov Myriad neveljaven, ali da so parametri v URI napačno oblikovani.</translation>
-    </message>
-    <message>
-        <source>Payment request file handling</source>
-        <translation>Rokovanje z datoteko z zahtevkom za plačilo</translation>
-    </message>
-    <message>
-        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Datoteke z zahtevkom za plačilo ni mogoče prebrati! Možno je, da datoteka ni veljavna.</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>Zahtevek za plačilo je potekel.</translation>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Nepreverjeni zahtevki za plačilo, namenjeni plačilni skripti po meri, niso podprti.</translation>
-    </message>
-    <message>
-        <source>Invalid payment request.</source>
-        <translation>Neveljaven zahtevek za plačilo.</translation>
-    </message>
-    <message>
-        <source>Refund from %1</source>
-        <translation>Povračilo od %1</translation>
-    </message>
-    <message>
-        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>Zahtevek za plačilo %1 je prevelik (%2 bajtov, dovoljenih je %3 bajtov.)</translation>
-    </message>
-    <message>
-        <source>Payment request DoS protection</source>
-        <translation>Zaščita pred napadom denial-of-service zahtevka za plačilo</translation>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>Napaka pri povezavi z  %1: %2</translation>
-    </message>
-    <message>
-        <source>Payment request cannot be parsed!</source>
-        <translation>Zahtevek za plačilo je neprepoznaven!</translation>
-    </message>
-    <message>
-        <source>Bad response from server %1</source>
-        <translation>Napačen odziv strežnika %1</translation>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation>Plačilo priznano</translation>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation>Napaka omrežne zahteve</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PeerTableModel</name>
     <message>
@@ -1315,13 +850,9 @@
     </message>
     <message>
         <source>Node/Service</source>
-        <translation>Vozlišče/Storitev</translation>
+        <translation>Naslov</translation>
     </message>
-    <message>
-        <source>Ping Time</source>
-        <translation>Odzivni čas</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -1329,8 +860,8 @@
         <translation>Znesek</translation>
     </message>
     <message>
-        <source>Enter a Myriad address (e.g. %1)</source>
-        <translation>Vnesite naslov Myriad (npr. %1):</translation>
+        <source>Enter a Myriadcoin address (e.g. %1)</source>
+        <translation>Vnesite naslov Myriadcoin (npr. %1):</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1360,32 +891,19 @@
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 in %2</translation>
+    </message>
+    </context>
+<context>
+    <name>QObject::QObject</name>
+    </context>
 <context>
     <name>QRImageWidget</name>
-    <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Shrani sliko ...</translation>
-    </message>
-    <message>
-        <source>&amp;Copy Image</source>
-        <translation>&amp;Kopiraj sliko</translation>
-    </message>
-    <message>
-        <source>Save QR Code</source>
-        <translation>Shrani kodo QR</translation>
-    </message>
-    <message>
-        <source>PNG Image (*.png)</source>
-        <translation>PNG slika (*.png)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RPCConsole</name>
-    <message>
-        <source>Client name</source>
-        <translation>Ime odjemalca</translation>
-    </message>
     <message>
         <source>N/A</source>
         <translation>Neznano</translation>
@@ -1405,10 +923,6 @@
     <message>
         <source>General</source>
         <translation>Splošno</translation>
-    </message>
-    <message>
-        <source>Using OpenSSL version</source>
-        <translation>OpenSSL različica v rabi</translation>
     </message>
     <message>
         <source>Using BerkeleyDB version</source>
@@ -1437,10 +951,6 @@
     <message>
         <source>Current number of blocks</source>
         <translation>Trenutno število blokov</translation>
-    </message>
-    <message>
-        <source>Open the Myriad Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Odpre razhroščevalni dnevnik debug.log, ki se nahaja v trenutni podatkovni mapi. Če je datoteka velika, lahko postopek traja nekaj sekund.</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1475,14 +985,6 @@
         <translation>Storitve</translation>
     </message>
     <message>
-        <source>Starting Height</source>
-        <translation>Začetna višina</translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>Trenutna višina</translation>
-    </message>
-    <message>
         <source>Ban Score</source>
         <translation>Kazenske točke</translation>
     </message>
@@ -1497,14 +999,6 @@
     <message>
         <source>Last Receive</source>
         <translation>Nazadnje prejeto</translation>
-    </message>
-    <message>
-        <source>Bytes Sent</source>
-        <translation>Oddanih bajtov</translation>
-    </message>
-    <message>
-        <source>Bytes Received</source>
-        <translation>Prejetih bajtov</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -1547,20 +1041,12 @@
         <translation>Odhodnih:</translation>
     </message>
     <message>
-        <source>Build date</source>
-        <translation>Datum izgradnje</translation>
-    </message>
-    <message>
         <source>Debug log file</source>
         <translation>Razhroščevalni dnevnik</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Počisti konzolo</translation>
-    </message>
-    <message>
-        <source>Welcome to the Myriad Core RPC console.</source>
-        <translation>Dobrodošli v konzoli RPC programa Myriad Core.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1603,12 +1089,16 @@
         <translation>Odhodna</translation>
     </message>
     <message>
-        <source>Unknown</source>
-        <translation>Neznano</translation>
+        <source>Yes</source>
+        <translation>Da</translation>
     </message>
     <message>
-        <source>Fetching...</source>
-        <translation>Pridobivam ...</translation>
+        <source>No</source>
+        <translation>Ne</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Neznano</translation>
     </message>
 </context>
 <context>
@@ -1634,8 +1124,8 @@
         <translation>P&amp;onovno uporabite obstoječ naslov za prejemanje. (Ni priporočeno.)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriad network.</source>
-        <translation>Neobvezno sporočilo kot priponka zahtevku za plačilo, ki bo prikazano, ko bo zahtevek odprt. Opomba: Opravljeno plačilo.prek omrežja Myriad tega sporočila ne bo vsebovalo.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriadcoin network.</source>
+        <translation>Neobvezno sporočilo kot priponka zahtevku za plačilo, ki bo prikazano, ko bo zahtevek odprt. Opomba: Opravljeno plačilo.prek omrežja Myriadcoin tega sporočila ne bo vsebovalo.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1681,19 +1171,7 @@
         <source>Remove</source>
         <translation>Odstrani</translation>
     </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Kopiraj oznako</translation>
-    </message>
-    <message>
-        <source>Copy message</source>
-        <translation>Kopiraj sporočilo</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopiraj znesek</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
@@ -1712,74 +1190,10 @@
         <source>&amp;Save Image...</source>
         <translation>&amp;Shrani sliko ...</translation>
     </message>
-    <message>
-        <source>Request payment to %1</source>
-        <translation>Zahtevek za plačilo z oznako: %1</translation>
-    </message>
-    <message>
-        <source>Payment information</source>
-        <translation>Informacije o plačilu</translation>
-    </message>
-    <message>
-        <source>URI</source>
-        <translation>URI</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Naslov</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Znesek</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Oznaka</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Sporočilo</translation>
-    </message>
-    <message>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>Nastali URI je predolg. Skušajte skrajšati besedilo v oznaki/sporočilu.</translation>
-    </message>
-    <message>
-        <source>Error encoding URI into QR Code.</source>
-        <translation>Napaka pri pretvorbi URI v kodo QR.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Oznaka</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Sporočilo</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Znesek</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(brez oznake)</translation>
-    </message>
-    <message>
-        <source>(no message)</source>
-        <translation>(brez sporočila)</translation>
-    </message>
-    <message>
-        <source>(no amount)</source>
-        <translation>(brez zneska)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
@@ -1813,10 +1227,6 @@
     <message>
         <source>Amount:</source>
         <translation>Znesek:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioriteta:</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -1867,7 +1277,7 @@
         <translation>skupno vsaj</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for myriad transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
         <translation>Dokler bo v blokih še dovolj prostora za vse nastajajoče transakcije, zadostuje, če plačate samo minimalno provizijo. Ko pa se bo količina vseh transakcij povečala do meja zmogljivosti omrežja, se lahko zgodi, da vaša transakcija brez večje provizije nikoli ne bo potrjena.</translation>
     </message>
     <message>
@@ -1887,24 +1297,12 @@
         <translation>(Samodejni obračun provizije še ni pripravljen. Po navadi izračun traja nekaj blokov ...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Čas do potrditve:</translation>
-    </message>
-    <message>
         <source>normal</source>
         <translation>navadno</translation>
     </message>
     <message>
         <source>fast</source>
         <translation>hitro</translation>
-    </message>
-    <message>
-        <source>Send as zero-fee transaction if possible</source>
-        <translation>Pošlji brez provizije, če je mogoče</translation>
-    </message>
-    <message>
-        <source>(confirmation may take longer)</source>
-        <translation>(čas do potrditve je lahko daljši)</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -1938,115 +1336,7 @@
         <source>S&amp;end</source>
         <translation>&amp;Pošlji</translation>
     </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Potrdi pošiljanje</translation>
-    </message>
-    <message>
-        <source>%1 to %2</source>
-        <translation>%1 na %2</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Kopiraj število vhodov</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopiraj znesek</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Kopiraj provizijo</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>Kopiraj Po proviziji</translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>Kopiraj bajte</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>Kopiraj prioriteto</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>Kopiraj vračilo</translation>
-    </message>
-    <message>
-        <source>or</source>
-        <translation>ali</translation>
-    </message>
-    <message>
-        <source>The amount to pay must be larger than 0.</source>
-        <translation>Znesek za plačilo mora biti večji od 0.</translation>
-    </message>
-    <message>
-        <source>The amount exceeds your balance.</source>
-        <translation>Znesek je večji od stanja sredstev, s katerimi razpolagate.</translation>
-    </message>
-    <message>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Celotni znesek z vključeno provizijo %1 je večji od stanja sredstev, s katerimi razpolagate.</translation>
-    </message>
-    <message>
-        <source>Transaction creation failed!</source>
-        <translation>Transakcije ni bilo mogoče ustvariti!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Transakcija je bila zavrnjena! To se lahko zgodi, če so bili kateri od kovancev iz denarnice že porabljeni, kot v primeru, da ste kje uporabili kopijo datoteke wallet.dat in kovance tam že porabili, lokalno pa ti še niso bili označeni kot porabljeni.</translation>
-    </message>
-    <message>
-        <source>A fee higher than %1 is considered an absurdly high fee.</source>
-        <translation>Provizija, višja od %1, velja za nesmiselno visoko.</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>Zahtevek za plačilo je potekel.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Predviden začetek potrditev po %n najdenem bloku.</numerusform><numerusform>Predviden začetek potrditev po %n najdenih blokih.</numerusform><numerusform>Predviden začetek potrditev po %n najdenih blokih.</numerusform><numerusform>Predviden začetek potrditev po %n najdenih blokih.</numerusform></translation>
-    </message>
-    <message>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>Plačilo samo minimalne provizije v znesku %1</translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid. Please recheck.</source>
-        <translation>Naslov prejemnika je neveljaven. Prosimo, preverite.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>Naslov je že bil uporabljen. Vsak naslov naj bi se uporabil samo enkrat.</translation>
-    </message>
-    <message>
-        <source>Warning: Invalid Myriad address</source>
-        <translation>Opozorilo: Neveljaven myriad naslov</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(brez oznake)</translation>
-    </message>
-    <message>
-        <source>Warning: Unknown change address</source>
-        <translation>Opozorilo: Neznan naslov za vračilo drobiža</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>Kopiraj prah</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?</source>
-        <translation>Ali ste prepričani, da želite izvesti plačilo?</translation>
-    </message>
-    <message>
-        <source>added as transaction fee</source>
-        <translation>dodano kot provizija transakcije</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
@@ -2056,10 +1346,6 @@
     <message>
         <source>Pay &amp;To:</source>
         <translation>Prejemnik &amp;plačila:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Vnesite oznako, pod katero bo zgornji naslov shranjen v imenik</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
@@ -2074,8 +1360,8 @@
         <translation>Plačilo je navadne vrste.</translation>
     </message>
     <message>
-        <source>The Myriad address to send the payment to</source>
-        <translation>Naslov Myriad, na katerega bo plačilo poslano</translation>
+        <source>The Myriadcoin address to send the payment to</source>
+        <translation>Naslov Bitcoin, na katerega bo plačilo poslano</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2094,7 +1380,7 @@
         <translation>Izpraznite vsebino polja</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less myriads than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less myriadcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Znesek plačila bo zmanjšan za znesek provizije. Prejemnik bo prejel manjše število kovancev, kot je bil vnešeni znesek. Če je prejemnikov več, bo provizija med njih enakomerno porazdeljena.</translation>
     </message>
     <message>
@@ -2118,8 +1404,8 @@
         <translation>Če vnesete oznako za zgornji naslov, se bo skupaj z naslovom shranila v imenk že uporabljenih naslovov</translation>
     </message>
     <message>
-        <source>A message that was attached to the myriad: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriad network.</source>
-        <translation>Sporočilo, ki ste ga pripeli na URI tipa myriad:. Shranjeno bo skupaj s podatki o transakciji. Opomba: Sporočilo ne bo poslano preko omrežja Myriad.</translation>
+        <source>A message that was attached to the myriadcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriadcoin network.</source>
+        <translation>Sporočilo, ki ste ga pripeli na URI tipa myriadcoin:. Shranjeno bo skupaj s podatki o transakciji. Opomba: Sporočilo ne bo poslano preko omrežja Bitcoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2129,13 +1415,12 @@
         <source>Memo:</source>
         <translation>Opomba:</translation>
     </message>
-</context>
+    </context>
+<context>
+    <name>SendConfirmationDialog</name>
+    </context>
 <context>
     <name>ShutdownWindow</name>
-    <message>
-        <source>Myriad Core is shutting down...</source>
-        <translation>Program se ustavlja ...</translation>
-    </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
         <translation>Dokler to okno ne izgine, ne zaustavljajte računalnika.</translation>
@@ -2152,12 +1437,12 @@
         <translation>&amp;Podpiši sporočilo</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive myriads sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive myriadcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>S svojimi naslovi lahko podpisujete sporočila ali pogodbe in s tem dokazujete, da na teh naslovih lahko prejemate kovance. Bodite previdni in ne podpisujte ničesar nejasnega ali naključnega, ker vas zlikovci preko ribarjenja (phishing) lahko prelisičijo, da na njih prepišete svojo identiteto. Podpisujte samo podrobno opisane izjave, s katerimi se strinjate.</translation>
     </message>
     <message>
-        <source>The Myriad address to sign the message with</source>
-        <translation>Naslov Myriad, s katerim podpisujete sporočilo</translation>
+        <source>The Myriadcoin address to sign the message with</source>
+        <translation>Naslov Bitcoin, s katerim podpisujete sporočilo</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2188,7 +1473,7 @@
         <translation>Kopiranje trenutnega podpisa na sistemsko odložišče.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriad address</source>
+        <source>Sign the message to prove you own this Myriadcoin address</source>
         <translation>Podpišite sporočilo, da dokažete lastništvo nad zgornjim naslovom.</translation>
     </message>
     <message>
@@ -2212,12 +1497,12 @@
         <translation>Da preverite verodostojnost sporočila, spodaj vnesite: prejemnikov naslov, prejeto sporočilo (pazljivo skopirajte vse prelome vrstic, presledke, tabulatorje ipd.,) in prejeti podpis. Da se izognete napadom tipa man-in-the-middle, vedite, da iz veljavnega podpisa ne sledi nič drugega, kot tisto, kar je navedeno v sporočilu. Podpis samo potrjuje dejstvo, da ima podpisnik v lasti prejemni naslov, ne more pa dokazati vira nobene transakcije!</translation>
     </message>
     <message>
-        <source>The Myriad address the message was signed with</source>
-        <translation>Naslov Myriad, s katerim je bilo sporočilo podpisano</translation>
+        <source>The Myriadcoin address the message was signed with</source>
+        <translation>Naslov Bitcoin, s katerim je bilo sporočilo podpisano</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Myriad address</source>
-        <translation>Preverite, ali je bilo sporočilo v resnici podpisano z navedenim naslovom Myriad.</translation>
+        <source>Verify the message to ensure it was signed with the specified Myriadcoin address</source>
+        <translation>Preverite, ali je bilo sporočilo v resnici podpisano z navedenim naslovom Bitcoin.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2227,69 +1512,9 @@
         <source>Reset all verify message fields</source>
         <translation>Počisti vsa polja za vnos v oknu za preverjanje</translation>
     </message>
-    <message>
-        <source>Click "Sign Message" to generate signature</source>
-        <translation>Kliknite "Podpiši sporočilo" da ustvarite podpis</translation>
-    </message>
-    <message>
-        <source>The entered address is invalid.</source>
-        <translation>Vnešeni naslov ni veljaven.</translation>
-    </message>
-    <message>
-        <source>Please check the address and try again.</source>
-        <translation>Prosimo preverite naslov in poskusite znova.</translation>
-    </message>
-    <message>
-        <source>The entered address does not refer to a key.</source>
-        <translation>Vnešeni naslov se ne nanaša na noben ključ.</translation>
-    </message>
-    <message>
-        <source>Wallet unlock was cancelled.</source>
-        <translation>Odklepanje denarnice je bilo preklicano.</translation>
-    </message>
-    <message>
-        <source>Private key for the entered address is not available.</source>
-        <translation>Zasebni ključ vnešenega naslova ni na voljo.</translation>
-    </message>
-    <message>
-        <source>Message signing failed.</source>
-        <translation>Podpisa ni bilo mogoče ustvariti.</translation>
-    </message>
-    <message>
-        <source>Message signed.</source>
-        <translation>Podpis je bil ustvarjen.</translation>
-    </message>
-    <message>
-        <source>The signature could not be decoded.</source>
-        <translation>Podpisa ni bilo mogoče razbrati.</translation>
-    </message>
-    <message>
-        <source>Please check the signature and try again.</source>
-        <translation>Prosimo preverite podpis in poskusite znova.</translation>
-    </message>
-    <message>
-        <source>The signature did not match the message digest.</source>
-        <translation>Podpis se ne ujema z rezultatom funkcije preverjanja.</translation>
-    </message>
-    <message>
-        <source>Message verification failed.</source>
-        <translation>Podpis ni veljaven za to sporočilo.</translation>
-    </message>
-    <message>
-        <source>Message verified.</source>
-        <translation>Podpis sporočila je veljaven.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SplashScreen</name>
-    <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
-    </message>
-    <message>
-        <source>The Myriad Core developers</source>
-        <translation>Myriad Core razvijalci</translation>
-    </message>
     <message>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
@@ -2304,416 +1529,20 @@
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message>
-        <source>Open until %1</source>
-        <translation>Odprto do %1</translation>
-    </message>
-    <message>
-        <source>conflicted</source>
-        <translation>v konfliktu</translation>
-    </message>
-    <message>
-        <source>%1/offline</source>
-        <translation>%1/brez povezave</translation>
-    </message>
-    <message>
-        <source>%1/unconfirmed</source>
-        <translation>%1/nepotrjeno</translation>
-    </message>
-    <message>
-        <source>%1 confirmations</source>
-        <translation>%1 potrdil</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Status</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, posredovano %n vozlišču</numerusform><numerusform>, posredovano %n vozliščema</numerusform><numerusform>, posredovano %n vozliščem</numerusform><numerusform>, posredovano %n vozliščem</numerusform></translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation>Izvor</translation>
-    </message>
-    <message>
-        <source>Generated</source>
-        <translation>Generirano</translation>
-    </message>
-    <message>
-        <source>From</source>
-        <translation>Pošiljatelj</translation>
-    </message>
-    <message>
-        <source>To</source>
-        <translation>Prejemnik</translation>
-    </message>
-    <message>
-        <source>own address</source>
-        <translation>lasten naslov</translation>
-    </message>
-    <message>
-        <source>watch-only</source>
-        <translation>opazovano</translation>
-    </message>
-    <message>
-        <source>label</source>
-        <translation>oznaka</translation>
-    </message>
-    <message>
-        <source>Credit</source>
-        <translation>V dobro</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>dozori po %n najdenem bloku</numerusform><numerusform>dozori po %n najdenih blokih</numerusform><numerusform>dozori po %n najdenih blokih</numerusform><numerusform>dozori po %n najdenih blokih</numerusform></translation>
-    </message>
-    <message>
-        <source>not accepted</source>
-        <translation>ni bilo sprejeto</translation>
-    </message>
-    <message>
-        <source>Debit</source>
-        <translation>Debit</translation>
-    </message>
-    <message>
-        <source>Total debit</source>
-        <translation>Skupaj v breme</translation>
-    </message>
-    <message>
-        <source>Total credit</source>
-        <translation>Skupaj v dobro</translation>
-    </message>
-    <message>
-        <source>Transaction fee</source>
-        <translation>Provizija transakcije</translation>
-    </message>
-    <message>
-        <source>Net amount</source>
-        <translation>Neto znesek</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Sporočilo</translation>
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Opomba</translation>
-    </message>
-    <message>
-        <source>Transaction ID</source>
-        <translation>ID transakcije</translation>
-    </message>
-    <message>
-        <source>Merchant</source>
-        <translation>Trgovec</translation>
-    </message>
-    <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Ustvarjeni kovanci morajo zoreti %1 blokov, preden jih lahko porabite. Ko ste ta blok zgenerirali, je bil posredovan v omrežje, da bo dodan v verigo. Če se bloku ni uspelo uvrstiti v verigo, se bo njegovo stanje spremenilo v "ni bilo sprejeto" in kovancev ne bo mogoče porabiti. To se včasih zgodi, če kak drug rudar v roku nekaj sekund hkrati z vami odkrije drug blok.</translation>
-    </message>
-    <message>
-        <source>Debug information</source>
-        <translation>Razhroščevalne informacije</translation>
-    </message>
-    <message>
-        <source>Transaction</source>
-        <translation>Transakcija</translation>
-    </message>
-    <message>
-        <source>Inputs</source>
-        <translation>Vhodi</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Znesek</translation>
-    </message>
-    <message>
-        <source>true</source>
-        <translation>pravilno</translation>
-    </message>
-    <message>
-        <source>false</source>
-        <translation>nepravilno</translation>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>, še ni bila uspešno raznešena</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Odprto še %n blok</numerusform><numerusform>Odprto še %n bloka</numerusform><numerusform>Odprto še %n bloke</numerusform><numerusform>Odprto še %n blokov</numerusform></translation>
-    </message>
-    <message>
-        <source>unknown</source>
-        <translation>neznano</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>TransactionDescDialog</name>
-    <message>
-        <source>Transaction details</source>
-        <translation>Podrobnosti transakcije</translation>
-    </message>
     <message>
         <source>This pane shows a detailed description of the transaction</source>
         <translation>V tem podoknu so prikazane podrobnosti o transakciji</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>TransactionTableModel</name>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Vrsta</translation>
-    </message>
-    <message>
-        <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>Nedozorelo (št. potrditev: %1, na voljo šele po: %2)</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Odprto še %n blok</numerusform><numerusform>Odprto še %n bloka</numerusform><numerusform>Odprto še %n bloke</numerusform><numerusform>Odprto še %n blokov</numerusform></translation>
-    </message>
-    <message>
-        <source>Open until %1</source>
-        <translation>Odprto do %1</translation>
-    </message>
-    <message>
-        <source>Confirmed (%1 confirmations)</source>
-        <translation>Potrjeno (%1 potrdil)</translation>
-    </message>
-    <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Ta blok ni prejelo še nobeno vozlišče. Najverjetneje ne bo sprejet!</translation>
-    </message>
-    <message>
-        <source>Generated but not accepted</source>
-        <translation>Generirano, toda ne sprejeto</translation>
-    </message>
-    <message>
-        <source>Offline</source>
-        <translation>Brez povezave</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Oznaka</translation>
-    </message>
-    <message>
-        <source>Unconfirmed</source>
-        <translation>Nepotrjeno</translation>
-    </message>
-    <message>
-        <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation>V potrjevanju (št. potrditev: %1 od priporočenih %2)</translation>
-    </message>
-    <message>
-        <source>Conflicted</source>
-        <translation>V konfliktu</translation>
-    </message>
-    <message>
-        <source>Received with</source>
-        <translation>Prejemek</translation>
-    </message>
-    <message>
-        <source>Received from</source>
-        <translation>Prejemek</translation>
-    </message>
-    <message>
-        <source>Sent to</source>
-        <translation>Izdatek</translation>
-    </message>
-    <message>
-        <source>Payment to yourself</source>
-        <translation>Nakazilo sebi</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>Narudarjeno</translation>
-    </message>
-    <message>
-        <source>watch-only</source>
-        <translation>opazovano</translation>
-    </message>
-    <message>
-        <source>(n/a)</source>
-        <translation>(ni na voljo)</translation>
-    </message>
-    <message>
-        <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Stanje transakcije. Zapeljite z miško čez to polje za prikaz števila potrdil. </translation>
-    </message>
-    <message>
-        <source>Date and time that the transaction was received.</source>
-        <translation>Datum in čas, ko je transakcija bila prejeta.</translation>
-    </message>
-    <message>
-        <source>Type of transaction.</source>
-        <translation>Vrsta transakcije.</translation>
-    </message>
-    <message>
-        <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Ali je v transakciji udeležen kateri od opazovanih naslovov.</translation>
-    </message>
-    <message>
-        <source>User-defined intent/purpose of the transaction.</source>
-        <translation>Uporabniško določen namen transakcije.</translation>
-    </message>
-    <message>
-        <source>Amount removed from or added to balance.</source>
-        <translation>Znesek spremembe stanja sredstev.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>TransactionView</name>
-    <message>
-        <source>All</source>
-        <translation>Vse</translation>
-    </message>
-    <message>
-        <source>Today</source>
-        <translation>Danes</translation>
-    </message>
-    <message>
-        <source>This week</source>
-        <translation>Ta teden</translation>
-    </message>
-    <message>
-        <source>This month</source>
-        <translation>Ta mesec</translation>
-    </message>
-    <message>
-        <source>Last month</source>
-        <translation>Prejšnji mesec</translation>
-    </message>
-    <message>
-        <source>This year</source>
-        <translation>To leto</translation>
-    </message>
-    <message>
-        <source>Range...</source>
-        <translation>Območje ...</translation>
-    </message>
-    <message>
-        <source>Received with</source>
-        <translation>Prejemek</translation>
-    </message>
-    <message>
-        <source>Sent to</source>
-        <translation>Izdatek</translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>Nakazilo sebi</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>Narudarjeno</translation>
-    </message>
-    <message>
-        <source>Other</source>
-        <translation>Drugo</translation>
-    </message>
-    <message>
-        <source>Enter address or label to search</source>
-        <translation>Iščite po naslovu ali oznaki</translation>
-    </message>
-    <message>
-        <source>Min amount</source>
-        <translation>Minimalni znesek</translation>
-    </message>
-    <message>
-        <source>Copy address</source>
-        <translation>Kopiraj naslov</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Kopiraj oznako</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopiraj znesek</translation>
-    </message>
-    <message>
-        <source>Copy transaction ID</source>
-        <translation>Kopiraj ID transakcije</translation>
-    </message>
-    <message>
-        <source>Edit label</source>
-        <translation>Uredi oznako</translation>
-    </message>
-    <message>
-        <source>Show transaction details</source>
-        <translation>Prikaži podrobnosti transakcije</translation>
-    </message>
-    <message>
-        <source>Export Transaction History</source>
-        <translation>Izvoz zgodovine transakcij</translation>
-    </message>
-    <message>
-        <source>Watch-only</source>
-        <translation>Opazovano</translation>
-    </message>
-    <message>
-        <source>Exporting Failed</source>
-        <translation>Seznama transakcij ni bilo mogoče izvoziti.</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>Prišlo je do napake med shranjevanjem zgodovine transakcij v datoteko %1.</translation>
-    </message>
-    <message>
-        <source>Exporting Successful</source>
-        <translation>Uspešen izvoz</translation>
-    </message>
-    <message>
-        <source>The transaction history was successfully saved to %1.</source>
-        <translation>Zgodovina poteklih transakcij je bila uspešno shranjena v datoteko %1.</translation>
-    </message>
-    <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Datoteka s podatki, ločenimi z vejico (*.csv)</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>Potrjeno</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Vrsta</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Oznaka</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Naslov</translation>
-    </message>
-    <message>
-        <source>ID</source>
-        <translation>ID</translation>
-    </message>
-    <message>
-        <source>Range:</source>
-        <translation>Območje:</translation>
-    </message>
-    <message>
-        <source>to</source>
-        <translation>za</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
     <message>
@@ -2723,53 +1552,17 @@
 </context>
 <context>
     <name>WalletFrame</name>
-    <message>
-        <source>No wallet has been loaded.</source>
-        <translation>Denarnica ni bila naložena.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>WalletModel</name>
-    <message>
-        <source>Send Coins</source>
-        <translation>Pošlji</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Izvozi</translation>
-    </message>
-    <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Izvozi podatke iz trenutnega zavihka v datoteko</translation>
+        <translation>Izvozi podatke v trenutnem zavihku v datoteko</translation>
     </message>
-    <message>
-        <source>Backup Wallet</source>
-        <translation>Izdelava varnostne kopije denarnice</translation>
-    </message>
-    <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Podatki denarnice (*.dat)</translation>
-    </message>
-    <message>
-        <source>Backup Failed</source>
-        <translation>Varnostne kopije ni bilo mogoče izdelati.</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>Prišlo je do napake pri shranjevanju podatkov denarnice v datoteko %1.</translation>
-    </message>
-    <message>
-        <source>The wallet data was successfully saved to %1.</source>
-        <translation>Podatki iz denarnice so bili uspešno shranjeni v datoteko %1.</translation>
-    </message>
-    <message>
-        <source>Backup Successful</source>
-        <translation>Varnostna kopija je bila uspešno izdelana</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>bitcoin-core</name>
     <message>
@@ -2797,96 +1590,28 @@
         <translation>Teci v ozadju in sprejemaj ukaze</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Uporabi testno omrežje</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Sprejemaj zunanje povezave (privzeto: 1, razen če ste vklopili opciji -proxy ali -connect)</translation>
+        <source>Myriadcoin Core</source>
+        <translation>Myriadcoin Core</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Veži dani naslov in tam vedno poslušaj. Za naslove protokola IPv6 uporabite zapis [gostitelj]:vrata.</translation>
     </message>
     <message>
-        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>Distribuirano v okviru programske licence MIT. Podrobnosti so navedene v  priloženi datoteki COPYING ali na naslovu &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
-    </message>
-    <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Izvedi ukaz, ko bo transakcija denarnice se spremenila (V cmd je bil TxID zamenjan za %s)</translation>
-    </message>
-    <message>
-        <source>Maximum total fees to use in a single wallet transaction; setting this too low may abort large transactions (default: %s)</source>
-        <translation>Največji še veljavni skupni znesek provizij pri transakcijah z uporabo ene denarnice. Prenizka nastavitev lahko povzroči izločitev večjih transakcij (privzeto %s)</translation>
-    </message>
-    <message>
-        <source>Reduce storage requirements by pruning (deleting) old blocks. This mode disables wallet support and is incompatible with -txindex. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, &gt;%u = target size in MiB to use for block files)</source>
-        <translation>Omogoči obrezovanje (brisanje) starejših blokov in s tem prihrani pri prostoru za shranjevanje. Ta način delovanja onemogoči uporabo denarnice in ni združljivo z opcijo -txindex. Opozorilo: Če kasneje to opcijo povrnete na privzeto vrednost, boste morali ponovno prenesti celotno verigo. (privzeto: 0 = onemogoči obrezovanje, &gt;%u = ciljna velikost datotek blokov v MiB)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
         <translation>Nastavi število niti za preverjanje skript (%u do %d, 0 = samodejno, &lt;0 toliko procesorskih jeder naj ostane prostih, privzeto: %d)</translation>
     </message>
     <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>To je preizkusna različica še neizdanega programa. Uporabljate jo na lastno odgovornost. Programa ne uporabljajte je za rudarjenje ali trgovske aplikacije.</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer. Myriad Core is probably already running.</source>
-        <translation>Na tem računalniku ni bilo mogoče vezati naslova %s. Odjemalec Myriad Core je verjetno že zagnan.</translation>
-    </message>
-    <message>
-        <source>WARNING: abnormally high number of blocks generated, %d blocks received in the last %d hours (%d expected)</source>
-        <translation>OPOZORILO: Generirano je bilo nenavadno veliko število blokov. Št. prejetih blokov: %d v št. ur: %d (pričakovanih je %d blokov)</translation>
-    </message>
-    <message>
-        <source>WARNING: check your network connection, %d blocks received in the last %d hours (%d expected)</source>
-        <translation>OPOZORILO: Preverite vašo omrežno povezavo. Št. prejetih blokov: %d v št. ur: %d (pričakovanih je %d blokov)</translation>
-    </message>
-    <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Opozorilo: Vrednost opcije -paytxfee je zelo visoka. To je provizija, ki jo boste plačali, če izvedete plačilo.</translation>
-    </message>
-    <message>
-        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Opozorilo: Trenutno na omrežju ni videti konsenza! Videti je, kot da bi imeli nekateri rudarji težave.</translation>
-    </message>
-    <message>
-        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Opozorilo: Trenutno se s soležniki ne strinjam v popolnosti! Mogoče bi morali vi ali drugi udeleženci posodobiti odjemalce.</translation>
-    </message>
-    <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Opozorilo: napaka pri branju datoteke wallet.dat! Vsi ključi so bili pravilno prebrani, podatki o transakciji ali imenik vnešenih naslovov so morda izgubljeni ali nepravilni.</translation>
-    </message>
-    <message>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Opozorilo: Datoteka wallet.dat je bila okvarjena, podatki pa so bili kljub temu rešeni! Originalna datoteka je bila shranjena kot wallet.{čas.oznaka}.bak v mapo %s. Če sta skupno stanje ali seznam transakcij napačna, morate datoteko restavrirati iz varnostne kopije.</translation>
-    </message>
-    <message>
-        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
-        <translation>Sprejemaj povezave samo od soležnikov, ki so na naslovih, ki ustrezajo navedeni omrežni maski ali naslovu. Opcijo lahko navedete večkrat.</translation>
-    </message>
-    <message>
-        <source>(default: 1)</source>
-        <translation>(privzeto: 1)</translation>
-    </message>
-    <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; je lahko:</translation>
     </message>
     <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Skušaj obnoviti zasebne ključe iz okvarjene datoteke wallet.dat</translation>
-    </message>
-    <message>
         <source>Block creation options:</source>
         <translation>Možnosti ustvarjanja blokov:</translation>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s)</source>
-        <translation>Poveži se samo z (enim ali več) navedenimi vozlišči</translation>
     </message>
     <message>
         <source>Connection options:</source>
@@ -2931,10 +1656,6 @@
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Ni mogoče poslušati na nobenih vratih. Če to zares želite, uporabite opcijo -listen=0.</translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>Če element &lt;category&gt; ni naveden, izpisuje vse informacije za razhroščevanje.</translation>
     </message>
     <message>
         <source>Importing...</source>
@@ -2997,24 +1718,8 @@
         <translation>Izbire denarnice:</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete; upgrade required!</source>
-        <translation>Opozorilo: Različica vašega odjemalca je zastarela. Potrebna je nadgradnja!</translation>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation>Ob spremembi vrednosti opcije -txindex boste morali obnoviti bazo podatkov z uporabo opcije -reindex</translation>
-    </message>
-    <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Uvozi bloke iz zunanje datoteke blk000??.dat</translation>
-    </message>
-    <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
         <translation>Iz navedenega vira dovoli povezave na JSON-RPC. Veljavne oblike vrednosti parametra &lt;ip&gt; so: edinstven naslov IP (npr.: 1.2.3.4), kombinacija omrežje/netmask (npr.: 1.2.3.4/255.255.255.0), ali pa kombinacija omrežje/CIDR (1.2.3.4/24). To opcijo lahko navedete večkrat.</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
-        <translation>Prišlo je do napake med zagonom poslušalca RPC na naslovu %s in vratih %u: %s</translation>
     </message>
     <message>
         <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
@@ -3023,10 +1728,6 @@
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
         <translation>Veži dani naslov in sprejemaj povezave na JSON-RPC. Za naslove protokola IPv6 uporabite zapis [gostitelj]:vrata. To opcijo lahko navedete večkrat. (privzeto: veži vse omrežne vmesnike)</translation>
-    </message>
-    <message>
-        <source>Cannot obtain a lock on data directory %s. Myriad Core is probably already running.</source>
-        <translation>Ne morem zakleniti podatkovne mape %s. Myriad Core je verjetno že zagnan.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -3041,16 +1742,8 @@
         <translation>Napaka: Ni mogoče sprejemati dohodnih povezav (vrnjena napaka: %s)</translation>
     </message>
     <message>
-        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>Napaka: Navedli ste nepodprto vrednost opcije -socks. Različice protokola SOCKS ni več mogoče navesti, podprti so samo posredniški strežniki tipa SOCKS5.</translation>
-    </message>
-    <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>Ko bo prejeto ustrezno opozorilo, ali ko bo opažena zelo dolga razvejitev, izvedi navedeni ukazni niz. (Niz %s bo nadomeščen z vsebino sporočila.)</translation>
-    </message>
-    <message>
-        <source>Fees (in BTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Provizije (v BTC/KiB), ki so manjše od te vrednosti, se pri posredovanju smatrajo za nične (privzeto: %s)</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -3061,40 +1754,12 @@
         <translation>Na vsak posredniški strežnik se prijavi z drugimi naključnimi podatki. Tako je omogočena osamitev tokov v omrežju Tor (privzeto: %u)</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Myriad Core will not work properly.</source>
-        <translation>Opozorilo: Preverite, če sta datum in ura na vašem računalniku točna! Myriad Core ne bo dobro deloval, če je nastavljeni čas nepravilen.</translation>
-    </message>
-    <message>
         <source>(default: %u)</source>
         <translation>(privzeto: %u)</translation>
     </message>
     <message>
-        <source>Activating best chain...</source>
-        <translation>Preklapljam na najboljšo verigo ...</translation>
-    </message>
-    <message>
-        <source>Can't run with a wallet in prune mode.</source>
-        <translation>Če je omogočena funkcija obrezovanja, ni mogoče uporabljati denarnice.</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Naslova %s, podanega pri opciji -whitebind ni mogoče razrešiti.</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Ob zagonu pozovi uporabnika, naj izbere podatkovno mapo (privzeto: 0)</translation>
-    </message>
-    <message>
         <source>Connect through SOCKS5 proxy</source>
         <translation>Poveži se preko posredniškega strežnika SOCKS5</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2009-%i The Myriad Core Developers</source>
-        <translation>Copyright (C) 2009-%i The Myriad Core Developers</translation>
-    </message>
-    <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>Vrednost %s opcije -rpcbind ni prepoznaven omrežni naslov</translation>
     </message>
     <message>
         <source>Information</source>
@@ -3109,28 +1774,12 @@
         <translation>Pošilja sledilne/razhroščevalne informacije na konzolo namesto v datoteko debug.log</translation>
     </message>
     <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Nastavi korenske certifikate SSL za preverjanje zahtevkov za plačilo (privzeto: -system-)</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Nastavi jezik, npr. "sl_SI" (privzeto: jezik sistema)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Ob zagonu prikaži uvodni zaslon (privzeto: 1)</translation>
-    </message>
-    <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Ob zagonu skrajšaj datoteko debug.log (privzeto: 1, če ni vklopljena opcija -debug)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
         <translation>Transakcije ni bilo mogoče podpisati.</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Zaženi v minimiranem oknu</translation>
     </message>
     <message>
         <source>This is experimental software.</source>
@@ -3141,16 +1790,8 @@
         <translation>Znesek je pramajhen</translation>
     </message>
     <message>
-        <source>Transaction amounts must be positive</source>
-        <translation>Znesek mora biti pozitiven</translation>
-    </message>
-    <message>
         <source>Transaction too large</source>
         <translation>Transkacija je prevelika</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>Možnosti uporabniškega vmesnika:</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
@@ -3169,36 +1810,12 @@
         <translation>Brišem vse transakcije iz denarnice ...</translation>
     </message>
     <message>
-        <source>on startup</source>
-        <translation>ob zagonu</translation>
-    </message>
-    <message>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation>Datoteka wallet.dat je poškodovana in je ni bilo mogoče obnoviti.</translation>
-    </message>
-    <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Geslo za povezave na JSON-RPC</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Izvedi ukaz, ko je najden najboljši blok (niz %s v ukazu bo zamenjan s hash vrednostjo bloka)</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Nadgradi denarnico na najnovejšo različico</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>S ponovnim pregledom verige blokov poišči manjkajoče transakcije iz denarnice</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Uporabi OpenSSL (https) za povezave na JSON-RPC</translation>
-    </message>
-    <message>
-        <source>This help message</source>
-        <translation>To sporočilo pomoči</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -3209,24 +1826,12 @@
         <translation>Nalagam naslove ...</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Napaka pri nalaganju wallet.dat: denarnica pokvarjena</translation>
-    </message>
-    <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation>Za dostop do soležnikov preko skritih storitev Tor uporabi drug posredniški strežnik SOCKS5 (privzeto: %s)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
         <translation>(privzeto: %s)</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: %s)</source>
-        <translation>Sprejemljivi tipi šifriranja (privzeto: %s)</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat</source>
-        <translation>Napaka pri nalaganju wallet.dat</translation>
     </message>
     <message>
         <source>Invalid -proxy address: '%s'</source>
@@ -3259,18 +1864,6 @@
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Neznano omrežje določeno v -onlynet: '%s'.</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Naslova %s, podanega pri opciji -bind ni mogoče razrešiti.</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Naslova "%s", podanega pri opciji -externalip ni mogoče razrešiti.</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Neveljavna količina za -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

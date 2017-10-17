@@ -5,13 +5,12 @@
 
 #include "primitives/pureheader.h"
 
-#include "chainparams.h"
+#include "hash.h"
 #include "crypto/hashgroestl.h"
 #include "crypto/hashqubit.h"
 #include "crypto/hashskein.h"
 #include "crypto/scrypt.h"
 #include "crypto/yescrypt.h"
-#include "hash.h"
 #include "utilstrencodings.h"
 
 uint256 CPureBlockHeader::GetHash() const
@@ -19,9 +18,9 @@ uint256 CPureBlockHeader::GetHash() const
     return SerializeHash(*this);
 }
 
-uint256 CPureBlockHeader::GetPoWHash(int algo) const
+uint256 CPureBlockHeader::GetPoWHash(int algo, const Consensus::Params& consensusParams) const
 {
-    switch(algo)
+    switch (algo)
     {
         case ALGO_SHA256D:
             return GetHash();
@@ -47,6 +46,13 @@ uint256 CPureBlockHeader::GetPoWHash(int algo) const
     return GetHash();
 }
 
+void CPureBlockHeader::SetBaseVersion(int32_t nBaseVersion, int32_t nChainId)
+{
+    //assert(nBaseVersion >= 1 && nBaseVersion < VERSION_AUXPOW);
+    assert(!IsAuxpow());
+    nVersion = nBaseVersion | (nChainId * VERSION_CHAIN_START);
+}
+
 int GetAlgo(int nVersion)
 {
     switch (nVersion & BLOCK_VERSION_ALGO)
@@ -65,24 +71,4 @@ int GetAlgo(int nVersion)
             return ALGO_YESCRYPT;
     }
     return ALGO_SHA256D;
-}
-
-std::string GetAlgoName(int Algo)
-{
-    switch (Algo)
-    {
-        case ALGO_SHA256D:
-            return std::string("sha256d");
-        case ALGO_SCRYPT:
-            return std::string("scrypt");
-        case ALGO_GROESTL:
-            return std::string("groestl");
-        case ALGO_SKEIN:
-            return std::string("skein");
-        case ALGO_QUBIT:
-            return std::string("qubit");
-        case ALGO_YESCRYPT:
-            return std::string("yescrypt");
-    }
-    return std::string("unknown");       
 }

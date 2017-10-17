@@ -1,166 +1,109 @@
-Bitcoin Core version 0.11.2 is now available from:
+Bitcoin Core version 0.14.2 is now available from:
 
-  <https://bitcoin.org/bin/bitcoin-core-0.11.2/>
+  <https://bitcoin.org/bin/bitcoin-core-0.14.2/>
 
-This is a new minor version release, bringing bug fixes, the BIP65
-(CLTV) consensus change, and relay policy preparation for BIP113. It is
-recommended to upgrade to this version as soon as possible.
+This is a new minor version release, including various bugfixes and
+performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
   <https://github.com/bitcoin/bitcoin/issues>
 
-Upgrading and downgrading
-=========================
+To receive security and update notifications, please subscribe to:
 
-How to Upgrade
---------------
+  <https://bitcoincore.org/en/list/announcements/join/>
 
-If you are running an older version, shut it down. Wait until it has completely
-shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or
-bitcoind/bitcoin-qt (on Linux).
+Compatibility
+==============
 
-Downgrade warning
-------------------
+Bitcoin Core is extensively tested on multiple operating systems using
+the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
-Because release 0.10.0 and later makes use of headers-first synchronization and
-parallel block download (see further), the block files and databases are not
-backwards-compatible with pre-0.10 versions of Bitcoin Core or other software:
+Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
+No attempt is made to prevent installing or running the software on Windows XP, you
+can still do so at your own risk but be aware that there are known instabilities and issues.
+Please do not report issues about Windows XP to the issue tracker.
 
-* Blocks will be stored on disk out of order (in the order they are
-received, really), which makes it incompatible with some tools or
-other programs. Reindexing using earlier versions will also not work
-anymore as a result of this.
+Bitcoin Core should also work on most other Unix-like systems but is not
+frequently tested on them.
 
-* The block index database will now hold headers for which no block is
-stored on disk, which earlier versions won't support.
+Notable changes
+===============
 
-If you want to be able to downgrade smoothly, make a backup of your entire data
-directory. Without this your node will need start syncing (or importing from
-bootstrap.dat) anew afterwards. It is possible that the data from a completely
-synchronised 0.10 node may be usable in older versions as-is, but this is not
-supported and may break as soon as the older version attempts to reindex.
+Low-level RPC changes
+---------------------
 
-This does not affect wallet forward or backward compatibility. There are no
-known problems when downgrading from 0.11.x to 0.10.x.
+- Error codes have been updated to be more accurate for the following error cases:
+  - `getblock` now returns RPC_MISC_ERROR if the block can't be found on disk (for
+  example if the block has been pruned). Previously returned RPC_INTERNAL_ERROR.
+  - `pruneblockchain` now returns RPC_MISC_ERROR if the blocks cannot be pruned
+  because the node is not in pruned mode. Previously returned RPC_METHOD_NOT_FOUND.
+  - `pruneblockchain` now returns RPC_INVALID_PARAMETER if the blocks cannot be pruned
+  because the supplied timestamp is too late. Previously returned RPC_INTERNAL_ERROR.
+  - `pruneblockchain` now returns RPC_MISC_ERROR if the blocks cannot be pruned
+  because the blockchain is too short. Previously returned RPC_INTERNAL_ERROR.
+  - `setban` now returns RPC_CLIENT_INVALID_IP_OR_SUBNET if the supplied IP address
+  or subnet is invalid. Previously returned RPC_CLIENT_NODE_ALREADY_ADDED.
+  - `setban` now returns RPC_CLIENT_INVALID_IP_OR_SUBNET if the user tries to unban
+  a node that has not previously been banned. Previously returned RPC_MISC_ERROR.
+  - `removeprunedfunds` now returns RPC_WALLET_ERROR if bitcoind is unable to remove
+  the transaction. Previously returned RPC_INTERNAL_ERROR.
+  - `removeprunedfunds` now returns RPC_INVALID_PARAMETER if the transaction does not
+  exist in the wallet. Previously returned RPC_INTERNAL_ERROR.
+  - `fundrawtransaction` now returns RPC_INVALID_ADDRESS_OR_KEY if an invalid change
+  address is provided. Previously returned RPC_INVALID_PARAMETER.
+  - `fundrawtransaction` now returns RPC_WALLET_ERROR if bitcoind is unable to create
+  the transaction. The error message provides further details. Previously returned
+  RPC_INTERNAL_ERROR.
+  - `bumpfee` now returns RPC_INVALID_PARAMETER if the provided transaction has
+  descendants in the wallet. Previously returned RPC_MISC_ERROR.
+  - `bumpfee` now returns RPC_INVALID_PARAMETER if the provided transaction has
+  descendants in the mempool. Previously returned RPC_MISC_ERROR.
+  - `bumpfee` now returns RPC_WALLET_ERROR if the provided transaction has
+  has been mined or conflicts with a mined transaction. Previously returned
+  RPC_INVALID_ADDRESS_OR_KEY.
+  - `bumpfee` now returns RPC_WALLET_ERROR if the provided transaction is not
+  BIP 125 replaceable. Previously returned RPC_INVALID_ADDRESS_OR_KEY.
+  - `bumpfee` now returns RPC_WALLET_ERROR if the provided transaction has already
+  been bumped by a different transaction. Previously returned RPC_INVALID_REQUEST.
+  - `bumpfee` now returns RPC_WALLET_ERROR if the provided transaction contains
+  inputs which don't belong to this wallet. Previously returned RPC_INVALID_ADDRESS_OR_KEY.
+  - `bumpfee` now returns RPC_WALLET_ERROR if the provided transaction has multiple change
+  outputs. Previously returned RPC_MISC_ERROR.
+  - `bumpfee` now returns RPC_WALLET_ERROR if the provided transaction has no change
+  output. Previously returned RPC_MISC_ERROR.
+  - `bumpfee` now returns RPC_WALLET_ERROR if the fee is too high. Previously returned
+  RPC_MISC_ERROR.
+  - `bumpfee` now returns RPC_WALLET_ERROR if the fee is too low. Previously returned
+  RPC_MISC_ERROR.
+  - `bumpfee` now returns RPC_WALLET_ERROR if the change output is too small to bump the
+  fee. Previously returned RPC_MISC_ERROR.
 
-Notable changes since 0.11.1
-============================
+miniupnp CVE-2017-8798
+----------------------------
 
-BIP65 soft fork to enforce OP_CHECKLOCKTIMEVERIFY opcode
---------------------------------------------------------
+Bundled miniupnpc was updated to 2.0.20170509. This fixes an integer signedness error
+(present in MiniUPnPc v1.4.20101221 through v2.0) that allows remote attackers
+(within the LAN) to cause a denial of service or possibly have unspecified
+other impact.
 
-This release includes several changes related to the [BIP65][] soft fork
-which redefines the existing OP_NOP2 opcode as OP_CHECKLOCKTIMEVERIFY
-(CLTV) so that a transaction output can be made unspendable until a
-specified point in the future.
+This only affects users that have explicitly enabled UPnP through the GUI
+setting or through the `-upnp` option, as since the last UPnP vulnerability
+(in Bitcoin Core 0.10.3) it has been disabled by default.
 
-1. This release will only relay and mine transactions spending a CLTV
-   output if they comply with the BIP65 rules as provided in code.
+If you use this option, it is recommended to upgrade to this version as soon as
+possible.
 
-2. This release will produce version 4 blocks by default. Please see the
-   *notice to miners* below.
+Known Bugs
+==========
 
-3. Once 951 out of a sequence of 1,001 blocks on the local node's best block
-   chain contain version 4 (or higher) blocks, this release will no
-   longer accept new version 3 blocks and it will only accept version 4
-   blocks if they comply with the BIP65 rules for CLTV.
+Since 0.14.0 the approximate transaction fee shown in Bitcoin-Qt when using coin
+control and smart fee estimation does not reflect any change in target from the
+smart fee slider. It will only present an approximate fee calculated using the
+default target. The fee calculated using the correct target is still applied to
+the transaction and shown in the final send confirmation dialog.
 
-For more information about the soft-forking change, please see
-<https://github.com/bitcoin/bitcoin/pull/6351>
-
-Graphs showing the progress towards block version 4 adoption may be
-found at the URLs below:
-
-- Block versions over the last 50,000 blocks as progress towards BIP65
-  consensus enforcement: <http://bitcoin.sipa.be/ver-50k.png>
-
-- Block versions over the last 2,000 blocks showing the days to the
-  earliest possible BIP65 consensus-enforced block: <http://bitcoin.sipa.be/ver-2k.png>
-
-**Notice to miners:** Bitcoin Core’s block templates are now for
-version 4 blocks only, and any mining software relying on its
-getblocktemplate must be updated in parallel to use libblkmaker either
-version 0.4.3 or any version from 0.5.2 onward.
-
-- If you are solo mining, this will affect you the moment you upgrade
-  Bitcoin Core, which must be done prior to BIP65 achieving its 951/1001
-  status.
-
-- If you are mining with the stratum mining protocol: this does not
-  affect you.
-
-- If you are mining with the getblocktemplate protocol to a pool: this
-  will affect you at the pool operator’s discretion, which must be no
-  later than BIP65 achieving its 951/1001 status.
-
-[BIP65]: https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki
-
-BIP113 mempool-only locktime enforcement using GetMedianTimePast()
-----------------------------------------------------------------
-
-Bitcoin transactions currently may specify a locktime indicating when
-they may be added to a valid block.  Current consensus rules require
-that blocks have a block header time greater than the locktime specified
-in any transaction in that block.
-
-Miners get to choose what time they use for their header time, with the
-consensus rule being that no node will accept a block whose time is more
-than two hours in the future.  This creates a incentive for miners to
-set their header times to future values in order to include locktimed
-transactions which weren't supposed to be included for up to two more
-hours.
-
-The consensus rules also specify that valid blocks may have a header
-time greater than that of the median of the 11 previous blocks.  This
-GetMedianTimePast() time has a key feature we generally associate with
-time: it can't go backwards.
-
-[BIP113][] specifies a soft fork (**not enforced in this release**) that
-weakens this perverse incentive for individual miners to use a future
-time by requiring that valid blocks have a computed GetMedianTimePast()
-greater than the locktime specified in any transaction in that block.
-
-Mempool inclusion rules currently require transactions to be valid for
-immediate inclusion in a block in order to be accepted into the mempool.
-This release begins applying the BIP113 rule to received transactions,
-so transaction whose time is greater than the GetMedianTimePast() will
-no longer be accepted into the mempool.
-
-**Implication for miners:** you will begin rejecting transactions that
-would not be valid under BIP113, which will prevent you from producing
-invalid blocks if/when BIP113 is enforced on the network. Any
-transactions which are valid under the current rules but not yet valid
-under the BIP113 rules will either be mined by other miners or delayed
-until they are valid under BIP113. Note, however, that time-based
-locktime transactions are more or less unseen on the network currently.
-
-**Implication for users:** GetMedianTimePast() always trails behind the
-current time, so a transaction locktime set to the present time will be
-rejected by nodes running this release until the median time moves
-forward. To compensate, subtract one hour (3,600 seconds) from your
-locktimes to allow those transactions to be included in mempools at
-approximately the expected time.
-
-[BIP113]: https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki
-
-Windows bug fix for corrupted UTXO database on unclean shutdowns
-----------------------------------------------------------------
-
-Several Windows users reported that they often need to reindex the
-entire blockchain after an unclean shutdown of Bitcoin Core on Windows
-(or an unclean shutdown of Windows itself). Although unclean shutdowns
-remain unsafe, this release no longer relies on memory-mapped files for
-the UTXO database, which significantly reduced the frequency of unclean
-shutdowns leading to required reindexes during testing.
-
-For more information, see: <https://github.com/bitcoin/bitcoin/pull/6917>
-
-Other fixes for database corruption on Windows are expected in the
-next major release.
-
-0.11.2 Change log
+0.14.2 Change log
 =================
 
 Detailed release notes follow. This overview includes changes that affect
@@ -168,25 +111,26 @@ behavior, not code moves, refactors and string updates. For convenience in locat
 the code changes and accompanying discussion, both the pull request and
 git merge commit are mentioned.
 
-- #6124 `684636b` Make CScriptNum() take nMaxNumSize as an argument
-- #6124 `4fa7a04` Replace NOP2 with CHECKLOCKTIMEVERIFY (BIP65)
-- #6124 `6ea5ca4` Enable CHECKLOCKTIMEVERIFY as a standard script verify flag
-- #6351 `5e82e1c` Add CHECKLOCKTIMEVERIFY (BIP65) soft-fork logic
-- #6353 `ba1da90` Show softfork status in getblockchaininfo
-- #6351 `6af25b0` Add BIP65 to getblockchaininfo softforks list
-- #6688 `01878c9` Fix locking in GetTransaction
-- #6653 `b3eaa30` [Qt] Raise debug window when requested
-- #6600 `1e672ae` Debian/Ubuntu: Include bitcoin-tx binary
-- #6600 `2394f4d` Debian/Ubuntu: Split bitcoin-tx into its own package
-- #5987 `33d6825` Bugfix: Allow mining on top of old tip blocks for testnet
-- #6852 `21e58b8` build: make sure OpenSSL heeds noexecstack
-- #6846 `af6edac` alias `-h` for `--help`
-- #6867 `95a5039` Set TCP_NODELAY on P2P sockets.
-- #6856 `dfe55bd` Do not allow blockfile pruning during reindex.
-- #6566 `a1d3c6f` Add rules--presently disabled--for using GetMedianTimePast as end point for lock-time calculations
-- #6566 `f720c5f` Enable policy enforcing GetMedianTimePast as the end point of lock-time constraints
-- #6917 `0af5b8e` leveldb: Win32WritableFile without memory mapping
-- #6948 `4e895b0` Always flush block and undo when switching to new file
+### RPC and other APIs
+- #10410 `321419b` Fix importwallet edge case rescan bug (ryanofsky)
+
+### P2P protocol and network code
+- #10424 `37a8fc5` Populate services in GetLocalAddress (morcos)
+- #10441 `9e3ad50` Only enforce expected services for half of outgoing connections (theuni)
+
+### Build system
+- #10414 `ffb0c4b` miniupnpc 2.0.20170509 (fanquake)
+- #10228 `ae479bc` Regenerate bitcoin-config.h as necessary (theuni)
+
+### Miscellaneous
+- #10245 `44a17f2` Minor fix in build documentation for FreeBSD 11 (shigeya)
+- #10215 `0aee4a1` Check interruptNet during dnsseed lookups (TheBlueMatt)
+
+### GUI
+- #10231 `1e936d7` Reduce a significant cs_main lock freeze (jonasschnelli)
+
+### Wallet
+- #10294 `1847642` Unset change position when there is no change (instagibbs)
 
 Credits
 =======
@@ -194,24 +138,22 @@ Credits
 Thanks to everyone who directly contributed to this release:
 
 - Alex Morcos
-- ฿tcDrak
-- Chris Kleeschulte
-- Daniel Cousens
-- Diego Viola
-- Eric Lombrozo
-- Esteban Ordano
-- Gregory Maxwell
-- Luke Dashjr
-- Marco Falke
-- Mark Friedenbach
+- Cory Fields
+- fanquake
+- Gregory Sanders
+- Jonas Schnelli
 - Matt Corallo
-- Micha
-- Mitchell Cash
-- Peter Todd
-- Pieter Wuille
+- Russell Yanofsky
+- Shigeya Suzuki
 - Wladimir J. van der Laan
-- Zak Wilcox
-
-And those who contributed additional code review and/or security research.
 
 As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+
+Myriadcoin Credits
+=======
+(not exhaustive)
+- 8bitcoder
+- nzsquirrell
+- cryptapus
+- jwinterm
+
