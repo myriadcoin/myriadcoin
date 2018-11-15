@@ -1238,41 +1238,31 @@ bool ReadBlockHeaderFromDisk(CBlockHeader& block, const CBlockIndex* pindex, con
     return ReadBlockOrHeader(block, pindex, consensusParams);
 }
 
-// TODO Myriadcoin LONGBLOCKS: remove pindex arg and VersionBitsState check post activation
-//CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
-CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, const CBlockIndex* pindex)
+CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
     int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-    if (VersionBitsState(pindex, consensusParams, Consensus::DEPLOYMENT_LONGBLOCKS, versionbitscache) == THRESHOLD_ACTIVE) {
-        if (nHeight >= consensusParams.nLongblocks_StartV1a) {
-            halvings = consensusParams.nLongblocks_StartV1a / consensusParams.nSubsidyHalvingInterval;
-        }
-        if (nHeight >= consensusParams.nLongblocks_StartV1b) {
-            halvings += 1;
-        }
-        if (nHeight >= consensusParams.nLongblocks_StartV1c) {
-            halvings += 1;
-            halvings += ( nHeight - consensusParams.nLongblocks_StartV1c ) / consensusParams.nSubsidyHalvingIntervalV2c;
-        }
-        // Force block reward to 1 after 10 halvings (tail emission).
-        if (halvings >= 13) // tail emission happens later with longblocks.
-            return 1 * COIN;
-    } else {
-        // Force block reward to 1 after 10 halvings (tail emission).
-        if (halvings >= 10)
-            return 1 * COIN;
+    if (nHeight >= consensusParams.nLongblocks_StartV1a) {
+        halvings = consensusParams.nLongblocks_StartV1a / consensusParams.nSubsidyHalvingInterval;
     }
+    if (nHeight >= consensusParams.nLongblocks_StartV1b) {
+        halvings += 1;
+    }
+    if (nHeight >= consensusParams.nLongblocks_StartV1c) {
+        halvings += 1;
+        halvings += ( nHeight - consensusParams.nLongblocks_StartV1c ) / consensusParams.nSubsidyHalvingIntervalV2c;
+    }
+    // Force block reward to 1 after 13 halvings (tail emission).
+    if (halvings >= 13) // tail emission happens later with longblocks.
+        return 1 * COIN;
 
     CAmount nSubsidy = 1000 * COIN;
-    if (VersionBitsState(pindex, consensusParams, Consensus::DEPLOYMENT_LONGBLOCKS, versionbitscache) == THRESHOLD_ACTIVE) {
-        // longblocks require larger reward scaled for time.
-        if (nHeight >= consensusParams.nLongblocks_StartV1c) {
-            nSubsidy *= 8; // 1min -> 8min
-        } else if (nHeight >= consensusParams.nLongblocks_StartV1b) {
-            nSubsidy *= 4; // 1min -> 4min
-        } else if (nHeight >= consensusParams.nLongblocks_StartV1a) {
-            nSubsidy *= 2; // 1min -> 2min
-        }
+    // longblocks require larger reward scaled for time.
+    if (nHeight >= consensusParams.nLongblocks_StartV1c) {
+        nSubsidy *= 8; // 1min -> 8min
+    } else if (nHeight >= consensusParams.nLongblocks_StartV1b) {
+        nSubsidy *= 4; // 1min -> 4min
+    } else if (nHeight >= consensusParams.nLongblocks_StartV1a) {
+        nSubsidy *= 2; // 1min -> 2min
     }
     // Subsidy is cut in half every 967680 blocks.
     nSubsidy >>= halvings;
@@ -1800,14 +1790,15 @@ int32_t ComputeBlockVersion(const CBlockIndex* pindexPrev, const Consensus::Para
         }
     }
 
-    /* TODO Myriadcoin: add legbit back for 0.11 post consensus, remove this when 0.11 clients are forked off network */
-    if (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_LEGBIT, versionbitscache) == THRESHOLD_ACTIVE) {
-        nVersion += 4;
-    }
-    /* TODO Myriadcoin LONGBLOCKS: remove legbit if LONGBLOCKS activates, now 0.11 clients are forked off network,
-       remove this and above legbit check once LONGBLOCKS is activated */
-    if (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_LONGBLOCKS, versionbitscache) == THRESHOLD_ACTIVE) {
-        nVersion -= 4;
+    /* Myriadcoin: As a suspected consequence of `legbit` signaling longer than multiple BIP9 activation
+     * windows, artificially increase nVersion for the length of blocks legbit was active. bit 2 should still be
+     * usable as a BIP9 bit, however it is advisable that this behavior is verified on a testnet soft-fork for
+     * future use. This tweak of nVersion has been necessary on v0.14-v0.16 in order to not trigger a
+     * "Warning: unknown new rules activated (versionbit 2)" in UpdateTip().
+     */
+    if (pindexPrev!=NULL) {
+        if (pindexPrev->nHeight >= params.nLegbitStart && pindexPrev->nHeight < params.nLegbitStop)
+            nVersion += 4;
     }
 
     return nVersion;
@@ -2045,9 +2036,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     int64_t nTime3 = GetTimeMicros(); nTimeConnect += nTime3 - nTime2;
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime3 - nTime2), 0.001 * (nTime3 - nTime2) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime3 - nTime2) / (nInputs-1), nTimeConnect * 0.000001);
 
-    // TODO Myriadcoin LONGBLOCKS: pindex needed for versionbits check. Remove if activated.
-    //CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
-    CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus(), pindex);
+    CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
     if (block.vtx[0]->GetValueOut() > blockReward)
         return state.DoS(100,
                          error("ConnectBlock(): coinbase pays too much (actual=%d vs limit=%d)",
@@ -2261,8 +2250,8 @@ void static UpdateTip(CBlockIndex *pindexNew, const CChainParams& chainParams) {
         {
             int32_t nExpectedVersion = ComputeBlockVersion(pindex->pprev, chainParams.GetConsensus());
             /* Myriadcoin: we only use the lowest 8 bits for BIP9, so we mask the chainid and algo (0x00FFFF00)*/
-            //if (pindex->GetBaseVersion() > VERSIONBITS_LAST_OLD_BLOCK_VERSION && (pindex->nVersion & ~nExpectedVersion) != 0)
-            if (pindex->GetBaseVersion() > VERSIONBITS_LAST_OLD_BLOCK_VERSION && ((pindex->nVersion & ~nExpectedVersion) & 0xFF0000FF) != 0)
+            //if (pindex->nVersion > VERSIONBITS_LAST_OLD_BLOCK_VERSION && (pindex->nVersion & ~nExpectedVersion) != 0)
+            if ((pindex->nVersion & 0xFF0000FF) > VERSIONBITS_LAST_OLD_BLOCK_VERSION && ((pindex->nVersion & ~nExpectedVersion) & 0xFF0000FF) != 0)
                 ++nUpgraded;
             pindex = pindex->pprev;
         }
