@@ -133,7 +133,7 @@
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation>Incripteaza portofelul</translation>
+        <translation>Criptează portofelul</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
@@ -176,8 +176,16 @@
         <translation>Portofel criptat</translation>
     </message>
     <message>
+        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
+        <translation>IMPORTANT: Fiecare backup anterior pe care l-ai facut portofelului tău virtual trebuie înlocuit cu cel nou. Din motive de securitate, backup-urile anteroiare făcute portofelului tău, care nu sunt criptate vor deveni inutilizabile și inutile când vei începe să utilizezi portofelul criptat.</translation>
+    </message>
+    <message>
         <source>Wallet encryption failed</source>
         <translation>Criptarea portofelului a eșuat</translation>
+    </message>
+    <message>
+        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <translation>Criptarea portofelului a eșuat din cauza unei erori interne. Portofelul tău nu a fost criptat.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
@@ -186,6 +194,10 @@
     <message>
         <source>Wallet unlock failed</source>
         <translation>Deblocarea portofelului a eșuat</translation>
+    </message>
+    <message>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <translation>Parola pe care ai introdus-o pentru decripatrea portofelului nu este corectă.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
@@ -215,7 +227,7 @@
     <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
-        <translation>Semnează &amp;mesajul...</translation>
+        <translation>Semnează și trimite...</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -224,10 +236,6 @@
     <message>
         <source>&amp;Overview</source>
         <translation>Vizualizare de ansamblu</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>Nod</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
@@ -242,8 +250,20 @@
         <translation>Navighează în istoricul tranzacțiilor</translation>
     </message>
     <message>
+        <source>E&amp;xit</source>
+        <translation>Ieși din...</translation>
+    </message>
+    <message>
         <source>Quit application</source>
         <translation>Părăsește aplicația</translation>
+    </message>
+    <message>
+        <source>&amp;About %1</source>
+        <translation>&amp;Despre %1</translation>
+    </message>
+    <message>
+        <source>Show information about %1</source>
+        <translation>Arată informații despre %1</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -268,14 +288,6 @@
     <message>
         <source>&amp;Change Passphrase...</source>
         <translation>&amp;Schimbă parola...</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Trimite adresele...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Primește adresele...</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
@@ -312,10 +324,6 @@
     <message>
         <source>Bitcoin</source>
         <translation>Bitcoin</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Portofel</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -402,6 +410,10 @@
         <translation>Actual</translation>
     </message>
     <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Fereastra</translation>
+    </message>
+    <message>
         <source>Date: %1
 </source>
         <translation>Data: %1</translation>
@@ -471,6 +483,10 @@
     <message>
         <source>Change:</source>
         <translation>Schimbă:</translation>
+    </message>
+    <message>
+        <source>(un)select all</source>
+        <translation>(de)selectează tot</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -544,10 +560,6 @@
         <translation>&amp;Adresa</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>Adresă de primire nouă</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>Adresă nouă de livrare</translation>
     </message>
@@ -585,19 +597,7 @@
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Utilizare:</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Pornește minimalizat</translation>
-    </message>
-    <message>
-        <source>Reset all settings changed in the GUI</source>
-        <translation>Resetează toate setările modificate în Interfața Grafică.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -676,10 +676,6 @@
     <message>
         <source>Options</source>
         <translation>Opțiuni</translation>
-    </message>
-    <message>
-        <source>MB</source>
-        <translation>MB</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -1000,6 +996,10 @@
         <source>Message</source>
         <translation>Mesaj</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Portofel</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -1253,6 +1253,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -1267,10 +1270,6 @@
     </context>
 <context>
     <name>bitcoin-core</name>
-    <message>
-        <source>Options:</source>
-        <translation>Optiuni:</translation>
-    </message>
     <message>
         <source>Bitcoin Core</source>
         <translation>Bitcoin Core</translation>

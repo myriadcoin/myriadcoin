@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,9 +7,10 @@
 
 #include <arith_uint256.h>
 #include <chain.h>
+#include <logging.h>
 #include <primitives/block.h>
 #include <uint256.h>
-#include <util.h>
+#include <util/strencodings.h>
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, int algo, const Consensus::Params& params)
 {
@@ -25,6 +26,14 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         /*
         if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing*2)
             return nProofOfWorkLimit;
+        else
+        {
+            // Return the last non-special-min-difficulty-rules-block
+            const CBlockIndex* pindex = pindexLast;
+            while (pindex->pprev && pindex->nHeight % params.DifficultyAdjustmentInterval() != 0 && pindex->nBits == nProofOfWorkLimit)
+                pindex = pindex->pprev;
+            return pindex->nBits;
+        }
         */
     }
 

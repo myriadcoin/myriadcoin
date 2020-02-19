@@ -239,10 +239,6 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>&amp;Tổng quan</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Node</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Hiện thỉ thông tin sơ lược chung về Ví</translation>
     </message>
@@ -299,14 +295,6 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>&amp;Thay đổi mật khẩu...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Địa chỉ gửi</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Địa chỉ nhận</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Mở &amp;URI...</translation>
     </message>
@@ -357,10 +345,6 @@ Ví của bạn chưa được mã hóa.</translation>
     <message>
         <source>Bitcoin</source>
         <translation>Bitcoin</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Ví</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -624,23 +608,7 @@ Ví của bạn chưa được mã hóa.</translation>
         <source>Command-line options</source>
         <translation>&amp;Tùy chọn dòng lệnh</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Mức sử dụng</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>tùy chọn dòng lệnh</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Chọn ngôn ngữ, ví dụ "de_DE" (mặc định: Vị trí hệ thống)</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Đặt chứng nhận SSL gốc cho yêu cầu giao dịch (mặc định: -hệ thống-)</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>Intro</name>
     <message>
@@ -691,10 +659,6 @@ Ví của bạn chưa được mã hóa.</translation>
     <message>
         <source>&amp;Main</source>
         <translation>&amp;Chính</translation>
-    </message>
-    <message>
-        <source>MB</source>
-        <translation>MB</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -980,6 +944,10 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>Tin nhắn</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Ví</translation>
+    </message>
+    <message>
         <source>Error encoding URI into QR Code.</source>
         <translation>Lỗi khi encode từ URI thành QR Code</translation>
     </message>
@@ -1070,10 +1038,6 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>Ẩn</translation>
     </message>
     <message>
-        <source>(read the tooltip)</source>
-        <translation>(Đọc hướng dẫn)</translation>
-    </message>
-    <message>
         <source>Send to multiple recipients at once</source>
         <translation>Gửi đến nhiều người nhận trong một lần</translation>
     </message>
@@ -1100,10 +1064,6 @@ Ví của bạn chưa được mã hóa.</translation>
     <message>
         <source>%1 to %2</source>
         <translation>%1 đến %2</translation>
-    </message>
-    <message>
-        <source>Total Amount %1</source>
-        <translation>Tổng cộng %1</translation>
     </message>
     <message>
         <source>or</source>
@@ -1200,6 +1160,9 @@ Ví của bạn chưa được mã hóa.</translation>
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -1219,16 +1182,8 @@ Ví của bạn chưa được mã hóa.</translation>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Options:</source>
-        <translation>Lựa chọn:</translation>
-    </message>
-    <message>
         <source>Bitcoin Core</source>
         <translation>Bitcoin Core</translation>
-    </message>
-    <message>
-        <source>(default: %u)</source>
-        <translation>(mặc định: %u)</translation>
     </message>
     <message>
         <source>Information</source>
@@ -1241,10 +1196,6 @@ Ví của bạn chưa được mã hóa.</translation>
     <message>
         <source>Warning</source>
         <translation>Chú ý</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(mặc định: %s)</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

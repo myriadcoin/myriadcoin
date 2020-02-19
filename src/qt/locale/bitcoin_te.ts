@@ -142,10 +142,6 @@
         <translation>బిట్కోయిన్</translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation>వాలెట్</translation>
-    </message>
-    <message>
         <source>&amp;Send</source>
         <translation>పంపు</translation>
     </message>
@@ -260,6 +256,10 @@
         <source>Message</source>
         <translation>సందేశం</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>వాలెట్</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -371,6 +371,9 @@
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>

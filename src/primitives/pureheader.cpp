@@ -12,7 +12,7 @@
 #include <crypto/scrypt/scrypt.h>
 #include <crypto/yescrypt/yescrypt.h>
 #include <crypto/hashargon2d.h>
-#include <utilstrencodings.h>
+#include <util/strencodings.h>
 
 uint256 CPureBlockHeader::GetHash() const
 {

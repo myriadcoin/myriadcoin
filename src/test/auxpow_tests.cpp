@@ -1,25 +1,32 @@
-// Copyright (c) 2014-2015 Daniel Kraft
+// Copyright (c) 2014-2019 Daniel Kraft
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "auxpow.h"
-#include "chainparams.h"
-#include "coins.h"
-#include "consensus/merkle.h"
-#include "validation.h"
-#include "primitives/block.h"
-#include "script/script.h"
-#include "utilstrencodings.h"
-#include "uint256.h"
+#include <arith_uint256.h>
+#include <auxpow.h>
+#include <chainparams.h>
+#include <coins.h>
+#include <consensus/merkle.h>
+#include <validation.h>
+#include <pow.h>
+#include <primitives/block.h>
+#include <rpc/auxpow_miner.h>
+#include <script/script.h>
+#include <util/strencodings.h>
+#include <util/time.h>
+#include <uint256.h>
+#include <univalue.h>
 
-#include "test/test_bitcoin.h"
+#include <test/test_bitcoin.h>
 
 #include <boost/test/unit_test.hpp>
 
 #include <algorithm>
 #include <vector>
 
-BOOST_FIXTURE_TEST_SUITE (auxpow_tests, BasicTestingSetup)
+/* No space between BOOST_AUTO_TEST_SUITE and '(', so that extraction of
+   the test-suite name works with grep as done in the Makefile.  */
+BOOST_AUTO_TEST_SUITE(auxpow_tests)
 
 /* ************************************************************************** */
 
@@ -34,6 +41,28 @@ tamperWith (uint256& num)
   modifiable += 1;
   num = ArithToUint256 (modifiable);
 }
+
+/**
+ * Helper class that is friend to CAuxPow and makes the internals accessible
+ * to the test code.
+ */
+class CAuxPowForTest : public CAuxPow
+{
+
+public:
+
+  explicit inline CAuxPowForTest (CTransactionRef txIn)
+    : CAuxPow (txIn)
+  {}
+
+  using CAuxPow::coinbaseTx;
+  using CAuxPow::vChainMerkleBranch;
+  using CAuxPow::nChainIndex;
+  using CAuxPow::parentBlock;
+
+  using CAuxPow::CheckMerkleBranch;
+
+};
 
 /**
  * Utility class to construct auxpow's and manipulate them.  This is used
@@ -98,6 +127,15 @@ public:
   }
 
   /**
+   * Returns the finished CAuxPow object and returns it as std::unique_ptr.
+   */
+  inline std::unique_ptr<CAuxPow>
+  getUnique () const
+  {
+    return std::unique_ptr<CAuxPow>(new CAuxPow (get ()));
+  }
+
+  /**
    * Build a data vector to be included in the coinbase.  It consists
    * of the aux hash, the merkle tree size and the nonce.  Optionally,
    * the header can be added as well.
@@ -142,7 +180,8 @@ CAuxpowBuilder::buildAuxpowChain (const uint256& hashAux, unsigned h, int index)
     auxpowChainMerkleBranch.push_back (ArithToUint256 (arith_uint256 (i)));
 
   const uint256 hash
-    = CAuxPow::CheckMerkleBranch (hashAux, auxpowChainMerkleBranch, index);
+    = CAuxPowForTest::CheckMerkleBranch (hashAux, auxpowChainMerkleBranch,
+                                         index);
 
   valtype res = ToByteVector (hash);
   std::reverse (res.begin (), res.end ());
@@ -154,8 +193,12 @@ CAuxPow
 CAuxpowBuilder::get (const CTransactionRef tx) const
 {
   LOCK(cs_main);
-  CAuxPow res(tx);
-  res.InitMerkleBranch (parentBlock, 0);
+
+  CAuxPowForTest res(tx);
+  res.coinbaseTx.hashBlock = parentBlock.GetHash ();
+  res.coinbaseTx.nIndex = 0;
+  res.coinbaseTx.vMerkleBranch
+      = merkle_tests::BlockMerkleBranch (parentBlock, res.coinbaseTx.nIndex);
 
   res.vChainMerkleBranch = auxpowChainMerkleBranch;
   res.nChainIndex = auxpowChainIndex;
@@ -171,20 +214,29 @@ CAuxpowBuilder::buildCoinbaseData (bool header, const valtype& auxRoot,
   valtype res;
 
   if (header)
-    res.insert (res.end (), UBEGIN (pchMergedMiningHeader),
-                UEND (pchMergedMiningHeader));
+    res.insert (res.end (),
+                pchMergedMiningHeader,
+                pchMergedMiningHeader + sizeof (pchMergedMiningHeader));
   res.insert (res.end (), auxRoot.begin (), auxRoot.end ());
 
-  const int size = (1 << h);
-  res.insert (res.end (), UBEGIN (size), UEND (size));
-  res.insert (res.end (), UBEGIN (nonce), UEND (nonce));
+  int size = (1 << h);
+  for (int i = 0; i < 4; ++i)
+    {
+      res.insert (res.end (), size & 0xFF);
+      size >>= 8;
+    }
+  for (int i = 0; i < 4; ++i)
+    {
+      res.insert (res.end (), nonce & 0xFF);
+      nonce >>= 8;
+    }
 
   return res;
 }
 
 /* ************************************************************************** */
 
-BOOST_AUTO_TEST_CASE (check_auxpow)
+BOOST_FIXTURE_TEST_CASE (check_auxpow, BasicTestingSetup)
 {
   const Consensus::Params& params = Params ().GetConsensus ();
   CAuxpowBuilder builder(5, 42);
@@ -207,6 +259,15 @@ BOOST_AUTO_TEST_CASE (check_auxpow)
   scr = (scr << OP_2 << data);
   builder.setCoinbase (scr);
   BOOST_CHECK (builder.get ().check (hashAux, ourChainId, params));
+
+  /* An auxpow without any inputs in the parent coinbase tx should be
+     handled gracefully (and be considered invalid).  */
+  CMutableTransaction mtx(*builder.parentBlock.vtx[0]);
+  mtx.vin.clear ();
+  builder.parentBlock.vtx.clear ();
+  builder.parentBlock.vtx.push_back (MakeTransactionRef (std::move (mtx)));
+  builder.parentBlock.hashMerkleRoot = BlockMerkleRoot (builder.parentBlock);
+  BOOST_CHECK (!builder.get ().check (hashAux, ourChainId, params));
 
   /* Check that the auxpow is invalid if we change either the aux block's
      hash or the chain ID.  */
@@ -231,8 +292,9 @@ BOOST_AUTO_TEST_CASE (check_auxpow)
   builder2.parentBlock.SetChainId (100);
   BOOST_CHECK (builder2.get ().check (hashAux, ourChainId, params));
   builder2.parentBlock.SetChainId (ourChainId);
-  // Removed for Myriadcoin:
+  // Myriadcoin allows the same chain ID:
   //BOOST_CHECK (!builder2.get ().check (hashAux, ourChainId, params));
+  BOOST_CHECK (builder2.get ().check (hashAux, ourChainId, params));
 
   /* Disallow too long merkle branches.  */
   builder2 = builder;
@@ -333,20 +395,18 @@ BOOST_AUTO_TEST_CASE (check_auxpow)
 static void
 mineBlock (CBlockHeader& block, bool ok, int nBits = -1)
 {
-  SelectParams (CBaseChainParams::REGTEST);
-  const Consensus::Params& params = Params().GetConsensus();
-
   if (nBits == -1)
     nBits = block.nBits;
 
   arith_uint256 target;
   target.SetCompact (nBits);
+
   const int algo = block.GetAlgo();
 
   block.nNonce = 0;
   while (true)
     {
-      const bool nowOk = (UintToArith256 (block.GetPoWHash(algo,params)) <= target);
+      const bool nowOk = (UintToArith256 (block.GetHash ()) <= target);
       if ((ok && nowOk) || (!ok && !nowOk))
         break;
 
@@ -354,18 +414,18 @@ mineBlock (CBlockHeader& block, bool ok, int nBits = -1)
     }
 
   if (ok)
-    BOOST_CHECK (CheckProofOfWork (block.GetPoWHash(algo,params), algo, nBits, params));
+    BOOST_CHECK (CheckProofOfWork (block.GetHash (), algo, nBits, Params().GetConsensus()));
   else
-    BOOST_CHECK (!CheckProofOfWork (block.GetPoWHash(algo,params), algo, nBits, params));
+    BOOST_CHECK (!CheckProofOfWork (block.GetHash (), algo, nBits, Params().GetConsensus()));
 }
 
-BOOST_AUTO_TEST_CASE (auxpow_pow)
+BOOST_FIXTURE_TEST_CASE (auxpow_pow, BasicTestingSetup)
 {
   /* Use regtest parameters to allow mining with easy difficulty.  */
   SelectParams (CBaseChainParams::REGTEST);
-  const Consensus::Params& params = Params().GetConsensus();
+  const Consensus::Params& params = Params ().GetConsensus ();
 
-  const arith_uint256 target = (~arith_uint256(0) >> 1);
+  const arith_uint256 target = (~arith_uint256 (0) >> 1);
   CBlockHeader block;
   block.nBits = target.GetCompact ();
 
@@ -399,20 +459,18 @@ BOOST_AUTO_TEST_CASE (auxpow_pow)
   mineBlock (block, true);
   BOOST_CHECK (!CheckProofOfWork (block, params));
 
-  // TODO Myriadcoin disabled tests (does not function at v0.16.4.1 with removal of bignum.h):
-  // This actually works, just not with `make check`. Needs further build investigation.
-  //block.SetAuxpowVersion (true);
-  //mineBlock (block, true);
-  //BOOST_CHECK (CheckProofOfWork (block, params));
-  //mineBlock (block, false);
-  //BOOST_CHECK (!CheckProofOfWork (block, params));
+  block.SetAuxpowVersion (false);
+  mineBlock (block, true);
+  BOOST_CHECK (CheckProofOfWork (block, params));
+  mineBlock (block, false);
+  BOOST_CHECK (!CheckProofOfWork (block, params));
 
   /* ****************************************** */
   /* Check the case that the block has auxpow.  */
 
   CAuxpowBuilder builder(5, 42);
   CAuxPow auxpow;
-  const int32_t ourChainId = Params().GetConsensus().nAuxpowChainId;
+  const int32_t ourChainId = params.nAuxpowChainId;
   const unsigned height = 3;
   const int nonce = 7;
   const int index = CAuxPow::getExpectedIndex (nonce, ourChainId, height);
@@ -424,11 +482,11 @@ BOOST_AUTO_TEST_CASE (auxpow_pow)
   data = CAuxpowBuilder::buildCoinbaseData (true, auxRoot, height, nonce);
   builder.setCoinbase (CScript () << data);
   mineBlock (builder.parentBlock, false, block.nBits);
-  block.SetAuxpow (new CAuxPow (builder.get ()));
-  BOOST_CHECK (!CheckProofOfWork (block, Params().GetConsensus()));
+  block.SetAuxpow (builder.getUnique ());
+  BOOST_CHECK (!CheckProofOfWork (block, params));
   mineBlock (builder.parentBlock, true, block.nBits);
-  block.SetAuxpow (new CAuxPow (builder.get ()));
-  BOOST_CHECK (CheckProofOfWork (block, Params().GetConsensus()));
+  block.SetAuxpow (builder.getUnique ());
+  BOOST_CHECK (CheckProofOfWork (block, params));
 
   /* Mismatch between auxpow being present and block.nVersion.  Note that
      block.SetAuxpow sets also the version and that we want to ensure
@@ -440,11 +498,11 @@ BOOST_AUTO_TEST_CASE (auxpow_pow)
   data = CAuxpowBuilder::buildCoinbaseData (true, auxRoot, height, nonce);
   builder.setCoinbase (CScript () << data);
   mineBlock (builder.parentBlock, true, block.nBits);
-  block.SetAuxpow (new CAuxPow (builder.get ()));
+  block.SetAuxpow (builder.getUnique ());
   BOOST_CHECK (hashAux != block.GetHash ());
   block.SetAuxpowVersion (false);
   BOOST_CHECK (hashAux == block.GetHash ());
-  BOOST_CHECK (!CheckProofOfWork (block, Params().GetConsensus()));
+  BOOST_CHECK (!CheckProofOfWork (block, params));
 
   /* Modifying the block invalidates the PoW.  */
   block.SetAuxpowVersion (true);
@@ -452,10 +510,103 @@ BOOST_AUTO_TEST_CASE (auxpow_pow)
   data = CAuxpowBuilder::buildCoinbaseData (true, auxRoot, height, nonce);
   builder.setCoinbase (CScript () << data);
   mineBlock (builder.parentBlock, true, block.nBits);
-  block.SetAuxpow (new CAuxPow (builder.get ()));
-  BOOST_CHECK (CheckProofOfWork (block, Params().GetConsensus()));
+  block.SetAuxpow (builder.getUnique ());
+  BOOST_CHECK (CheckProofOfWork (block, params));
   tamperWith (block.hashMerkleRoot);
-  BOOST_CHECK (!CheckProofOfWork (block, Params().GetConsensus()));
+  BOOST_CHECK (!CheckProofOfWork (block, params));
+}
+
+/* ************************************************************************** */
+
+/**
+ * Helper class that is friend to AuxpowMiner and makes the tested methods
+ * accessible to the test code.
+ */
+class AuxpowMinerForTest : public AuxpowMiner
+{
+
+public:
+
+  using AuxpowMiner::cs;
+
+  using AuxpowMiner::getCurrentBlock;
+  using AuxpowMiner::lookupSavedBlock;
+
+};
+
+BOOST_FIXTURE_TEST_CASE (auxpow_miner_blockRegeneration, TestChain100Setup)
+{
+  AuxpowMinerForTest miner;
+  LOCK (miner.cs);
+
+  /* We use mocktime so that we can control GetTime() as it is used in the
+     logic that determines whether or not to reconstruct a block.  The "base"
+     time is set such that the blocks we have from the fixture are fresh.  */
+  const int64_t baseTime = chainActive.Tip ()->GetMedianTimePast () + 1;
+  SetMockTime (baseTime);
+
+  /* Construct a first block.  */
+  CScript scriptPubKey;
+  uint256 target;
+  const CBlock* pblock1 = miner.getCurrentBlock (scriptPubKey, target);
+  BOOST_CHECK (pblock1 != nullptr);
+  const uint256 hash1 = pblock1->GetHash ();
+
+  /* Verify target computation.  */
+  arith_uint256 expected;
+  expected.SetCompact (pblock1->nBits);
+  BOOST_CHECK (target == ArithToUint256 (expected));
+
+  /* Calling the method again should return the same, cached block a second
+     time (even if we advance the clock, since there are no new
+     transactions).  */
+  SetMockTime (baseTime + 100);
+  const CBlock* pblock = miner.getCurrentBlock (scriptPubKey, target);
+  BOOST_CHECK (pblock == pblock1 && pblock->GetHash () == hash1);
+
+  /* Mine a block, then we should get a new auxpow block constructed.  Note that
+     it can be the same *pointer* if the memory was reused after clearing it,
+     so we can only verify that the hash is different.  */
+  CreateAndProcessBlock ({}, scriptPubKey);
+  const CBlock* pblock2 = miner.getCurrentBlock (scriptPubKey, target);
+  BOOST_CHECK (pblock2 != nullptr);
+  const uint256 hash2 = pblock2->GetHash ();
+  BOOST_CHECK (hash2 != hash1);
+
+  /* Add a new transaction to the mempool.  */
+  TestMemPoolEntryHelper entry;
+  CMutableTransaction mtx;
+  mtx.vout.emplace_back (1234, scriptPubKey);
+  {
+    LOCK (mempool.cs);
+    mempool.addUnchecked (entry.FromTx (mtx));
+  }
+
+  /* We should still get back the cached block, for now.  */
+  SetMockTime (baseTime + 160);
+  pblock = miner.getCurrentBlock (scriptPubKey, target);
+  BOOST_CHECK (pblock == pblock2 && pblock->GetHash () == hash2);
+
+  /* With time advanced too far, we get a new block.  This time, we should also
+     definitely get a different pointer, as there is no clearing.  The old
+     blocks are freed only after a new tip is found.  */
+  SetMockTime (baseTime + 161);
+  const CBlock* pblock3 = miner.getCurrentBlock (scriptPubKey, target);
+  BOOST_CHECK (pblock3 != pblock2 && pblock3->GetHash () != hash2);
+}
+
+BOOST_FIXTURE_TEST_CASE (auxpow_miner_createAndLookupBlock, TestChain100Setup)
+{
+  AuxpowMinerForTest miner;
+  LOCK (miner.cs);
+
+  CScript scriptPubKey;
+  uint256 target;
+  const CBlock* pblock = miner.getCurrentBlock (scriptPubKey, target);
+  BOOST_CHECK (pblock != nullptr);
+
+  BOOST_CHECK (miner.lookupSavedBlock (pblock->GetHash ().GetHex ()) == pblock);
+  BOOST_CHECK_THROW (miner.lookupSavedBlock ("foobar"), UniValue);
 }
 
 /* ************************************************************************** */
